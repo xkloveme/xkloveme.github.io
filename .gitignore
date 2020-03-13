@@ -2,6 +2,7 @@
 # .sass-cache
 # .jekyll-metadata
 node_modules
+public
 *.sublime-project
 *.sublime-workspace
 .DS_Store
