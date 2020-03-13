@@ -1,18 +1,38 @@
-sudo: false
 language: node_js
-node_js:
-  - 10 # use nodejs v10 LTS
+node_js: stable
+
 cache: npm
+before_install:
+  - npm install hexo -g
+
+install:
+  - npm install
+
+script:
+  - npm run build # generate static files
+
+# deploy:
+#   provider: pages
+#   skip-cleanup: true
+#   github-token: $GH_TOKEN
+#   keep-history: true
+#   on:
+#     branch: master
+#   local-dir: public
+
+after_script:
+  - cd public
+  - git init
+  - git config user.name "xkloveme"
+  - git config user.email "admin@jixiaokang.com"
+  - git add .
+  - git commit -m "Automatically update from travis-ci"
+  - git push --quiet --force  "https://${GH_TOKEN}@${GH_REF}" master:${P_BRANCH}
+
 branches:
   only:
-    - dev # build master branch only
-script:
-  - hexo generate # generate static files
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GH_TOKEN
-  keep-history: true
-  on:
-    branch: dev
-  local-dir: public
+    - master
+    - dev
+env:
+  global:
+    - GH_REF: github.com/xkloveme/xkloveme.github.io.git
