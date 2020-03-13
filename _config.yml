@@ -99,8 +99,8 @@ theme: hexo-theme-matery
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: github.com/xkloveme/xkloveme.github.io.git
-  branch: gh-pages
+  repo: https://github.com/xkloveme/xkloveme.github.io.git
+  branch: master
 
 # 高亮代码
 
