@@ -21,7 +21,7 @@ script:
 #   local-dir: public
 
 after_script:
-  - cd ./public
+  - cd public
   - git init
   - git config user.name "xkloveme"
   - git config user.email "admin@jixiaokang.com"
