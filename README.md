@@ -2,7 +2,10 @@
 
 个人成长记录 [Hexo].
 
-- [Preview](http://jixiaokang.com/)
+![](https://cdn.jsdelivr.net/gh/xkloveme/oss@master/images/1627479150168-1627479149928.png)
+
+- [online](http://jixiaokang.com/)
+- [国内](https://xkloveme-github-io.vercel.app/)
 
 ## 新建笔记
 
