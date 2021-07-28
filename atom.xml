@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jixioakang.com/"/>
-  <updated>2020-07-21T06:52:09.649Z</updated>
+  <updated>2021-07-28T13:07:30.465Z</updated>
   <id>http://jixioakang.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>属于你自己的云桌面</title>
+    <link href="http://jixioakang.com/2021/07/28/2021-7-28-shu-yu-ni-zi-ji-de-yun-zhuo-mian/"/>
+    <id>http://jixioakang.com/2021/07/28/2021-7-28-shu-yu-ni-zi-ji-de-yun-zhuo-mian/</id>
+    <published>2021-07-28T21:00:33.000Z</published>
+    <updated>2021-07-28T13:07:30.465Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;云桌面&quot;&gt;&lt;a href=&quot;#云桌面&quot; class=&quot;headerlink&quot; title=&quot;云桌面&quot;&gt;&lt;/a&gt;云桌面&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://files.catbox.moe/c1fg67.jpg&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="utools 插件" scheme="http://jixioakang.com/tags/utools-%E6%8F%92%E4%BB%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>优化github首页</title>
@@ -553,36 +578,6 @@
     
     
       <category term="技术" scheme="http://jixioakang.com/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-      <category term="工具" scheme="http://jixioakang.com/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mac 使用技巧总结</title>
-    <link href="http://jixioakang.com/2018/03/16/2018-03-16-mac-shi-yong-ji-qiao-zong-jie/"/>
-    <id>http://jixioakang.com/2018/03/16/2018-03-16-mac-shi-yong-ji-qiao-zong-jie/</id>
-    <published>2018-03-16T01:29:00.000Z</published>
-    <updated>2020-03-14T06:51:08.212Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;Mac 系统日常使用技巧归纳总结。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;一、Mac-中-Finder-显示、关闭隐藏文件&quot;&gt;&lt;a href=&quot;#一、Mac-中-Finder-显示、关闭隐藏文件&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="教程" scheme="http://jixioakang.com/categories/%E6%95%99%E7%A8%8B/"/>
-    
     
       <category term="工具" scheme="http://jixioakang.com/tags/%E5%B7%A5%E5%85%B7/"/>
     

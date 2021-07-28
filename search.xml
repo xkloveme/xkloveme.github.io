@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>属于你自己的云桌面</title>
+      <link href="/2021/07/28/2021-7-28-shu-yu-ni-zi-ji-de-yun-zhuo-mian/"/>
+      <url>/2021/07/28/2021-7-28-shu-yu-ni-zi-ji-de-yun-zhuo-mian/</url>
+      
+        <content type="html"><![CDATA[<h1 id="云桌面"><a href="#云桌面" class="headerlink" title="云桌面"></a>云桌面</h1><p><img src="https://files.catbox.moe/c1fg67.jpg" alt=""></p><p><img src="https://files.catbox.moe/ybvolr.jpg" alt=""><br><img src="https://files.catbox.moe/f7yqbu.jpg" alt=""></p><h1 id="📝🎨-云桌面"><a href="#📝🎨-云桌面" class="headerlink" title="📝🎨 云桌面"></a>📝🎨 云桌面</h1><p><img src="https://forthebadge.com/images/badges/built-with-love.svg" alt="image"></p><h2 id="地址"><a href="#地址" class="headerlink" title="地址"></a>地址</h2><ul><li><a href="https://github.com/xkloveme/utools-desktop" target="_blank" rel="noopener">项目源码</a></li><li><a href="https://github.com/xkloveme/utools-desktop/issues" target="_blank" rel="noopener">反馈</a></li></ul><h2 id="云桌面-插件"><a href="#云桌面-插件" class="headerlink" title="云桌面 插件"></a>云桌面 插件</h2><ol><li>全平台支持. windows, mac, linux.</li></ol><h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p><a href="https://www.jixiaokang.com/utools-desktop-cloud/#/login" target="_blank" rel="noopener">online</a></p><p><a href="https://utools-desktop-cloud.vercel.app/#/login" target="_blank" rel="noopener">国内</a></p><p>This project is a web page emulation of a particular Linux distro called deepin. It is designed to allow you to host an open source blog, needless your own server. </p><p>Currently this project has implemented some basic features of blogs, windows, directories, also it has a shell with very fundamental functionalities. </p><p><strong>Hope you enjoy this blog and have fun 😃.</strong></p><h2 id="地址-1"><a href="#地址-1" class="headerlink" title="地址"></a>地址</h2><ul><li><a href="https://github.com/xkloveme/utools-desktop-cloud" target="_blank" rel="noopener">项目源码</a></li><li><a href="https://github.com/xkloveme/utools-desktop-cloud/issues" target="_blank" rel="noopener">反馈</a></li></ul><h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span><span class="token function">npm</span> run dev</code></pre><h2 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h2><p>感谢Deepin, 感谢Utools, 感谢参与的人🙏🙏🙏</p><h2 id="打赏"><a href="#打赏" class="headerlink" title="打赏"></a>打赏</h2><blockquote><p>开发不易, 您的鼓励会让我走的更远, 一分也是情一分也是爱❤️</p></blockquote><p><img src="https://s1.ax1x.com/2020/07/05/UpeRIA.jpg" alt="UpeRIA.jpg"></p><h2 id="关注我"><a href="#关注我" class="headerlink" title="关注我"></a>关注我</h2><p>觉得不错的话给个<code>star</code></p><ul><li><a href="https://www.jixiaokang.com" target="_blank" rel="noopener">小康之家</a></li><li><a href="https://github.com/xkloveme" target="_blank" rel="noopener">xkloveme</a></li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> utools 插件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>优化github首页</title>
       <link href="/2020/07/21/2020-07-21-you-hua-github-shou-ye/"/>
       <url>/2020/07/21/2020-07-21-you-hua-github-shou-ye/</url>
