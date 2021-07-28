@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jixioakang.com/"/>
-  <updated>2021-04-02T06:06:16.457Z</updated>
+  <updated>2020-07-21T06:52:09.649Z</updated>
   <id>http://jixioakang.com/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>优化github首页</title>
     <link href="http://jixioakang.com/2020/07/21/2020-07-21-you-hua-github-shou-ye/"/>
     <id>http://jixioakang.com/2020/07/21/2020-07-21-you-hua-github-shou-ye/</id>
-    <published>2020-07-21T14:51:28.000Z</published>
-    <updated>2021-04-02T06:06:16.457Z</updated>
+    <published>2020-07-21T06:51:28.000Z</published>
+    <updated>2020-07-21T06:52:09.649Z</updated>
     
     <summary type="html">
     
@@ -45,8 +45,8 @@
     <title>框架优化</title>
     <link href="http://jixioakang.com/2020/06/23/2020-06-23ruo-yi-antd-kuang-jia-you-hua/"/>
     <id>http://jixioakang.com/2020/06/23/2020-06-23ruo-yi-antd-kuang-jia-you-hua/</id>
-    <published>2020-06-23T16:59:32.000Z</published>
-    <updated>2021-04-02T06:06:16.457Z</updated>
+    <published>2020-06-23T08:59:32.000Z</published>
+    <updated>2020-06-23T09:06:58.352Z</updated>
     
     <summary type="html">
     
@@ -72,8 +72,8 @@
     <title>utools-笔记插件</title>
     <link href="http://jixioakang.com/2020/05/31/2020-05-31-utools-bi-ji-cha-jian/"/>
     <id>http://jixioakang.com/2020/05/31/2020-05-31-utools-bi-ji-cha-jian/</id>
-    <published>2020-05-31T22:15:14.000Z</published>
-    <updated>2021-04-02T06:06:16.457Z</updated>
+    <published>2020-05-31T14:15:14.000Z</published>
+    <updated>2020-05-31T14:16:55.463Z</updated>
     
     <summary type="html">
     
@@ -97,8 +97,8 @@
     <title>utools-天气插件</title>
     <link href="http://jixioakang.com/2020/05/31/2020-05-31-utools-tian-qi-cha-jian/"/>
     <id>http://jixioakang.com/2020/05/31/2020-05-31-utools-tian-qi-cha-jian/</id>
-    <published>2020-05-31T22:10:54.000Z</published>
-    <updated>2021-04-02T06:06:16.457Z</updated>
+    <published>2020-05-31T14:10:54.000Z</published>
+    <updated>2020-05-31T14:15:41.859Z</updated>
     
     <summary type="html">
     
@@ -122,8 +122,8 @@
     <title>浅拷贝和深拷贝</title>
     <link href="http://jixioakang.com/2020/04/06/2020-04-06-qian-kao-bei-he-shen-kao-bei/"/>
     <id>http://jixioakang.com/2020/04/06/2020-04-06-qian-kao-bei-he-shen-kao-bei/</id>
-    <published>2020-04-06T22:39:12.000Z</published>
-    <updated>2021-04-02T06:06:16.457Z</updated>
+    <published>2020-04-06T14:39:12.000Z</published>
+    <updated>2020-04-06T14:48:47.054Z</updated>
     
     <summary type="html">
     
@@ -141,9 +141,9 @@
       <category term="面试" scheme="http://jixioakang.com/categories/%E9%9D%A2%E8%AF%95/"/>
     
     
-      <category term="面试" scheme="http://jixioakang.com/tags/%E9%9D%A2%E8%AF%95/"/>
-    
       <category term="js" scheme="http://jixioakang.com/tags/js/"/>
+    
+      <category term="面试" scheme="http://jixioakang.com/tags/%E9%9D%A2%E8%AF%95/"/>
     
   </entry>
   
@@ -151,8 +151,8 @@
     <title>前端面试之HTTP</title>
     <link href="http://jixioakang.com/2020/03/22/2020-03-22-qian-duan-mian-shi-zhi-http/"/>
     <id>http://jixioakang.com/2020/03/22/2020-03-22-qian-duan-mian-shi-zhi-http/</id>
-    <published>2020-03-22T16:22:06.000Z</published>
-    <updated>2021-04-02T06:06:16.457Z</updated>
+    <published>2020-03-22T08:22:06.000Z</published>
+    <updated>2020-03-22T08:48:58.911Z</updated>
     
     <summary type="html">
     
@@ -181,8 +181,8 @@
     <title>约在春天相见</title>
     <link href="http://jixioakang.com/2020/03/13/2020-03-14-yue-zai-chun-tian-xiang-jian/"/>
     <id>http://jixioakang.com/2020/03/13/2020-03-14-yue-zai-chun-tian-xiang-jian/</id>
-    <published>2020-03-13T11:57:26.000Z</published>
-    <updated>2021-04-02T06:06:16.457Z</updated>
+    <published>2020-03-13T03:57:26.000Z</published>
+    <updated>2020-03-14T12:25:04.735Z</updated>
     
     <summary type="html">
     
@@ -210,8 +210,8 @@
     <title>发哨子的人</title>
     <link href="http://jixioakang.com/2020/03/13/2020-03-13-fa-shao-zi-de-ren/"/>
     <id>http://jixioakang.com/2020/03/13/2020-03-13-fa-shao-zi-de-ren/</id>
-    <published>2020-03-13T11:57:26.000Z</published>
-    <updated>2021-04-02T06:06:16.457Z</updated>
+    <published>2020-03-13T03:57:26.000Z</published>
+    <updated>2020-03-14T06:52:36.525Z</updated>
     
     <summary type="html">
     
@@ -238,10 +238,10 @@
   
   <entry>
     <title>基于 Vue拓展的 v-xxx 库</title>
-    <link href="http://jixioakang.com/2019/10/12/2019-10-12-vue-v-xxx-ji-yu-vue-tuo-zhan-de-v-xxx-ku/"/>
-    <id>http://jixioakang.com/2019/10/12/2019-10-12-vue-v-xxx-ji-yu-vue-tuo-zhan-de-v-xxx-ku/</id>
-    <published>2019-10-12T00:00:00.000Z</published>
-    <updated>2021-04-02T06:06:16.457Z</updated>
+    <link href="http://jixioakang.com/2019/10/11/2019-10-12-vue-v-xxx-ji-yu-vue-tuo-zhan-de-v-xxx-ku/"/>
+    <id>http://jixioakang.com/2019/10/11/2019-10-12-vue-v-xxx-ji-yu-vue-tuo-zhan-de-v-xxx-ku/</id>
+    <published>2019-10-11T16:00:00.000Z</published>
+    <updated>2020-03-14T11:53:59.439Z</updated>
     
     <summary type="html">
     
@@ -260,9 +260,9 @@
       <category term="前端" scheme="http://jixioakang.com/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-      <category term="vue" scheme="http://jixioakang.com/tags/vue/"/>
-    
       <category term="GitHub" scheme="http://jixioakang.com/tags/GitHub/"/>
+    
+      <category term="vue" scheme="http://jixioakang.com/tags/vue/"/>
     
       <category term="指令" scheme="http://jixioakang.com/tags/%E6%8C%87%E4%BB%A4/"/>
     
@@ -270,10 +270,10 @@
   
   <entry>
     <title>如何上传自己的UI组件包</title>
-    <link href="http://jixioakang.com/2019/10/12/2019-10-12-ru-he-shang-chuan-zi-ji-de-ui-zu-jian-bao/"/>
-    <id>http://jixioakang.com/2019/10/12/2019-10-12-ru-he-shang-chuan-zi-ji-de-ui-zu-jian-bao/</id>
-    <published>2019-10-12T00:00:00.000Z</published>
-    <updated>2021-04-02T06:06:16.457Z</updated>
+    <link href="http://jixioakang.com/2019/10/11/2019-10-12-ru-he-shang-chuan-zi-ji-de-ui-zu-jian-bao/"/>
+    <id>http://jixioakang.com/2019/10/11/2019-10-12-ru-he-shang-chuan-zi-ji-de-ui-zu-jian-bao/</id>
+    <published>2019-10-11T16:00:00.000Z</published>
+    <updated>2020-03-14T11:54:01.546Z</updated>
     
     <summary type="html">
     
@@ -291,20 +291,20 @@
       <category term="前端" scheme="http://jixioakang.com/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-      <category term="vue" scheme="http://jixioakang.com/tags/vue/"/>
-    
       <category term="GitHub" scheme="http://jixioakang.com/tags/GitHub/"/>
     
       <category term="教程" scheme="http://jixioakang.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="vue" scheme="http://jixioakang.com/tags/vue/"/>
     
   </entry>
   
   <entry>
     <title>Vue中的代理Proxy和$refs</title>
-    <link href="http://jixioakang.com/2018/08/10/2018-07-10-vue-refs/"/>
-    <id>http://jixioakang.com/2018/08/10/2018-07-10-vue-refs/</id>
-    <published>2018-08-10T00:00:00.000Z</published>
-    <updated>2021-04-02T06:06:16.457Z</updated>
+    <link href="http://jixioakang.com/2018/08/09/2018-07-10-vue-refs/"/>
+    <id>http://jixioakang.com/2018/08/09/2018-07-10-vue-refs/</id>
+    <published>2018-08-09T16:00:00.000Z</published>
+    <updated>2020-03-14T06:52:03.314Z</updated>
     
     <summary type="html">
     
@@ -331,8 +331,8 @@
     <title>黑匣子里到底装了什么</title>
     <link href="http://jixioakang.com/2018/07/24/2018-07-24-hei-xia-zi-li-dao-di-zhuang-liao-shi-me/"/>
     <id>http://jixioakang.com/2018/07/24/2018-07-24-hei-xia-zi-li-dao-di-zhuang-liao-shi-me/</id>
-    <published>2018-07-24T12:47:29.000Z</published>
-    <updated>2021-04-02T06:06:16.457Z</updated>
+    <published>2018-07-24T04:47:29.000Z</published>
+    <updated>2020-03-14T07:09:19.363Z</updated>
     
     <summary type="html">
     
@@ -361,8 +361,8 @@
     <title>Vue中数组和对象更改后视图不刷新的问题</title>
     <link href="http://jixioakang.com/2018/06/27/2018-06-27-vue-zhong-shu-zu-he-dui-xiang-geng-gai-hou-shi-tu-bu-shua-xin-de-wen-ti/"/>
     <id>http://jixioakang.com/2018/06/27/2018-06-27-vue-zhong-shu-zu-he-dui-xiang-geng-gai-hou-shi-tu-bu-shua-xin-de-wen-ti/</id>
-    <published>2018-06-27T15:01:38.000Z</published>
-    <updated>2021-04-02T06:06:16.457Z</updated>
+    <published>2018-06-27T07:01:38.000Z</published>
+    <updated>2020-03-14T06:51:56.187Z</updated>
     
     <summary type="html">
     
@@ -388,8 +388,8 @@
     <title>javascript逻辑运算符“||”和“&amp;&amp;”的简单梳理</title>
     <link href="http://jixioakang.com/2018/05/31/2018-05-31-javascript-luo-ji-yun-suan-fu-he-de-jian-dan-shu-li/"/>
     <id>http://jixioakang.com/2018/05/31/2018-05-31-javascript-luo-ji-yun-suan-fu-he-de-jian-dan-shu-li/</id>
-    <published>2018-05-31T23:28:19.000Z</published>
-    <updated>2021-04-02T06:06:16.457Z</updated>
+    <published>2018-05-31T15:28:19.000Z</published>
+    <updated>2020-03-14T06:51:52.336Z</updated>
     
     <summary type="html">
     
@@ -419,8 +419,8 @@
     <title>JS几种数组遍历方式详解</title>
     <link href="http://jixioakang.com/2018/05/27/2018-05-27-js-ji-chong-shu-zu-bian-li-fang-shi-xiang-jie/"/>
     <id>http://jixioakang.com/2018/05/27/2018-05-27-js-ji-chong-shu-zu-bian-li-fang-shi-xiang-jie/</id>
-    <published>2018-05-27T20:42:38.000Z</published>
-    <updated>2021-04-02T06:06:16.457Z</updated>
+    <published>2018-05-27T12:42:38.000Z</published>
+    <updated>2020-03-14T06:51:36.124Z</updated>
     
     <summary type="html">
     
@@ -448,8 +448,8 @@
     <title>超简单！Mac打造漂亮又好用的 zsh shell 环境</title>
     <link href="http://jixioakang.com/2018/05/17/2018-05-17-chao-jian-dan-mac-da-zao-piao-liang-you-hao-yong-de-zsh-shell-huan-jing/"/>
     <id>http://jixioakang.com/2018/05/17/2018-05-17-chao-jian-dan-mac-da-zao-piao-liang-you-hao-yong-de-zsh-shell-huan-jing/</id>
-    <published>2018-05-17T08:16:48.000Z</published>
-    <updated>2021-04-02T06:06:16.457Z</updated>
+    <published>2018-05-17T00:16:48.000Z</published>
+    <updated>2020-03-14T06:51:47.969Z</updated>
     
     <summary type="html">
     
@@ -475,10 +475,10 @@
   
   <entry>
     <title>vue 分享知识点</title>
-    <link href="http://jixioakang.com/2018/05/17/2018-05-17-vue-fen-xiang-zhi-shi-dian/"/>
-    <id>http://jixioakang.com/2018/05/17/2018-05-17-vue-fen-xiang-zhi-shi-dian/</id>
-    <published>2018-05-17T06:46:00.000Z</published>
-    <updated>2021-04-02T06:06:16.457Z</updated>
+    <link href="http://jixioakang.com/2018/05/16/2018-05-17-vue-fen-xiang-zhi-shi-dian/"/>
+    <id>http://jixioakang.com/2018/05/16/2018-05-17-vue-fen-xiang-zhi-shi-dian/</id>
+    <published>2018-05-16T22:46:00.000Z</published>
+    <updated>2020-03-14T06:51:32.708Z</updated>
     
     <summary type="html">
     
@@ -502,10 +502,10 @@
   
   <entry>
     <title>vscode 常用配置</title>
-    <link href="http://jixioakang.com/2018/05/15/2018-05-15-vscode-chang-yong-pei-zhi/"/>
-    <id>http://jixioakang.com/2018/05/15/2018-05-15-vscode-chang-yong-pei-zhi/</id>
-    <published>2018-05-15T01:24:00.000Z</published>
-    <updated>2021-04-02T06:06:16.457Z</updated>
+    <link href="http://jixioakang.com/2018/05/14/2018-05-15-vscode-chang-yong-pei-zhi/"/>
+    <id>http://jixioakang.com/2018/05/14/2018-05-15-vscode-chang-yong-pei-zhi/</id>
+    <published>2018-05-14T17:24:00.000Z</published>
+    <updated>2020-03-14T06:51:25.831Z</updated>
     
     <summary type="html">
     
@@ -531,8 +531,8 @@
     <title>Mac OS X 终端切换root用户</title>
     <link href="http://jixioakang.com/2018/03/18/2018-03-18-mac-os-x-zhong-duan-qie-huan-root-yong-hu/"/>
     <id>http://jixioakang.com/2018/03/18/2018-03-18-mac-os-x-zhong-duan-qie-huan-root-yong-hu/</id>
-    <published>2018-03-18T08:16:00.000Z</published>
-    <updated>2021-04-02T06:06:16.457Z</updated>
+    <published>2018-03-18T00:16:00.000Z</published>
+    <updated>2020-03-14T06:51:16.478Z</updated>
     
     <summary type="html">
     
@@ -562,8 +562,8 @@
     <title>Mac 使用技巧总结</title>
     <link href="http://jixioakang.com/2018/03/16/2018-03-16-mac-shi-yong-ji-qiao-zong-jie/"/>
     <id>http://jixioakang.com/2018/03/16/2018-03-16-mac-shi-yong-ji-qiao-zong-jie/</id>
-    <published>2018-03-16T09:29:00.000Z</published>
-    <updated>2021-04-02T06:06:16.457Z</updated>
+    <published>2018-03-16T01:29:00.000Z</published>
+    <updated>2020-03-14T06:51:08.212Z</updated>
     
     <summary type="html">
     
