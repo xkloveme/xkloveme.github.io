@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>设置静态资源访问造成中文404问题</title>
+      <link href="/2021/11/15/she-zhi-jing-tai-zi-yuan-fang-wen-zao-cheng-zhong-wen-404-wen-ti/"/>
+      <url>/2021/11/15/she-zhi-jing-tai-zi-yuan-fang-wen-zao-cheng-zhong-wen-404-wen-ti/</url>
+      
+        <content type="html"><![CDATA[<h1 id="nginx-设置静态资源访问造成中文404问题"><a href="#nginx-设置静态资源访问造成中文404问题" class="headerlink" title="nginx 设置静态资源访问造成中文404问题"></a>nginx 设置静态资源访问造成中文404问题</h1><p>环境:centos7<br>工具:nginx、xhell5、xftp5</p><ul><li>问题:<br>访问nginx非中文静态资源一切正常,但是带有中文文件的资源就会404错误<br><img src="https://img-blog.csdnimg.cn/20201202143555679.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzE0NzM3MQ==,size_16,color_FFFFFF,t_70#pic_center" alt=""></li></ul><p>1, 设置xftp传输文件格式为utf-8</p><p><img src="https://img-blog.csdnimg.cn/20201202143701671.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzE0NzM3MQ==,size_16,color_FFFFFF,t_70#pic_center" alt=""></p><p><img src="https://img-blog.csdnimg.cn/20201202143711853.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzE0NzM3MQ==,size_16,color_FFFFFF,t_70#pic_center" alt=""></p><p><img src="https://img-blog.csdnimg.cn/20201202143719142.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzE0NzM3MQ==,size_16,color_FFFFFF,t_70#pic_center" alt=""></p><p>2, 设置nginx编码格式</p><p><img src="https://img-blog.csdnimg.cn/20201202143729413.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzE0NzM3MQ==,size_16,color_FFFFFF,t_70#pic_center" alt=""></p><p>3, 配置服务器编码格式并重启服务器</p><pre class=" language-Bash"><code class="language-Bash">编辑文件/etc/sysconfig/i18n并添加内容:LANG="en_US.UTF-8"SYSFONT="latarcyrheb-sun16"添加完以后重启服务器:reboot</code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> nginx </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Chrome您的连接不是私密连接解决办法</title>
+      <link href="/2021/08/23/2021-08-23-jie-jue-liu-lan-qi-lian-jie-bu-shi-si-mi-lian-jie/"/>
+      <url>/2021/08/23/2021-08-23-jie-jue-liu-lan-qi-lian-jie-bu-shi-si-mi-lian-jie/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Chrome您的连接不是私密连接解决办法"><a href="#Chrome您的连接不是私密连接解决办法" class="headerlink" title="Chrome您的连接不是私密连接解决办法"></a>Chrome您的连接不是私密连接解决办法</h1><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>最近chrome版本移除了关于ssl配置错误后，点高级没有继续访问的选项。 提示如下：</p><p>您的连接不是私密连接 攻击者可能会试图从 x.x.x.x 窃取您的信息（例如：密码、通讯内容或信用卡信息）。了解详情 NET::ERR_CERT_INVALID</p><p>将您访问的部分网页的网址、有限的系统信息以及部分网页内容发送给 Google，以帮助我们提升 Chrome 的安全性。隐私权政策 x.x.x.x 通常会使用加密技术来保护您的信息。Google Chrome 此次尝试连接到 x.x.x.x 时，此网站发回了异常的错误凭据。这可能是因为有攻击者在试图冒充 x.x.x.x，或 Wi-Fi 登录屏幕中断了此次连接。请放心，您的信息仍然是安全的，因为 Google Chrome 尚未进行任何数据交换便停止了连接。</p><p>您目前无法访问 x.x.x.x，因为此网站发送了 Google Chrome 无法处理的杂乱凭据。网络错误和攻击通常是暂时的，因此，此网页稍后可能会恢复正常。</p><h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><p>解决办法就是在当前页面用键盘输入 <code>thisisunsafe</code> ，不是在地址栏输入，就直接敲键盘就行了，页面即会自动刷新进入网页。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Chrome </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>属于你自己的云桌面</title>
       <link href="/2021/07/28/2021-7-28-shu-yu-ni-zi-ji-de-yun-zhuo-mian/"/>
       <url>/2021/07/28/2021-7-28-shu-yu-ni-zi-ji-de-yun-zhuo-mian/</url>
