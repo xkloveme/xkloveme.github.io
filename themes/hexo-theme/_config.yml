@@ -364,11 +364,11 @@ libs:
     lightgallery: https://cdn.bootcss.com/lightgallery/1.6.11/css/lightgallery.min.css # V1.6.11
     aplayer: https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.css
     dplayer: https://cdn.bootcss.com/dplayer/1.25.0/DPlayer.min.css
-    gitalk: https://cdn.bootcss.com/gitalk/1.6.2/gitalk.min.css
+    gitalk: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css
     jqcloud: https://cdn.bootcss.com/jqcloud/1.0.4/jqcloud.min.css
     tocbot: https://cdn.bootcss.com/tocbot/4.10.0/tocbot.css
   js:
-    jquery: https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js
+    jquery: https://unpkg.com/jquery/dist/jquery.min.js
     materialize: https://cdn.bootcss.com/materialize/1.0.0/js/materialize.min.js # 1.0.0
     masonry: https://cdn.bootcss.com/masonry/4.0.0/masonry.pkgd.min.js # v4.0.0
     aos: https://cdn.bootcss.com/aos/3.0.0-beta.6/aos.js
@@ -380,7 +380,7 @@ libs:
     dplayer: https://cdn.bootcss.com/dplayer/1.25.0/DPlayer.min.js
     crypto: https://cdn.bootcss.com/crypto-js/4.0.0/crypto-js.min.js
     echarts: https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js
-    gitalk: https://cdn.bootcss.com/gitalk/1.6.2/gitalk.min.js
+    gitalk: https://unpkg.com/gitalk/dist/gitalk.min.js
     valine: https://unpkg.com/valine/dist/Valine.min.js # 若想保持最新版，请替换为 https://unpkg.com/valine/dist/Valine.min.js  默认为 /libs/valine/Valine.min.js
     jqcloud: https://cdn.bootcss.com/jqcloud/1.0.4/jqcloud-1.0.4.min.js
     tocbot: https://cdn.bootcss.com/tocbot/4.10.0/tocbot.min.js
