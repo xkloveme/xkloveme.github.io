@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.jixiaokang.com/"/>
-  <updated>2023-03-18T13:27:40.889Z</updated>
+  <updated>2023-03-18T13:41:31.149Z</updated>
   <id>http://www.jixiaokang.com/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>机场备份</title>
-    <link href="http://www.jixiaokang.com/2023/03/06/2023-03-06-ji-chang-bei-fen/"/>
-    <id>http://www.jixiaokang.com/2023/03/06/2023-03-06-ji-chang-bei-fen/</id>
+    <link href="http://www.jixiaokang.com/2023/03/06/2023/2023-03-06-ji-chang-bei-fen/"/>
+    <id>http://www.jixiaokang.com/2023/03/06/2023/2023-03-06-ji-chang-bei-fen/</id>
     <published>2023-03-06T15:17:09.000Z</published>
-    <updated>2023-03-18T13:27:40.889Z</updated>
+    <updated>2023-03-18T13:41:31.149Z</updated>
     
     <summary type="html">
     
@@ -42,11 +42,11 @@
   </entry>
   
   <entry>
-    <title>2023-02-15链接备份</title>
-    <link href="http://www.jixiaokang.com/2023/02/15/2023-02-15-lian-jie-bei-fen/"/>
-    <id>http://www.jixiaokang.com/2023/02/15/2023-02-15-lian-jie-bei-fen/</id>
+    <title>重要链接备份</title>
+    <link href="http://www.jixiaokang.com/2023/02/15/2023/2023-02-15-lian-jie-bei-fen/"/>
+    <id>http://www.jixiaokang.com/2023/02/15/2023/2023-02-15-lian-jie-bei-fen/</id>
     <published>2023-02-15T11:13:53.000Z</published>
-    <updated>2023-03-18T13:27:40.889Z</updated>
+    <updated>2023-03-18T13:41:31.149Z</updated>
     
     <summary type="html">
     
@@ -54,8 +54,7 @@
       
         
         
-          &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;拱墅浙政钉&lt;br&gt;&lt;a href=&quot;https://jdql.gongshu.gov.cn/zzd/#/pages/login/login&quot; target=&quot;_blank&quot;
+          &lt;h1 id=&quot;浙里办需要跳转的链接备份&quot;&gt;&lt;a href=&quot;#浙里办需要跳转的链接备份&quot; class=&quot;headerlink&quot;
         
       
     
@@ -68,11 +67,36 @@
   </entry>
   
   <entry>
+    <title>2022-12-16PVE显卡直通</title>
+    <link href="http://www.jixiaokang.com/2022/12/16/2022/2022-12-16-pve-xian-qia-zhi-tong/"/>
+    <id>http://www.jixiaokang.com/2022/12/16/2022/2022-12-16-pve-xian-qia-zhi-tong/</id>
+    <published>2022-12-16T09:19:41.000Z</published>
+    <updated>2023-03-18T13:41:31.149Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在 PVE 中安装黑苹果（也称为 Hackintosh）是一种使用虚拟机在非苹果电脑上运行 macOS 的方法。尽管这是可行的，但有一些注意事项需要考虑。&lt;br&gt;首先，在 PVE 中安装黑苹果需要先安装 PVE 本身。这可以通过在 Linux 操作系统上安装 PVE
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="黑苹果" scheme="http://www.jixiaokang.com/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+    
+  </entry>
+  
+  <entry>
     <title>设置静态资源访问造成中文404问题</title>
-    <link href="http://www.jixiaokang.com/2021/11/15/she-zhi-jing-tai-zi-yuan-fang-wen-zao-cheng-zhong-wen-404-wen-ti/"/>
-    <id>http://www.jixiaokang.com/2021/11/15/she-zhi-jing-tai-zi-yuan-fang-wen-zao-cheng-zhong-wen-404-wen-ti/</id>
+    <link href="http://www.jixiaokang.com/2021/11/15/2021/2021-11-15-she-zhi-jing-tai-zi-yuan-fang-wen-zao-cheng-zhong-wen-404-wen-ti/"/>
+    <id>http://www.jixiaokang.com/2021/11/15/2021/2021-11-15-she-zhi-jing-tai-zi-yuan-fang-wen-zao-cheng-zhong-wen-404-wen-ti/</id>
     <published>2021-11-15T14:02:49.000Z</published>
-    <updated>2023-03-18T13:27:40.889Z</updated>
+    <updated>2023-03-18T13:41:31.149Z</updated>
     
     <summary type="html">
     
@@ -94,10 +118,10 @@
   
   <entry>
     <title>Chrome您的连接不是私密连接解决办法</title>
-    <link href="http://www.jixiaokang.com/2021/08/23/2021-08-23-jie-jue-liu-lan-qi-lian-jie-bu-shi-si-mi-lian-jie/"/>
-    <id>http://www.jixiaokang.com/2021/08/23/2021-08-23-jie-jue-liu-lan-qi-lian-jie-bu-shi-si-mi-lian-jie/</id>
+    <link href="http://www.jixiaokang.com/2021/08/23/2021/2021-08-23-jie-jue-liu-lan-qi-lian-jie-bu-shi-si-mi-lian-jie/"/>
+    <id>http://www.jixiaokang.com/2021/08/23/2021/2021-08-23-jie-jue-liu-lan-qi-lian-jie-bu-shi-si-mi-lian-jie/</id>
     <published>2021-08-23T15:52:12.000Z</published>
-    <updated>2023-03-18T13:27:40.885Z</updated>
+    <updated>2023-03-18T13:41:31.149Z</updated>
     
     <summary type="html">
     
@@ -119,10 +143,10 @@
   
   <entry>
     <title>属于你自己的云桌面</title>
-    <link href="http://www.jixiaokang.com/2021/07/28/2021-7-28-shu-yu-ni-zi-ji-de-yun-zhuo-mian/"/>
-    <id>http://www.jixiaokang.com/2021/07/28/2021-7-28-shu-yu-ni-zi-ji-de-yun-zhuo-mian/</id>
+    <link href="http://www.jixiaokang.com/2021/07/28/2021/2021-7-28-shu-yu-ni-zi-ji-de-yun-zhuo-mian/"/>
+    <id>http://www.jixiaokang.com/2021/07/28/2021/2021-7-28-shu-yu-ni-zi-ji-de-yun-zhuo-mian/</id>
     <published>2021-07-28T21:00:33.000Z</published>
-    <updated>2023-03-18T13:27:40.885Z</updated>
+    <updated>2023-03-18T13:41:31.149Z</updated>
     
     <summary type="html">
     
@@ -144,10 +168,10 @@
   
   <entry>
     <title>优化github首页</title>
-    <link href="http://www.jixiaokang.com/2020/07/21/2020-07-21-you-hua-github-shou-ye/"/>
-    <id>http://www.jixiaokang.com/2020/07/21/2020-07-21-you-hua-github-shou-ye/</id>
+    <link href="http://www.jixiaokang.com/2020/07/21/2020/2020-07-21-you-hua-github-shou-ye/"/>
+    <id>http://www.jixiaokang.com/2020/07/21/2020/2020-07-21-you-hua-github-shou-ye/</id>
     <published>2020-07-21T14:51:28.000Z</published>
-    <updated>2023-03-18T13:27:40.885Z</updated>
+    <updated>2023-03-18T13:41:31.149Z</updated>
     
     <summary type="html">
     
@@ -169,10 +193,10 @@
   
   <entry>
     <title>框架优化</title>
-    <link href="http://www.jixiaokang.com/2020/06/23/2020-06-23ruo-yi-antd-kuang-jia-you-hua/"/>
-    <id>http://www.jixiaokang.com/2020/06/23/2020-06-23ruo-yi-antd-kuang-jia-you-hua/</id>
+    <link href="http://www.jixiaokang.com/2020/06/23/2020/2020-06-23ruo-yi-antd-kuang-jia-you-hua/"/>
+    <id>http://www.jixiaokang.com/2020/06/23/2020/2020-06-23ruo-yi-antd-kuang-jia-you-hua/</id>
     <published>2020-06-23T16:59:32.000Z</published>
-    <updated>2023-03-18T13:27:40.885Z</updated>
+    <updated>2023-03-18T13:41:31.149Z</updated>
     
     <summary type="html">
     
@@ -196,10 +220,10 @@
   
   <entry>
     <title>utools-笔记插件</title>
-    <link href="http://www.jixiaokang.com/2020/05/31/2020-05-31-utools-bi-ji-cha-jian/"/>
-    <id>http://www.jixiaokang.com/2020/05/31/2020-05-31-utools-bi-ji-cha-jian/</id>
+    <link href="http://www.jixiaokang.com/2020/05/31/2020/2020-05-31-utools-bi-ji-cha-jian/"/>
+    <id>http://www.jixiaokang.com/2020/05/31/2020/2020-05-31-utools-bi-ji-cha-jian/</id>
     <published>2020-05-31T22:15:14.000Z</published>
-    <updated>2023-03-18T13:27:40.885Z</updated>
+    <updated>2023-03-18T13:41:31.149Z</updated>
     
     <summary type="html">
     
@@ -221,10 +245,10 @@
   
   <entry>
     <title>utools-天气插件</title>
-    <link href="http://www.jixiaokang.com/2020/05/31/2020-05-31-utools-tian-qi-cha-jian/"/>
-    <id>http://www.jixiaokang.com/2020/05/31/2020-05-31-utools-tian-qi-cha-jian/</id>
+    <link href="http://www.jixiaokang.com/2020/05/31/2020/2020-05-31-utools-tian-qi-cha-jian/"/>
+    <id>http://www.jixiaokang.com/2020/05/31/2020/2020-05-31-utools-tian-qi-cha-jian/</id>
     <published>2020-05-31T22:10:54.000Z</published>
-    <updated>2023-03-18T13:27:40.885Z</updated>
+    <updated>2023-03-18T13:41:31.149Z</updated>
     
     <summary type="html">
     
@@ -246,10 +270,10 @@
   
   <entry>
     <title>浅拷贝和深拷贝</title>
-    <link href="http://www.jixiaokang.com/2020/04/06/2020-04-06-qian-kao-bei-he-shen-kao-bei/"/>
-    <id>http://www.jixiaokang.com/2020/04/06/2020-04-06-qian-kao-bei-he-shen-kao-bei/</id>
+    <link href="http://www.jixiaokang.com/2020/04/06/2020/2020-04-06-qian-kao-bei-he-shen-kao-bei/"/>
+    <id>http://www.jixiaokang.com/2020/04/06/2020/2020-04-06-qian-kao-bei-he-shen-kao-bei/</id>
     <published>2020-04-06T22:39:12.000Z</published>
-    <updated>2023-03-18T13:27:40.885Z</updated>
+    <updated>2023-03-18T13:41:31.149Z</updated>
     
     <summary type="html">
     
@@ -275,10 +299,10 @@
   
   <entry>
     <title>前端面试之HTTP</title>
-    <link href="http://www.jixiaokang.com/2020/03/22/2020-03-22-qian-duan-mian-shi-zhi-http/"/>
-    <id>http://www.jixiaokang.com/2020/03/22/2020-03-22-qian-duan-mian-shi-zhi-http/</id>
+    <link href="http://www.jixiaokang.com/2020/03/22/2020/2020-03-22-qian-duan-mian-shi-zhi-http/"/>
+    <id>http://www.jixiaokang.com/2020/03/22/2020/2020-03-22-qian-duan-mian-shi-zhi-http/</id>
     <published>2020-03-22T16:22:06.000Z</published>
-    <updated>2023-03-18T13:27:40.885Z</updated>
+    <updated>2023-03-18T13:41:31.149Z</updated>
     
     <summary type="html">
     
@@ -305,10 +329,10 @@
   
   <entry>
     <title>发哨子的人</title>
-    <link href="http://www.jixiaokang.com/2020/03/13/2020-03-13-fa-shao-zi-de-ren/"/>
-    <id>http://www.jixiaokang.com/2020/03/13/2020-03-13-fa-shao-zi-de-ren/</id>
+    <link href="http://www.jixiaokang.com/2020/03/13/2020/2020-03-13-fa-shao-zi-de-ren/"/>
+    <id>http://www.jixiaokang.com/2020/03/13/2020/2020-03-13-fa-shao-zi-de-ren/</id>
     <published>2020-03-13T11:57:26.000Z</published>
-    <updated>2023-03-18T13:27:40.885Z</updated>
+    <updated>2023-03-18T13:41:31.149Z</updated>
     
     <summary type="html">
     
@@ -335,10 +359,10 @@
   
   <entry>
     <title>约在春天相见</title>
-    <link href="http://www.jixiaokang.com/2020/03/13/2020-03-14-yue-zai-chun-tian-xiang-jian/"/>
-    <id>http://www.jixiaokang.com/2020/03/13/2020-03-14-yue-zai-chun-tian-xiang-jian/</id>
+    <link href="http://www.jixiaokang.com/2020/03/13/2020/2020-03-14-yue-zai-chun-tian-xiang-jian/"/>
+    <id>http://www.jixiaokang.com/2020/03/13/2020/2020-03-14-yue-zai-chun-tian-xiang-jian/</id>
     <published>2020-03-13T11:57:26.000Z</published>
-    <updated>2023-03-18T13:27:40.885Z</updated>
+    <updated>2023-03-18T13:41:31.149Z</updated>
     
     <summary type="html">
     
@@ -364,10 +388,10 @@
   
   <entry>
     <title>wt-cli使用安装说明</title>
-    <link href="http://www.jixiaokang.com/2020/03/13/2023-03-06-wt-cli-shi-yong-an-zhuang-shuo-ming/"/>
-    <id>http://www.jixiaokang.com/2020/03/13/2023-03-06-wt-cli-shi-yong-an-zhuang-shuo-ming/</id>
+    <link href="http://www.jixiaokang.com/2020/03/13/2023/2023-03-06-wt-cli-shi-yong-an-zhuang-shuo-ming/"/>
+    <id>http://www.jixiaokang.com/2020/03/13/2023/2023-03-06-wt-cli-shi-yong-an-zhuang-shuo-ming/</id>
     <published>2020-03-13T11:57:26.000Z</published>
-    <updated>2023-03-18T13:27:40.889Z</updated>
+    <updated>2023-03-18T13:41:31.149Z</updated>
     
     <summary type="html">
     
@@ -391,8 +415,8 @@
   
   <entry>
     <title>如何上传自己的UI组件包</title>
-    <link href="http://www.jixiaokang.com/2019/10/12/2019-10-12-ru-he-shang-chuan-zi-ji-de-ui-zu-jian-bao/"/>
-    <id>http://www.jixiaokang.com/2019/10/12/2019-10-12-ru-he-shang-chuan-zi-ji-de-ui-zu-jian-bao/</id>
+    <link href="http://www.jixiaokang.com/2019/10/12/2019/2019-10-12-ru-he-shang-chuan-zi-ji-de-ui-zu-jian-bao/"/>
+    <id>http://www.jixiaokang.com/2019/10/12/2019/2019-10-12-ru-he-shang-chuan-zi-ji-de-ui-zu-jian-bao/</id>
     <published>2019-10-12T12:00:00.000Z</published>
     <updated>2022-02-10T20:46:55.000Z</updated>
     
@@ -422,10 +446,10 @@
   
   <entry>
     <title>基于 Vue拓展的 v-xxx 库</title>
-    <link href="http://www.jixiaokang.com/2019/10/12/2019-10-12-vue-v-xxx-ji-yu-vue-tuo-zhan-de-v-xxx-ku/"/>
-    <id>http://www.jixiaokang.com/2019/10/12/2019-10-12-vue-v-xxx-ji-yu-vue-tuo-zhan-de-v-xxx-ku/</id>
+    <link href="http://www.jixiaokang.com/2019/10/12/2019/2019-10-12-vue-v-xxx-ji-yu-vue-tuo-zhan-de-v-xxx-ku/"/>
+    <id>http://www.jixiaokang.com/2019/10/12/2019/2019-10-12-vue-v-xxx-ji-yu-vue-tuo-zhan-de-v-xxx-ku/</id>
     <published>2019-10-12T00:00:00.000Z</published>
-    <updated>2023-03-18T13:27:40.885Z</updated>
+    <updated>2023-03-18T13:41:31.149Z</updated>
     
     <summary type="html">
     
@@ -454,10 +478,10 @@
   
   <entry>
     <title>Vue中的代理Proxy和$refs</title>
-    <link href="http://www.jixiaokang.com/2018/08/10/2018-07-10-vue-refs/"/>
-    <id>http://www.jixiaokang.com/2018/08/10/2018-07-10-vue-refs/</id>
+    <link href="http://www.jixiaokang.com/2018/08/10/2018/2018-07-10-vue-refs/"/>
+    <id>http://www.jixiaokang.com/2018/08/10/2018/2018-07-10-vue-refs/</id>
     <published>2018-08-10T00:00:00.000Z</published>
-    <updated>2023-03-18T13:27:40.885Z</updated>
+    <updated>2023-03-18T13:41:31.149Z</updated>
     
     <summary type="html">
     
@@ -482,10 +506,10 @@
   
   <entry>
     <title>黑匣子里到底装了什么</title>
-    <link href="http://www.jixiaokang.com/2018/07/24/2018-07-24-hei-xia-zi-li-dao-di-zhuang-liao-shi-me/"/>
-    <id>http://www.jixiaokang.com/2018/07/24/2018-07-24-hei-xia-zi-li-dao-di-zhuang-liao-shi-me/</id>
+    <link href="http://www.jixiaokang.com/2018/07/24/2018/2018-07-24-hei-xia-zi-li-dao-di-zhuang-liao-shi-me/"/>
+    <id>http://www.jixiaokang.com/2018/07/24/2018/2018-07-24-hei-xia-zi-li-dao-di-zhuang-liao-shi-me/</id>
     <published>2018-07-24T12:47:29.000Z</published>
-    <updated>2023-03-18T13:27:40.885Z</updated>
+    <updated>2023-03-18T13:41:31.149Z</updated>
     
     <summary type="html">
     
@@ -512,10 +536,10 @@
   
   <entry>
     <title>Vue中数组和对象更改后视图不刷新的问题</title>
-    <link href="http://www.jixiaokang.com/2018/06/27/2018-06-27-vue-zhong-shu-zu-he-dui-xiang-geng-gai-hou-shi-tu-bu-shua-xin-de-wen-ti/"/>
-    <id>http://www.jixiaokang.com/2018/06/27/2018-06-27-vue-zhong-shu-zu-he-dui-xiang-geng-gai-hou-shi-tu-bu-shua-xin-de-wen-ti/</id>
+    <link href="http://www.jixiaokang.com/2018/06/27/2018/2018-06-27-vue-zhong-shu-zu-he-dui-xiang-geng-gai-hou-shi-tu-bu-shua-xin-de-wen-ti/"/>
+    <id>http://www.jixiaokang.com/2018/06/27/2018/2018-06-27-vue-zhong-shu-zu-he-dui-xiang-geng-gai-hou-shi-tu-bu-shua-xin-de-wen-ti/</id>
     <published>2018-06-27T15:01:38.000Z</published>
-    <updated>2023-03-18T13:27:40.885Z</updated>
+    <updated>2023-03-18T13:41:31.149Z</updated>
     
     <summary type="html">
     
@@ -534,35 +558,6 @@
     
     
       <category term="vue" scheme="http://www.jixiaokang.com/tags/vue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS几种数组遍历方式详解</title>
-    <link href="http://www.jixiaokang.com/2018/05/27/2018-05-27-js-ji-chong-shu-zu-bian-li-fang-shi-xiang-jie/"/>
-    <id>http://www.jixiaokang.com/2018/05/27/2018-05-27-js-ji-chong-shu-zu-bian-li-fang-shi-xiang-jie/</id>
-    <published>2018-05-27T20:42:38.000Z</published>
-    <updated>2023-03-18T13:27:40.885Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;h2
-        
-      
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="http://www.jixiaokang.com/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="ES6" scheme="http://www.jixiaokang.com/tags/ES6/"/>
-    
-      <category term="JavaScript" scheme="http://www.jixiaokang.com/tags/JavaScript/"/>
     
   </entry>
   
