@@ -325,8 +325,18 @@
 
 
 <script>
+function getNowFormatDate() {
+  let date = new Date(),
+    year = date.getFullYear(), //获取完整的年份(4位)
+    month = date.getMonth() + 1, //获取当前月份(0-11,0代表1月)
+    strDate = date.getDate()-1 // 获取当前日(1-31)
+  if (month < 10) month = `0${month}` // 如果月份是个位数，在前面补0
+  if (strDate < 10) strDate = `0${strDate}` // 如果日是个位数，在前面补0
+ 
+  return `${year}-${month}-${strDate}`
+}
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', `url(http://bing.getlove.cn/bingImage?t=${new Date().getDay()})`);
+    $('.bg-cover').css('background-image', `url(https://raw.kgithub.com/xkloveme/xkloveme/master/img/${getNowFormatDate()}.png)`);
 </script>
 
 <script src="https://bennettfeely.com/ztext/js/ztext.min.js"></script>
@@ -687,7 +697,7 @@
                         <div class="card-image tag-image">
                             
                             
-                            <img src="https://picsum.photos/600/300?t=neva6qsj4w" class="responsive-img" alt="浅拷贝和深拷贝">
+                            <img src="https://picsum.photos/600/300?t=6705n7f9yvi" class="responsive-img" alt="浅拷贝和深拷贝">
                             
                             <span class="card-title">浅拷贝和深拷贝</span>
                         </div>
@@ -719,7 +729,7 @@
                         <div class="card-image tag-image">
                             
                             
-                            <img src="https://picsum.photos/600/300?t=7duua8dr3nd" class="responsive-img" alt="字符串方法">
+                            <img src="https://picsum.photos/600/300?t=o6sxx2cdfg" class="responsive-img" alt="字符串方法">
                             
                             <span class="card-title">字符串方法</span>
                         </div>

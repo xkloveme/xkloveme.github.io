@@ -326,8 +326,18 @@
 
 
 <script>
+function getNowFormatDate() {
+  let date = new Date(),
+    year = date.getFullYear(), //获取完整的年份(4位)
+    month = date.getMonth() + 1, //获取当前月份(0-11,0代表1月)
+    strDate = date.getDate()-1 // 获取当前日(1-31)
+  if (month < 10) month = `0${month}` // 如果月份是个位数，在前面补0
+  if (strDate < 10) strDate = `0${strDate}` // 如果日是个位数，在前面补0
+ 
+  return `${year}-${month}-${strDate}`
+}
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', `url(http://bing.getlove.cn/bingImage?t=${new Date().getDay()})`);
+    $('.bg-cover').css('background-image', `url(https://raw.kgithub.com/xkloveme/xkloveme/master/img/${getNowFormatDate()}.png)`);
 </script>
 
 <script src="https://bennettfeely.com/ztext/js/ztext.min.js"></script>
@@ -352,7 +362,7 @@
                         <div class="card-image">
                             
                             
-                            <img src="https://picsum.photos/600/300?t=kjmlqmmo1v" class="responsive-img" alt="HTTP状态码列表">
+                            <img src="https://picsum.photos/600/300?t=5wo492csod" class="responsive-img" alt="HTTP状态码列表">
                             
                             <span class="card-title">HTTP状态码列表</span>
                         </div>
@@ -404,7 +414,7 @@
                         <div class="card-image">
                             
                             
-                            <img src="https://picsum.photos/600/300?t=pm9vl1n8u3" class="responsive-img" alt="Chrome 控制台console的用法">
+                            <img src="https://picsum.photos/600/300?t=yshmuwhosve" class="responsive-img" alt="Chrome 控制台console的用法">
                             
                             <span class="card-title">Chrome 控制台console的用法</span>
                         </div>
@@ -451,7 +461,7 @@
                         <div class="card-image">
                             
                             
-                            <img src="https://picsum.photos/600/300?t=o57cnhrm1o" class="responsive-img" alt="一些常用文件夹和类的一些命名">
+                            <img src="https://picsum.photos/600/300?t=i8ewrs698gd" class="responsive-img" alt="一些常用文件夹和类的一些命名">
                             
                             <span class="card-title">一些常用文件夹和类的一些命名</span>
                         </div>
@@ -506,7 +516,7 @@
                         <div class="card-image">
                             
                             
-                            <img src="https://picsum.photos/600/300?t=9o2k96xnra" class="responsive-img" alt="JS异步加载的三种方式">
+                            <img src="https://picsum.photos/600/300?t=dza7vq208c6" class="responsive-img" alt="JS异步加载的三种方式">
                             
                             <span class="card-title">JS异步加载的三种方式</span>
                         </div>
@@ -554,7 +564,7 @@
                         <div class="card-image">
                             
                             
-                            <img src="https://picsum.photos/600/300?t=wz7jzdzhdql" class="responsive-img" alt="前端模板Nunjucks简介">
+                            <img src="https://picsum.photos/600/300?t=cvdi2mw447b" class="responsive-img" alt="前端模板Nunjucks简介">
                             
                             <span class="card-title">前端模板Nunjucks简介</span>
                         </div>
@@ -603,7 +613,7 @@ https://mozilla.github.io/n
                         <div class="card-image">
                             
                             
-                            <img src="https://picsum.photos/600/300?t=nia88tegzvq" class="responsive-img" alt="node.js的request模块">
+                            <img src="https://picsum.photos/600/300?t=0l0prtmji5v" class="responsive-img" alt="node.js的request模块">
                             
                             <span class="card-title">node.js的request模块</span>
                         </div>

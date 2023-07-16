@@ -325,8 +325,18 @@
 
 
 <script>
+function getNowFormatDate() {
+  let date = new Date(),
+    year = date.getFullYear(), //获取完整的年份(4位)
+    month = date.getMonth() + 1, //获取当前月份(0-11,0代表1月)
+    strDate = date.getDate()-1 // 获取当前日(1-31)
+  if (month < 10) month = `0${month}` // 如果月份是个位数，在前面补0
+  if (strDate < 10) strDate = `0${strDate}` // 如果日是个位数，在前面补0
+ 
+  return `${year}-${month}-${strDate}`
+}
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', `url(http://bing.getlove.cn/bingImage?t=${new Date().getDay()})`);
+    $('.bg-cover').css('background-image', `url(https://raw.kgithub.com/xkloveme/xkloveme/master/img/${getNowFormatDate()}.png)`);
 </script>
 
 <script src="https://bennettfeely.com/ztext/js/ztext.min.js"></script>
@@ -687,7 +697,7 @@
                         <div class="card-image tag-image">
                             
                             
-                            <img src="https://picsum.photos/600/300?t=w8k6dlnetla" class="responsive-img" alt="utools-笔记插件">
+                            <img src="https://picsum.photos/600/300?t=5h63r0um8oe" class="responsive-img" alt="utools-笔记插件">
                             
                             <span class="card-title">utools-笔记插件</span>
                         </div>
@@ -715,7 +725,7 @@
                         <div class="card-image tag-image">
                             
                             
-                            <img src="https://picsum.photos/600/300?t=fi60xrg2a7" class="responsive-img" alt="utools-天气插件">
+                            <img src="https://picsum.photos/600/300?t=tx92uq270n" class="responsive-img" alt="utools-天气插件">
                             
                             <span class="card-title">utools-天气插件</span>
                         </div>

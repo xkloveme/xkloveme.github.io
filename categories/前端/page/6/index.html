@@ -325,8 +325,18 @@
 
 
 <script>
+function getNowFormatDate() {
+  let date = new Date(),
+    year = date.getFullYear(), //获取完整的年份(4位)
+    month = date.getMonth() + 1, //获取当前月份(0-11,0代表1月)
+    strDate = date.getDate()-1 // 获取当前日(1-31)
+  if (month < 10) month = `0${month}` // 如果月份是个位数，在前面补0
+  if (strDate < 10) strDate = `0${strDate}` // 如果日是个位数，在前面补0
+ 
+  return `${year}-${month}-${strDate}`
+}
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', `url(http://bing.getlove.cn/bingImage?t=${new Date().getDay()})`);
+    $('.bg-cover').css('background-image', `url(https://raw.kgithub.com/xkloveme/xkloveme/master/img/${getNowFormatDate()}.png)`);
 </script>
 
 <script src="https://bennettfeely.com/ztext/js/ztext.min.js"></script>
@@ -418,7 +428,7 @@
                         <div class="card-image tag-image">
                             
                             
-                            <img src="https://picsum.photos/600/300?t=ex91waeqd87" class="responsive-img" alt="Vue 实例中的生命周期钩子">
+                            <img src="https://picsum.photos/600/300?t=64n2is5abx" class="responsive-img" alt="Vue 实例中的生命周期钩子">
                             
                             <span class="card-title">Vue 实例中的生命周期钩子</span>
                         </div>
@@ -469,7 +479,7 @@ Vue 实例在文档中经常会使用
                         <div class="card-image tag-image">
                             
                             
-                            <img src="https://picsum.photos/600/300?t=l0v2ed2ifra" class="responsive-img" alt="Vuex新手入门指南-基本介绍">
+                            <img src="https://picsum.photos/600/300?t=yrcjcm0qpr" class="responsive-img" alt="Vuex新手入门指南-基本介绍">
                             
                             <span class="card-title">Vuex新手入门指南-基本介绍</span>
                         </div>
@@ -521,7 +531,7 @@ Vuex 字面上看与 Vue.js 只差了一个字母，但是他们两个做的事�
                         <div class="card-image tag-image">
                             
                             
-                            <img src="https://picsum.photos/600/300?t=9i2wrxygpmn" class="responsive-img" alt="Vue2.0父子组件之间和兄弟组件之间的数据交互">
+                            <img src="https://picsum.photos/600/300?t=zpv3zs14ubq" class="responsive-img" alt="Vue2.0父子组件之间和兄弟组件之间的数据交互">
                             
                             <span class="card-title">Vue2.0父子组件之间和兄弟组件之间的数据交互</span>
                         </div>
@@ -573,7 +583,7 @@ Vuex 字面上看与 Vue.js 只差了一个字母，但是他们两个做的事�
                         <div class="card-image tag-image">
                             
                             
-                            <img src="https://picsum.photos/600/300?t=1wn7b7cytn9" class="responsive-img" alt="mint-ui —— navbar和tab-container的区别">
+                            <img src="https://picsum.photos/600/300?t=adfdp99qbvw" class="responsive-img" alt="mint-ui —— navbar和tab-container的区别">
                             
                             <span class="card-title">mint-ui —— navbar和tab-container的区别</span>
                         </div>
@@ -624,7 +634,7 @@ Vuex 字面上看与 Vue.js 只差了一个字母，但是他们两个做的事�
                         <div class="card-image tag-image">
                             
                             
-                            <img src="https://picsum.photos/600/300?t=x8egqopw3h" class="responsive-img" alt="轻松搞定 flex 布局（精细篇）">
+                            <img src="https://picsum.photos/600/300?t=zufxc1ul8ge" class="responsive-img" alt="轻松搞定 flex 布局（精细篇）">
                             
                             <span class="card-title">轻松搞定 flex 布局（精细篇）</span>
                         </div>
@@ -670,7 +680,7 @@ Vuex 字面上看与 Vue.js 只差了一个字母，但是他们两个做的事�
                         <div class="card-image tag-image">
                             
                             
-                            <img src="https://picsum.photos/600/300?t=oiqfzafw1u" class="responsive-img" alt="CSS中em、rem和px的区别以及各个的优缺点比较">
+                            <img src="https://picsum.photos/600/300?t=5jnjjw8bq1x" class="responsive-img" alt="CSS中em、rem和px的区别以及各个的优缺点比较">
                             
                             <span class="card-title">CSS中em、rem和px的区别以及各个的优缺点比较</span>
                         </div>

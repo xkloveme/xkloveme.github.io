@@ -325,8 +325,18 @@
 
 
 <script>
+function getNowFormatDate() {
+  let date = new Date(),
+    year = date.getFullYear(), //获取完整的年份(4位)
+    month = date.getMonth() + 1, //获取当前月份(0-11,0代表1月)
+    strDate = date.getDate()-1 // 获取当前日(1-31)
+  if (month < 10) month = `0${month}` // 如果月份是个位数，在前面补0
+  if (strDate < 10) strDate = `0${strDate}` // 如果日是个位数，在前面补0
+ 
+  return `${year}-${month}-${strDate}`
+}
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', `url(http://bing.getlove.cn/bingImage?t=${new Date().getDay()})`);
+    $('.bg-cover').css('background-image', `url(https://raw.kgithub.com/xkloveme/xkloveme/master/img/${getNowFormatDate()}.png)`);
 </script>
 
 <script src="https://bennettfeely.com/ztext/js/ztext.min.js"></script>
@@ -687,7 +697,7 @@
                         <div class="card-image tag-image">
                             
                             
-                            <img src="https://picsum.photos/600/300?t=c1iq8530nst" class="responsive-img" alt="框架优化">
+                            <img src="https://picsum.photos/600/300?t=flpiwtsvl97" class="responsive-img" alt="框架优化">
                             
                             <span class="card-title">框架优化</span>
                         </div>
@@ -715,7 +725,7 @@
                         <div class="card-image tag-image">
                             
                             
-                            <img src="https://picsum.photos/600/300?t=czxixn9sqvs" class="responsive-img" alt="小程序开发wepy框架类vue的开发方式">
+                            <img src="https://picsum.photos/600/300?t=9qgy9ie988q" class="responsive-img" alt="小程序开发wepy框架类vue的开发方式">
                             
                             <span class="card-title">小程序开发wepy框架类vue的开发方式</span>
                         </div>
@@ -747,7 +757,7 @@
                         <div class="card-image tag-image">
                             
                             
-                            <img src="https://picsum.photos/600/300?t=hmtimilbeu8" class="responsive-img" alt="前端模板Nunjucks简介">
+                            <img src="https://picsum.photos/600/300?t=ukvdyr2aqxl" class="responsive-img" alt="前端模板Nunjucks简介">
                             
                             <span class="card-title">前端模板Nunjucks简介</span>
                         </div>

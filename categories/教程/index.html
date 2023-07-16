@@ -325,8 +325,18 @@
 
 
 <script>
+function getNowFormatDate() {
+  let date = new Date(),
+    year = date.getFullYear(), //获取完整的年份(4位)
+    month = date.getMonth() + 1, //获取当前月份(0-11,0代表1月)
+    strDate = date.getDate()-1 // 获取当前日(1-31)
+  if (month < 10) month = `0${month}` // 如果月份是个位数，在前面补0
+  if (strDate < 10) strDate = `0${strDate}` // 如果日是个位数，在前面补0
+ 
+  return `${year}-${month}-${strDate}`
+}
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', `url(http://bing.getlove.cn/bingImage?t=${new Date().getDay()})`);
+    $('.bg-cover').css('background-image', `url(https://raw.kgithub.com/xkloveme/xkloveme/master/img/${getNowFormatDate()}.png)`);
 </script>
 
 <script src="https://bennettfeely.com/ztext/js/ztext.min.js"></script>
@@ -418,7 +428,7 @@
                         <div class="card-image tag-image">
                             
                             
-                            <img src="https://picsum.photos/600/300?t=unl5z8b8fs" class="responsive-img" alt="超简单！Mac打造漂亮又好用的 zsh shell 环境">
+                            <img src="https://picsum.photos/600/300?t=agoh4l8prwk" class="responsive-img" alt="超简单！Mac打造漂亮又好用的 zsh shell 环境">
                             
                             <span class="card-title">超简单！Mac打造漂亮又好用的 zsh shell 环境</span>
                         </div>
@@ -470,7 +480,7 @@
                         <div class="card-image tag-image">
                             
                             
-                            <img src="https://picsum.photos/600/300?t=n0hyzjwykc" class="responsive-img" alt="vscode 常用配置">
+                            <img src="https://picsum.photos/600/300?t=iye5z1e6qjp" class="responsive-img" alt="vscode 常用配置">
                             
                             <span class="card-title">vscode 常用配置</span>
                         </div>
@@ -516,7 +526,7 @@
                         <div class="card-image tag-image">
                             
                             
-                            <img src="https://picsum.photos/600/300?t=w7zk40nfalr" class="responsive-img" alt="Mac OS X 终端切换root用户">
+                            <img src="https://picsum.photos/600/300?t=aksoxec2bk5" class="responsive-img" alt="Mac OS X 终端切换root用户">
                             
                             <span class="card-title">Mac OS X 终端切换root用户</span>
                         </div>
@@ -568,7 +578,7 @@
                         <div class="card-image tag-image">
                             
                             
-                            <img src="https://picsum.photos/600/300?t=usy9ic5n5od" class="responsive-img" alt="Mac 使用技巧总结">
+                            <img src="https://picsum.photos/600/300?t=vibows48pk" class="responsive-img" alt="Mac 使用技巧总结">
                             
                             <span class="card-title">Mac 使用技巧总结</span>
                         </div>
@@ -624,7 +634,7 @@ Mac 系统日常使用技巧归纳总结。
                         <div class="card-image tag-image">
                             
                             
-                            <img src="https://picsum.photos/600/300?t=efuwk76wvah" class="responsive-img" alt="Mac 快捷键">
+                            <img src="https://picsum.photos/600/300?t=xte0riaabm" class="responsive-img" alt="Mac 快捷键">
                             
                             <span class="card-title">Mac 快捷键</span>
                         </div>
@@ -672,7 +682,7 @@ Mac 系统日常使用技巧归纳总结。
                         <div class="card-image tag-image">
                             
                             
-                            <img src="https://picsum.photos/600/300?t=3yowi3mwsyf" class="responsive-img" alt="ESLint 配置">
+                            <img src="https://picsum.photos/600/300?t=1gp2nc5iqgb" class="responsive-img" alt="ESLint 配置">
                             
                             <span class="card-title">ESLint 配置</span>
                         </div>

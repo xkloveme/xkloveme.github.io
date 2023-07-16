@@ -325,8 +325,18 @@
 
 
 <script>
+function getNowFormatDate() {
+  let date = new Date(),
+    year = date.getFullYear(), //获取完整的年份(4位)
+    month = date.getMonth() + 1, //获取当前月份(0-11,0代表1月)
+    strDate = date.getDate()-1 // 获取当前日(1-31)
+  if (month < 10) month = `0${month}` // 如果月份是个位数，在前面补0
+  if (strDate < 10) strDate = `0${strDate}` // 如果日是个位数，在前面补0
+ 
+  return `${year}-${month}-${strDate}`
+}
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', `url(http://bing.getlove.cn/bingImage?t=${new Date().getDay()})`);
+    $('.bg-cover').css('background-image', `url(https://raw.kgithub.com/xkloveme/xkloveme/master/img/${getNowFormatDate()}.png)`);
 </script>
 
 <script src="https://bennettfeely.com/ztext/js/ztext.min.js"></script>
@@ -687,7 +697,7 @@
                         <div class="card-image tag-image">
                             
                             
-                            <img src="https://picsum.photos/600/300?t=g9yhooo8oqn" class="responsive-img" alt="Vimium~让您的Chrome起飞">
+                            <img src="https://picsum.photos/600/300?t=dhaaerupkhn" class="responsive-img" alt="Vimium~让您的Chrome起飞">
                             
                             <span class="card-title">Vimium~让您的Chrome起飞</span>
                         </div>
@@ -719,7 +729,7 @@
                         <div class="card-image tag-image">
                             
                             
-                            <img src="https://picsum.photos/600/300?t=ec0c10nkjef" class="responsive-img" alt="一篇傻瓜都能看懂的Promises文章">
+                            <img src="https://picsum.photos/600/300?t=ulc09a1u59" class="responsive-img" alt="一篇傻瓜都能看懂的Promises文章">
                             
                             <span class="card-title">一篇傻瓜都能看懂的Promises文章</span>
                         </div>
@@ -751,7 +761,7 @@
                         <div class="card-image tag-image">
                             
                             
-                            <img src="https://picsum.photos/600/300?t=8g7ypzi9bpx" class="responsive-img" alt="移动端或者pc端不允许点击返回按钮">
+                            <img src="https://picsum.photos/600/300?t=5on62hztcn5" class="responsive-img" alt="移动端或者pc端不允许点击返回按钮">
                             
                             <span class="card-title">移动端或者pc端不允许点击返回按钮</span>
                         </div>
@@ -783,7 +793,7 @@
                         <div class="card-image tag-image">
                             
                             
-                            <img src="https://picsum.photos/600/300?t=bdj6fkv0ic8" class="responsive-img" alt="JS 开发者必须知道的十个 ES6 新特性">
+                            <img src="https://picsum.photos/600/300?t=428cqirnij8" class="responsive-img" alt="JS 开发者必须知道的十个 ES6 新特性">
                             
                             <span class="card-title">JS 开发者必须知道的十个 ES6 新特性</span>
                         </div>
@@ -815,7 +825,7 @@
                         <div class="card-image tag-image">
                             
                             
-                            <img src="https://picsum.photos/600/300?t=bk3xacgxmhj" class="responsive-img" alt="Web前端开发规范文档">
+                            <img src="https://picsum.photos/600/300?t=l0vg9pcdivp" class="responsive-img" alt="Web前端开发规范文档">
                             
                             <span class="card-title">Web前端开发规范文档</span>
                         </div>
@@ -847,7 +857,7 @@
                         <div class="card-image tag-image">
                             
                             
-                            <img src="https://picsum.photos/600/300?t=599yav5jaer" class="responsive-img" alt="解决导航下图片不能按需加载的问题减少对资源请求数量">
+                            <img src="https://picsum.photos/600/300?t=u8vtbqlhwc" class="responsive-img" alt="解决导航下图片不能按需加载的问题减少对资源请求数量">
                             
                             <span class="card-title">解决导航下图片不能按需加载的问题减少对资源请求数量</span>
                         </div>
