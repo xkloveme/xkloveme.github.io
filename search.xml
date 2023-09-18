@@ -4,6 +4,38 @@
   
     
     <entry>
+      <title>vue 批量替换 /deep/</title>
+      <link href="/2023/07/19/2023/2023-07-19-vue-pi-liang-ti-huan-deep/"/>
+      <url>/2023/07/19/2023/2023-07-19-vue-pi-liang-ti-huan-deep/</url>
+      
+        <content type="html"><![CDATA[<h1 id="批量处理-deep-替换为-deep"><a href="#批量处理-deep-替换为-deep" class="headerlink" title="批量处理 /deep/ 替换为 :deep"></a>批量处理 /deep/ 替换为 :deep</h1><pre><code>/deep/\s*([^\s^{|,]+)</code></pre><p>替换</p><pre class=" language-bash"><code class="language-bash">:deep<span class="token punctuation">(</span><span class="token variable">$1</span><span class="token punctuation">)</span></code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>mac 使用指南【新】</title>
+      <link href="/2023/07/17/2023/2023-07-17-mac-xin-shi-yong-zhi-nan/"/>
+      <url>/2023/07/17/2023/2023-07-17-mac-xin-shi-yong-zhi-nan/</url>
+      
+        <content type="html"><![CDATA[<h1 id="mac-安装代理之后-提示后台项目已添加"><a href="#mac-安装代理之后-提示后台项目已添加" class="headerlink" title="mac 安装代理之后 提示后台项目已添加"></a>mac 安装代理之后 提示后台项目已添加</h1><p><img src="img/20230718091031.jpg" alt=""></p><p>很多使用mac系统的用户最近更新了最新版本系统后，会发现，一直弹出“后台项目已添加”窗口。而且是登陆系统后，都会出现，烦不胜烦。</p><p>我真是服了，我把 ~/Library/LaunchAgents 目录的写权限拿掉了，然后就不弹了。</p><pre class=" language-bash"><code class="language-bash"><span class="token function">chmod</span> -R 555 ~/Library/LaunchAgents </code></pre><h1 id="mac-brew-安装慢"><a href="#mac-brew-安装慢" class="headerlink" title="mac brew 安装慢"></a>mac brew 安装慢</h1>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 生活 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>冥想入门指南</title>
       <link href="/2023/06/07/2023/2023-06-07-ming-xiang-ru-men/"/>
       <url>/2023/06/07/2023/2023-06-07-ming-xiang-ru-men/</url>
