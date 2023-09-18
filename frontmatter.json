@@ -1,0 +1,184 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Content preview",
+          "name": "preview",
+          "type": "image"
+        },
+        {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Categories",
+          "name": "categories",
+          "type": "categories"
+        }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "hexo",
+  "frontMatter.preview.host": "http://localhost:4000",
+  "frontMatter.content.pageFolders": [
+    {
+      "path": "[[workspace]]/source/_posts/2018",
+      "title": "2018"
+    },
+    {
+      "path": "[[workspace]]/source/_posts/2017",
+      "title": "2017"
+    },
+    {
+      "path": "[[workspace]]/source/_posts/2019",
+      "title": "2019"
+    },
+    {
+      "path": "[[workspace]]/source/_posts/2020",
+      "title": "2020"
+    },
+    {
+      "path": "[[workspace]]/source/_posts/2022",
+      "title": "2022"
+    },
+    {
+      "title": "2016",
+      "path": "[[workspace]]/source/_posts/2016"
+    },
+    {
+      "title": "2021",
+      "path": "[[workspace]]/source/_posts/2021"
+    },
+    {
+      "title": "2023",
+      "path": "[[workspace]]/source/_posts/2023"
+    },
+    {
+      "title": "about",
+      "path": "[[workspace]]/source/about"
+    },
+    {
+      "title": "categories",
+      "path": "[[workspace]]/source/categories"
+    },
+    {
+      "title": "friends",
+      "path": "[[workspace]]/source/friends"
+    },
+    {
+      "title": "tags",
+      "path": "[[workspace]]/source/tags"
+    },
+    {
+      "title": "hexo-theme",
+      "path": "[[workspace]]/themes/hexo-theme"
+    }
+  ],
+  "frontMatter.taxonomy.tags": [
+    " ",
+    "C",
+    "CSS",
+    "ES6",
+    "GitHub",
+    "H",
+    "HTTP",
+    "JavaScript",
+    "Jekyll",
+    "L",
+    "Linux",
+    "M",
+    "T",
+    "e",
+    "g",
+    "git",
+    "h",
+    "host",
+    "i",
+    "js",
+    "l",
+    "m",
+    "n",
+    "node",
+    "o",
+    "p",
+    "r",
+    "s",
+    "t",
+    "u",
+    "vue",
+    "w",
+    "x",
+    "人",
+    "人生百态",
+    "代",
+    "件",
+    "优化",
+    "冥想",
+    "前端",
+    "办",
+    "吐纳",
+    "工具",
+    "技术",
+    "指令",
+    "插",
+    "插件",
+    "教程",
+    "机场",
+    "果",
+    "浙",
+    "生",
+    "生活",
+    "码",
+    "网络",
+    "翻墙",
+    "苹",
+    "规范",
+    "里",
+    "面试",
+    "黑"
+  ],
+  "frontMatter.taxonomy.categories": [
+    "令",
+    "具",
+    "前",
+    "前端",
+    "命",
+    "工",
+    "教",
+    "琐",
+    "碎",
+    "程",
+    "端",
+    "行",
+    "试",
+    "面"
+  ]
+}

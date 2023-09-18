@@ -12,5 +12,33 @@
     "introduction": "知识的积累，思想的火花",
     "url": "https://todu.top/",
     "title": "杜龙少的博客"
+  },
+  {
+    "avatar": "https://cdn.jsdelivr.net/gh/alist-org/logo@main/logo.svg",
+    "name": "alist",
+    "introduction": "看视频",
+    "url": "https://alist.jixiaokang.com/",
+    "title": "小康存储"
+  },
+  {
+    "avatar": "https://notes.jixiaokang.com/logo.webp",
+    "name": "notes",
+    "introduction": "写笔记",
+    "url": "https://notes.jixiaokang.com/",
+    "title": "小康笔记"
+  },
+  {
+    "avatar": "https://s1.ax1x.com/2020/03/13/8nIuY6.png",
+    "name": "alist",
+    "introduction": "表格转化",
+    "url": "https://www.jixiaokang.com/black-tool/",
+    "title": "黑科技表格转化"
+  },
+  {
+    "avatar": "https://s1.ax1x.com/2020/03/13/8nIuY6.png",
+    "name": "nav",
+    "introduction": "导航",
+    "url": "https://alist.jixiaokang.com/nav/",
+    "title": "小康导航"
   }
 ]
