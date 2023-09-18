@@ -15,30 +15,30 @@
   },
   {
     "avatar": "https://cdn.jsdelivr.net/gh/alist-org/logo@main/logo.svg",
-    "name": "alist",
+    "name": "小康存储",
     "introduction": "看视频",
     "url": "https://alist.jixiaokang.com/",
-    "title": "小康存储"
+    "title": "alist"
   },
   {
     "avatar": "https://notes.jixiaokang.com/logo.webp",
-    "name": "notes",
+    "name": "小康笔记",
     "introduction": "写笔记",
     "url": "https://notes.jixiaokang.com/",
-    "title": "小康笔记"
+    "title": "notes"
   },
   {
     "avatar": "https://s1.ax1x.com/2020/03/13/8nIuY6.png",
-    "name": "alist",
-    "introduction": "表格转化",
+    "name": "表格转化",
+    "introduction": "黑科技表格转化",
     "url": "https://www.jixiaokang.com/black-tool/",
-    "title": "黑科技表格转化"
+    "title": "black-tool"
   },
   {
     "avatar": "https://s1.ax1x.com/2020/03/13/8nIuY6.png",
-    "name": "nav",
+    "name": "小康导航",
     "introduction": "导航",
-    "url": "https://alist.jixiaokang.com/nav/",
-    "title": "小康导航"
+    "url": "https://www.jixiaokang.com/nav/",
+    "title": "nav"
   }
 ]
