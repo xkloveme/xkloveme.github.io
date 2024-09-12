@@ -28,7 +28,7 @@
     
     <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -298,7 +298,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=ugofsygvsq')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=eqwyfzh6bho')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -454,7 +454,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    761
+                    759
                 </div>
                 
 
@@ -477,7 +477,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="nuxt-js-简单介绍"><a href="#nuxt-js-简单介绍" class="headerlink" title="nuxt.js 简单介绍"></a>nuxt.js 简单介绍</h1><p>nuxt 官网：<a href="https://zh.nuxtjs.org/" target="_blank" rel="noopener">https://zh.nuxtjs.org/</a></p>
+                <h1 id="nuxt-js-简单介绍"><a href="#nuxt-js-简单介绍" class="headerlink" title="nuxt.js 简单介绍"></a>nuxt.js 简单介绍</h1><p>nuxt 官网：<a target="_blank" rel="noopener" href="https://zh.nuxtjs.org/">https://zh.nuxtjs.org/</a></p>
 <h3 id="1、nuxt-js-的原理图："><a href="#1、nuxt-js-的原理图：" class="headerlink" title="1、nuxt.js 的原理图："></a>1、nuxt.js 的原理图：</h3><p>具体的原理介绍官网有详细的解释，欢迎移步官网，这里不再复述。</p>
 <h3 id="2、nuxt-js-的优势"><a href="#2、nuxt-js-的优势" class="headerlink" title="2、nuxt.js 的优势"></a>2、nuxt.js 的优势</h3><p>1）就是我们无需为了路由划分而烦恼，你只需要按照对应的文件夹层级创建 .vue 文件就行</p>
 <p>2）无需考虑数据传输问题，nuxt 会在模板输出之前异步请求数据（需要引入 axios 库），而且对 vuex 有进一步的封装</p>
@@ -505,8 +505,12 @@
 <li><p>同时 nuxt 还支持区分只在浏览器中运行和只在服务端运行的插件。</p>
 </li>
 </ol>
-<p>1)  只在浏览器运行：配置 nuxt.config.js 中 plugins 字段，将引入的插件属性设置为 ssr： false</p>
-<p>2)  只在服务端运行：直接在 webpack 打包 server.bundle.js 文件中，将 process.SERVER_BUILD 设置为 true 即可 layout 布局</p>
+<ol>
+<li><p>只在浏览器运行：配置 nuxt.config.js 中 plugins 字段，将引入的插件属性设置为 ssr： false</p>
+</li>
+<li><p>只在服务端运行：直接在 webpack 打包 server.bundle.js 文件中，将 process.SERVER_BUILD 设置为 true 即可 layout 布局</p>
+</li>
+</ol>
 <h1 id="layout-布局"><a href="#layout-布局" class="headerlink" title="layout 布局"></a>layout 布局</h1><p>nuxt.js 实现了一个新的概念，layout 布局，我们可以通过 layout 布局方便的实现页面的多个布局之间方便的切换。本项目中实现了三种常用的布局，即：1）两栏布局，左栏固定，右栏动态宽度；2、错误页提示，页面中间一个提示框的布局方案；3、纯白页面布局。</p>
 <p>结合 elementUI 可以进行快速布局</p>
 <h1 id="页面路由"><a href="#页面路由" class="headerlink" title="页面路由"></a>页面路由</h1><p>nuxt 框架的页面路由使用了 vue-router，但是我们不需要对页面的路由进行过多的操心，因为我们只要按照 nuxt 规范的页面文件目录结构进行设计，就可以自动生成 vue-router 文件。或者说我们存放页面的目录结构会直接影响最终生成的路由配置。</p>
@@ -1069,12 +1073,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
       <a href="http://www.jixiaokang.com" target="_blank">xkloveme</a>
       |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
       <br />
-       &nbsp;<i
-        class="fas fa-chart-area"
-      ></i
-      >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >148.1k</span
-      >&nbsp;字      
+           
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
           id="busuanzi_value_site_pv"

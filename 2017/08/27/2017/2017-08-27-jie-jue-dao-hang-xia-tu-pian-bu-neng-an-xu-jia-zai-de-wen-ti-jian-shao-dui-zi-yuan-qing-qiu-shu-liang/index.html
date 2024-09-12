@@ -10,8 +10,8 @@
 在优化之前需要加载三张大图这无疑增加了资源请求数量
 因此，我想到了将图片转换为背景以此减少请求没想到方案是可行的，上代码
     
-
-&amp;lt;mt-navbar">
+      
+&amp;lt;mt-">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -32,7 +32,7 @@
     
     <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -302,7 +302,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=n79r47ngdsq')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=coat8bnvsds')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -454,7 +454,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    306
+                    312
                 </div>
                 
 
@@ -478,18 +478,18 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p><strong>问题描述：</strong>在一个三段式的 navbar 中，各段下面有一个长图（类似这样的）</p>
-<p><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/1213869-20170827152714949-194066703.png" alt=""></p>
+<p><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/1213869-20170827152714949-194066703.png"></p>
 <p>在优化之前需要加载三张大图这无疑增加了资源请求数量</p>
 <p>因此，我想到了将图片转换为背景以此减少请求没想到方案是可行的，上代码</p>
   <div class="page-navbar">  
-
+      
 <pre><code>&lt;mt-navbar class=&quot;page-part&quot; v-model=&quot;selected&quot; swipeable&gt;  
   &lt;mt-tab-item id=&quot;1&quot;&gt;平台介绍mt-tab-item&gt;  
   &lt;mt-tab-item id=&quot;2&quot;&gt;雇佣模式mt-tab-item&gt;  
   &lt;mt-tab-item id=&quot;3&quot;&gt;3天试用mt-tab-item&gt;  
 mt-navbar&gt;   
 
-
+  
 &lt;mt-tab-container v-model=&quot;selected&quot; class=&quot;imgadapt&quot;&gt;  
   &lt;mt-tab-container-item id=&quot;1&quot;&gt;  
   &lt;div class=&quot;sprite1&quot;&gt;div&gt;  
@@ -502,10 +502,12 @@ mt-navbar&gt;
 
 &lt;div class=&quot;sprite3&quot;&gt;div&gt;  
   mt-tab-container-item&gt;  
-mt-tab-container&gt;  </code></pre><p>  div&gt;</p>
+mt-tab-container&gt;  
+</code></pre>
+<p>  div&gt;</p>
 <p>重点来了</p>
-<p>.sprite1 {<br>background: url(‘../assets/1.jpg’) no-repeat;<br>width: 5.25rem;<br>height: 14.77rem;<br>background-size:100% 100%;</p>
-<p>}<br>.sprite2 {<br>background: url(‘../assets/2.jpg’) no-repeat ;<br>width: 5.25rem;<br>height: 14.77rem;<br>background-size:100% 100%;<br>}<br>.sprite3 {<br>background: url(‘../assets/3.jpg’) no-repeat;<br>width: 5.25rem;<br>height: 14.77rem;<br>background-size:100% 100%;<br>}</p>
+<p>.sprite1 {<br>background: url(‘..&#x2F;assets&#x2F;1.jpg’) no-repeat;<br>width: 5.25rem;<br>height: 14.77rem;<br>background-size:100% 100%;</p>
+<p>}<br>.sprite2 {<br>background: url(‘..&#x2F;assets&#x2F;2.jpg’) no-repeat ;<br>width: 5.25rem;<br>height: 14.77rem;<br>background-size:100% 100%;<br>}<br>.sprite3 {<br>background: url(‘..&#x2F;assets&#x2F;3.jpg’) no-repeat;<br>width: 5.25rem;<br>height: 14.77rem;<br>background-size:100% 100%;<br>}</p>
 <p>完美解决</p>
 
             </div>
@@ -794,8 +796,8 @@ mt-tab-container&gt;  </code></pre><p>  div&gt;</p>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            本文主要考量客户端性能、服务器端和网络性能，内容框架来自  Yahoo Developer Network，包含 7 个类别共 35 条前端性能优化最佳实践，在此基础上补充了一些相关或者更符合主流技术的内容。
-同时，建议关注及时更新的  G
+                            本文主要考量客户端性能、服务器端和网络性能，内容框架来自  Yahoo Developer Network，包含 7 个类别共 35 条前端性能优化最佳实践，在此基础上补充了一些相关或者更符合主流技术的内容。
+同时，建议关注及时更新的  G
                         
                     </div>
                     <div class="publish-info">
@@ -1052,12 +1054,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
       <a href="http://www.jixiaokang.com" target="_blank">xkloveme</a>
       |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
       <br />
-       &nbsp;<i
-        class="fas fa-chart-area"
-      ></i
-      >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >148.1k</span
-      >&nbsp;字      
+           
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
           id="busuanzi_value_site_pv"

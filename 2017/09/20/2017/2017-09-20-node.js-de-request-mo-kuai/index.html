@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <meta name="keywords" content="node.js的request模块, 小康,xkloveme,博客">
     <meta name="description" content="request 模块让 http 请求变的更加简单。最简单的一个示例：
-1: var request = require(‘request’);
+1: var request &amp;#x3D; require(‘request’);
 2:
-3: request(‘http://www.google.com&amp;#39;, func">
+3: request(‘http://www.google.com‘, fun">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -29,7 +29,7 @@
     
     <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -299,7 +299,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=jtmdh1e6asr')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=9p8xjpyo9zd')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -455,14 +455,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    698
+                    713
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    3 分
                 </div>
                 
 				
@@ -479,36 +479,36 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>request 模块让 http 请求变的更加简单。最简单的一个示例：</p>
-<p>1: var request = require(‘request’);</p>
+<p>1: var request &#x3D; require(‘request’);</p>
 <p>2:</p>
-<p>3: request(‘<a href="http://www.google.com&#39;" target="_blank" rel="noopener">http://www.google.com&#39;</a>, function (error, response, body) {</p>
-<p>4: if (!error &amp;&amp; response.statusCode == 200) {</p>
+<p>3: request(‘<a target="_blank" rel="noopener" href="http://www.google.com/">http://www.google.com</a>‘, function (error, response, body) {</p>
+<p>4: if (!error &amp;&amp; response.statusCode &#x3D;&#x3D; 200) {</p>
 <p>5: console.log(body);</p>
 <p>6: }</p>
 <p>7: })</p>
 <p>安装：</p>
 <p>npm install request</p>
 <p>可以用 request 的 pipe 方法很方便的获取图片的文件流</p>
-<p>1: var request = require(‘request’),</p>
-<p>2: fs = require(‘fs’);</p>
+<p>1: var request &#x3D; require(‘request’),</p>
+<p>2: fs &#x3D; require(‘fs’);</p>
 <p>3:</p>
-<p>4: request(‘<a href="https://www.google.com.hk/images/srpr/logo3w.png&#39;).pipe(fs.createWriteStream(&#39;doodle.png&#39;)" target="_blank" rel="noopener">https://www.google.com.hk/images/srpr/logo3w.png&#39;).pipe(fs.createWriteStream(&#39;doodle.png&#39;)</a>);</p>
+<p>4: request(‘<a target="_blank" rel="noopener" href="https://www.google.com.hk/images/srpr/logo3w.png').pipe(fs.createWriteStream('doodle.png')">https://www.google.com.hk/images/srpr/logo3w.png&#39;).pipe(fs.createWriteStream(&#39;doodle.png&#39;)</a>);</p>
 <p>request 也支持 OAuth 的签名请求</p>
-<p>更多使用方法和说明可点击这里继续阅读：<a href="https://github.com/mikeal/request/" target="_blank" rel="noopener">https://github.com/mikeal/request/</a></p>
+<p>更多使用方法和说明可点击这里继续阅读：<a target="_blank" rel="noopener" href="https://github.com/mikeal/request/">https://github.com/mikeal/request/</a></p>
 <p>这里写了一个很简单的示例，用来抓取去哪儿网的酒店查询数据（获取酒店某一时间段内各房型的价格排名）：</p>
-<p>1: var request = require(‘request’),</p>
-<p>2: fs = require(‘fs’);</p>
+<p>1: var request &#x3D; require(‘request’),</p>
+<p>2: fs &#x3D; require(‘fs’);</p>
 <p>3:</p>
 <p>4:</p>
-<p>5: var reqUrl = ‘<a href="http://hotel.qunar.com/price/detail.jsp?fromDate=2012-08-18&amp;toDate=2012-08-19&amp;cityurl=shanghai\_city&amp;HotelSEQ=shanghai\_city_2856&amp;cn=5&#39;" target="_blank" rel="noopener">http://hotel.qunar.com/price/detail.jsp?fromDate=2012-08-18&amp;toDate=2012-08-19&amp;cityurl=shanghai\_city&amp;HotelSEQ=shanghai\_city_2856&amp;cn=5&#39;</a>;</p>
+<p>5: var reqUrl &#x3D; ‘<a target="_blank" rel="noopener" href="http://hotel.qunar.com/price/detail.jsp?fromDate=2012-08-18&toDate=2012-08-19&cityurl=shanghai%5C_city&HotelSEQ=shanghai%5C_city_2856&cn=5">http://hotel.qunar.com/price/detail.jsp?fromDate=2012-08-18&amp;toDate=2012-08-19&amp;cityurl=shanghai\_city&amp;HotelSEQ=shanghai\_city_2856&amp;cn=5</a>‘;</p>
 <p>6:</p>
 <p>7: request({uri:reqUrl}, function(err, response, body) {</p>
 <p>8:</p>
-<p>9: //console.log(response.statusCode);</p>
-<p>10: //console.log(response);</p>
+<p>9: &#x2F;&#x2F;console.log(response.statusCode);</p>
+<p>10: &#x2F;&#x2F;console.log(response);</p>
 <p>11:</p>
-<p>12: //如果数据量比较大，就需要对返回的数据根据日期、酒店 ID 进行存储，如果获取数据进行对比的时候直接读文件</p>
-<p>13: var filePath = __dirname + ‘/data/data.js’;</p>
+<p>12: &#x2F;&#x2F;如果数据量比较大，就需要对返回的数据根据日期、酒店 ID 进行存储，如果获取数据进行对比的时候直接读文件</p>
+<p>13: var filePath &#x3D; __dirname + ‘&#x2F;data&#x2F;data.js’;</p>
 <p>14:</p>
 <p>15: if (fs.exists(filePath)) {</p>
 <p>16: fs.unlinkSync(filePath);</p>
@@ -824,7 +824,7 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            参考资料: https://mozilla.github.io/nunjucks/
+                            参考资料: https://mozilla.github.io/nunjucks/
 https://mozilla.github.io/nunjucks/templating.html
 https://mozilla.github.io/n
                         
@@ -876,7 +876,7 @@ https://mozilla.github.io/n
                     <div class="summary block-with-text">
                         
                             
-转载请注明：  老 D 博客
+转载请注明：  老 D 博客
 
 本页面长期更新最新Google、谷歌学术、维基百科、ccFox.info、ProjectH、Battle.NET 、WordPress、Microsoft Live、GitHub、Amazon、Archiv
                         
@@ -1085,12 +1085,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
       <a href="http://www.jixiaokang.com" target="_blank">xkloveme</a>
       |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
       <br />
-       &nbsp;<i
-        class="fas fa-chart-area"
-      ></i
-      >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >148.1k</span
-      >&nbsp;字      
+           
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
           id="busuanzi_value_site_pv"

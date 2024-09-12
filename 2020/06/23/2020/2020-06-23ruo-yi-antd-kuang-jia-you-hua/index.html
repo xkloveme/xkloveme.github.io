@@ -35,7 +35,7 @@ v3 测试版: http://v3.ant.zmrit.com
     
     <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -305,7 +305,7 @@ v3 测试版: http://v3.ant.zmrit.com
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=8s9l81k0jzl')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=qdftow85p1j')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -448,14 +448,14 @@ v3 测试版: http://v3.ant.zmrit.com
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1k
+                    1.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    5 分
                 </div>
                 
 				
@@ -473,102 +473,80 @@ v3 测试版: http://v3.ant.zmrit.com
             <div id="articleContent">
                 <h1 align="center">Ant 若依前端框架</h1>
 
-<p>文档：<a href="http://doc.rycloud.zmrit.com" target="_blank" rel="noopener">http://doc.rycloud.zmrit.com</a></p>
+<p>文档：<a target="_blank" rel="noopener" href="http://doc.rycloud.zmrit.com/">http://doc.rycloud.zmrit.com</a></p>
 <ul>
-<li>预览: <a href="http://ruoyi.ant.zmrit.com" target="_blank" rel="noopener">http://ruoyi.ant.zmrit.com</a></li>
-<li>v3 测试版: <a href="http://v3.ant.zmrit.com" target="_blank" rel="noopener">http://v3.ant.zmrit.com</a></li>
+<li>预览: <a target="_blank" rel="noopener" href="http://ruoyi.ant.zmrit.com/">http://ruoyi.ant.zmrit.com</a></li>
+<li>v3 测试版: <a target="_blank" rel="noopener" href="http://v3.ant.zmrit.com/">http://v3.ant.zmrit.com</a></li>
 </ul>
 <h2 id="下载和运行"><a href="#下载和运行" class="headerlink" title="下载和运行"></a>下载和运行</h2><ul>
 <li>安装依赖</li>
 </ul>
-<pre><code>yarn install</code></pre><ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">yarn install</span><br></pre></td></tr></table></figure>
+
+<ul>
 <li>开发模式运行</li>
 </ul>
-<pre><code>yarn run serve</code></pre><ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">yarn run serve</span><br></pre></td></tr></table></figure>
+
+<ul>
 <li>编译项目</li>
 </ul>
-<pre><code>yarn run build</code></pre><ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">yarn run build</span><br></pre></td></tr></table></figure>
+
+<ul>
 <li>Lints and fixes files</li>
 </ul>
-<pre><code>yarn run lint</code></pre><h2 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h2><h3 id="1-「接口请求」自动封装挂载到vue实例上"><a href="#1-「接口请求」自动封装挂载到vue实例上" class="headerlink" title="1. 「接口请求」自动封装挂载到vue实例上"></a>1. 「接口请求」自动封装挂载到<code>vue</code>实例上</h3><ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">yarn run lint</span><br></pre></td></tr></table></figure>
+
+<h2 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h2><h3 id="1-「接口请求」自动封装挂载到vue实例上"><a href="#1-「接口请求」自动封装挂载到vue实例上" class="headerlink" title="1. 「接口请求」自动封装挂载到vue实例上"></a>1. 「接口请求」自动封装挂载到<code>vue</code>实例上</h3><ul>
 <li>调用方式</li>
 </ul>
-<pre class=" language-bash"><code class="language-bash">// 获取用户列表
- this.<span class="token variable">$api</span>.getUserList<span class="token punctuation">(</span><span class="token punctuation">)</span>.then<span class="token punctuation">(</span>res <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-        console.log<span class="token punctuation">(</span><span class="token string">'🐛:: handleClickUser -> res'</span>, res<span class="token punctuation">)</span>
-      <span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">// 获取用户列表</span><br><span class="line"> this.<span class="variable">$api</span>.getUserList().<span class="keyword">then</span>(res =&gt; &#123;</span><br><span class="line">        console.log(<span class="string">&#x27;🐛:: handleClickUser -&gt; res&#x27;</span>, res)</span><br><span class="line">      &#125;)</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>接口书写命名格式</li>
 </ul>
 <ol>
 <li>为避免命名冲突导致请求错误,采用一下命名</li>
 </ol>
-<pre class=" language-bash"><code class="language-bash">/*
- * Api命名建议:
-  * 组成: <span class="token punctuation">{</span>请求方法<span class="token punctuation">}</span><span class="token punctuation">{</span>文件名<span class="token punctuation">}</span><span class="token punctuation">{</span>接口用处<span class="token punctuation">}</span><span class="token punctuation">{</span>Api<span class="token punctuation">}</span>
-  * 1.请求方法<span class="token punctuation">(</span>get查询, post增加, put修改, delete删除, upload上传<span class="token punctuation">)</span>
-  * 2.当前js所在文件名称如gen, login
-  * 3.接口用处, 如userList, deviceDetail
-  * 4.Api, 表明是Api接口, 区别于其他方法
-  * 目的: 语义化明确, 看到接口就知道类型用处
-  * 示例: getManageUserListApi<span class="token punctuation">(</span>获取用户列表api<span class="token punctuation">)</span>, putLoginMsCaptchaApi<span class="token punctuation">(</span>获取验证码api<span class="token punctuation">)</span>
- */</code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/*</span><br><span class="line"> * Api命名建议:</span><br><span class="line">  * 组成: &#123;请求方法&#125;&#123;文件名&#125;&#123;接口用处&#125;&#123;Api&#125;</span><br><span class="line">  * 1.请求方法(get查询, post增加, put修改, delete删除, upload上传)</span><br><span class="line">  * 2.当前js所在文件名称如gen, login</span><br><span class="line">  * 3.接口用处, 如userList, deviceDetail</span><br><span class="line">  * 4.Api, 表明是Api接口, 区别于其他方法</span><br><span class="line">  * 目的: 语义化明确, 看到接口就知道类型用处</span><br><span class="line">  * 示例: getManageUserListApi(获取用户列表api), putLoginMsCaptchaApi(获取验证码api)</span><br><span class="line"> */</span><br></pre></td></tr></table></figure>
+
 <ol start="2">
 <li><p>接口命名一律采用小驼峰命名法</p>
 </li>
 <li><p>新书写接口推荐一下写法,极度精简,可读性高</p>
 </li>
 </ol>
-<pre class=" language-bash"><code class="language-bash">// get 请求 用户列表
-<span class="token function">export</span> const getManageGetUserApi <span class="token operator">=</span> params <span class="token operator">=</span><span class="token operator">></span> axios.get<span class="token punctuation">(</span>api.user, <span class="token punctuation">{</span> params <span class="token punctuation">}</span><span class="token punctuation">)</span>
-// OR
-<span class="token function">export</span> const getManageGetUserApi <span class="token operator">=</span> params <span class="token operator">=</span><span class="token operator">></span> axios.get<span class="token punctuation">(</span><span class="token string">'/system/user/list'</span>, <span class="token punctuation">{</span> params <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">// get 请求 用户列表</span><br><span class="line"><span class="built_in">export</span> const getManageGetUserApi = params =&gt; axios.get(api.user, &#123; params &#125;)</span><br><span class="line">// OR</span><br><span class="line"><span class="built_in">export</span> const getManageGetUserApi = params =&gt; axios.get(<span class="string">&#x27;/system/user/list&#x27;</span>, &#123; params &#125;)</span><br><span class="line"></span><br><span class="line">// post 请求</span><br><span class="line"><span class="built_in">export</span> const postManageServiceApi = data =&gt; axios.get(<span class="string">&#x27;/service&#x27;</span>, data)</span><br><span class="line"></span><br><span class="line">// 切换请求方法</span><br><span class="line"><span class="built_in">export</span> const postManageServiceApi = data =&gt; axios[data.id === 0 ? <span class="string">&#x27;post&#x27;</span> : <span class="string">&#x27;put&#x27;</span>](<span class="string">&#x27;/service&#x27;</span>, data)</span><br></pre></td></tr></table></figure>
 
-// post 请求
-<span class="token function">export</span> const postManageServiceApi <span class="token operator">=</span> data <span class="token operator">=</span><span class="token operator">></span> axios.get<span class="token punctuation">(</span><span class="token string">'/service'</span>, data<span class="token punctuation">)</span>
-
-// 切换请求方法
-<span class="token function">export</span> const postManageServiceApi <span class="token operator">=</span> data <span class="token operator">=</span><span class="token operator">></span> axios<span class="token punctuation">[</span>data.id <span class="token operator">==</span><span class="token operator">=</span> 0 ? <span class="token string">'post'</span> <span class="token keyword">:</span> <span class="token string">'put'</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token string">'/service'</span>, data<span class="token punctuation">)</span></code></pre>
 <ol start="4">
 <li>每个 api 前面需要添加中文注释</li>
 </ol>
 <h3 id="2-「权限」判断按钮级权限"><a href="#2-「权限」判断按钮级权限" class="headerlink" title="2. 「权限」判断按钮级权限"></a>2. 「权限」判断按钮级权限</h3><ul>
 <li>自定义指令写法</li>
 </ul>
-<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// 指令写法</span>
-<span class="token operator">&lt;</span>div v<span class="token operator">-</span>auth<span class="token operator">=</span><span class="token string">"'system:dict:add'"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-<span class="token comment" spellcheck="true">// v-if写法</span>
-<span class="token operator">&lt;</span>div v<span class="token operator">-</span><span class="token keyword">if</span><span class="token operator">=</span><span class="token string">"$pm('system:dict:add')"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span></code></pre>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 指令写法</span></span><br><span class="line">&lt;div v-auth=<span class="string">&quot;&#x27;system:dict:add&#x27;&quot;</span>&gt;&lt;/div&gt;</span><br><span class="line"><span class="comment">// v-if写法</span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-if</span>=<span class="string">&quot;$pm(&#x27;system:dict:add&#x27;)&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>在<code>js</code>中使用</li>
 </ul>
-<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// 挂载到`VM`实例上</span>
-<span class="token keyword">this</span><span class="token punctuation">.</span>$pm <span class="token operator">===</span> checkPermission<span class="token punctuation">;</span></code></pre>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 挂载到`VM`实例上</span></span><br><span class="line"><span class="variable language_">this</span>.<span class="property">$pm</span> === checkPermission;</span><br></pre></td></tr></table></figure>
+
 <h3 id="3-「工具」常用工具封装"><a href="#3-「工具」常用工具封装" class="headerlink" title="3. 「工具」常用工具封装"></a>3. 「工具」常用工具封装</h3><ul>
 <li>时间格式化封装</li>
 </ul>
-<pre class=" language-js"><code class="language-js">
-<span class="token comment" spellcheck="true">// 过滤器封装 YYYY-MM-DD</span>
-<span class="token operator">&lt;</span>div<span class="token operator">></span><span class="token punctuation">{</span><span class="token punctuation">{</span>time <span class="token operator">|</span> date<span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">// 过滤器封装 YYYY-MM-DD</span></span><br><span class="line">&lt;div&gt;&#123;&#123;time | date&#125;&#125;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 过滤器封装 YYYY-MM-DD HH:mm:ss</span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span>&#123;&#123;time | datetime&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 挂载到vue实例上</span></span><br><span class="line"><span class="variable language_">this</span>.$formatDate(<span class="keyword">new</span> <span class="title class_">Date</span>())</span><br><span class="line"><span class="comment">// OR</span></span><br><span class="line"><span class="variable language_">this</span>.$formatDate(<span class="keyword">new</span> <span class="title class_">Date</span>(),<span class="string">&#x27;YYYY-MM-DD&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<span class="token comment" spellcheck="true">// 过滤器封装 YYYY-MM-DD HH:mm:ss</span>
-<span class="token operator">&lt;</span>div<span class="token operator">></span><span class="token punctuation">{</span><span class="token punctuation">{</span>time <span class="token operator">|</span> datetime<span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-
-<span class="token comment" spellcheck="true">// 挂载到vue实例上</span>
-<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$formatDate</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">// OR</span>
-<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$formatDate</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token string">'YYYY-MM-DD'</span><span class="token punctuation">)</span>
-</code></pre>
 <h3 id="4-「table」-封装-采用-jsx-书写方式"><a href="#4-「table」-封装-采用-jsx-书写方式" class="headerlink" title="4. 「table」 封装,采用 jsx 书写方式"></a>4. 「table」 封装,采用 jsx 书写方式</h3><ul>
 <li>支持两种书写方式(直接传输数据和表头)</li>
 </ul>
-<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// columns 列  tableData 表数据   params 默认请求数据</span>
-    <span class="token operator">&lt;</span>wt<span class="token operator">-</span>table <span class="token punctuation">:</span>columns<span class="token operator">=</span><span class="token string">"columns"</span> <span class="token punctuation">:</span>tableData<span class="token operator">=</span><span class="token string">"tableData"</span> <span class="token punctuation">:</span>params<span class="token operator">=</span><span class="token string">"params"</span> <span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>wt<span class="token operator">-</span>table<span class="token operator">></span></code></pre>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// columns 列  tableData 表数据   params 默认请求数据</span></span><br><span class="line">    &lt;wt-table :columns=<span class="string">&quot;columns&quot;</span> :tableData=<span class="string">&quot;tableData&quot;</span> :params=<span class="string">&quot;params&quot;</span> &gt;&lt;/wt-table&gt;</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>支持传输接口和 api</li>
 </ul>
-<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// columns 列  tableData 表数据   params 默认请求数据</span>
-    <span class="token operator">&lt;</span>wt<span class="token operator">-</span>table <span class="token punctuation">:</span>columns<span class="token operator">=</span><span class="token string">"columns"</span> <span class="token punctuation">:</span>api<span class="token operator">=</span><span class="token string">"$api.postManageServiceApi"</span> <span class="token punctuation">:</span>params<span class="token operator">=</span><span class="token string">"params"</span> <span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>wt<span class="token operator">-</span>table<span class="token operator">></span></code></pre>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// columns 列  tableData 表数据   params 默认请求数据</span></span><br><span class="line">    &lt;wt-table :columns=<span class="string">&quot;columns&quot;</span> :api=<span class="string">&quot;$api.postManageServiceApi&quot;</span> :params=<span class="string">&quot;params&quot;</span> &gt;&lt;/wt-table&gt;</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>表格数据提供三种写法</li>
 </ul>
@@ -578,108 +556,37 @@ v3 测试版: http://v3.ant.zmrit.com
 <blockquote>
 <p>需要创建 <code>h</code> 函数,不然会报错,需要把<code>js</code>文件建立在同级目录便于管理</p>
 </blockquote>
-<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// 外部数据</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">[</span>
-  <span class="token punctuation">{</span>
-    title<span class="token punctuation">:</span> <span class="token string">"序号"</span><span class="token punctuation">,</span>
-    dataIndex<span class="token punctuation">:</span> <span class="token string">"index"</span><span class="token punctuation">,</span>
-    customRender<span class="token punctuation">:</span> <span class="token punctuation">(</span>text<span class="token punctuation">,</span> row<span class="token punctuation">,</span> index<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-      <span class="token keyword">const</span> h <span class="token operator">=</span> props<span class="token punctuation">.</span>$createElement<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 需要创建h函数</span>
-      <span class="token keyword">return</span> <span class="token function">h</span><span class="token punctuation">(</span><span class="token string">"a"</span><span class="token punctuation">,</span> index <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 外部数据</span></span><br><span class="line"><span class="keyword">export</span> <span class="title function_">default</span> (props) =&gt; [</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">title</span>: <span class="string">&quot;序号&quot;</span>,</span><br><span class="line">    <span class="attr">dataIndex</span>: <span class="string">&quot;index&quot;</span>,</span><br><span class="line">    <span class="attr">customRender</span>: <span class="function">(<span class="params">text, row, index</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">const</span> h = props.<span class="property">$createElement</span>; <span class="comment">// 需要创建h函数</span></span><br><span class="line">      <span class="keyword">return</span> <span class="title function_">h</span>(<span class="string">&quot;a&quot;</span>, index + <span class="number">1</span>);</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;,</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line"><span class="comment">// 组件内部,需要把this传进去</span></span><br><span class="line"><span class="keyword">import</span> columns <span class="keyword">from</span> <span class="string">&quot;./table.js&quot;</span>;</span><br><span class="line"><span class="attr">columns</span>: <span class="title function_">columns</span>(<span class="variable language_">this</span>);</span><br></pre></td></tr></table></figure>
 
-<span class="token comment" spellcheck="true">// 组件内部,需要把this传进去</span>
-<span class="token keyword">import</span> columns <span class="token keyword">from</span> <span class="token string">"./table.js"</span><span class="token punctuation">;</span>
-columns<span class="token punctuation">:</span> <span class="token function">columns</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 <blockquote>
 <p>表格渲染支持两种写法</p>
 </blockquote>
-<pre class=" language-js"><code class="language-js"> <span class="token punctuation">{</span>
-    title<span class="token punctuation">:</span> <span class="token string">'创建时间'</span><span class="token punctuation">,</span>
-    dataIndex<span class="token punctuation">:</span> <span class="token string">'createTime'</span><span class="token punctuation">,</span>
-    customRender<span class="token punctuation">:</span> <span class="token punctuation">(</span>text<span class="token punctuation">,</span> row<span class="token punctuation">,</span> index<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-      <span class="token keyword">return</span> <span class="token punctuation">{</span>
-        children<span class="token punctuation">:</span> props<span class="token punctuation">.</span><span class="token function">$formatDate</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span>
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token punctuation">{</span>
-    title<span class="token punctuation">:</span> <span class="token string">'邮箱'</span><span class="token punctuation">,</span>
-    dataIndex<span class="token punctuation">:</span> <span class="token string">'email'</span><span class="token punctuation">,</span>
-    customRender<span class="token punctuation">:</span> <span class="token punctuation">(</span>text<span class="token punctuation">,</span> row<span class="token punctuation">,</span> index<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-      <span class="token keyword">const</span> h <span class="token operator">=</span> props<span class="token punctuation">.</span>$createElement
-      <span class="token keyword">return</span> <span class="token function">h</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">,</span> text<span class="token punctuation">)</span>
-    <span class="token punctuation">}</span>
-  <span class="token punctuation">}</span></code></pre>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   <span class="attr">title</span>: <span class="string">&#x27;创建时间&#x27;</span>,</span><br><span class="line">   <span class="attr">dataIndex</span>: <span class="string">&#x27;createTime&#x27;</span>,</span><br><span class="line">   <span class="attr">customRender</span>: <span class="function">(<span class="params">text, row, index</span>) =&gt;</span> &#123;</span><br><span class="line">     <span class="keyword">return</span> &#123;</span><br><span class="line">       <span class="attr">children</span>: props.$formatDate(text)</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;</span><br><span class="line"> &#125;,</span><br><span class="line"> &#123;</span><br><span class="line">   <span class="attr">title</span>: <span class="string">&#x27;邮箱&#x27;</span>,</span><br><span class="line">   <span class="attr">dataIndex</span>: <span class="string">&#x27;email&#x27;</span>,</span><br><span class="line">   <span class="attr">customRender</span>: <span class="function">(<span class="params">text, row, index</span>) =&gt;</span> &#123;</span><br><span class="line">     <span class="keyword">const</span> h = props.<span class="property">$createElement</span></span><br><span class="line">     <span class="keyword">return</span> <span class="title function_">h</span>(<span class="string">&#x27;a&#x27;</span>, text)</span><br><span class="line">   &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
 <ol start="2">
 <li>直接写在组件内部,但可能会造成单文件过长,不利于阅读</li>
 </ol>
 <blockquote>
 <p>这种写法支持 <code>jsx</code> 形式,可以少些大部分代码「表格数据不多的时候推荐」</p>
 </blockquote>
-<pre class=" language-js"><code class="language-js">columns<span class="token punctuation">:</span> <span class="token punctuation">[</span>
-  <span class="token punctuation">{</span>
-    title<span class="token punctuation">:</span> <span class="token string">"创建时间"</span><span class="token punctuation">,</span>
-    dataIndex<span class="token punctuation">:</span> <span class="token string">"createTime"</span><span class="token punctuation">,</span>
-    customRender<span class="token punctuation">:</span> <span class="token punctuation">(</span>text<span class="token punctuation">,</span> row<span class="token punctuation">,</span> index<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-      <span class="token keyword">return</span> <span class="token punctuation">{</span>
-        children<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$formatDate</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span><span class="token punctuation">,</span>
-      <span class="token punctuation">}</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token punctuation">{</span>
-    title<span class="token punctuation">:</span> <span class="token string">"邮箱"</span><span class="token punctuation">,</span>
-    dataIndex<span class="token punctuation">:</span> <span class="token string">"email"</span><span class="token punctuation">,</span>
-    customRender<span class="token punctuation">:</span> <span class="token punctuation">(</span>text<span class="token punctuation">,</span> row<span class="token punctuation">,</span> index<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-      <span class="token keyword">return</span> <span class="token operator">&lt;</span>a<span class="token operator">></span><span class="token punctuation">{</span>text<span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">></span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-<span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="attr">columns</span>: [</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">title</span>: <span class="string">&quot;创建时间&quot;</span>,</span><br><span class="line">    <span class="attr">dataIndex</span>: <span class="string">&quot;createTime&quot;</span>,</span><br><span class="line">    <span class="attr">customRender</span>: <span class="function">(<span class="params">text, row, index</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">return</span> &#123;</span><br><span class="line">        <span class="attr">children</span>: <span class="variable language_">this</span>.$formatDate(text),</span><br><span class="line">      &#125;;</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">title</span>: <span class="string">&quot;邮箱&quot;</span>,</span><br><span class="line">    <span class="attr">dataIndex</span>: <span class="string">&quot;email&quot;</span>,</span><br><span class="line">    <span class="attr">customRender</span>: <span class="function">(<span class="params">text, row, index</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="language-xml"><span class="tag">&lt;<span class="name">a</span>&gt;</span>&#123;text&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span>;</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;,</span><br><span class="line">];</span><br></pre></td></tr></table></figure>
+
 <ol start="3">
 <li><code>mixins</code> 方式混入,同样可读性好,但此语法未来可能会废弃[不推荐]</li>
 </ol>
 <h3 id="5-引入可配置from"><a href="#5-引入可配置from" class="headerlink" title="5. 引入可配置from"></a>5. 引入可配置<code>from</code></h3><ul>
 <li>基于配置表单,封装<code>wt-from</code></li>
-<li>地址<a href="http://form-create.com/v2/ant-design-vue/" target="_blank" rel="noopener">http://form-create.com/v2/ant-design-vue/</a></li>
+<li>地址<a target="_blank" rel="noopener" href="http://form-create.com/v2/ant-design-vue/">http://form-create.com/v2/ant-design-vue/</a></li>
 </ul>
-<h4 id="1-使用表单组件"><a href="#1-使用表单组件" class="headerlink" title="1.使用表单组件"></a>1.使用表单组件</h4><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>wt-form</span> <span class="token attr-name">:rule</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>rule<span class="token punctuation">"</span></span> <span class="token attr-name">@submit</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>wt-form</span><span class="token punctuation">></span></span></code></pre>
+<h4 id="1-使用表单组件"><a href="#1-使用表单组件" class="headerlink" title="1.使用表单组件"></a>1.使用表单组件</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">wt-form</span> <span class="attr">:rule</span>=<span class="string">&quot;rule&quot;</span> @<span class="attr">submit</span>=<span class="string">&quot;submit&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">wt-form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>可配置项分为两种,直接用挂载在<code>VM</code>上的<code>$maker</code>和<code>JSON</code>配置,具体如下</li>
 </ul>
-<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// 由$maker配置生成</span>
-rule<span class="token punctuation">:</span> <span class="token punctuation">[</span>
-  <span class="token keyword">this</span><span class="token punctuation">.</span>$maker<span class="token punctuation">.</span><span class="token function">input</span><span class="token punctuation">(</span><span class="token string">"goods_name"</span><span class="token punctuation">,</span> <span class="token string">"goods_name"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-  <span class="token keyword">this</span><span class="token punctuation">.</span>$maker<span class="token punctuation">.</span><span class="token function">date</span><span class="token punctuation">(</span><span class="token string">"create_at"</span><span class="token punctuation">,</span> <span class="token string">"created_at"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-<span class="token punctuation">]</span><span class="token punctuation">;</span>
-<span class="token comment" spellcheck="true">// json 配置生成</span>
-rule1<span class="token punctuation">:</span> <span class="token punctuation">[</span>
-  <span class="token punctuation">{</span>
-    type<span class="token punctuation">:</span> <span class="token string">"input"</span><span class="token punctuation">,</span>
-    title<span class="token punctuation">:</span> <span class="token string">"商品名称"</span><span class="token punctuation">,</span>
-    field<span class="token punctuation">:</span> <span class="token string">"goods_name"</span><span class="token punctuation">,</span>
-    value<span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
-    props<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-      type<span class="token punctuation">:</span> <span class="token string">"text"</span><span class="token punctuation">,</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token punctuation">{</span>
-    type<span class="token punctuation">:</span> <span class="token string">"select"</span><span class="token punctuation">,</span>
-    field<span class="token punctuation">:</span> <span class="token string">"cate_id"</span><span class="token punctuation">,</span>
-    title<span class="token punctuation">:</span> <span class="token string">"产品分类"</span><span class="token punctuation">,</span>
-    value<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"104"</span><span class="token punctuation">,</span> <span class="token string">"105"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-    options<span class="token punctuation">:</span> <span class="token punctuation">[</span>
-      <span class="token punctuation">{</span> value<span class="token punctuation">:</span> <span class="token string">"104"</span><span class="token punctuation">,</span> label<span class="token punctuation">:</span> <span class="token string">"生态蔬菜"</span><span class="token punctuation">,</span> disabled<span class="token punctuation">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
-      <span class="token punctuation">{</span> value<span class="token punctuation">:</span> <span class="token string">"105"</span><span class="token punctuation">,</span> label<span class="token punctuation">:</span> <span class="token string">"新鲜水果"</span><span class="token punctuation">,</span> disabled<span class="token punctuation">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token punctuation">]</span><span class="token punctuation">,</span>
-    props<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-      multiple<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-<span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 由$maker配置生成</span></span><br><span class="line"><span class="attr">rule</span>: [</span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">$maker</span>.<span class="title function_">input</span>(<span class="string">&quot;goods_name&quot;</span>, <span class="string">&quot;goods_name&quot;</span>),</span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">$maker</span>.<span class="title function_">date</span>(<span class="string">&quot;create_at&quot;</span>, <span class="string">&quot;created_at&quot;</span>),</span><br><span class="line">];</span><br><span class="line"><span class="comment">// json 配置生成</span></span><br><span class="line"><span class="attr">rule1</span>: [</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">type</span>: <span class="string">&quot;input&quot;</span>,</span><br><span class="line">    <span class="attr">title</span>: <span class="string">&quot;商品名称&quot;</span>,</span><br><span class="line">    <span class="attr">field</span>: <span class="string">&quot;goods_name&quot;</span>,</span><br><span class="line">    <span class="attr">value</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="attr">props</span>: &#123;</span><br><span class="line">      <span class="attr">type</span>: <span class="string">&quot;text&quot;</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">type</span>: <span class="string">&quot;select&quot;</span>,</span><br><span class="line">    <span class="attr">field</span>: <span class="string">&quot;cate_id&quot;</span>,</span><br><span class="line">    <span class="attr">title</span>: <span class="string">&quot;产品分类&quot;</span>,</span><br><span class="line">    <span class="attr">value</span>: [<span class="string">&quot;104&quot;</span>, <span class="string">&quot;105&quot;</span>],</span><br><span class="line">    <span class="attr">options</span>: [</span><br><span class="line">      &#123; <span class="attr">value</span>: <span class="string">&quot;104&quot;</span>, <span class="attr">label</span>: <span class="string">&quot;生态蔬菜&quot;</span>, <span class="attr">disabled</span>: <span class="literal">false</span> &#125;,</span><br><span class="line">      &#123; <span class="attr">value</span>: <span class="string">&quot;105&quot;</span>, <span class="attr">label</span>: <span class="string">&quot;新鲜水果&quot;</span>, <span class="attr">disabled</span>: <span class="literal">false</span> &#125;,</span><br><span class="line">    ],</span><br><span class="line">    <span class="attr">props</span>: &#123;</span><br><span class="line">      <span class="attr">multiple</span>: <span class="literal">true</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;,</span><br><span class="line">];</span><br></pre></td></tr></table></figure>
+
 <blockquote>
-<p>更多内置配置参考<a href="http://form-create.com/v2/ant-design-vue/components/hidden.html" target="_blank" rel="noopener">配置项</a></p>
+<p>更多内置配置参考<a target="_blank" rel="noopener" href="http://form-create.com/v2/ant-design-vue/components/hidden.html">配置项</a></p>
 </blockquote>
 <ul>
 <li>基于第三方组件的使用,通过<code>type:&#39;codemirror&#39;</code>,来使用</li>
@@ -687,7 +594,8 @@ rule1<span class="token punctuation">:</span> <span class="token punctuation">[<
 <h3 id="6-封装search组件"><a href="#6-封装search组件" class="headerlink" title="6. 封装search组件"></a>6. 封装<code>search</code>组件</h3><blockquote>
 <p>对于表格常用的搜索进行封装,更少的代码,更多的灵活性</p>
 </blockquote>
-<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>wt-search</span> <span class="token attr-name">:rule</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>rule1<span class="token punctuation">"</span></span> <span class="token attr-name">@submit</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span> <span class="token attr-name">:isSearch</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>wt-search</span><span class="token punctuation">></span></span></code></pre>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">wt-search</span> <span class="attr">:rule</span>=<span class="string">&quot;rule1&quot;</span> @<span class="attr">submit</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">:isSearch</span>=<span class="string">&quot;true&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">wt-search</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <p><strong>配置同<code>wt-form</code>,<code>submit</code>为搜索结果回调</strong></p>
 
             </div>
@@ -1045,10 +953,10 @@ note 插件
 更新日志
 0.0.4
 
+
+
 上架应用市场
 修复首次登录未获取到数据问题
-
-
 
                         
                     </div>
@@ -1252,12 +1160,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
       <a href="http://www.jixiaokang.com" target="_blank">xkloveme</a>
       |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
       <br />
-       &nbsp;<i
-        class="fas fa-chart-area"
-      ></i
-      >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >148.1k</span
-      >&nbsp;字      
+           
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
           id="busuanzi_value_site_pv"

@@ -26,7 +26,7 @@
     
     <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -296,7 +296,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=2itv3ku0kz3')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=lsd9hl2pglr')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -448,14 +448,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    4.2k
+                    4.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    18 分
+                    19 分
                 </div>
                 
 				
@@ -479,7 +479,7 @@
 <li>多行字符串</li>
 <li>拆包表达式</li>
 <li>改进的对象表达式</li>
-<li>箭头函数  <code>=&amp;&gt;</code></li>
+<li>箭头函数  <code>=&amp;&gt;</code></li>
 <li>Promise</li>
 <li>块级作用域的<code>let</code>和<code>const</code></li>
 <li>类</li>
@@ -492,7 +492,7 @@
 <li>1997 年：ECMAScript 标准确立</li>
 <li>1999 年：ES3 发布，IE5 非常生气</li>
 <li>2000 年-2005 年：<code>XMLHttpRequest</code>，熟知为<code>AJAX</code>，在如 Outlook Web Access(2002)、Oddpost(2002)、Gmail(2004)、Google Maps(2005)中得到了广泛的应用</li>
-<li>2009 年：ES5 发布（这是我们目前用的最多的版本），带来了<code>forEach</code> / <code>Object.keys</code>/ <code>Object.create</code>（特地为 Douglas Crockford 所造，JSON 标准创建者） ，还有 JSON 标准。</li>
+<li>2009 年：ES5 发布（这是我们目前用的最多的版本），带来了<code>forEach</code> &#x2F; <code>Object.keys</code>&#x2F; <code>Object.create</code>（特地为 Douglas Crockford 所造，JSON 标准创建者） ，还有 JSON 标准。</li>
 </ol>
 <p>历史课上完了，我们回来讲编程。</p>
 <h3 id="1-ES6-中的默认参数"><a href="#1-ES6-中的默认参数" class="headerlink" title="1. ES6 中的默认参数"></a>1. ES6 中的默认参数</h3><p>还记得我们以前要这样子来定义默认参数：</p>
@@ -503,10 +503,10 @@
 <p>4</p>
 <p>5</p>
 <p>6</p>
-<p>var link = function (height, color, url) {</p>
-<p>var height = height || 50</p>
-<p>var color = color || ‘red’</p>
-<p>var url = url || ‘<a href="http://azat.co&#39;" target="_blank" rel="noopener">http://azat.co&#39;</a></p>
+<p>var link &#x3D; function (height, color, url) {</p>
+<p>var height &#x3D; height || 50</p>
+<p>var color &#x3D; color || ‘red’</p>
+<p>var url &#x3D; url || ‘<a target="_blank" rel="noopener" href="http://azat.co/">http://azat.co</a>‘</p>
 <p>…</p>
 <p>}</p>
 <p>这样做一直都没什么问题，直到参数的值为<code>0</code>，因为<code>0</code>在 JavaScript 中算是<code>false</code>值，它会直接变成后面硬编码的值而不是<code>0</code>本身。当然了，谁要用<code>0</code>来传值啊（讽刺脸）？所以我们也忽略了这个瑕疵，沿用了这个逻辑，否则的话只能…..没有否则！在 ES6 中，我们可以把这些默认值直接放在函数签名中。</p>
@@ -514,7 +514,7 @@
 <p>1</p>
 <p>2</p>
 <p>3</p>
-<p>var link = function(height = 50, color = ‘red’, url = ‘<a href="http://azat.co&#39;" target="_blank" rel="noopener">http://azat.co&#39;</a>) {</p>
+<p>var link &#x3D; function(height &#x3D; 50, color &#x3D; ‘red’, url &#x3D; ‘<a target="_blank" rel="noopener" href="http://azat.co/">http://azat.co</a>‘) {</p>
 <p>…</p>
 <p>}</p>
 <p>对了，这个语法和 Ruby 很像！</p>
@@ -522,14 +522,14 @@
 <p>JavaScript</p>
 <p>1</p>
 <p>2</p>
-<p>var name = ‘Your name is ‘ + first + ‘ ‘ + last + ‘.’</p>
-<p>var url = ‘<a href="http://localhost:3000/api/messages/&#39;" target="_blank" rel="noopener">http://localhost:3000/api/messages/&#39;</a> + id</p>
+<p>var name &#x3D; ‘Your name is ‘ + first + ‘ ‘ + last + ‘.’</p>
+<p>var url &#x3D; ‘<a target="_blank" rel="noopener" href="http://localhost:3000/api/messages/">http://localhost:3000/api/messages/</a>‘ + id</p>
 <p>幸运的是在 ES6 中我们有了新语法，在反引号包裹的字符串中，使用${NAME}语法来表示模板字符:</p>
 <p>JavaScript</p>
 <p>1</p>
 <p>2</p>
-<p>var name = <code>Your name is ${first} ${last}</code></p>
-<p>var url = <code>http://localhost:3000/api/messages/${id}</code></p>
+<p>var name &#x3D; <code>Your name is $&#123;first&#125; $&#123;last&#125;</code></p>
+<p>var url &#x3D; <code>http://localhost:3000/api/messages/$&#123;id&#125;</code></p>
 <h3 id="3-ES6-中的多行字符串"><a href="#3-ES6-中的多行字符串" class="headerlink" title="3. ES6 中的多行字符串"></a>3. ES6 中的多行字符串</h3><p>另一个好吃的语法糖就是多行字符串，以前我们的实现是像这样的：</p>
 <p>JavaScript</p>
 <p>1</p>
@@ -540,7 +540,7 @@
 <p>6</p>
 <p>7</p>
 <p>8</p>
-<p>var roadPoem = ‘Then took the other, as just as fair,nt’</p>
+<p>var roadPoem &#x3D; ‘Then took the other, as just as fair,nt’</p>
 <ul>
 <li><p>‘And having perhaps the better claimnt’</p>
 </li>
@@ -551,7 +551,7 @@
 <li><p>‘Had worn them really about the same,nt’</p>
 </li>
 </ul>
-<p>var fourAgreements = ‘You have the right to be you.n</p>
+<p>var fourAgreements &#x3D; ‘You have the right to be you.n</p>
 <p>You can only be you when you do your best.’</p>
 <p>但是在 ES6 中，只要充分利用反引号。</p>
 <p>JavaScript</p>
@@ -563,21 +563,21 @@
 <p>6</p>
 <p>7</p>
 <p>8</p>
-<p>var roadPoem = `Then took the other, as just as fair,</p>
+<p>var roadPoem &#x3D; &#96;Then took the other, as just as fair,</p>
 <p>And having perhaps the better claim</p>
 <p>Because it was grassy and wanted wear,</p>
 <p>Though as for that the passing there</p>
-<p>Had worn them really about the same,`</p>
-<p>var fourAgreements = `You have the right to be you.</p>
-<p>You can only be you when you do your best.`</p>
+<p>Had worn them really about the same,&#96;</p>
+<p>var fourAgreements &#x3D; &#96;You have the right to be you.</p>
+<p>You can only be you when you do your best.&#96;</p>
 <h3 id="4-ES6-中的拆包表达式"><a href="#4-ES6-中的拆包表达式" class="headerlink" title="4. ES6 中的拆包表达式"></a>4. ES6 中的拆包表达式</h3><p>拆包可能是一个比较难理解的概念，因为这里面真的是有魔法发生。假如说你有一个简单的赋值表达式，把对象中的<code>house</code>的<code>mouse</code>赋值为<code>house</code>和<code>mouse</code>的变量。</p>
 <p>JavaScript</p>
 <p>1</p>
 <p>2</p>
 <p>3</p>
-<p>var data = $(‘body’).data(), // 假设 data 中有 mouse 和 house 的值</p>
-<p>house = data.house,</p>
-<p>mouse = data.mouse</p>
+<p>var data &#x3D; $(‘body’).data(), &#x2F;&#x2F; 假设 data 中有 mouse 和 house 的值</p>
+<p>house &#x3D; data.house,</p>
+<p>mouse &#x3D; data.mouse</p>
 <p>另一个拆包的实例（Node.js)：</p>
 <p>JavaScript</p>
 <p>1</p>
@@ -585,10 +585,10 @@
 <p>3</p>
 <p>4</p>
 <p>5</p>
-<p>var jsonMiddleware = require(‘body-parser’).json</p>
-<p>var body = req.body, // body 中有用户名和密码值</p>
-<p>username = body.username,</p>
-<p>password = body.password</p>
+<p>var jsonMiddleware &#x3D; require(‘body-parser’).json</p>
+<p>var body &#x3D; req.body, &#x2F;&#x2F; body 中有用户名和密码值</p>
+<p>username &#x3D; body.username,</p>
+<p>password &#x3D; body.password</p>
 <p>但是在 ES6 中我们可以用以下语句替换：</p>
 <p>JavaScript</p>
 <p>1</p>
@@ -596,15 +596,15 @@
 <p>3</p>
 <p>4</p>
 <p>5</p>
-<p>var { house, mouse} = $(‘body’).data() // 我们会拿到 house 和 mouse 的值的</p>
-<p>var {jsonMiddleware} = require(‘body-parser’)</p>
-<p>var {username, password} = req.body</p>
+<p>var { house, mouse} &#x3D; $(‘body’).data() &#x2F;&#x2F; 我们会拿到 house 和 mouse 的值的</p>
+<p>var {jsonMiddleware} &#x3D; require(‘body-parser’)</p>
+<p>var {username, password} &#x3D; req.body</p>
 <p>甚至在数组中也能用，简直疯狂！</p>
 <p>JavaScript</p>
 <p>1</p>
 <p>2</p>
-<p>var [col1, col2]  = $(‘.column’),</p>
-<p>[line1, line2, line3, , line5] = file.split(‘n’)</p>
+<p>var [col1, col2]  &#x3D; $(‘.column’),</p>
+<p>[line1, line2, line3, , line5] &#x3D; file.split(‘n’)</p>
 <p>习惯拆包语法可能需要一些时间，但是这绝对是糖衣炮弹。</p>
 <h3 id="5-ES6-中改进的对象表达式"><a href="#5-ES6-中改进的对象表达式" class="headerlink" title="5. ES6 中改进的对象表达式"></a>5. ES6 中改进的对象表达式</h3><p>你能用对象表达式所做的是超乎想象的！类定义的方法从 ES5 中一个美化版的 JSON，进化到 ES6 中更像类的构造。</p>
 <p>这是一个 ES5 中典型的对象表达式，定义了一些方法和属性。</p>
@@ -622,19 +622,19 @@
 <p>11</p>
 <p>12</p>
 <p>13</p>
-<p>var serviceBase = {port: 3000, url: ‘azat.co’},</p>
-<p>getAccounts = function(){return [1,2,3]}</p>
-<p>var accountServiceES5 = {</p>
+<p>var serviceBase &#x3D; {port: 3000, url: ‘azat.co’},</p>
+<p>getAccounts &#x3D; function(){return [1,2,3]}</p>
+<p>var accountServiceES5 &#x3D; {</p>
 <p>port: serviceBase.port,</p>
 <p>url: serviceBase.url,</p>
 <p>getAccounts: getAccounts,</p>
 <p>toString: function() {</p>
 <p>return JSON.stringify(this.valueOf())</p>
 <p>},</p>
-<p>getUrl: function() {return ‘http://‘ + this.url + ‘:’ + this.port},</p>
+<p>getUrl: function() {return ‘http:&#x2F;&#x2F;‘ + this.url + ‘:’ + this.port},</p>
 <p>valueOf_1_2_3: getAccounts()</p>
 <p>}</p>
-<p>如果你想做的好看一点，我们可以用<code>Object.create</code>方法来让  <code>serviceBase</code>成为  <code>accountServiceES5</code>的  <code>prototype</code>从而实现继承。</p>
+<p>如果你想做的好看一点，我们可以用<code>Object.create</code>方法来让  <code>serviceBase</code>成为  <code>accountServiceES5</code>的  <code>prototype</code>从而实现继承。</p>
 <p>JavaScript</p>
 <p>1</p>
 <p>2</p>
@@ -645,16 +645,16 @@
 <p>7</p>
 <p>8</p>
 <p>9</p>
-<p>var accountServiceES5ObjectCreate = Object.create(serviceBase)</p>
-<p>var accountServiceES5ObjectCreate = {</p>
+<p>var accountServiceES5ObjectCreate &#x3D; Object.create(serviceBase)</p>
+<p>var accountServiceES5ObjectCreate &#x3D; {</p>
 <p>getAccounts: getAccounts,</p>
 <p>toString: function() {</p>
 <p>return JSON.stringify(this.valueOf())</p>
 <p>},</p>
-<p>getUrl: function() {return ‘http://‘ + this.url + ‘:’ + this.port},</p>
+<p>getUrl: function() {return ‘http:&#x2F;&#x2F;‘ + this.url + ‘:’ + this.port},</p>
 <p>valueOf_1_2_3: getAccounts()</p>
 <p>}</p>
-<p>我知道  <code>accountServiceES5ObjectCreate</code>和  <code>accountServiceES5</code>是<strong>不完全相同</strong>的。因为一个对象  <code>accountServiceES5</code>会有如下所示的  <code>__proto__</code>属性：<br><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/6941baebjw1f61bok7iv5j20cw07v0u4.jpg" alt=""></p>
+<p>我知道  <code>accountServiceES5ObjectCreate</code>和  <code>accountServiceES5</code>是<strong>不完全相同</strong>的。因为一个对象  <code>accountServiceES5</code>会有如下所示的  <code>__proto__</code>属性：<br><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/6941baebjw1f61bok7iv5j20cw07v0u4.jpg"></p>
 <p>但对于这个示例，我们就把这两者考虑为相同的。所以在 ES6 的对象表达式中，我们把<code>getAccounts: getAccounts</code>简化为<code>getAccounts,</code>，并且我们还可以用<code>__proto__</code>直接设置<code>prototype</code>，这样听起来合理的多。（不过并不是用<code>proto</code>）</p>
 <p>JavaScript</p>
 <p>1</p>
@@ -662,12 +662,12 @@
 <p>3</p>
 <p>4</p>
 <p>5</p>
-<p>var serviceBase = {port: 3000, url: ‘azat.co’},</p>
-<p>getAccounts = function(){return [1,2,3]}</p>
-<p>var accountService = {</p>
+<p>var serviceBase &#x3D; {port: 3000, url: ‘azat.co’},</p>
+<p>getAccounts &#x3D; function(){return [1,2,3]}</p>
+<p>var accountService &#x3D; {</p>
 <p>__proto__: serviceBase,</p>
 <p>getAccounts,</p>
-<p>还有，我们可以调用  <code>super</code>和动态索引(<code>valueOf_1_2_3</code>)</p>
+<p>还有，我们可以调用  <code>super</code>和动态索引(<code>valueOf_1_2_3</code>)</p>
 <p>JavaScript</p>
 <p>1</p>
 <p>2</p>
@@ -677,15 +677,15 @@
 <p>6</p>
 <p>7</p>
 <p>8</p>
-<p>// 续上段代码</p>
+<p>&#x2F;&#x2F; 续上段代码</p>
 <p>toString() {</p>
 <p>return JSON.stringify((super.valueOf()))</p>
 <p>},</p>
-<p>getUrl() {return ‘http://‘ + this.url + ‘:’ + this.port},</p>
-<p>[ ‘valueOf<em>‘ + getAccounts().join(‘</em>‘) ]: getAccounts()</p>
+<p>getUrl() {return ‘http:&#x2F;&#x2F;‘ + this.url + ‘:’ + this.port},</p>
+<p>[ ‘valueOf*’ + getAccounts().join(‘*’) ]: getAccounts()</p>
 <p>};</p>
 <p>console.log(accountService)</p>
-<p><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/6941baebjw1f61bokh01nj20ad0buta1.jpg" alt=""></p>
+<p><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/6941baebjw1f61bokh01nj20ad0buta1.jpg"></p>
 <p>这是对老旧的对象表达式一个很大的改进！</p>
 <h3 id="6-ES6-中的箭头函数"><a href="#6-ES6-中的箭头函数" class="headerlink" title="6. ES6 中的箭头函数"></a>6. ES6 中的箭头函数</h3><p>这或许是我最想要的一个特性，我爱 CoffeeScript 就是因为他胖胖的箭头(<code>=&amp;&gt;</code>相对于<code>-&amp;&gt;</code>)，现在 ES6 中也有了。这些箭头最神奇的地方在于他会让你写正确的代码。比如，<code>this</code>在上下文和函数中的值应当是相同的，它不会变化，通常变化的原因都是因为你创建了闭包。</p>
 <p>使用箭头函数可以让我们不再用<code>that = this</code>或者<code>self = this</code>或者<code>_this = this</code>或者<code>.bind(this)</code>这样的代码，比如，这些代码在 ES5 中就特别丑。</p>
@@ -694,7 +694,7 @@
 <p>2</p>
 <p>3</p>
 <p>4</p>
-<p>var _this = this</p>
+<p>var _this &#x3D; this</p>
 <p>$(‘.btn’).click(function(event){</p>
 <p>_this.sendData()</p>
 <p>})</p>
@@ -703,10 +703,10 @@
 <p>1</p>
 <p>2</p>
 <p>3</p>
-<p>$(‘.btn’).click((event) =&gt;{</p>
+<p>$(‘.btn’).click((event) &#x3D;&gt;{</p>
 <p>this.sendData()</p>
 <p>})</p>
-<p>可惜的是，ES6 委员会觉得再加上瘦箭头(<code>-&amp;&gt;</code>)的话就对我们太好了，所以他们留下了一个老旧的<code>function</code>。（<a href="https://www.udemy.com/coffeescript/?couponCode=a" target="_blank" rel="noopener">瘦箭头在 CoffeeScript 中的作用</a>就像 ES5/6 中一样）</p>
+<p>可惜的是，ES6 委员会觉得再加上瘦箭头(<code>-&amp;&gt;</code>)的话就对我们太好了，所以他们留下了一个老旧的<code>function</code>。（<a target="_blank" rel="noopener" href="https://www.udemy.com/coffeescript/?couponCode=a">瘦箭头在 CoffeeScript 中的作用</a>就像 ES5&#x2F;6 中一样）</p>
 <p>JavaScript</p>
 <p>1</p>
 <p>2</p>
@@ -718,9 +718,9 @@
 <p>8</p>
 <p>9</p>
 <p>10</p>
-<p>var logUpperCase = function() {</p>
-<p>var _this = this</p>
-<p>this.string = this.string.toUpperCase()</p>
+<p>var logUpperCase &#x3D; function() {</p>
+<p>var _this &#x3D; this</p>
+<p>this.string &#x3D; this.string.toUpperCase()</p>
 <p>return function () {</p>
 <p>return console.log(_this.string)</p>
 <p>}</p>
@@ -734,36 +734,36 @@
 <p>4</p>
 <p>5</p>
 <p>6</p>
-<p>var logUpperCase = function() {</p>
-<p>this.string = this.string.toUpperCase()</p>
-<p>return () =&gt; console.log(this.string)</p>
+<p>var logUpperCase &#x3D; function() {</p>
+<p>this.string &#x3D; this.string.toUpperCase()</p>
+<p>return () &#x3D;&gt; console.log(this.string)</p>
 <p>}</p>
 <p>logUpperCase.call({ string: ‘es6 rocks’ })()</p>
-<p>注意，在 ES6 中你可以合理的把箭头函数和旧式  <code>function</code>函数混用。当箭头函数所在语句只有一行时，它就会变成一个表达式，它会直接返回这个语句的值。但是如果你有多行语句，你就要明确的使用<code>return</code>。</p>
+<p>注意，在 ES6 中你可以合理的把箭头函数和旧式  <code>function</code>函数混用。当箭头函数所在语句只有一行时，它就会变成一个表达式，它会直接返回这个语句的值。但是如果你有多行语句，你就要明确的使用<code>return</code>。</p>
 <p>这是 ES5 中利用<code>messages</code>数组创建一个数组的代码：</p>
 <p>JavaScript</p>
 <p>1</p>
 <p>2</p>
 <p>3</p>
 <p>4</p>
-<p>var ids = [‘5632953c4e345e145fdf2df8’,’563295464e345e145fdf2df9’]</p>
-<p>var messages = ids.map(function (value) {</p>
-<p>return ‘ID is ‘ + value // 显式返回</p>
+<p>var ids &#x3D; [‘5632953c4e345e145fdf2df8’,’563295464e345e145fdf2df9’]</p>
+<p>var messages &#x3D; ids.map(function (value) {</p>
+<p>return ‘ID is ‘ + value &#x2F;&#x2F; 显式返回</p>
 <p>});</p>
 <p>在 ES6 中会变成这样：</p>
 <p>JavaScript</p>
 <p>1</p>
 <p>2</p>
-<p>var ids = [‘5632953c4e345e145fdf2df8’,’563295464e345e145fdf2df9’]</p>
-<p>var messages = ids.map(value =&gt; <code>ID is ${value}</code>) // 隐式返回</p>
+<p>var ids &#x3D; [‘5632953c4e345e145fdf2df8’,’563295464e345e145fdf2df9’]</p>
+<p>var messages &#x3D; ids.map(value &#x3D;&gt; <code>ID is $&#123;value&#125;</code>) &#x2F;&#x2F; 隐式返回</p>
 <p>注意到我用了字符串模版吗，又一个从 CoffeeScript 中来的功能，我爱它们！</p>
 <p>在只有一个参数的函数签名中，括号是可有可无的，但是如果多于一个参数时就要加上。</p>
 <p>JavaScript</p>
 <p>1</p>
 <p>2</p>
-<p>var ids = [‘5632953c4e345e145fdf2df8’,’563295464e345e145fdf2df9’]</p>
-<p>var messages = ids.map((value, index, list) =&gt; <code>ID of ${index} element is ${value}</code>) // 隐式返回</p>
-<h3 id="7-ES6-中的-Promise"><a href="#7-ES6-中的-Promise" class="headerlink" title="7. ES6 中的 Promise"></a>7. ES6 中的 Promise</h3><p>Promise 是一个有争议的话题。现在有很多 Promise 实现，语法也大致相同，比如<code>q</code>/ <code>bluebird</code>/ <code>deferred.js</code>/ <code>vow</code>/ <code>avow</code>/ <code>jquery deferred</code>等等。其他人说我们并不需要 Promise，异步，回调和<code>generator</code>之类的就很好。庆幸的是，现在在 ES6 中终于有一个标准的 Promise 实现。</p>
+<p>var ids &#x3D; [‘5632953c4e345e145fdf2df8’,’563295464e345e145fdf2df9’]</p>
+<p>var messages &#x3D; ids.map((value, index, list) &#x3D;&gt; <code>ID of $&#123;index&#125; element is $&#123;value&#125;</code>) &#x2F;&#x2F; 隐式返回</p>
+<h3 id="7-ES6-中的-Promise"><a href="#7-ES6-中的-Promise" class="headerlink" title="7. ES6 中的 Promise"></a>7. ES6 中的 Promise</h3><p>Promise 是一个有争议的话题。现在有很多 Promise 实现，语法也大致相同，比如<code>q</code>&#x2F; <code>bluebird</code>&#x2F; <code>deferred.js</code>&#x2F; <code>vow</code>&#x2F; <code>avow</code>&#x2F; <code>jquery deferred</code>等等。其他人说我们并不需要 Promise，异步，回调和<code>generator</code>之类的就很好。庆幸的是，现在在 ES6 中终于有一个标准的 Promise 实现。</p>
 <p>我们来看一个相当微不足道的延迟异步执行，用<code>setTimeout</code>实现</p>
 <p>JavaScript</p>
 <p>1</p>
@@ -779,7 +779,7 @@
 <p>3</p>
 <p>4</p>
 <p>5</p>
-<p>var wait1000 =  new Promise(function(resolve, reject) {</p>
+<p>var wait1000 &#x3D;  new Promise(function(resolve, reject) {</p>
 <p>setTimeout(resolve, 1000)</p>
 <p>}).then(function() {</p>
 <p>console.log(‘Yay!’)</p>
@@ -791,9 +791,9 @@
 <p>3</p>
 <p>4</p>
 <p>5</p>
-<p>var wait1000 =  new Promise((resolve, reject)=&gt; {</p>
+<p>var wait1000 &#x3D;  new Promise((resolve, reject)&#x3D;&gt; {</p>
 <p>setTimeout(resolve, 1000)</p>
-<p>}).then(()=&gt; {</p>
+<p>}).then(()&#x3D;&gt; {</p>
 <p>console.log(‘Yay!’)</p>
 <p>})</p>
 <p>到现在为止，我们只是单纯增加了代码的行数，还明显没有带来任何好处，你说的对。但是如果我们有更多复杂的逻辑内嵌在<code>setTimeout()</code>中的回调时好处就来了：</p>
@@ -822,7 +822,7 @@
 <p>8</p>
 <p>9</p>
 <p>10</p>
-<p>var wait1000 =  ()=&gt; new Promise((resolve, reject)=&gt; {setTimeout(resolve, 1000)})</p>
+<p>var wait1000 &#x3D;  ()&#x3D;&gt; new Promise((resolve, reject)&#x3D;&gt; {setTimeout(resolve, 1000)})</p>
 <p>wait1000()</p>
 <p>.then(function() {</p>
 <p>console.log(‘Yay!’)</p>
@@ -832,8 +832,8 @@
 <p>console.log(‘Wheeyee!’)</p>
 <p>});</p>
 <p>还是无法相信 Promise 比普通回调要好？我也不信。我想一旦知道了回调这个方法它就会在你脑中萦绕，额外的复杂的 Promise 也没有必要存在了。</p>
-<p>不论怎么说，ES6 中的 Promise 是为会欣赏的人准备的，Promise 有一个不错的<code>失败-捕捉</code>回调机制，看看这篇文章吧，里面有更多关于 Promise 的信息。<a href="https://www.udemy.com/coffeescript" target="_blank" rel="noopener">ES6 Promise 介绍</a></p>
-<h3 id="8-块级作用域的let和const"><a href="#8-块级作用域的let和const" class="headerlink" title="8. 块级作用域的let和const"></a>8. 块级作用域的<code>let</code>和<code>const</code></h3><p>你可能早就听过对 ES6 中的<code>let</code>那些奇怪的传说，我记得我第一次到伦敦时为那些 TO LET 牌子感到非常困惑。但是 ES6 中的<code>let</code>和出租无关，这不算是语法糖，它很复杂。<code>let</code>是一个更新的<code>var</code>，可以让你把变量作用域限制在当前块里。我们用<code>{}</code>来定义块，但是在 ES5 中这些花括号起不到任何作用。</p>
+<p>不论怎么说，ES6 中的 Promise 是为会欣赏的人准备的，Promise 有一个不错的<code>失败-捕捉</code>回调机制，看看这篇文章吧，里面有更多关于 Promise 的信息。<a target="_blank" rel="noopener" href="https://www.udemy.com/coffeescript">ES6 Promise 介绍</a></p>
+<h3 id="8-块级作用域的let和const"><a href="#8-块级作用域的let和const" class="headerlink" title="8. 块级作用域的let和const"></a>8. 块级作用域的<code>let</code>和<code>const</code></h3><p>你可能早就听过对 ES6 中的<code>let</code>那些奇怪的传说，我记得我第一次到伦敦时为那些 TO LET 牌子感到非常困惑。但是 ES6 中的<code>let</code>和出租无关，这不算是语法糖，它很复杂。<code>let</code>是一个更新的<code>var</code>，可以让你把变量作用域限制在当前块里。我们用<code>&#123;&#125;</code>来定义块，但是在 ES5 中这些花括号起不到任何作用。</p>
 <p>JavaScript</p>
 <p>1</p>
 <p>2</p>
@@ -851,14 +851,14 @@
 <p>14</p>
 <p>15</p>
 <p>function calculateTotalAmount (vip) {</p>
-<p>var amount = 0</p>
+<p>var amount &#x3D; 0</p>
 <p>if (vip) {</p>
-<p>var amount = 1</p>
+<p>var amount &#x3D; 1</p>
 <p>}</p>
-<p>{ // 让块来的更疯狂</p>
-<p>var amount = 100</p>
+<p>{ &#x2F;&#x2F; 让块来的更疯狂</p>
+<p>var amount &#x3D; 100</p>
 <p>{</p>
-<p>var amount = 1000</p>
+<p>var amount &#x3D; 1000</p>
 <p>}</p>
 <p>}</p>
 <p>return amount</p>
@@ -882,14 +882,14 @@
 <p>14</p>
 <p>15</p>
 <p>function calculateTotalAmount (vip) {</p>
-<p>var amount = 0 // 或许应该用 let, 但你可以混用</p>
+<p>var amount &#x3D; 0 &#x2F;&#x2F; 或许应该用 let, 但你可以混用</p>
 <p>if (vip) {</p>
-<p>let amount = 1 // 第一个数量为 0</p>
+<p>let amount &#x3D; 1 &#x2F;&#x2F; 第一个数量为 0</p>
 <p>}</p>
-<p>{ // 更多的块</p>
-<p>let amount = 100 // 第一个数量为 0</p>
+<p>{ &#x2F;&#x2F; 更多的块</p>
+<p>let amount &#x3D; 100 &#x2F;&#x2F; 第一个数量为 0</p>
 <p>{</p>
-<p>let amount = 1000 // 第一个数量为 0</p>
+<p>let amount &#x3D; 1000 &#x2F;&#x2F; 第一个数量为 0</p>
 <p>}</p>
 <p>}</p>
 <p>return amount</p>
@@ -914,14 +914,14 @@
 <p>14</p>
 <p>15</p>
 <p>function calculateTotalAmount (vip) {</p>
-<p>const amount = 0</p>
+<p>const amount &#x3D; 0</p>
 <p>if (vip) {</p>
-<p>const amount = 1</p>
+<p>const amount &#x3D; 1</p>
 <p>}</p>
-<p>{ // 更多的块</p>
-<p>const amount = 100</p>
+<p>{ &#x2F;&#x2F; 更多的块</p>
+<p>const amount &#x3D; 100</p>
 <p>{</p>
-<p>const amount = 1000</p>
+<p>const amount &#x3D; 1000</p>
 <p>}</p>
 <p>}</p>
 <p>return amount</p>
@@ -929,7 +929,7 @@
 <p>console.log(calculateTotalAmount(true))</p>
 <p>依我愚见，<code>let</code>和<code>const</code>让这门语言变得更加复杂，没有这些的时候我们只有一条路可以走，但是现在可以要考虑更多的情景。;-(</p>
 <h3 id="9-ES6-中的类"><a href="#9-ES6-中的类" class="headerlink" title="9. ES6 中的类"></a>9. ES6 中的类</h3><p>如果你喜欢面向对象编程，那么你会特别喜欢这个特性。他让你编写和继承类时就跟在 Facebook 上发一个评论这么简单。</p>
-<p>在 ES5 中，因为没有<code>class</code>关键字（但它是毫无作用的保留字），类的创建和使用是让人十分痛苦的事情。更惨的是，很多伪类的实现像<a href="http://javascript.info/tutorial/pseudo-classical-pattern" target="_blank" rel="noopener">pseude-classical</a>, <a href="http://www.crockford.com/javascript/inheritance.html" target="_blank" rel="noopener">classical</a>, <a href="http://javascript.info/tutorial/factory-constructor-pattern" target="_blank" rel="noopener">functional</a>让人越来越摸不着头脑，为 JavaScript 的信仰战争火上浇油。</p>
+<p>在 ES5 中，因为没有<code>class</code>关键字（但它是毫无作用的保留字），类的创建和使用是让人十分痛苦的事情。更惨的是，很多伪类的实现像<a target="_blank" rel="noopener" href="http://javascript.info/tutorial/pseudo-classical-pattern">pseude-classical</a>, <a target="_blank" rel="noopener" href="http://www.crockford.com/javascript/inheritance.html">classical</a>, <a target="_blank" rel="noopener" href="http://javascript.info/tutorial/factory-constructor-pattern">functional</a>让人越来越摸不着头脑，为 JavaScript 的信仰战争火上浇油。</p>
 <p>我不会给你展示在 ES5 中怎么去编写一个类（是啦是啦从对象可以衍生出来其他的类和对象），因为有太多方法去完成。我们直接看 ES6 的示例，告诉你 ES6 的类会用<code>prototype</code>来实现而不是<code>function</code>。现在有一个<code>baseModel</code>类，其中我们可以定义构造函数和<code>getName()</code>方法。</p>
 <p>JavaScript</p>
 <p>1</p>
@@ -945,14 +945,14 @@
 <p>11</p>
 <p>12</p>
 <p>class baseModel {</p>
-<p>constructor(options = {}, data = []) { // class constructor</p>
-<p>this.name = ‘Base’</p>
-<p>this.url = ‘<a href="http://azat.co/api&#39;" target="_blank" rel="noopener">http://azat.co/api&#39;</a></p>
-<p>this.data = data</p>
-<p>this.options = options</p>
+<p>constructor(options &#x3D; {}, data &#x3D; []) { &#x2F;&#x2F; class constructor</p>
+<p>this.name &#x3D; ‘Base’</p>
+<p>this.url &#x3D; ‘<a target="_blank" rel="noopener" href="http://azat.co/api">http://azat.co/api</a>‘</p>
+<p>this.data &#x3D; data</p>
+<p>this.options &#x3D; options</p>
 <p>}</p>
-<p>getName() { // class method</p>
-<p>console.log(<code>Class name: ${this.name}</code>)</p>
+<p>getName() { &#x2F;&#x2F; class method</p>
+<p>console.log(<code>Class name: $&#123;this.name&#125;</code>)</p>
 <p>}</p>
 <p>}</p>
 <p>注意到我给<code>options</code>和<code>data</code>用了默认参数，而且方法名再也不用加上<code>function</code>或者<code>:</code>了。还有一个很大的区别，你不能像构造函数里面一样向<code>this.Name</code>指派值。怎么说呢，和<code>函数</code>有相同缩进的代码里，你不能向<code>name</code>赋值。如果有这个需要的话，在构造函数里面完成。</p>
@@ -968,9 +968,9 @@
 <p>2</p>
 <p>3</p>
 <p>4</p>
-<p>super({private: true}, [‘32113123123’, ‘524214691’]) //call the parent method with super</p>
-<p>this.name = ‘Account Model’</p>
-<p>this.url +=’/accounts/‘</p>
+<p>super({private: true}, [‘32113123123’, ‘524214691’]) &#x2F;&#x2F;call the parent method with super</p>
+<p>this.name &#x3D; ‘Account Model’</p>
+<p>this.url +&#x3D;’&#x2F;accounts&#x2F;‘</p>
 <p>}</p>
 <p>想要高级一点的话，你可以像这样弄一个<code>getter</code>方法，这样<code>accountsData</code>就会变成一个属性。</p>
 <p>JavaScript</p>
@@ -979,8 +979,8 @@
 <p>3</p>
 <p>4</p>
 <p>5</p>
-<p>get accountsData() { // 返回计算后的数据</p>
-<p>// … make XHR</p>
+<p>get accountsData() { &#x2F;&#x2F; 返回计算后的数据</p>
+<p>&#x2F;&#x2F; … make XHR</p>
 <p>return this.data</p>
 <p>}</p>
 <p>}</p>
@@ -989,7 +989,7 @@
 <p>1</p>
 <p>2</p>
 <p>3</p>
-<p>let accounts = new AccountModel(5)</p>
+<p>let accounts &#x3D; new AccountModel(5)</p>
 <p>accounts.getName()</p>
 <p>console.log(‘Data is %s’, accounts.accountsData)</p>
 <p>如果好奇输出结果的话：</p>
@@ -999,7 +999,7 @@
 <p>Class name: Account Model</p>
 <p>Data is 32113123123,524214691</p>
 <h3 id="10-ES6-中的模块化"><a href="#10-ES6-中的模块化" class="headerlink" title="10. ES6 中的模块化"></a>10. ES6 中的模块化</h3><p>你可能知道，ES6 之前 JavaScript 并没有对模块化有过原生的支持，人们想出来<code>AMD</code>，<code>RequireJS</code>，<code>CommenJS</code>等等，现在终于有<code>import</code>和<code>export</code>运算符来实现了。</p>
-<p>ES5 中你会用<code>script</code>标签和<code>IIFE(立即执行函数)</code>，或者是其他的像<code>AMD</code>之类的库，但是 ES6 中你可以用<code>export</code>来暴露你的类。我是喜欢 Node.js 的人，所以我用和 Node.js 语法一样的<code>CommonJS</code>，然后用<a href="http://browserify.org/" target="_blank" rel="noopener">Browserfy</a>来浏览器化。现在我们有一个<code>port</code>变量和<code>getAccounts</code>方法，在 ES5 中：</p>
+<p>ES5 中你会用<code>script</code>标签和<code>IIFE(立即执行函数)</code>，或者是其他的像<code>AMD</code>之类的库，但是 ES6 中你可以用<code>export</code>来暴露你的类。我是喜欢 Node.js 的人，所以我用和 Node.js 语法一样的<code>CommonJS</code>，然后用<a target="_blank" rel="noopener" href="http://browserify.org/">Browserfy</a>来浏览器化。现在我们有一个<code>port</code>变量和<code>getAccounts</code>方法，在 ES5 中：</p>
 <p>JavaScript</p>
 <p>1</p>
 <p>2</p>
@@ -1007,7 +1007,7 @@
 <p>4</p>
 <p>5</p>
 <p>6</p>
-<p>module.exports = {</p>
+<p>module.exports &#x3D; {</p>
 <p>port: 3000,</p>
 <p>getAccounts: function() {</p>
 <p>…</p>
@@ -1017,35 +1017,35 @@
 <p>JavaScript</p>
 <p>1</p>
 <p>2</p>
-<p>var service = require(‘module.js’)</p>
-<p>console.log(service.port) // 3000</p>
+<p>var service &#x3D; require(‘module.js’)</p>
+<p>console.log(service.port) &#x2F;&#x2F; 3000</p>
 <p>但是在 ES6 中，我们用<code>export</code>和<code>import</code>。比如这是 ES6 中的<code>module.js</code>文件：</p>
 <p>JavaScript</p>
 <p>1</p>
 <p>2</p>
 <p>3</p>
 <p>4</p>
-<p>export var port = 3000</p>
+<p>export var port &#x3D; 3000</p>
 <p>export function getAccounts(url) {</p>
 <p>…</p>
 <p>}</p>
-<p>在需要引入的<code>main.js</code>文件中，可以用<code>import {名称} from &#39;模块&#39;</code>语法：</p>
+<p>在需要引入的<code>main.js</code>文件中，可以用<code>import &#123;名称&#125; from &#39;模块&#39;</code>语法：</p>
 <p>JavaScript</p>
 <p>1</p>
 <p>2</p>
 <p>import {port, getAccounts} from ‘module’</p>
-<p>console.log(port) // 3000</p>
+<p>console.log(port) &#x2F;&#x2F; 3000</p>
 <p>或者就直接在<code>main.js</code>中引入所有的变量：</p>
 <p>JavaScript</p>
 <p>1</p>
 <p>2</p>
 <p>import * as service from ‘module’</p>
-<p>console.log(service.port) // 3000</p>
+<p>console.log(service.port) &#x2F;&#x2F; 3000</p>
 <p>个人来说，我觉得这样的模块化有些搞不懂。确实，这样会更传神一些 。但是 Node.js 中的模块不会马上就改过来，浏览器和服务器的代码最好是用同样的标准，所以目前我还是会坚持<code>CommonJS/Node.js</code>的方式。</p>
-<p>目前来说浏览器对 ES6 的支持还遥遥无期（本文写作时），所以你需要一些像<a href="http://jspm.io/" target="_blank" rel="noopener">jspm</a>这样的工具来用 ES6 的模块。</p>
-<p>想要了解更多 ES6 中的模块化和例子的话，来看<a href="http://exploringjs.com/es6/ch_modules.html" target="_blank" rel="noopener">这篇文章</a>，不管怎么说，写现代化的 JavaScript 吧！</p>
-<h3 id="怎么样可以在今天就用上-ES6（Babel）"><a href="#怎么样可以在今天就用上-ES6（Babel）" class="headerlink" title="怎么样可以在今天就用上 ES6（Babel）"></a>怎么样可以在今天就用上 ES6（Babel）</h3><p>ES6 标准已经敲定，但还未被所有浏览器支持（<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla" target="_blank" rel="noopener">Firefox 的 ES6 功能一览</a>），如果想马上就用上 ES6，需要一个像<a href="https://babeljs.io/" target="_blank" rel="noopener">Babel</a>这样的编译器。你可以把他当独立工具用，也可以将他集成到构建系统里，Babel 对<code>Gulp</code>，<code>Grunt</code>和<code>Webpack</code>都有对应的<a href="http://babeljs.io/docs/setup" target="_blank" rel="noopener">插件</a>。</p>
-<p><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/6941baebjw1f61bokq3xbj20yb0pdq6a.jpg" alt=""></p>
+<p>目前来说浏览器对 ES6 的支持还遥遥无期（本文写作时），所以你需要一些像<a target="_blank" rel="noopener" href="http://jspm.io/">jspm</a>这样的工具来用 ES6 的模块。</p>
+<p>想要了解更多 ES6 中的模块化和例子的话，来看<a target="_blank" rel="noopener" href="http://exploringjs.com/es6/ch_modules.html">这篇文章</a>，不管怎么说，写现代化的 JavaScript 吧！</p>
+<h3 id="怎么样可以在今天就用上-ES6（Babel）"><a href="#怎么样可以在今天就用上-ES6（Babel）" class="headerlink" title="怎么样可以在今天就用上 ES6（Babel）"></a>怎么样可以在今天就用上 ES6（Babel）</h3><p>ES6 标准已经敲定，但还未被所有浏览器支持（<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla">Firefox 的 ES6 功能一览</a>），如果想马上就用上 ES6，需要一个像<a target="_blank" rel="noopener" href="https://babeljs.io/">Babel</a>这样的编译器。你可以把他当独立工具用，也可以将他集成到构建系统里，Babel 对<code>Gulp</code>，<code>Grunt</code>和<code>Webpack</code>都有对应的<a target="_blank" rel="noopener" href="http://babeljs.io/docs/setup">插件</a>。</p>
+<p><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/6941baebjw1f61bokq3xbj20yb0pdq6a.jpg"></p>
 <p>安装 Gulp 插件示例：</p>
 <p>JavaScript</p>
 <p>1</p>
@@ -1060,10 +1060,10 @@
 <p>6</p>
 <p>7</p>
 <p>8</p>
-<p>var gulp = require(‘gulp’),</p>
-<p>babel = require(‘gulp-babel’)</p>
+<p>var gulp &#x3D; require(‘gulp’),</p>
+<p>babel &#x3D; require(‘gulp-babel’)</p>
 <p>gulp.task(‘build’, function () {</p>
-<p>return gulp.src(‘src/app.js’)</p>
+<p>return gulp.src(‘src&#x2F;app.js’)</p>
 <p>.pipe(babel())</p>
 <p>.pipe(gulp.dest(‘build’))</p>
 <p>})</p>
@@ -1077,7 +1077,7 @@
 <p>require(‘babel-core’).transform(es5Code, options)</p>
 <h3 id="ES6-的一些总结"><a href="#ES6-的一些总结" class="headerlink" title="ES6 的一些总结"></a>ES6 的一些总结</h3><p>ES6 中还有很多你可能都用不上（至少现在用不上）的可圈可点的特性，以下无特定顺序：</p>
 <ol>
-<li><code>Math</code> / <code>Number</code> / <code>String</code> / <code>Array</code> / <code>Object</code>中新的方法</li>
+<li><code>Math</code> &#x2F; <code>Number</code> &#x2F; <code>String</code> &#x2F; <code>Array</code> &#x2F; <code>Object</code>中新的方法</li>
 <li>二进制和八进制数据类型</li>
 <li>自动展开多余参数</li>
 <li><code>For of</code>循环（又见面了 CoffeeScript）</li>
@@ -1630,12 +1630,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
       <a href="http://www.jixiaokang.com" target="_blank">xkloveme</a>
       |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
       <br />
-       &nbsp;<i
-        class="fas fa-chart-area"
-      ></i
-      >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >148.1k</span
-      >&nbsp;字      
+           
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
           id="busuanzi_value_site_pv"

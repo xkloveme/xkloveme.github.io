@@ -29,7 +29,7 @@
     
     <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -299,7 +299,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=vuy0weowhon')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=2queoigf04h')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -459,14 +459,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2k
+                    2.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    8 分
+                    9 分
                 </div>
                 
 				
@@ -489,31 +489,22 @@
 <p>闲话少叙，直逼主题，毕竟我们是正经的官方软文。</p>
 <ul>
 <li><strong><a href="https://www.jixiaokang.com/vue-v-xxx/">查看官网</a></strong></li>
-<li><strong><a href="https://github.com/xkloveme/vue-v-xxx/" target="_blank" rel="noopener">查看源码</a></strong></li>
+<li><strong><a target="_blank" rel="noopener" href="https://github.com/xkloveme/vue-v-xxx/">查看源码</a></strong></li>
 </ul>
 <h2 id="什么是-vue-指令"><a href="#什么是-vue-指令" class="headerlink" title="什么是 vue 指令?"></a>什么是 vue 指令?</h2><hr>
 <ul>
 <li>在我们了解库之前,我们先回顾一下<code>Vue</code>指令</li>
 </ul>
-<h3 id="1-我们经常用的有一下几种指令"><a href="#1-我们经常用的有一下几种指令" class="headerlink" title="1. 我们经常用的有一下几种指令"></a>1. 我们经常用的有一下几种指令</h3><pre class=" language-js"><code class="language-js">v<span class="token operator">-</span>text 、 v<span class="token operator">-</span>html 、 v<span class="token operator">-</span>show 、 v<span class="token operator">-</span><span class="token keyword">if</span> 、 v<span class="token operator">-</span><span class="token keyword">else</span> 、v<span class="token operator">-</span><span class="token keyword">for</span> 、 v<span class="token operator">-</span>bind 、 v<span class="token operator">-</span>on 、
-v<span class="token operator">-</span>model 、 v<span class="token operator">-</span>once</code></pre>
+<h3 id="1-我们经常用的有一下几种指令"><a href="#1-我们经常用的有一下几种指令" class="headerlink" title="1. 我们经常用的有一下几种指令"></a>1. 我们经常用的有一下几种指令</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">v-text 、 v-html 、 v-show 、 v-<span class="keyword">if</span> 、 v-<span class="keyword">else</span> 、v-<span class="keyword">for</span> 、 v-bind 、 v-on 、</span><br><span class="line">v-model 、 v-once</span><br></pre></td></tr></table></figure>
+
 <blockquote>
-<p>具体用法<a href="https://cn.vuejs.org/v2/guide/conditional.html" target="_blank" rel="noopener">前去官网</a>,不再赘述</p>
+<p>具体用法<a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/guide/conditional.html">前去官网</a>,不再赘述</p>
 </blockquote>
 <h3 id="什么是自定义指令"><a href="#什么是自定义指令" class="headerlink" title="什么是自定义指令?"></a>什么是自定义指令?</h3><blockquote>
 <p>有的情况下，你仍然需要对普通 DOM 元素进行底层操作，这时候就会用到自定义指令.</p>
 </blockquote>
-<pre class=" language-js"><code class="language-js"><span class="token operator">&lt;</span>input  v<span class="token operator">-</span>focus<span class="token operator">></span><span class="token comment" spellcheck="true">// 为例</span>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;input  v-focus&gt;<span class="comment">// 为例</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 在组件内部</span></span><br><span class="line"><span class="attr">directives</span>: &#123;</span><br><span class="line">  <span class="attr">focus</span>: &#123;</span><br><span class="line">  <span class="comment">// 指令的定义</span></span><br><span class="line">  <span class="attr">inserted</span>: <span class="keyword">function</span> (<span class="params">el</span>) &#123;</span><br><span class="line">    el.<span class="title function_">focus</span>()</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<span class="token comment" spellcheck="true">// 在组件内部</span>
-directives<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-  focus<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-  <span class="token comment" spellcheck="true">// 指令的定义</span>
-  inserted<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>el<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    el<span class="token punctuation">.</span><span class="token function">focus</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-    <span class="token punctuation">}</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span></code></pre>
 <h3 id="钩子函数"><a href="#钩子函数" class="headerlink" title="钩子函数"></a>钩子函数</h3><p>一个指令定义对象可以提供如下几个钩子函数 (均为可选)：</p>
 <ul>
 <li><p><code>bind</code>：只调用一次，指令第一次绑定到元素时调用。在这里可以进行一次性的初始化设置。</p>
@@ -535,7 +526,7 @@ directives<span class="token punctuation">:</span> <span class="token punctuatio
 <li><code>oldValue</code>：指令绑定的前一个值，仅在 <code>update</code> 和 <code>componentUpdated</code> 钩子中可用。无论值是否改变都可用。</li>
 <li><code>expression</code>：字符串形式的指令表达式。例如 <code>v-my-directive=&quot;1 + 1&quot;</code> 中，表达式为 <code>&quot;1 + 1&quot;</code>。</li>
 <li><code>arg</code>：传给指令的参数，可选。例如 <code>v-my-directive:foo</code> 中，参数为 <code>&quot;foo&quot;</code>。</li>
-<li><code>modifiers</code>：一个包含修饰符的对象。例如：<code>v-my-directive.foo.bar</code> 中，修饰符对象为 <code>{ foo: true, bar: true }</code>。</li>
+<li><code>modifiers</code>：一个包含修饰符的对象。例如：<code>v-my-directive.foo.bar</code> 中，修饰符对象为 <code>&#123; foo: true, bar: true &#125;</code>。</li>
 </ul>
 </li>
 <li><code>vnode</code>：Vue 编译生成的虚拟节点。</li>
@@ -548,92 +539,23 @@ directives<span class="token punctuation">:</span> <span class="token punctuatio
 <h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ul>
 <li>您可以通过 npm 安装,推荐使用 <code>npm</code> 的方式安装，它能更好地和 <code>webpack</code> 打包工具配合使用。</li>
 </ul>
-<pre class=" language-bash"><code class="language-bash">
-<span class="token comment" spellcheck="true"># install vue-v-xxx</span>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># install vue-v-xxx</span></span><br><span class="line"></span><br><span class="line"> npm install vue-v-xxx --save</span><br><span class="line"></span><br><span class="line"><span class="comment"># or</span></span><br><span class="line"></span><br><span class="line"> yarn add vue-v-xxx --save</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
- <span class="token function">npm</span> <span class="token function">install</span> vue-v-xxx --save
-
-<span class="token comment" spellcheck="true"># or</span>
-
- yarn add vue-v-xxx --save
-</code></pre>
 <ul>
-<li>您也可以通过 unpkg.com/vue-v-xxx 获取到最新版本的资源，在页面上引入 js 和 css 文件即可开始使用。</li>
+<li>您也可以通过 unpkg.com&#x2F;vue-v-xxx 获取到最新版本的资源，在页面上引入 js 和 css 文件即可开始使用。</li>
 </ul>
-<pre class=" language-html"><code class="language-html"><span class="token comment" spellcheck="true">&lt;!-- 引入样式 --></span>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 引入样式 --&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://unpkg.com/vue-v-xxx/lib/vue-v-xxx.css&quot;</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 引入组件库 --&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://unpkg.com/vue-v-xxx&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://unpkg.com/vue-v-xxx/lib/vue-v-xxx.css<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
-
-<span class="token comment" spellcheck="true">&lt;!-- 引入组件库 --></span>
-
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://unpkg.com/vue-v-xxx<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code></pre>
 <h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><ul>
-<li>您可以在<code>main.js</code>里面全局注册,在组件内就可以应用了<a href="https://github.com/xkloveme/vue-v-xxx-project" target="_blank" rel="noopener">推荐工程</a></li>
+<li>您可以在<code>main.js</code>里面全局注册,在组件内就可以应用了<a target="_blank" rel="noopener" href="https://github.com/xkloveme/vue-v-xxx-project">推荐工程</a></li>
 </ul>
-<pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">"vue"</span><span class="token punctuation">;</span>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">Vue</span> <span class="keyword">from</span> <span class="string">&quot;vue&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">App</span> <span class="keyword">from</span> <span class="string">&quot;./App&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">Vxxx</span> <span class="keyword">from</span> <span class="string">&quot;vue-v-xxx&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">&quot;vue-v-xxx/lib/vue-v-xxx.css&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="title class_">Vue</span>.<span class="property">config</span>.<span class="property">productionTip</span> = <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line"><span class="title class_">Vue</span>.<span class="title function_">use</span>(<span class="title class_">Vxxx</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">/* eslint-disable no-new */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">new</span> <span class="title class_">Vue</span>(&#123;</span><br><span class="line">  <span class="attr">el</span>: <span class="string">&quot;#app&quot;</span>,</span><br><span class="line"></span><br><span class="line">  <span class="attr">components</span>: &#123; <span class="title class_">App</span> &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="attr">template</span>: <span class="string">&quot;&lt;App/&gt;&quot;</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
-<span class="token keyword">import</span> App <span class="token keyword">from</span> <span class="token string">"./App"</span><span class="token punctuation">;</span>
-
-<span class="token keyword">import</span> Vxxx <span class="token keyword">from</span> <span class="token string">"vue-v-xxx"</span><span class="token punctuation">;</span>
-
-<span class="token keyword">import</span> <span class="token string">"vue-v-xxx/lib/vue-v-xxx.css"</span><span class="token punctuation">;</span>
-
-Vue<span class="token punctuation">.</span>config<span class="token punctuation">.</span>productionTip <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-
-Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Vxxx<span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-<span class="token comment" spellcheck="true">/* eslint-disable no-new */</span>
-
-<span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  el<span class="token punctuation">:</span> <span class="token string">"#app"</span><span class="token punctuation">,</span>
-
-  components<span class="token punctuation">:</span> <span class="token punctuation">{</span> App <span class="token punctuation">}</span><span class="token punctuation">,</span>
-
-  template<span class="token punctuation">:</span> <span class="token string">"&lt;App/>"</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 <ul>
-<li>您可以通过 CDN 可以快速使用 vue-v-xxx 写出一个示例，您可以复制下面代码或<a href="https://codesandbox.io/s/vue-v-xxx-bndj4" target="_blank" rel="noopener">在线预览</a></li>
+<li>您可以通过 CDN 可以快速使用 vue-v-xxx 写出一个示例，您可以复制下面代码或<a target="_blank" rel="noopener" href="https://codesandbox.io/s/vue-v-xxx-bndj4">在线预览</a></li>
 </ul>
-<pre class=" language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>vue-v-xxx<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span></span></span><br><span class="line"><span class="tag">      <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span></span></span><br><span class="line"><span class="tag">      <span class="attr">href</span>=<span class="string">&quot;https://unpkg.com/vue-v-xxx/lib/vue-v-xxx.css&quot;</span></span></span><br><span class="line"><span class="tag">    /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;app&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">h1</span> <span class="attr">title</span>=<span class="string">&quot;Welcome&quot;</span>&gt;</span>欢迎使用 &#123;&#123; value &#125;&#125;<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"></span><br><span class="line">      <span class="tag">&lt;<span class="name">button</span> <span class="attr">v-copy</span>=<span class="string">&quot;value&quot;</span>&gt;</span>Click me!<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">&lt;!-- import Vue before vue-v-xxx --&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://unpkg.com/vue/dist/vue.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">&lt;!-- import JavaScript --&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://unpkg.com/vue-v-xxx/lib/vue-v-xxx.umd.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">new</span> <span class="title class_">Vue</span>(&#123;</span></span><br><span class="line"><span class="language-javascript">      <span class="attr">el</span>: <span class="string">&quot;#app&quot;</span>,</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">      <span class="attr">data</span>: &#123;</span></span><br><span class="line"><span class="language-javascript">        <span class="attr">value</span>: <span class="string">&quot;vue-v-xxx&quot;</span></span></span><br><span class="line"><span class="language-javascript">      &#125;</span></span><br><span class="line"><span class="language-javascript">    &#125;);</span></span><br><span class="line"><span class="language-javascript">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
-
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>vue-v-xxx<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
-
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span>
-      <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span>
-      <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://unpkg.com/vue-v-xxx/lib/vue-v-xxx.css<span class="token punctuation">"</span></span>
-    <span class="token punctuation">/></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
-
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>app<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Welcome<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>欢迎使用 {{ value }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
-
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">v-copy</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>value<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Click me!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
-
-  <span class="token comment" spellcheck="true">&lt;!-- import Vue before vue-v-xxx --></span>
-
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://unpkg.com/vue/dist/vue.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
-
-  <span class="token comment" spellcheck="true">&lt;!-- import JavaScript --></span>
-
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://unpkg.com/vue-v-xxx/lib/vue-v-xxx.umd.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
-
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script language-javascript">
-    <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-      el<span class="token punctuation">:</span> <span class="token string">"#app"</span><span class="token punctuation">,</span>
-
-      data<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-        value<span class="token punctuation">:</span> <span class="token string">"vue-v-xxx"</span>
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
 <h2 id="我们提供了那些额外的指令"><a href="#我们提供了那些额外的指令" class="headerlink" title="我们提供了那些额外的指令?"></a>我们提供了那些额外的指令?</h2><hr>
 <h3 id="v-call-拨打指令"><a href="#v-call-拨打指令" class="headerlink" title="v-call 拨打指令"></a>v-call 拨打指令</h3><blockquote>
 <p>该指令快速唤起拨打电话或者发送短信</p>
@@ -644,21 +566,9 @@ Vue<span class="token punctuation">.</span><span class="token function">use</spa
 <li><p>使用案例</p>
 </li>
 </ul>
-<pre><code>&lt;template lang=&quot;pug&quot;&gt;
-.v-xxx
-  div(v-call=&quot;tel&quot;) 点击拨打☎️
-  div(v-call:sms=&quot;10086&quot;) 点击发短信💬
-&lt;/template&gt;
-&lt;script&gt;
-  export default {
-    name: &#39;v-call&#39;,
-    data() {
-      return {
-        tel: &#39;10086&#39;
-      }
-    }
-  }
-&lt;/script&gt;</code></pre><h3 id="v-copy-复制指令"><a href="#v-copy-复制指令" class="headerlink" title="v-copy 复制指令"></a>v-copy 复制指令</h3><blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;template lang=&quot;pug&quot;&gt;</span><br><span class="line">.v-xxx</span><br><span class="line">  div(v-call=&quot;tel&quot;) 点击拨打☎️</span><br><span class="line">  div(v-call:sms=&quot;10086&quot;) 点击发短信💬</span><br><span class="line">&lt;/template&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  export default &#123;</span><br><span class="line">    name: &#x27;v-call&#x27;,</span><br><span class="line">    data() &#123;</span><br><span class="line">      return &#123;</span><br><span class="line">        tel: &#x27;10086&#x27;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="v-copy-复制指令"><a href="#v-copy-复制指令" class="headerlink" title="v-copy 复制指令"></a>v-copy 复制指令</h3><blockquote>
 <p>在很多情况下，我们需要复制操作</p>
 </blockquote>
 <ul>
@@ -667,170 +577,63 @@ Vue<span class="token punctuation">.</span><span class="token function">use</spa
 <li><p>使用案例</p>
 </li>
 </ul>
-<pre><code>&lt;template lang=&quot;pug&quot;&gt;
-.v-xxx
-  Button(@click=&quot;handleClick&quot; v-copy=&quot;value&quot;) 点击复制
-  div
-    textarea(placeholder=&quot;Paste here&quot; style=&quot;margin-top:40px;width:100%;height:100%;&quot;)
-&lt;/template&gt;
-&lt;script&gt;
-  export default {
-    name: &#39;v-copy&#39;,
-    data() {
-      return {
-        value: &#39;&#39;
-      }
-    },
-    methods: {
-      handleClick(html = &#39;你复制了我,去粘贴吧&#39;) {
-        this.value = html
-      }
-    }
-  }
-&lt;/script&gt;</code></pre><h3 id="v-debounce-防抖指令"><a href="#v-debounce-防抖指令" class="headerlink" title="v-debounce 防抖指令"></a>v-debounce 防抖指令</h3><blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;template lang=&quot;pug&quot;&gt;</span><br><span class="line">.v-xxx</span><br><span class="line">  Button(@click=&quot;handleClick&quot; v-copy=&quot;value&quot;) 点击复制</span><br><span class="line">  div</span><br><span class="line">    textarea(placeholder=&quot;Paste here&quot; style=&quot;margin-top:40px;width:100%;height:100%;&quot;)</span><br><span class="line">&lt;/template&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  export default &#123;</span><br><span class="line">    name: &#x27;v-copy&#x27;,</span><br><span class="line">    data() &#123;</span><br><span class="line">      return &#123;</span><br><span class="line">        value: &#x27;&#x27;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    methods: &#123;</span><br><span class="line">      handleClick(html = &#x27;你复制了我,去粘贴吧&#x27;) &#123;</span><br><span class="line">        this.value = html</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="v-debounce-防抖指令"><a href="#v-debounce-防抖指令" class="headerlink" title="v-debounce 防抖指令"></a>v-debounce 防抖指令</h3><blockquote>
 <p><code>v-debounce</code> 支持传入防抖时间<code>v-debounce:500</code> 默认 500ms</p>
 </blockquote>
 <ul>
 <li><a href="https://www.jixiaokang.com/vue-v-xxx/configurations/v-debounce.html">在线预览</a></li>
 </ul>
-<pre><code>&lt;template lang=&quot;pug&quot;&gt;
-.v-xxx
-  h1 未加防抖
-  h2 点击次数:{{num}}
-  Button(@click=&quot;addNum&quot;) (点我)
-  h1 加入防抖
-  h2 点击次数:{{num2}}
-  Button(v-debounce=&quot;addNum2&quot;) (点我)
-&lt;/template&gt;
-&lt;script&gt;
-export default {
-  name: &#39;v-debounce&#39;,
-  data () {
-    return {
-      num: 0,
-      num2: 0,
-    }
-  },
-  methods: {
-    addNum () {
-      this.num++
-    },
-    addNum2 () {
-      this.num2++
-    }
-  }
-}
-&lt;/script&gt;</code></pre><h3 id="v-throttle-节流指令"><a href="#v-throttle-节流指令" class="headerlink" title="v-throttle 节流指令"></a>v-throttle 节流指令</h3><blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;template lang=&quot;pug&quot;&gt;</span><br><span class="line">.v-xxx</span><br><span class="line">  h1 未加防抖</span><br><span class="line">  h2 点击次数:&#123;&#123;num&#125;&#125;</span><br><span class="line">  Button(@click=&quot;addNum&quot;) (点我)</span><br><span class="line">  h1 加入防抖</span><br><span class="line">  h2 点击次数:&#123;&#123;num2&#125;&#125;</span><br><span class="line">  Button(v-debounce=&quot;addNum2&quot;) (点我)</span><br><span class="line">&lt;/template&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">export default &#123;</span><br><span class="line">  name: &#x27;v-debounce&#x27;,</span><br><span class="line">  data () &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      num: 0,</span><br><span class="line">      num2: 0,</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  methods: &#123;</span><br><span class="line">    addNum () &#123;</span><br><span class="line">      this.num++</span><br><span class="line">    &#125;,</span><br><span class="line">    addNum2 () &#123;</span><br><span class="line">      this.num2++</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="v-throttle-节流指令"><a href="#v-throttle-节流指令" class="headerlink" title="v-throttle 节流指令"></a>v-throttle 节流指令</h3><blockquote>
 <p><code>v-throttle</code> 支持传入防抖时间<code>v-throttle:2000</code> 默认 2s</p>
 </blockquote>
 <ul>
 <li><a href="https://www.jixiaokang.com/vue-v-xxx/configurations/v-throttle.html">在线预览</a></li>
 </ul>
-<pre><code>&lt;template lang=&quot;pug&quot;&gt;
-.v-xxx
-  h3 立即触发:{{num}}
-  input(v-model=&quot;num&quot;)
-  h3 节流后:{{num2}}
-  input(v-throttle:2000=&quot;num2&quot;)
-&lt;/template&gt;
-&lt;script&gt;
-  export default {
-    name: &#39;v-throttle&#39;,
-    data() {
-      return {
-        num: &#39;立即改变&#39;,
-        num2: &#39;节流值&#39;
-      }
-    }
-  }
-&lt;/script&gt;</code></pre><h3 id="v-ellipsis-省略指令"><a href="#v-ellipsis-省略指令" class="headerlink" title="v-ellipsis 省略指令"></a>v-ellipsis 省略指令</h3><blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;template lang=&quot;pug&quot;&gt;</span><br><span class="line">.v-xxx</span><br><span class="line">  h3 立即触发:&#123;&#123;num&#125;&#125;</span><br><span class="line">  input(v-model=&quot;num&quot;)</span><br><span class="line">  h3 节流后:&#123;&#123;num2&#125;&#125;</span><br><span class="line">  input(v-throttle:2000=&quot;num2&quot;)</span><br><span class="line">&lt;/template&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  export default &#123;</span><br><span class="line">    name: &#x27;v-throttle&#x27;,</span><br><span class="line">    data() &#123;</span><br><span class="line">      return &#123;</span><br><span class="line">        num: &#x27;立即改变&#x27;,</span><br><span class="line">        num2: &#x27;节流值&#x27;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="v-ellipsis-省略指令"><a href="#v-ellipsis-省略指令" class="headerlink" title="v-ellipsis 省略指令"></a>v-ellipsis 省略指令</h3><blockquote>
 <p><code>v-ellipsis</code> 在表格中经常使用,<code>v-ellipsis</code>默认单行省略</p>
 </blockquote>
 <ul>
 <li><a href="https://www.jixiaokang.com/vue-v-xxx/configurations/v-ellipsis.html">在线预览</a></li>
 </ul>
-<pre><code>&lt;template lang=&quot;pug&quot;&gt;
-.v-xxx
-  div(v-ellipsis) {{des}}
-  div(v-ellipsis:3)
-    p {{des2}}
-&lt;/template&gt;
-&lt;script&gt;
-export default {
-  name: &#39;v-ellipsis&#39;,
-  data() {
-    return {
-      des:
-        &#39;单行省略单行省略单行省略单行省略单行省略单行省略单行省略单行省略单行省略单行省略单行省略单行省略单行省略单行省略单行省略单行省略&#39;,
-      des2:
-        &#39;多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略&#39;
-    }
-  }
-}
-&lt;/script&gt;</code></pre><h3 id="v-pin-固定指令"><a href="#v-pin-固定指令" class="headerlink" title="v-pin 固定指令"></a>v-pin 固定指令</h3><blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;template lang=&quot;pug&quot;&gt;</span><br><span class="line">.v-xxx</span><br><span class="line">  div(v-ellipsis) &#123;&#123;des&#125;&#125;</span><br><span class="line">  div(v-ellipsis:3)</span><br><span class="line">    p &#123;&#123;des2&#125;&#125;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">export default &#123;</span><br><span class="line">  name: &#x27;v-ellipsis&#x27;,</span><br><span class="line">  data() &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      des:</span><br><span class="line">        &#x27;单行省略单行省略单行省略单行省略单行省略单行省略单行省略单行省略单行省略单行省略单行省略单行省略单行省略单行省略单行省略单行省略&#x27;,</span><br><span class="line">      des2:</span><br><span class="line">        &#x27;多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略&#x27;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="v-pin-固定指令"><a href="#v-pin-固定指令" class="headerlink" title="v-pin 固定指令"></a>v-pin 固定指令</h3><blockquote>
 <p><code>v-pin</code> 支持传入定位位置和定位值<code>v-pin:left || top</code> 默认 left</p>
 </blockquote>
 <ul>
 <li><a href="https://www.jixiaokang.com/vue-v-xxx/configurations/v-pin.html">在线预览</a></li>
 </ul>
-<pre><code>&lt;template lang=&quot;pug&quot;&gt;
-.v-xxx
-  div(v-pin=&quot;200&quot;) 顶部200px
-  div(v-pin:left=&quot;300&quot;) 左边300px
-&lt;/template&gt;
-&lt;script&gt;
-  export default {
-    name: &#39;v-pin&#39;
-  }
-&lt;/script&gt;</code></pre><h3 id="v-focus-聚焦指令"><a href="#v-focus-聚焦指令" class="headerlink" title="v-focus 聚焦指令"></a>v-focus 聚焦指令</h3><blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;template lang=&quot;pug&quot;&gt;</span><br><span class="line">.v-xxx</span><br><span class="line">  div(v-pin=&quot;200&quot;) 顶部200px</span><br><span class="line">  div(v-pin:left=&quot;300&quot;) 左边300px</span><br><span class="line">&lt;/template&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  export default &#123;</span><br><span class="line">    name: &#x27;v-pin&#x27;</span><br><span class="line">  &#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="v-focus-聚焦指令"><a href="#v-focus-聚焦指令" class="headerlink" title="v-focus 聚焦指令"></a>v-focus 聚焦指令</h3><blockquote>
 <p><code>v-focus</code> 在移动端登录时异常好用</p>
 </blockquote>
 <ul>
 <li><a href="https://www.jixiaokang.com/vue-v-xxx/configurations/v-focus.html">在线预览</a></li>
 </ul>
-<pre><code>&lt;template lang=&quot;pug&quot;&gt;
-.v-xxx
-  input(v-focus)
-&lt;/template&gt;
-&lt;script&gt;
-export default {
-  name: &#39;v-focus&#39;
-}
-&lt;/script&gt;</code></pre><h3 id="v-click-out-外部点击指令"><a href="#v-click-out-外部点击指令" class="headerlink" title="v-click-out 外部点击指令"></a>v-click-out 外部点击指令</h3><blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;template lang=&quot;pug&quot;&gt;</span><br><span class="line">.v-xxx</span><br><span class="line">  input(v-focus)</span><br><span class="line">&lt;/template&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">export default &#123;</span><br><span class="line">  name: &#x27;v-focus&#x27;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="v-click-out-外部点击指令"><a href="#v-click-out-外部点击指令" class="headerlink" title="v-click-out 外部点击指令"></a>v-click-out 外部点击指令</h3><blockquote>
 <p><code>v-click-out</code> 点击外部 dom 触发</p>
 </blockquote>
 <ul>
 <li><a href="https://www.jixiaokang.com/vue-v-xxx/configurations/v-click-out.html">在线预览</a></li>
 </ul>
-<pre><code>&lt;template lang=&quot;pug&quot;&gt;
-.v-xxx
-  div(style=&quot;border:1px solid red;width:200px;height:200px;&quot; @click=&quot;handleClick&quot; v-click-out=&quot;handleClickOut&quot;) {{name}}
-&lt;/template&gt;
-&lt;script&gt;
-  export default {
-    name: &#39;v-click-out&#39;,
-    data() {
-      return {
-        name: &#39;内部&#39;
-      }
-    },
-    methods: {
-      handleClick() {
-        this.name = &#39;您点击了内部&#39;
-      },
-      handleClickOut() {
-        this.name = &#39;您点击了外部&#39;
-      }
-    }
-  }
-&lt;/script&gt;
-</code></pre><h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;template lang=&quot;pug&quot;&gt;</span><br><span class="line">.v-xxx</span><br><span class="line">  div(style=&quot;border:1px solid red;width:200px;height:200px;&quot; @click=&quot;handleClick&quot; v-click-out=&quot;handleClickOut&quot;) &#123;&#123;name&#125;&#125;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  export default &#123;</span><br><span class="line">    name: &#x27;v-click-out&#x27;,</span><br><span class="line">    data() &#123;</span><br><span class="line">      return &#123;</span><br><span class="line">        name: &#x27;内部&#x27;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    methods: &#123;</span><br><span class="line">      handleClick() &#123;</span><br><span class="line">        this.name = &#x27;您点击了内部&#x27;</span><br><span class="line">      &#125;,</span><br><span class="line">      handleClickOut() &#123;</span><br><span class="line">        this.name = &#x27;您点击了外部&#x27;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><blockquote>
 <p><strong>如果您有好的指令欢迎 👏 来提 issue,尽可能多的覆盖,一旦选用将获取神秘礼品,期待您的加入</strong></p>
 </blockquote>
 <h2 id="神交"><a href="#神交" class="headerlink" title="神交"></a>神交</h2><p>觉得不错的话给个<code>star</code></p>
 <ul>
-<li><a href="https://github.com/xkloveme/vue-v-xxx/" target="_blank" rel="noopener">GitHub</a></li>
-<li><a href="https://www.cnblogs.com/xkloveme/" target="_blank" rel="noopener">blog</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/xkloveme/vue-v-xxx/">GitHub</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/xkloveme/">blog</a></li>
 </ul>
 
             </div>
@@ -1397,12 +1200,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
       <a href="http://www.jixiaokang.com" target="_blank">xkloveme</a>
       |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
       <br />
-       &nbsp;<i
-        class="fas fa-chart-area"
-      ></i
-      >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >148.1k</span
-      >&nbsp;字      
+           
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
           id="busuanzi_value_site_pv"

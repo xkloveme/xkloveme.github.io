@@ -28,7 +28,7 @@
     
     <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -298,7 +298,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=ljyqm6yqf1o')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=1ddtcp9fh2x')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -454,14 +454,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    840
+                    844
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    3 分
                 </div>
                 
 				
@@ -478,25 +478,25 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h4 id="熟悉了-Vue-js-的同级组件之间通信，写此文章，以便记录。"><a href="#熟悉了-Vue-js-的同级组件之间通信，写此文章，以便记录。" class="headerlink" title="熟悉了 Vue.js 的同级组件之间通信，写此文章，以便记录。"></a>熟悉了 Vue.js 的同级组件之间通信，写此文章，以便记录。</h4><h4 id="Vue-是一个轻量级的渐进式框架，对于它的一些特性和优点，请在官网上进行查看，不再赘述。"><a href="#Vue-是一个轻量级的渐进式框架，对于它的一些特性和优点，请在官网上进行查看，不再赘述。" class="headerlink" title="Vue 是一个轻量级的渐进式框架，对于它的一些特性和优点，请在官网上进行查看，不再赘述。"></a>Vue 是一个轻量级的渐进式框架，对于它的一些特性和优点，请在官网上进行查看，不再赘述。</h4><p>使用 NPM 及相关命令行工具初始化的 Vue 工程，目录结构如下</p>
-<p><img src="http://img.blog.csdn.net/20170723170241545" alt=""></p>
-<p>接着我们进入 Demo，首先我们可以删除掉模板项目中 src/components/Hello.vue,然后在 App.vue 中删除对于 Hello 子组件的注册和使用还有一些其他无关紧要的东西，此时的 App.vue 应为这样</p>
-<p><img src="http://img.blog.csdn.net/20170723170721302" alt=""></p>
-<p><strong>一 .我们先来创建中央事件总线，在 src/assets/下创建一个 eventBus.js,内容如下</strong></p>
+<p><img src="http://img.blog.csdn.net/20170723170241545"></p>
+<p>接着我们进入 Demo，首先我们可以删除掉模板项目中 src&#x2F;components&#x2F;Hello.vue,然后在 App.vue 中删除对于 Hello 子组件的注册和使用还有一些其他无关紧要的东西，此时的 App.vue 应为这样</p>
+<p><img src="http://img.blog.csdn.net/20170723170721302"></p>
+<p><strong>一 .我们先来创建中央事件总线，在 src&#x2F;assets&#x2F;下创建一个 eventBus.js,内容如下</strong></p>
 <p>（eventBus 中我们只创建了一个新的 Vue 实例，以后它就承担起了组件之间通信的桥梁了，也就是中央事件总线。）</p>
-<p><img src="http://img.blog.csdn.net/20170723220642249" alt=""></p>
+<p><img src="http://img.blog.csdn.net/20170723220642249"></p>
 <p><strong>二 . 创建一个 firstChild 组件，引入 eventBus 这个事件总线，接着添加一个按钮并绑定一个点击事件</strong></p>
-<p>*<em><img src="http://img.blog.csdn.net/20170723220843946" alt=""><br>*</em></p>
+<p>**<img src="http://img.blog.csdn.net/20170723220843946"><br>**</p>
 <p>1、我们在响应点击事件的 sendMsg 函数中用$emit触发了一个自定义的userDefinedEvent事件，并传递了一个字符串参数<br>2、$emit 实例方法触发当前实例(这里的当前实例就是 bus)上的事件,附加参数都会传给监听器回调。</p>
 <p><strong>三 . 我们再创建一个 secondChild 组件，引入 eventBus 事件总线，并用一个 p 标签来显示传递过来的值</strong></p>
-<p><img src="http://img.blog.csdn.net/20170723221122492" alt=""></p>
+<p><img src="http://img.blog.csdn.net/20170723221122492"></p>
 <p>1、我们在 mounted 中，监听了 userDefinedEvent,并把传递过来的字符串参数传递给了$on监听器的回调函数<br>2、mounted:是一个Vue生命周期中的钩子函数，简单点说就类似于jQuery的ready，Vue会在文档加载完毕后调用mounted函数。<br>3、$on:监听当前实例上的自定义事件(此处当前实例为 bus)。事件可以由$emit触发，回调函数会接收所有传入事件触发函数($emit)的额外参数。</p>
 <p><strong>四 . 在父组件中，注册这两个组件，并添加这两个组件的标签</strong></p>
-<p><img src="http://img.blog.csdn.net/20170723221338855" alt=""></p>
+<p><img src="http://img.blog.csdn.net/20170723221338855"></p>
 <p><strong>保存所有修改的文件，然后打开浏览器窗口，内容如下(css 请自行处理)</strong></p>
-<p>*<em><img src="http://img.blog.csdn.net/20170723221514399" alt=""><br>*</em></p>
+<p>**<img src="http://img.blog.csdn.net/20170723221514399"><br>**</p>
 <p><strong>点击向组件传值按钮，我们可以看到传值成功</strong></p>
-<p>*<em><img src="http://img.blog.csdn.net/20170723221616095" alt=""><br>*</em></p>
-<p>*<em>总结：<br>1、创建一个事件总线，例如 demo 中的 eventBus，用它作为通信桥梁<br>2、在需要传值的组件中用 bus.$emit触发一个自定义事件，并传递参数<br>3、在需要接收数据的组件中用bus.$on 监听自定义事件，并在回调函数中处理传递过来的参数<br>*</em></p>
+<p>**<img src="http://img.blog.csdn.net/20170723221616095"><br>**</p>
+<p>**总结：<br>1、创建一个事件总线，例如 demo 中的 eventBus，用它作为通信桥梁<br>2、在需要传值的组件中用 bus.$emit触发一个自定义事件，并传递参数<br>3、在需要接收数据的组件中用bus.$on 监听自定义事件，并在回调函数中处理传递过来的参数<br>**</p>
 <p><strong>另外：</strong></p>
 <p><strong>1、兄弟组件之间与父子组件之间的数据交互，两者相比较，兄弟组件之间的通信其实和子组件向父组件传值有些类似，其实他们的通信原理都是相同的，例如子向父传值也是$emit和$on 的形式，只是没有 eventBus，但若我们仔细想想，此时父组件其实就充当了 bus 这个事件总线的角色。<br>2、这种用一个 Vue 实例来作为中央事件总线来管理组件通信的方法只适用于通信需求简单一点的项目，对于更复杂的情况，Vue 也有提供更复杂的状态管理模式 Vuex 来进行处理。</strong></p>
 
@@ -792,7 +792,7 @@
                         
                             很多人在学习完 Vue.js 之后还会看到一个经常被提及的词语叫做 Vuex。
 Vuex 字面上看与 Vue.js 只差了一个字母，但是他们两个做的事情完全不一样。
-在本文我会像之前的  Vue.js 新手入门指南文章一样的问答形式来写文章
+在本文我会像之前的  Vue.js 新手入门指南文章一样的问答形式来写文章
                         
                     </div>
                     <div class="publish-info">
@@ -845,8 +845,8 @@ Vuex 字面上看与 Vue.js 只差了一个字母，但是他们两个做的事�
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            navbar 的具体实现)
-1  2  3 Navbardiv&gt; 4 5  6 选项一 mt-tab-item&gt; 7 选项二 mt-tab-item&gt; 8 选项三 mt-tab-item&gt; 9 mt-navbar&g
+                            navbar 的具体实现
+1  2  3 Navbardiv&gt; 4 5  6 选项一 mt-tab-item&gt; 7 选项二 mt-tab-item&gt; 8 选项三 mt-tab-item&gt; 9 mt-navbar&gt
                         
                     </div>
                     <div class="publish-info">
@@ -1057,12 +1057,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
       <a href="http://www.jixiaokang.com" target="_blank">xkloveme</a>
       |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
       <br />
-       &nbsp;<i
-        class="fas fa-chart-area"
-      ></i
-      >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >148.1k</span
-      >&nbsp;字      
+           
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
           id="busuanzi_value_site_pv"

@@ -8,7 +8,7 @@
     <meta name="description" content="在 vue 中需要比较两个数组取相同值
 一个大数组一个 小数组，小数组是大数组的一部分取相同 ID 的不同 name 值
 有两种写法，两个 for 循环和 map 写法
-const toName = (ids, arr) =&amp;gt; {le">
+const toName &amp;#x3D; (ids, arr) &amp;#x3">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -29,7 +29,7 @@ const toName = (ids, arr) =&amp;gt; {le">
     
     <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -299,7 +299,7 @@ const toName = (ids, arr) =&amp;gt; {le">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=f27aoqil7zn')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=n1uymoy3gms')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -455,7 +455,7 @@ const toName = (ids, arr) =&amp;gt; {le">
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    188
+                    213
                 </div>
                 
 
@@ -481,11 +481,11 @@ const toName = (ids, arr) =&amp;gt; {le">
                 <p>在 vue 中需要比较两个数组取相同值</p>
 <p>一个大数组一个 小数组，小数组是大数组的一部分取相同 ID 的不同 name 值</p>
 <p>有两种写法，两个 for 循环和 map 写法</p>
-<p>const toName = (ids, arr) =&gt; {<br>let a = [];<br>ids = String(ids) &amp;&amp; String(ids).split(‘,’) || []; for (let i = 0, length = arr.length; i &lt; length; i++) { for (let j = 0, l = ids.length; j &lt; l; j++) { if (ids[j] == arr[i].id) {<br>a.push(arr[i].name)<br>}<br>}<br>} return a.join();<br>}</p>
-<p>const toName = (ids, arr) =&gt; {<br>let list = []<br>ids = String(ids) &amp;&amp; String(ids).split(‘,’) || [];<br>ids.map((x) =&gt; { this.arr.map((k) =&gt; { if (k.id == x) { return list.push(k.name)<br>}<br>})<br>})<br>ids = list.join(“、”)<br>}</p>
+<p>const toName &#x3D; (ids, arr) &#x3D;&gt; {<br>let a &#x3D; [];<br>ids &#x3D; String(ids) &amp;&amp; String(ids).split(‘,’) || []; for (let i &#x3D; 0, length &#x3D; arr.length; i &lt; length; i++) { for (let j &#x3D; 0, l &#x3D; ids.length; j &lt; l; j++) { if (ids[j] &#x3D;&#x3D; arr[i].id) {<br>a.push(arr[i].name)<br>}<br>}<br>} return a.join();<br>}</p>
+<p>const toName &#x3D; (ids, arr) &#x3D;&gt; {<br>let list &#x3D; []<br>ids &#x3D; String(ids) &amp;&amp; String(ids).split(‘,’) || [];<br>ids.map((x) &#x3D;&gt; { this.arr.map((k) &#x3D;&gt; { if (k.id &#x3D;&#x3D; x) { return list.push(k.name)<br>}<br>})<br>})<br>ids &#x3D; list.join(“、”)<br>}</p>
 <p>在 vue 中就可以使用了</p>
-<p>{ {78 | toName(“78,456,78”)}}//数字可以转字符串<br>{ {“78”| toName(“78,456,78”)}}//直接使用</p>
-<p>{ {“87，78，80”| toName(“78,456,78”)}}//直接使用</p>
+<p>{ {78 | toName(“78,456,78”)}}&#x2F;&#x2F;数字可以转字符串<br>{ {“78”| toName(“78,456,78”)}}&#x2F;&#x2F;直接使用</p>
+<p>{ {“87，78，80”| toName(“78,456,78”)}}&#x2F;&#x2F;直接使用</p>
 
             </div>
             <hr/>
@@ -779,8 +779,7 @@ const toName = (ids, arr) =&amp;gt; {le">
                         
                             
 定义一个父组件
-/_ ============ * Home Index Page * ============ * * The home index page._/
-import VLayout from ‘@/layouts/Defa
+&#x2F; &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D; * Home Index Page * &#x3D;&#x3D
                         
                     </div>
                     <div class="publish-info">
@@ -1058,12 +1057,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
       <a href="http://www.jixiaokang.com" target="_blank">xkloveme</a>
       |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
       <br />
-       &nbsp;<i
-        class="fas fa-chart-area"
-      ></i
-      >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >148.1k</span
-      >&nbsp;字      
+           
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
           id="busuanzi_value_site_pv"

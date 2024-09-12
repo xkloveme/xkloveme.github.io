@@ -27,7 +27,7 @@
     
     <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -297,7 +297,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=t68nup4jv2g')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=ku4fk3tfg5g')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -456,7 +456,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    15 分
+                    16 分
                 </div>
                 
 				
@@ -485,7 +485,9 @@ var aaa=new Array(5);       // 传入的5为array的个数
 
 console.log(aaa);           //  [6,,,,,]
 
-console.log(aa);            //  [4,8,9]</code></pre><h2 id="二、-访问数组元素-x-index"><a href="#二、-访问数组元素-x-index" class="headerlink" title="二、 访问数组元素 x.[index]"></a>二、 访问数组元素 <code>x.[index]</code></h2><pre><code>var a=[&quot;333&quot;,&quot;999&quot;];
+console.log(aa);            //  [4,8,9]
+</code></pre>
+<h2 id="二、-访问数组元素-x-index"><a href="#二、-访问数组元素-x-index" class="headerlink" title="二、 访问数组元素 x.[index]"></a>二、 访问数组元素 <code>x.[index]</code></h2><pre><code>var a=[&quot;333&quot;,&quot;999&quot;];
 
 var b=a[0];              // 访问数组的第一个元素
 
@@ -493,22 +495,28 @@ var c=a[a.length-1];     // 访问数组的最后一个元素
 
 var f=a[&quot;1&quot;]===a[1];     // a[&quot;1&quot;]会自动转为数字1
 
-console.log(f);          //  true</code></pre><p><strong>当然，如果我们通过以下方式去访问时，会被解析成连续运算返回最后一个值</strong></p>
+console.log(f);          //  true
+</code></pre>
+<p><strong>当然，如果我们通过以下方式去访问时，会被解析成连续运算返回最后一个值</strong></p>
 <p><code>console.log([2,3,4,5][1,2]) // 4</code></p>
 <p><strong>数组也是一种特殊的对象，因此我们也可以通过键值对的形式去访问</strong></p>
 <pre><code>var arr9 = [];
 
     arr9.say = &#39;Hello&#39;;
 
-console.log(arr9.say)    // Hello</code></pre><h2 id="三、遍历数组-x-forEach-function-item-index-array"><a href="#三、遍历数组-x-forEach-function-item-index-array" class="headerlink" title="三、遍历数组 x.forEach(function(item,index,array){})"></a>三、遍历数组 <code>x.forEach(function(item,index,array){})</code></h2><p><code>es6写法 forEach((item,index)=&gt;{dosomething.....})</code></p>
+console.log(arr9.say)    // Hello
+</code></pre>
+<h2 id="三、遍历数组-x-forEach-function-item-index-array"><a href="#三、遍历数组-x-forEach-function-item-index-array" class="headerlink" title="三、遍历数组 x.forEach(function(item,index,array){})"></a>三、遍历数组 <code>x.forEach(function(item,index,array)&#123;&#125;)</code></h2><p><code>es6写法 forEach((item,index)=&gt;&#123;dosomething.....&#125;)</code></p>
 <pre><code>var a=[&quot;333&quot;,&quot;999&quot;];
 
-   a.forEach(function (item,index,array) {
+   a.forEach(function (item,index,array) &#123;
 
            console.log(item,index)
 
- });
-       //333 0  999 1</code></pre><h2 id="四、添加元素到数组的末尾-x-push"><a href="#四、添加元素到数组的末尾-x-push" class="headerlink" title="四、添加元素到数组的末尾 x.push(...)"></a>四、添加元素到数组的末尾 <code>x.push(...)</code></h2><pre><code>var a=[&quot;333&quot;,&quot;999&quot;];
+ &#125;);
+       //333 0  999 1
+</code></pre>
+<h2 id="四、添加元素到数组的末尾-x-push"><a href="#四、添加元素到数组的末尾-x-push" class="headerlink" title="四、添加元素到数组的末尾 x.push(...)"></a>四、添加元素到数组的末尾 <code>x.push(...)</code></h2><pre><code>var a=[&quot;333&quot;,&quot;999&quot;];
 
     a.push(&quot;我是新元素&quot;,&quot;666&quot;);
 
@@ -516,7 +524,9 @@ console.log(a);    //[&quot;333&quot;,&quot;999&quot;,&quot;我是新元素&quot
 
 console.log(a.push(&quot;我&quot;,&quot;690&quot;),a.length,a);  //6,[&quot;333&quot;,&quot;666&quot;,&quot;我是新元素&quot;,&quot;666&quot;,&quot;我&quot;,&quot;690&quot;]
 
-//返回新数组长度6，会执行一次a.push</code></pre><h2 id="五、在末尾删除数组-只能删除-1-个-x-pop"><a href="#五、在末尾删除数组-只能删除-1-个-x-pop" class="headerlink" title="五、在末尾删除数组(只能删除 1 个) x.pop()"></a>五、在末尾删除数组(只能删除 1 个) <code>x.pop()</code></h2><pre><code>var a=[&quot;333&quot;,&quot;999&quot;];
+//返回新数组长度6，会执行一次a.push
+</code></pre>
+<h2 id="五、在末尾删除数组-只能删除-1-个-x-pop"><a href="#五、在末尾删除数组-只能删除-1-个-x-pop" class="headerlink" title="五、在末尾删除数组(只能删除 1 个) x.pop()"></a>五、在末尾删除数组(只能删除 1 个) <code>x.pop()</code></h2><pre><code>var a=[&quot;333&quot;,&quot;999&quot;];
 
     a.pop();
 
@@ -524,7 +534,9 @@ console.log(a);            // [&quot;333&quot;];  返回新数组
 
 console.log( a.pop(),a);   //333 []
 
-//会执行一次a.pop()，返回本次被删除元素</code></pre><h2 id="六、删除数组最前面元素-x-shift"><a href="#六、删除数组最前面元素-x-shift" class="headerlink" title="六、删除数组最前面元素 x.shift()"></a>六、删除数组最前面元素 <code>x.shift()</code></h2><pre><code>var a=[&quot;333&quot;,&quot;999&quot;];
+//会执行一次a.pop()，返回本次被删除元素
+</code></pre>
+<h2 id="六、删除数组最前面元素-x-shift"><a href="#六、删除数组最前面元素-x-shift" class="headerlink" title="六、删除数组最前面元素 x.shift()"></a>六、删除数组最前面元素 <code>x.shift()</code></h2><pre><code>var a=[&quot;333&quot;,&quot;999&quot;];
 
     a.shift();
 
@@ -532,7 +544,9 @@ console.log(a);            //  [&quot;999&quot;]
 
 console.log( a.shift());   //  &quot;999&quot;
 
-  //返回被删除元素，不会执行a.shift()</code></pre><h2 id="七、添加到数组的前面（头部）x-unshift-quot-quot"><a href="#七、添加到数组的前面（头部）x-unshift-quot-quot" class="headerlink" title="七、添加到数组的前面（头部）x.unshift(&quot;...&quot;)"></a>七、添加到数组的前面（头部）<code>x.unshift(&quot;...&quot;)</code></h2><pre><code>var a=[&quot;333&quot;,&quot;999&quot;];
+  //返回被删除元素，不会执行a.shift()
+</code></pre>
+<h2 id="七、添加到数组的前面（头部）x-unshift"><a href="#七、添加到数组的前面（头部）x-unshift" class="headerlink" title="七、添加到数组的前面（头部）x.unshift(&quot;...&quot;)"></a>七、添加到数组的前面（头部）<code>x.unshift(&quot;...&quot;)</code></h2><pre><code>var a=[&quot;333&quot;,&quot;999&quot;];
 
     a.unshift(&quot;000&quot;,&quot;888&quot;,&quot;777&quot;);
 
@@ -544,7 +558,9 @@ console.log(a.unshift(&quot;111&quot;),a.length,a);
 
 //[&quot;111&quot;,&quot;000&quot;,&quot;888&quot;,&quot;777&quot;,&quot;333&quot;,&quot;999&quot;]
 
-   //会执行一次a.unshift，返回数组长度,</code></pre><h2 id="八、找到某个元素在数组中的索引-indexOf"><a href="#八、找到某个元素在数组中的索引-indexOf" class="headerlink" title="八、找到某个元素在数组中的索引 indexOf"></a>八、找到某个元素在数组中的索引 <code>indexOf</code></h2><pre><code>var a=[&quot;333&quot;,&quot;999&quot;];
+   //会执行一次a.unshift，返回数组长度,
+</code></pre>
+<h2 id="八、找到某个元素在数组中的索引-indexOf"><a href="#八、找到某个元素在数组中的索引-indexOf" class="headerlink" title="八、找到某个元素在数组中的索引 indexOf"></a>八、找到某个元素在数组中的索引 <code>indexOf</code></h2><pre><code>var a=[&quot;333&quot;,&quot;999&quot;];
 
 var d=a.indexOf(&quot;333&quot;);   // 通过元素查找在当前数组的索引值
 
@@ -552,7 +568,9 @@ console.log(d);           // 0
 
 var e=a.indexOf(&quot;654&quot;);   // 如果查不到返回-1
 
-console.log(e);           // -1</code></pre><h2 id="九、复制数组-slice-Array-from-…"><a href="#九、复制数组-slice-Array-from-…" class="headerlink" title="九、复制数组 slice() , Array.from() […]"></a>九、复制数组 <code>slice()</code> , <code>Array.from()</code> […]</h2><pre><code>var a=[1,2,8];
+console.log(e);           // -1
+</code></pre>
+<h2 id="九、复制数组-slice-Array-from-…"><a href="#九、复制数组-slice-Array-from-…" class="headerlink" title="九、复制数组 slice() , Array.from() […]"></a>九、复制数组 <code>slice()</code> , <code>Array.from()</code> […]</h2><pre><code>var a=[1,2,8];
 
 var newArray=a.slice();
 
@@ -568,7 +586,9 @@ console.log(newArray2);  //第二种方法 [1,2,8]
 
 var newArray3=[...a];
 
-console.log(newArray3);  //第三种方法 [1,2,8]</code></pre><h2 id="十、清空数组"><a href="#十、清空数组" class="headerlink" title="十、清空数组"></a>十、清空数组</h2><pre><code>// 两种方法都可以实现，但第二种比较优雅
+console.log(newArray3);  //第三种方法 [1,2,8]
+</code></pre>
+<h2 id="十、清空数组"><a href="#十、清空数组" class="headerlink" title="十、清空数组"></a>十、清空数组</h2><pre><code>// 两种方法都可以实现，但第二种比较优雅
 
 var arr=[1,2,3,3,4,5];
 
@@ -582,7 +602,9 @@ var arr=[888,99];
 
     arr.length=0;
 
-console.log(arr)     //  []</code></pre><h2 id="十一、合并数组"><a href="#十一、合并数组" class="headerlink" title="十一、合并数组"></a>十一、合并数组</h2><pre><code>var arr=[1];
+console.log(arr)     //  []
+</code></pre>
+<h2 id="十一、合并数组"><a href="#十一、合并数组" class="headerlink" title="十一、合并数组"></a>十一、合并数组</h2><pre><code>var arr=[1];
 
 var arr2=[2];
 
@@ -601,7 +623,9 @@ var arr2=[4,5,6];
 
     arr1.push.apply(arr1,arr2);
 
-console.log(arr1);   // [1, 2, 3, 4, 5, 6]</code></pre><h2 id="十二、在数组中找到最大值和最小值"><a href="#十二、在数组中找到最大值和最小值" class="headerlink" title="十二、在数组中找到最大值和最小值"></a>十二、在数组中找到最大值和最小值</h2><pre><code>//方法1
+console.log(arr1);   // [1, 2, 3, 4, 5, 6]
+</code></pre>
+<h2 id="十二、在数组中找到最大值和最小值"><a href="#十二、在数组中找到最大值和最小值" class="headerlink" title="十二、在数组中找到最大值和最小值"></a>十二、在数组中找到最大值和最小值</h2><pre><code>//方法1
 var array1 = [1,2,3,4];
 
 var array2 = Math.max.apply(null,array1);  // 最大值
@@ -617,7 +641,9 @@ var array4 =Math.max(...array1);         // 最大值
 
 var array5 =Math.min(...array1);         // 最小值
 
-console.log(array4,array5);              // 4 ,1</code></pre><h2 id="十三、判断是不是数组"><a href="#十三、判断是不是数组" class="headerlink" title="十三、判断是不是数组"></a>十三、判断是不是数组</h2><pre><code>// 在javascript中，如何判断一个变量是否是数组
+console.log(array4,array5);              // 4 ,1
+</code></pre>
+<h2 id="十三、判断是不是数组"><a href="#十三、判断是不是数组" class="headerlink" title="十三、判断是不是数组"></a>十三、判断是不是数组</h2><pre><code>// 在javascript中，如何判断一个变量是否是数组
 
 (1)Array.isArray()方法
 
@@ -625,55 +651,67 @@ console.log(array4,array5);              // 4 ,1</code></pre><h2 id="十三、�
 
     console.log(Array.isArray(a));   // true
 
-(2)typeof  toString 方法</code></pre><p><strong>由于低版本的<code>IE</code>不支持<code>ES5</code>，如需要兼容，用<code>typeof</code>，我们都知道，数组是特殊的对象，所以数组的<code>typeof</code>结果也是<code>object</code>，而因为<code>null</code>的结果也是<code>object</code>，所以需要加判断是 <code>object</code>同时排除<code>null</code>、排除纯对象,先判断<code>a</code>是不是<code>object</code>,并且<code>a!==null</code>, 并且<code>toString.call</code>判断<code>a</code>等于 <code>[object Array]</code></strong></p>
+(2)typeof  toString 方法
+</code></pre>
+<p><strong>由于低版本的<code>IE</code>不支持<code>ES5</code>，如需要兼容，用<code>typeof</code>，我们都知道，数组是特殊的对象，所以数组的<code>typeof</code>结果也是<code>object</code>，而因为<code>null</code>的结果也是<code>object</code>，所以需要加判断是 <code>object</code>同时排除<code>null</code>、排除纯对象,先判断<code>a</code>是不是<code>object</code>,并且<code>a!==null</code>, 并且<code>toString.call</code>判断<code>a</code>等于 <code>[object Array]</code></strong></p>
 <pre><code>var a = [0, 1, 2];
 
-console.log( typeof a ===&#39;object&#39; &amp;&amp;  a !==null  &amp;&amp;  Object.prototype.toString.call(a) ===&#39;[object Array]&#39;);   //  true</code></pre><h2 id="十四、数组与其他值的运算-使用”-”会自动转为string-”-“会自动转为number"><a href="#十四、数组与其他值的运算-使用”-”会自动转为string-”-“会自动转为number" class="headerlink" title="十四、数组与其他值的运算(使用”+”会自动转为string,”-“会自动转为number)"></a>十四、数组与其他值的运算(使用”+”会自动转为<code>string</code>,”-“会自动转为<code>number</code>)</h2><pre><code>// 数组和任何值相加都会将数组转换成字符串再进行拼接
+console.log( typeof a ===&#39;object&#39; &amp;&amp;  a !==null  &amp;&amp;  Object.prototype.toString.call(a) ===&#39;[object Array]&#39;);   //  true
+</code></pre>
+<h2 id="十四、数组与其他值的运算-使用”-”会自动转为string-”-“会自动转为number"><a href="#十四、数组与其他值的运算-使用”-”会自动转为string-”-“会自动转为number" class="headerlink" title="十四、数组与其他值的运算(使用”+”会自动转为string,”-“会自动转为number)"></a>十四、数组与其他值的运算(使用”+”会自动转为<code>string</code>,”-“会自动转为<code>number</code>)</h2><pre><code>// 数组和任何值相加都会将数组转换成字符串再进行拼接
 
 console.log([1,2,3] + 6) ;       // &quot;1,2,36&quot;
 
-console.log([1,2,3] + {}) ;      // &quot;1,2,3[object Object]&quot;
+console.log([1,2,3] + &#123;&#125;) ;      // &quot;1,2,3[object Object]&quot;
 
 console.log([1,2,3] + [1,2,3])； // &quot;1,2,31,2,3&quot;
 
 如果数组只有一个值，那么当这个数组和其他值相减相乘等时会被转换为数字，如果为空会被转换为0
 
-console.log([5] - 2)          // 3</code></pre><h2 id="十五、数组去重"><a href="#十五、数组去重" class="headerlink" title="十五、数组去重"></a>十五、数组去重</h2><pre><code>// ES6新增的Set数据结构，类似于数组，但是里面的元素都是唯一的，其构造函数可以接受一个数组作为参数
+console.log([5] - 2)          // 3
+</code></pre>
+<h2 id="十五、数组去重"><a href="#十五、数组去重" class="headerlink" title="十五、数组去重"></a>十五、数组去重</h2><pre><code>// ES6新增的Set数据结构，类似于数组，但是里面的元素都是唯一的，其构造函数可以接受一个数组作为参数
 
 let arr1=[1,2,1,2,6,3,5,69,66,7,2,1,4,3,6,8,9663,8]
 
 let set = new Set(arr1);
 
-console.log(set)       //  {1,2,6,3,5,69,66,7,4,8,9663,8]
+console.log(set)       //  &#123;1,2,6,3,5,69,66,7,4,8,9663,8]
 
 // ES6中Array新增了一个静态方法from，可以把类似数组的对象转换为数组
 
 var arr=[1,2,1,2,6,3,5,69,66,7,2,1,4,3,6,8,9663,8]
 
-console.log(Array.from( new Set(arr)))  // {1,2,6,3,5,69,66,7,4,8,9663,8]
+console.log(Array.from( new Set(arr)))  // &#123;1,2,6,3,5,69,66,7,4,8,9663,8]
 
 //函数去重：
 
-function removeRepeatArray(arr){
+function removeRepeatArray(arr)&#123;
         return Array.from(new Set(arr))
-}
+&#125;
 console.log(removeRepeatArray([1,5,9,8,6,2,5,1,2,5,8,65,3,5,5,2,2,5]))
-    //  [1, 5, 9, 8, 6, 2, 65, 3]</code></pre><h2 id="十六、将数组顺序打乱"><a href="#十六、将数组顺序打乱" class="headerlink" title="十六、将数组顺序打乱"></a>十六、将数组顺序打乱</h2><pre><code>function upsetArr(arr){
-    return arr.sort(function(){ return Math.random() - 0.5});
-}</code></pre><blockquote>
+    //  [1, 5, 9, 8, 6, 2, 65, 3]
+</code></pre>
+<h2 id="十六、将数组顺序打乱"><a href="#十六、将数组顺序打乱" class="headerlink" title="十六、将数组顺序打乱"></a>十六、将数组顺序打乱</h2><pre><code>function upsetArr(arr)&#123;
+    return arr.sort(function()&#123; return Math.random() - 0.5&#125;);
+&#125;
+</code></pre>
+<blockquote>
 <p>解析：沿用原<code>sort</code>的 a-b 的方法，先生成一个随机数，然后将其与随机数进行 比较，如果 Math.random() - 0.5 是 true，则返回前者，否则比较下一个</p>
 </blockquote>
 <h2 id="十七-实现将数组中数字求和，字母忽略。"><a href="#十七-实现将数组中数字求和，字母忽略。" class="headerlink" title="十七 实现将数组中数字求和，字母忽略。"></a>十七 实现将数组中数字求和，字母忽略。</h2><pre><code>var arr=[&quot;a&quot;,3,4,5,9,&quot;d&quot;];
-function sum(arr){
+function sum(arr)&#123;
     var a=0;
-    for(var i=0;iif(typeof arr[i]===&quot;number&quot;){
+    for(var i=0;iif(typeof arr[i]===&quot;number&quot;)&#123;
             a+=arr[i]
-        }
-    }
+        &#125;
+    &#125;
     return a;
-}
+&#125;
 
-sum(arr)  //21</code></pre><blockquote>
+sum(arr)  //21
+</code></pre>
+<blockquote>
 <p>通过循环遍历判断数组中的每个值是否是数字，如果是的赋值到变量上进行加法计算</p>
 </blockquote>
 <h2 id="十八、delete，splice删除数组内指定的某个值。"><a href="#十八、delete，splice删除数组内指定的某个值。" class="headerlink" title="十八、delete，splice删除数组内指定的某个值。"></a>十八、<code>delete</code>，<code>splice</code>删除数组内指定的某个值。</h2><blockquote>
@@ -683,7 +721,9 @@ sum(arr)  //21</code></pre><blockquote>
 
     delete arr[0]
 
-console.log(arr,arr[0]).   // [empty,2,3,45,5],undefined</code></pre><blockquote>
+console.log(arr,arr[0]).   // [empty,2,3,45,5],undefined
+</code></pre>
+<blockquote>
 <p>如果要彻底删除，可以使用<code>splice()</code>方法 <code>splice(开始位置，删除个数，添加的值)</code>，如果没有第三个值，可以只传前两个值</p>
 </blockquote>
 <p><strong>两个值的示例：</strong></p>
@@ -691,49 +731,63 @@ console.log(arr,arr[0]).   // [empty,2,3,45,5],undefined</code></pre><blockquote
 
     arr.splice(0,1)
 
-console.log(arr)    //  [2, 3, 45, 5, 2]</code></pre><p><strong>三个值的示例：</strong></p>
+console.log(arr)    //  [2, 3, 45, 5, 2]
+</code></pre>
+<p><strong>三个值的示例：</strong></p>
 <pre><code>var arr=[1,2,3,45,5,2];
 
     arr.splice(0,1,100)
 
-console.log(arr)     //  [100 ,2, 3, 45, 5, 2]</code></pre><h2 id="十九、slice-截取数组，可选择开始位置和结束位置"><a href="#十九、slice-截取数组，可选择开始位置和结束位置" class="headerlink" title="十九、slice()截取数组，可选择开始位置和结束位置"></a>十九、<code>slice()</code>截取数组，可选择开始位置和结束位置</h2><p><code>slice()</code>接收两个参数，第一个是开始位置，第二个是结束位置</p>
+console.log(arr)     //  [100 ,2, 3, 45, 5, 2]
+</code></pre>
+<h2 id="十九、slice-截取数组，可选择开始位置和结束位置"><a href="#十九、slice-截取数组，可选择开始位置和结束位置" class="headerlink" title="十九、slice()截取数组，可选择开始位置和结束位置"></a>十九、<code>slice()</code>截取数组，可选择开始位置和结束位置</h2><p><code>slice()</code>接收两个参数，第一个是开始位置，第二个是结束位置</p>
 <pre><code>var arr=[1,2,3,45,5,2];
 
     arr.slice(0,4)
 
-console.log(arr). //  [1, 2, 3, 45]</code></pre><p>如果<code>slice()</code>括号中不传参数，将会全部截取</p>
+console.log(arr). //  [1, 2, 3, 45]
+</code></pre>
+<p>如果<code>slice()</code>括号中不传参数，将会全部截取</p>
 <pre><code>var arr=[1,2,3,45,5,2];
 
     arr.slice()
 
-console.log(arr).  //  [1, 2, 3, 45, 5, 2]</code></pre><h2 id="二十、颠倒数组的顺序，也称数组的反转"><a href="#二十、颠倒数组的顺序，也称数组的反转" class="headerlink" title="二十、颠倒数组的顺序，也称数组的反转"></a>二十、颠倒数组的顺序，也称数组的反转</h2><pre><code>var arr=[1,2,3,45,5,2];
+console.log(arr).  //  [1, 2, 3, 45, 5, 2]
+</code></pre>
+<h2 id="二十、颠倒数组的顺序，也称数组的反转"><a href="#二十、颠倒数组的顺序，也称数组的反转" class="headerlink" title="二十、颠倒数组的顺序，也称数组的反转"></a>二十、颠倒数组的顺序，也称数组的反转</h2><pre><code>var arr=[1,2,3,45,5,2];
 
     arr.reverse()
 
-console.log(arr)   // [2, 5, 45, 3, 2, 1]</code></pre><h2 id="二十一、join-将数组以括号中的值分割成字符串-不会改变原数组"><a href="#二十一、join-将数组以括号中的值分割成字符串-不会改变原数组" class="headerlink" title="二十一、join()将数组以括号中的值分割成字符串(不会改变原数组)"></a>二十一、<code>join()</code>将数组以括号中的值分割成字符串(不会改变原数组)</h2><pre><code>var arr=[1,2,3,45,5,2];
+console.log(arr)   // [2, 5, 45, 3, 2, 1]
+</code></pre>
+<h2 id="二十一、join-将数组以括号中的值分割成字符串-不会改变原数组"><a href="#二十一、join-将数组以括号中的值分割成字符串-不会改变原数组" class="headerlink" title="二十一、join()将数组以括号中的值分割成字符串(不会改变原数组)"></a>二十一、<code>join()</code>将数组以括号中的值分割成字符串(不会改变原数组)</h2><pre><code>var arr=[1,2,3,45,5,2];
 
 console.log(arr.join(&quot;_”));  //  &quot;1_2_3_45_5_2&quot;
 
-console.log(arr);   //  [1, 2, 3, 45, 5, 2]</code></pre><h2 id="二十二、sort-排序，将数组中的值进行排序，从大到小或从小到大-会改变原本的数组"><a href="#二十二、sort-排序，将数组中的值进行排序，从大到小或从小到大-会改变原本的数组" class="headerlink" title="二十二、sort()排序，将数组中的值进行排序，从大到小或从小到大(会改变原本的数组)"></a>二十二、<code>sort()</code>排序，将数组中的值进行排序，从大到小或从小到大(会改变原本的数组)</h2><blockquote>
+console.log(arr);   //  [1, 2, 3, 45, 5, 2]
+</code></pre>
+<h2 id="二十二、sort-排序，将数组中的值进行排序，从大到小或从小到大-会改变原本的数组"><a href="#二十二、sort-排序，将数组中的值进行排序，从大到小或从小到大-会改变原本的数组" class="headerlink" title="二十二、sort()排序，将数组中的值进行排序，从大到小或从小到大(会改变原本的数组)"></a>二十二、<code>sort()</code>排序，将数组中的值进行排序，从大到小或从小到大(会改变原本的数组)</h2><blockquote>
 <p><code>sort</code>原本的排序功能只能识别到个位数做比较，所以扩展使用以下方法：（排序方法有很多，这是最传统，也是使用频率较多的，其他的方法不再赘述）</p>
 </blockquote>
 <pre><code>var arr=[1,2,3,45,5,2];
 
-    arr.sort(function(a,b){
+    arr.sort(function(a,b)&#123;
         return a-b
-    })
+    &#125;)
    //  [1, 2, 2, 3, 5, 45]
 
 查看此时的arr数组：
     console.log(arr)  //   [1, 2, 2, 3, 5, 45]
 
-    arr.sort(function(a,b){
+    arr.sort(function(a,b)&#123;
         return b-a
-    })
+    &#125;)
   //  [45, 5, 3, 2, 2, 1]
 
 查看此时的arr数组：
-    console.log(arr)  //   [45, 5, 3, 2, 2, 1]</code></pre><blockquote>
+    console.log(arr)  //   [45, 5, 3, 2, 2, 1]
+</code></pre>
+<blockquote>
 <p>当然我们有时是不可以改变原数组的，那么可以试试下面的方法将需要的内容拷贝出来即可：</p>
 </blockquote>
 <pre><code>var arr=[1,3,6,8,45,34,90,122,9,0];
@@ -744,7 +798,9 @@ var array=arr.slice();
 
 console.log(arr，array)
 
-// [1,3,6,8,45,34,90,122,9,0],[1,3,6,8,45,34,90,122,9,0,34]</code></pre><hr>
+// [1,3,6,8,45,34,90,122,9,0],[1,3,6,8,45,34,90,122,9,0,34]
+</code></pre>
+<hr>
 <h2 id="数组中的迭代方法filter-every-forEach-map-some"><a href="#数组中的迭代方法filter-every-forEach-map-some" class="headerlink" title="数组中的迭代方法filter(), every(),forEach(),map(),some()"></a>数组中的迭代方法<code>filter()</code>, <code>every()</code>,<code>forEach()</code>,<code>map()</code>,<code>some()</code></h2><p><code>filter()</code>：对数组中的每一项运行给定函数，返回该函数会返回<code>true</code> 的项组成的数组。</p>
 <p><code>every()</code>：对数组中的每一项运行给定函数，如果该函数对每一项都返回<code>true</code>，则返回<code>true</code>。</p>
 <p><code>forEach()</code>：对数组中的每一项运行给定函数。这个方法没有返回值。</p>
@@ -753,31 +809,35 @@ console.log(arr，array)
 <h2 id="一、数组迭代方法之filter"><a href="#一、数组迭代方法之filter" class="headerlink" title="一、数组迭代方法之filter()"></a>一、数组迭代方法之<code>filter()</code></h2><p>（<code>filter</code>返回的是一个符合某种条件的数组，并返回，不会更改原数组）</p>
 <pre><code>var arr=[1,3,6,8,45,34,90,122,9,0];
 
-var array = arr.filter(function(element){
+var array = arr.filter(function(element)&#123;
 
         return element&gt;10
-    })
+    &#125;)
 console.log(array)
 
 //筛选数组中大于10的值， [45, 34, 90, 122]
 
 //查看原数组，并没有改变
 
-console.log(arr)    //  [1,3,6,8,45,34,90,122,9,0]</code></pre><h2 id="二、数组迭代方法之every"><a href="#二、数组迭代方法之every" class="headerlink" title="二、数组迭代方法之every()"></a>二、数组迭代方法之<code>every()</code></h2><p>（主要是用于判断一个素组中的值是否符合某个标准。必须是每个值都符合才会返回<code>true</code>。否则返回<code>false</code>）</p>
+console.log(arr)    //  [1,3,6,8,45,34,90,122,9,0]
+</code></pre>
+<h2 id="二、数组迭代方法之every"><a href="#二、数组迭代方法之every" class="headerlink" title="二、数组迭代方法之every()"></a>二、数组迭代方法之<code>every()</code></h2><p>（主要是用于判断一个素组中的值是否符合某个标准。必须是每个值都符合才会返回<code>true</code>。否则返回<code>false</code>）</p>
 <pre><code>var arr = [1,2,3,4,5,4,3,2,1];
 
-var everyResult = arr.every(function(item, index, array){
+var everyResult = arr.every(function(item, index, array)&#123;
     return (item &gt; 2);
-});
+&#125;);
 
 //判断数组中所有的值是否都大于2，如果都大于2，返回true，反之返回false.
 
-console.log(everyResult)     //false</code></pre><h2 id="三、数组迭代方法之forEach"><a href="#三、数组迭代方法之forEach" class="headerlink" title="三、数组迭代方法之forEach()"></a>三、数组迭代方法之<code>forEach()</code></h2><p>（数组的循环遍历,对数组中的每一项运行给定函数。这个方法没有返回值。)</p>
+console.log(everyResult)     //false
+</code></pre>
+<h2 id="三、数组迭代方法之forEach"><a href="#三、数组迭代方法之forEach" class="headerlink" title="三、数组迭代方法之forEach()"></a>三、数组迭代方法之<code>forEach()</code></h2><p>（数组的循环遍历,对数组中的每一项运行给定函数。这个方法没有返回值。)</p>
 <pre><code>var arr=[1,3,6,8,45,34,90,122,9,0];
 
-    arr.forEach(function(item,index,array){
+    arr.forEach(function(item,index,array)&#123;
         console.log(item,index,array)
-    })
+    &#125;)
 /*
  0 1 (10) [1, 3, 6, 8, 45, 34, 90, 122, 9, 0]
  1 3 (10) [1, 3, 6, 8, 45, 34, 90, 122, 9, 0]
@@ -789,12 +849,14 @@ console.log(everyResult)     //false</code></pre><h2 id="三、数组迭代方�
  7 122 (10) [1, 3, 6, 8, 45, 34, 90, 122, 9, 0]
  8 9 (10) [1, 3, 6, 8, 45, 34, 90, 122, 9, 0]
  9 0 (10) [1, 3, 6, 8, 45, 34, 90, 122, 9, 0]
-*/</code></pre><h2 id="四、数组迭代方法之map"><a href="#四、数组迭代方法之map" class="headerlink" title="四、数组迭代方法之map()"></a>四、数组迭代方法之<code>map()</code></h2><p>（数组的循环遍历,对数组中的每一项运行给定函数，返回每次函数调用的结果组成的数组。)</p>
+*/
+</code></pre>
+<h2 id="四、数组迭代方法之map"><a href="#四、数组迭代方法之map" class="headerlink" title="四、数组迭代方法之map()"></a>四、数组迭代方法之<code>map()</code></h2><p>（数组的循环遍历,对数组中的每一项运行给定函数，返回每次函数调用的结果组成的数组。)</p>
 <pre><code>var arr=[1,3,6,8,45,34,90,122,9,0];
 
-    arr.map(function(item,index,array){
+    arr.map(function(item,index,array)&#123;
         console.log(index,item,array)
-    })
+    &#125;)
  /*
  0 1 (10) [1, 3, 6, 8, 45, 34, 90, 122, 9, 0]
  1 3 (10) [1, 3, 6, 8, 45, 34, 90, 122, 9, 0]
@@ -806,32 +868,40 @@ console.log(everyResult)     //false</code></pre><h2 id="三、数组迭代方�
  7 122 (10) [1, 3, 6, 8, 45, 34, 90, 122, 9, 0]
  8 9 (10) [1, 3, 6, 8, 45, 34, 90, 122, 9, 0]
  9 0 (10) [1, 3, 6, 8, 45, 34, 90, 122, 9, 0]
- */</code></pre><h2 id="五、数组迭代方法之some"><a href="#五、数组迭代方法之some" class="headerlink" title="五、数组迭代方法之some()"></a>五、数组迭代方法之<code>some()</code></h2><p>(对数组中的每一项运行给定函数，如果该函数对任一项返回 true，则返回 true)</p>
+ */
+</code></pre>
+<h2 id="五、数组迭代方法之some"><a href="#五、数组迭代方法之some" class="headerlink" title="五、数组迭代方法之some()"></a>五、数组迭代方法之<code>some()</code></h2><p>(对数组中的每一项运行给定函数，如果该函数对任一项返回 true，则返回 true)</p>
 <pre><code>var numbers = [1,2,3,4,5,4,3,2,1];
 
-var someResult = numbers.some(function(item, index, array){
+var someResult = numbers.some(function(item, index, array)&#123;
     return (item &gt; 2);
-});
+&#125;);
 
 //只要有一个返回true，则返回true
 
-console.log(someResult); // true</code></pre><h2 id="归并：迭代数组中的所有值，返回一个按条件计算的最终值。"><a href="#归并：迭代数组中的所有值，返回一个按条件计算的最终值。" class="headerlink" title="归并：迭代数组中的所有值，返回一个按条件计算的最终值。"></a><strong>归并：迭代数组中的所有值，返回一个按条件计算的最终值。</strong></h2><p><strong>reduce:</strong></p>
+console.log(someResult); // true
+</code></pre>
+<h2 id="归并：迭代数组中的所有值，返回一个按条件计算的最终值。"><a href="#归并：迭代数组中的所有值，返回一个按条件计算的最终值。" class="headerlink" title="归并：迭代数组中的所有值，返回一个按条件计算的最终值。"></a><strong>归并：迭代数组中的所有值，返回一个按条件计算的最终值。</strong></h2><p><strong>reduce:</strong></p>
 <pre><code>var values = [1,2,3,4,5];
 
-var sum = reduce(function(prev, cur, index, array){
+var sum = reduce(function(prev, cur, index, array)&#123;
     return prev + cur;
-});
+&#125;);
 
 //第一次执行回调函数，prev 是1，cur 是2。第二次，prev 是3（1 加2 的结果），cur 是3（数组的第三项）。这个过程会持续到把数组中的每一项都访问一遍，最后返回结果。
-//通过循环遍历，返回数组中所有值的总和  15</code></pre><p><strong>reduceRight:</strong></p>
+//通过循环遍历，返回数组中所有值的总和  15
+</code></pre>
+<p><strong>reduceRight:</strong></p>
 <pre><code>var values = [1,2,3,4,5];
 
-var sum = reduceRight(function(prev, cur, index, array){
+var sum = reduceRight(function(prev, cur, index, array)&#123;
     return prev + cur;
-});
+&#125;);
 
 //第一次执行回调函数，prev 是5，cur 是4。第二次，prev 是9（5加4 的结果），cur 是3（数组的第三项）。这个过程会持续到把数组中的每一项都访问一遍，最后返回结果。
-//通过循环遍历，返回数组中所有值的总和  15</code></pre>
+//通过循环遍历，返回数组中所有值的总和  15
+</code></pre>
+
             </div>
             <hr/>
 
@@ -1170,7 +1240,7 @@ var sum = reduceRight(function(prev, cur, index, array){
                         
                             建立 VPSGoogle cloud platform 有免費 12 個月 300USD 的額度可以使用
 
-註冊  Google Clund Platform  服務
+註冊  Google Clund Platform  服務
 點擊左上角三條線漢堡，下拉選單到 「Compute Engine」 -&
                         
                     </div>
@@ -1378,12 +1448,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
       <a href="http://www.jixiaokang.com" target="_blank">xkloveme</a>
       |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
       <br />
-       &nbsp;<i
-        class="fas fa-chart-area"
-      ></i
-      >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >148.1k</span
-      >&nbsp;字      
+           
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
           id="busuanzi_value_site_pv"

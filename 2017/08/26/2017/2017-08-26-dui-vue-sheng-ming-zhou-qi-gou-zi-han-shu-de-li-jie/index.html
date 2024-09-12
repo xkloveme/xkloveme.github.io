@@ -27,7 +27,7 @@
     
     <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -297,7 +297,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=hckmbeld9nb')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=yh09pex619n')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -449,14 +449,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.5k
+                    1.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    7 分
                 </div>
                 
 				
@@ -473,63 +473,69 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>对于实现页面逻辑交互等效果，我们必须知晓 vue 的生命周期，才能愉快的玩耍，知道我们写的东西应该挂载到哪里，vue 官方给出的 api 讲解的那叫一个简单啊，如下：</p>
-<p>所有的生命周期钩子自动绑定 this 上下文到实例中，因此你可以访问数据，对属性和方法进行运算。这意味着<strong>你不能使用箭头函数来定义一个生命周期方法</strong>(例如 created: () =&gt; this.fetchTodos())。这是因为箭头函数绑定了父上下文，因此 this 与你期待的 Vue 实例不同，this.fetchTodos 的行为未定义。</p>
+<p>所有的生命周期钩子自动绑定 this 上下文到实例中，因此你可以访问数据，对属性和方法进行运算。这意味着<strong>你不能使用箭头函数来定义一个生命周期方法</strong>(例如 created: () &#x3D;&gt; this.fetchTodos())。这是因为箭头函数绑定了父上下文，因此 this 与你期待的 Vue 实例不同，this.fetchTodos 的行为未定义。</p>
 <p>下面附加一张生命周期图示</p>
-<p><img src="//upload-images.jianshu.io/upload_images/2615941-444e7f8762fd0ef3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<p><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/1213869-20170826142620121-2040456715.png" alt=""></p>
-<p><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/ContractedBlock-1.gif" alt="">)<img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/ExpandedBlockStart-1.gif" alt=""></p>
+<p><img src="//upload-images.jianshu.io/upload_images/2615941-444e7f8762fd0ef3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<p><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/1213869-20170826142620121-2040456715.png"></p>
+<p><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/ContractedBlock-1.gif"><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/ExpandedBlockStart-1.gif"></p>
 <p>1 DOCTYPE html&gt;<br>2 <html><br>3 <head><br>4 <title>title&gt;<br>5 <meta charset="utf-8"><br>6 <script type="text/javascript" src="https://cdn.jsdelivr.net/vue/2.1.3/vue.js">script><br>7 head><br>8 <body><br>9<br>10 <div id="app"><br>11 <p>{ { message }}p><br>12 div><br>13<br>14 <script type="text/javascript"><br>15 var app = new Vue({ 16 el: '#app', 17 data: { 18 message: "this is a test"<br>19 }, 20 beforeCreate: function () { 21 console.group('beforeCreate 创建前状态===============》'); 22 console.log("%c%s", "color:red", "el : " + this.$el); //undefined<br>23             console.log("%c%s", "color:red", "data   : " + this.$data); //undefined<br>24 console.log("%c%s", "color:red", "message: " + this.message) 25 }, 26 created: function () { 27 console.group('created 创建完毕状态===============》'); 28 console.log("%c%s", "color:red", "el : " + this.$el); //undefined<br>29             console.log("%c%s", "color:red", "data   : " + this.$data); //已被初始化<br>30 console.log("%c%s", "color:red", "message: " + this.message); //已被初始化<br>31 }, 32 beforeMount: function () { 33 console.group('beforeMount 挂载前状态===============》'); 34 console.log("%c%s", "color:red", "el : " + (this.$el)); //已被初始化<br>35             console.log(this.$el); 36 console.log("%c%s", "color:red", "data : " + this.$data); //已被初始化<br>37             console.log("%c%s", "color:red", "message: " + this.message); //已被初始化<br>38 }, 39 mounted: function () { 40             console.group('mounted 挂载结束状态===============》'); 41             console.log("%c%s", "color:red", "el     : " + this.$el); //已被初始化<br>42 console.log(this.$el); 43             console.log("%c%s", "color:red", "data   : " + this.$data); //已被初始化<br>44 console.log("%c%s", "color:red", "message: " + this.message); //已被初始化<br>45 }, 46 beforeUpdate: function () { 47 console.group('beforeUpdate 更新前状态===============》'); 48 console.log("%c%s", "color:red", "el : " + this.$el); 49             console.log(this.$el); 50 console.log("%c%s", "color:red", "data : " + this.$data); 51             console.log("%c%s", "color:red", "message: " + this.message); 52 }, 53 updated: function () { 54             console.group('updated 更新完成状态===============》'); 55             console.log("%c%s", "color:red", "el     : " + this.$el); 56 console.log(this.$el); 57             console.log("%c%s", "color:red", "data   : " + this.$data); 58 console.log("%c%s", "color:red", "message: " + this.message); 59 }, 60 beforeDestroy: function () { 61 console.group('beforeDestroy 销毁前状态===============》'); 62 console.log("%c%s", "color:red", "el : " + this.$el); 63             console.log(this.$el); 64 console.log("%c%s", "color:red", "data : " + this.$data); 65             console.log("%c%s", "color:red", "message: " + this.message); 66 }, 67 destroyed: function () { 68             console.group('destroyed 销毁完成状态===============》'); 69             console.log("%c%s", "color:red", "el     : " + this.$el); 70 console.log(this.$el); 71             console.log("%c%s", "color:red", "data   : " + this.$data); 72 console.log("%c%s", "color:red", "message: " + this.message) 73 } 74 }) 75 script><br>76 body><br>77 html></p>
 <p>生命周期</p>
 <ol>
-<li><a href="https://cn.vuejs.org/v2/api/#beforeCreate" target="_blank" rel="noopener">beforeCreate</a></li>
-<li><a href="https://cn.vuejs.org/v2/api/#created" target="_blank" rel="noopener">created</a></li>
-<li><a href="https://cn.vuejs.org/v2/api/#beforeMount" target="_blank" rel="noopener">beforeMount</a></li>
-<li><a href="https://cn.vuejs.org/v2/api/#mounted" target="_blank" rel="noopener">mounted</a></li>
-<li><a href="https://cn.vuejs.org/v2/api/#beforeUpdate" target="_blank" rel="noopener">beforeUpdate</a></li>
-<li><a href="https://cn.vuejs.org/v2/api/#updated" target="_blank" rel="noopener">updated</a></li>
-<li><a href="https://cn.vuejs.org/v2/api/#activated" target="_blank" rel="noopener">activated</a></li>
-<li><a href="https://cn.vuejs.org/v2/api/#deactivated" target="_blank" rel="noopener">deactivated</a></li>
-<li><a href="https://cn.vuejs.org/v2/api/#beforeDestroy" target="_blank" rel="noopener">beforeDestroy</a></li>
-<li><a href="https://cn.vuejs.org/v2/api/#destroyed" target="_blank" rel="noopener">destroyed</a></li>
+<li><a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/api/#beforeCreate">beforeCreate</a></li>
+<li><a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/api/#created">created</a></li>
+<li><a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/api/#beforeMount">beforeMount</a></li>
+<li><a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/api/#mounted">mounted</a></li>
+<li><a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/api/#beforeUpdate">beforeUpdate</a></li>
+<li><a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/api/#updated">updated</a></li>
+<li><a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/api/#activated">activated</a></li>
+<li><a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/api/#deactivated">deactivated</a></li>
+<li><a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/api/#beforeDestroy">beforeDestroy</a></li>
+<li><a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/api/#destroyed">destroyed</a></li>
 </ol>
 <h3 id="详解："><a href="#详解：" class="headerlink" title="详解："></a>详解：</h3><ol>
 <li><p><code>beforeCreate</code><br><strong>官方说明：</strong>在实例初始化之后，数据观测(data observer) 和 event/watcher 事件配置之前被调用。<br><strong>解释：</strong>这个时期，this 变量还不能使用，在 data 下的数据，和 methods 下的方法，watcher 中的事件都不能获得到；</p>
-<pre><code> beforeCreate() {
+<pre><code> beforeCreate() &#123;
    console.log(this.page); // undefined
-   console.log{this.showPage); // undefined
- },
- data() {
-   return {
+   console.log&#123;this.showPage); // undefined
+ &#125;,
+ data() &#123;
+   return &#123;
      page: 123
-   }
- },
- methods: {
-   showPage() {
+   &#125;
+ &#125;,
+ methods: &#123;
+   showPage() &#123;
      console.log(this.page);
-   }
- }</code></pre></li>
+   &#125;
+ &#125;
+</code></pre>
+</li>
 <li><p><code>created</code><br><strong>官方说明：</strong>实例已经创建完成之后被调用。在这一步，实例已完成以下的配置：数据观测(data observer)，属性和方法的运算， watch/event 事件回调。然而，挂载阶段还没开始，$el 属性目前不可见。<br><strong>解释说明：</strong> 这个时候可以操作 vue 实例中的数据和各种方法，但是还不能对"dom"节点进行操作；</p>
-<pre><code> created() {
+<pre><code> created() &#123;
    console.log(this.page); // 123
-   console.log{this.showPage); // ...
+   console.log&#123;this.showPage); // ...
    $(&#39;select&#39;).select2(); // jQuery插件需要操作相关dom，不会起作用
- },
- data() {
-   return {
+ &#125;,
+ data() &#123;
+   return &#123;
      page: 123
-   }
- },
- methods: {
-   showPage() {
+   &#125;
+ &#125;,
+ methods: &#123;
+   showPage() &#123;
      console.log(this.page);
-   }
- }</code></pre></li>
+   &#125;
+ &#125;
+</code></pre>
+</li>
 <li><p><code>beforeMounte</code><br><strong>官方说明：</strong>在挂载开始之前被调用：相关的 render 函数首次被调用。</p>
 </li>
 <li><p><code>mounted</code><br><strong>官方说明：</strong><code>el</code> 被新创建的 <code>vm.$el</code> 替换，并挂载到实例上去之后调用该钩子。如果<code>root</code>实例挂载了一个文档内元素，当 <code>mounted</code> 被调用时 <code>vm.$el</code> 也在文档内。<br><strong>解释说明：</strong>挂载完毕，这时<code>dom</code>节点被渲染到文档内，一些需要<code>dom</code>的操作在此时才能正常进行</p>
-<pre><code> mounted() {
+<pre><code> mounted() &#123;
    $(&#39;select&#39;).select2(); // jQuery插件可以正常使用
- },</code></pre></li>
+ &#125;,
+</code></pre>
+</li>
 </ol>
 <p>这时初始化插件没有问题，插件能正常运行，但是这并不代表万事大吉；下面思考一个问题：</p>
 <p><img src="//upload-images.jianshu.io/upload_images/2480162-963129596d325d26.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="select2"></p>
@@ -539,40 +545,46 @@
 <p><img src="//upload-images.jianshu.io/upload_images/2480162-5f3d7b05331886c6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="option有默认效果的是130，select中的值还是保持全部"></p>
 <p>option 有默认效果的是 130，select 中的值还是保持全部</p>
 <p>什么时候执行<code>$(&#39;select&#39;).select2()</code>，是解决这个问题的关键。大家肯定猜到了，mounted 的确是在请求成功之前执行的，所以这时的办法就是将<code>$(&#39;select&#39;).select2()</code>的执行放到请求成功的回调里执行：</p>
-<pre><code>  $.getJSON(urls.agentAndCity, {pageType: this.pageType}, (res) =&gt; {
+<pre><code>  $.getJSON(urls.agentAndCity, &#123;pageType: this.pageType&#125;, (res) =&gt; &#123;
     const a = this.agentList,
     d = res.data;
     a.id = d.orgIds;
     a.name = d.orgNames;
     a.city = d.cityMap;
     $(&#39;select&#39;).select2()；
-  });</code></pre><p>本以为这样就完美解决了，但是发现还是会出现和上图一样的效果；如何是好？这时轮到<a href="https://cn.vuejs.org/v2/api/#vm-nextTick-callback" target="_blank" rel="noopener">vm.$nextTick</a>登场了：<br><strong>说明：</strong> 将回调延迟到下次 <code>DOM</code> 更新循环之后执行。在修改数据之后立即使用它，然后等待 <code>DOM</code> 更新。<br>官方示例代码：</p>
-<pre><code>    new Vue({
+  &#125;);
+</code></pre>
+<p>本以为这样就完美解决了，但是发现还是会出现和上图一样的效果；如何是好？这时轮到<a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/api/#vm-nextTick-callback">vm.$nextTick</a>登场了：<br><strong>说明：</strong> 将回调延迟到下次 <code>DOM</code> 更新循环之后执行。在修改数据之后立即使用它，然后等待 <code>DOM</code> 更新。<br>官方示例代码：</p>
+<pre><code>    new Vue(&#123;
       // ...
-      methods: {
+      methods: &#123;
       // ...
-      example: function () {
+      example: function () &#123;
       // 修改数据
       this.message = &#39;changed&#39;
       // DOM 还没有更新
-        this.$nextTick(function () {
+        this.$nextTick(function () &#123;
           // DOM 现在更新了
           // `this` 绑定到当前实例
           this.doSomethingElse()
-        })
-      }
-    }
-  })</code></pre><p>所以我的解决办法如下：</p>
-<pre><code>$.getJSON(urls.agentAndCity, {pageType: this.pageType}, (res) =&gt; {
+        &#125;)
+      &#125;
+    &#125;
+  &#125;)
+</code></pre>
+<p>所以我的解决办法如下：</p>
+<pre><code>$.getJSON(urls.agentAndCity, &#123;pageType: this.pageType&#125;, (res) =&gt; &#123;
     const a = this.agentList,
     d = res.data;
     a.id = d.orgIds;
     a.name = d.orgNames;
     a.city = d.cityMap;
-    this.$nextTick(() =&gt; {
+    this.$nextTick(() =&gt; &#123;
       $(&#39;select&#39;).select2();
-    });
-  });</code></pre><p>至此这个问题才算比较满意的解决</p>
+    &#125;);
+  &#125;);
+</code></pre>
+<p>至此这个问题才算比较满意的解决</p>
 
             </div>
             <hr/>
@@ -865,8 +877,8 @@
 在优化之前需要加载三张大图这无疑增加了资源请求数量
 因此，我想到了将图片转换为背景以此减少请求没想到方案是可行的，上代码
     
-
-&lt;mt-navbar
+      
+&lt;mt-
                         
                     </div>
                     <div class="publish-info">
@@ -915,7 +927,7 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Vuex 是一个专为 Vue 服务，用于管理页面数据状态、提供统一数据操作的生态系统。它集中于 MVC 模式中的 Model 层，规定所有的数据操作必须通过  action - mutation - state change  的流程来进行
+                            Vuex 是一个专为 Vue 服务，用于管理页面数据状态、提供统一数据操作的生态系统。它集中于 MVC 模式中的 Model 层，规定所有的数据操作必须通过  action - mutation - state change  的流程来进行
                         
                     </div>
                     <div class="publish-info">
@@ -1126,12 +1138,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
       <a href="http://www.jixiaokang.com" target="_blank">xkloveme</a>
       |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
       <br />
-       &nbsp;<i
-        class="fas fa-chart-area"
-      ></i
-      >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >148.1k</span
-      >&nbsp;字      
+           
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
           id="busuanzi_value_site_pv"

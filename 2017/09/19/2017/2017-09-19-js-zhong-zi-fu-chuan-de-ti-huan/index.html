@@ -8,7 +8,7 @@
     <meta name="description" content="定义和用法
 replace() 方法用于在字符串中用一些字符替换另一些字符，或替换一个与正则表达式匹配的子串。
 语法
-stringObject.replace(regexp/substr,replacement)参数 描述regexp/su">
+stringObject.replace(regexp&amp;#x2F;substr,replacement)参数 描述  re">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -29,7 +29,7 @@ stringObject.replace(regexp/substr,replacement)参数 描述regexp/su">
     
     <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -299,7 +299,7 @@ stringObject.replace(regexp/substr,replacement)参数 描述regexp/su">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=3luwbd5ld2h')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=rbg8loebgg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -458,7 +458,7 @@ stringObject.replace(regexp/substr,replacement)参数 描述regexp/su">
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    7 分
                 </div>
                 
 				
@@ -477,42 +477,33 @@ stringObject.replace(regexp/substr,replacement)参数 描述regexp/su">
                 <p><strong>定义和用法</strong></p>
 <p>replace() 方法用于在字符串中用一些字符替换另一些字符，或替换一个与正则表达式匹配的子串。</p>
 <p><strong>语法</strong></p>
-<p>stringObject.replace(regexp/substr,replacement)参数 描述<br>regexp/substr 必需。规定子字符串或要替换的模式的 RegExp 对象。</p>
+<p>stringObject.replace(regexp&#x2F;substr,replacement)参数 描述  <br>regexp&#x2F;substr 必需。规定子字符串或要替换的模式的 RegExp 对象。</p>
 <p>请注意，如果该值是一个字符串，则将它作为要检索的直接量文本模式，而不是首先被转换为 RegExp 对象。</p>
 <p>replacement 必需。一个字符串值。规定了替换文本或生成替换文本的函数。</p>
 <p><strong>返回值</strong></p>
 <p>一个新的字符串，是用 replacement 替换了 regexp 的第一次匹配或所有匹配之后得到的。</p>
-<p>*<em>说明<br>*</em>字符串 stringObject 的 replace() 方法执行的是查找并替换的操作。它将在 stringObject 中查找与 regexp 相匹配的子字符串，然后用 replacement 来替换这些子串。如果 regexp 具有全局标志 g，那么 replace() 方法将替换所有匹配的子串。否则，它只替换第一个匹配子串。</p>
+<p>**说明<br>**字符串 stringObject 的 replace() 方法执行的是查找并替换的操作。它将在 stringObject 中查找与 regexp 相匹配的子字符串，然后用 replacement 来替换这些子串。如果 regexp 具有全局标志 g，那么 replace() 方法将替换所有匹配的子串。否则，它只替换第一个匹配子串。</p>
 <p>replacement 可以是字符串，也可以是函数。如果它是字符串，那么每个匹配都将由字符串替换。但是 replacement 中的 $ 字符具有特定的含义。如下表所示，它说明从模式匹配得到的字符串将用于替换。</p>
-<p>*<em>字符 替换文本<br>*</em>$1、$2、…、$99 与 regexp 中的第 1 到第 99 个子表达式相匹配的文本。<br>$&amp; 与 regexp 相匹配的子串。<br>$` 位于匹配子串左侧的文本。<br>$’ 位于匹配子串右侧的文本。</p>
+<p>**字符 替换文本  <br>**$1、$2、…、$99 与 regexp 中的第 1 到第 99 个子表达式相匹配的文本。 <br>$&amp; 与 regexp 相匹配的子串。 <br>$&#96; 位于匹配子串左侧的文本。 <br>$’ 位于匹配子串右侧的文本。</p>
 <p>$$<br>注意：ECMAScript v3 规定，replace() 方法的参数 replacement 可以是函数而不是字符串。在这种情况下，每个匹配都调用该函数，它返回的字符串将作为替换文本使用。该函数的第一个参数是匹配模式的字符串。接下来的参数是与模式中的子表达式匹配的字符串，可以有 0 个或多个这样的参数。接下来的参数是一个整数，声明了匹配在 stringObject 中出现的位置。最后一个参数是 stringObject 本身。<br>实例</p>
 <p>i、replace方法</p>
-<pre><code>该方法的作用是替换字符串中所有指定的字符，然后生成一个新的字符串。经过该方法调用以后，原来的字符串不发生改变。例如：
-
-String s = “abcat”；
-
-String s1 = s.replace（‘a’，‘1’）；
-
-该代码的作用是将字符串s中所有的字符a替换成字符1，生成的新字符串s1的值是“1bc1t”，而字符串s的内容不发生改变。
-
-如果需要将字符串中某个指定的字符串替换为其它字符串，则可以使用replaceAll方法，例如：
-
-String s = “abatbac”；
-
-String s1 = s.replaceAll（“ba”，“12”）；
-
-该代码的作用是将字符串s中所有的字符串“ab”替换为“12”，生成新的字符串“a12t12c”，而字符串s的内容也不发生改变。
-
-如果只需要替换第一个出现的指定字符串时，可以使用replaceFirst方法，例如：
-
-String s = “abatbac”；
-
-String s1 = s. replaceFirst （“ba”，“12”）；
-
-该代码的作用是只将字符串s中全局出现的字符串“,”替换为字符串“/”。</code></pre><p>  var str = “Is,is,the,cost,of,of,gasoline,going,up,up”;</p>
-<p><em>document.write(str.replace(/\,/g,’/‘));</em></p>
-<pre><code>运用正则进行全局匹配将全局的“,”替换为“/”。</code></pre><p>*<em>例子 1<br>*</em>在本例中，我们将使用 “jb51.net” 替换字符串中的 “Microsoft”：</p>
-<p><a href="http://www.jb51.net/article/28009.htm#" target="_blank" rel="noopener">?</a></p>
+<p>    该方法的作用是替换字符串中所有指定的字符，然后生成一个新的字符串。经过该方法调用以后，原来的字符串不发生改变。例如：</p>
+<p>    String s &#x3D; “abcat”；</p>
+<p>    String s1 &#x3D; s.replace（‘a’，‘1’）；</p>
+<p>    该代码的作用是将字符串s中所有的字符a替换成字符1，生成的新字符串s1的值是“1bc1t”，而字符串s的内容不发生改变。</p>
+<p>    如果需要将字符串中某个指定的字符串替换为其它字符串，则可以使用replaceAll方法，例如：</p>
+<p>    String s &#x3D; “abatbac”；</p>
+<p>    String s1 &#x3D; s.replaceAll（“ba”，“12”）；</p>
+<p>    该代码的作用是将字符串s中所有的字符串“ab”替换为“12”，生成新的字符串“a12t12c”，而字符串s的内容也不发生改变。</p>
+<p>    如果只需要替换第一个出现的指定字符串时，可以使用replaceFirst方法，例如：</p>
+<p>    String s &#x3D; “abatbac”；</p>
+<p>    String s1 &#x3D; s. replaceFirst （“ba”，“12”）；</p>
+<p>    该代码的作用是只将字符串s中全局出现的字符串“,”替换为字符串“&#x2F;”。</p>
+<p>  var str &#x3D; “Is,is,the,cost,of,of,gasoline,going,up,up”;</p>
+<p><em>document.write(str.replace(&#x2F;\,&#x2F;g,’&#x2F;‘));</em></p>
+<p>    运用正则进行全局匹配将全局的“,”替换为“&#x2F;”。</p>
+<p>**例子 1<br>**在本例中，我们将使用 “jb51.net” 替换字符串中的 “Microsoft”：</p>
+<p><a target="_blank" rel="noopener" href="http://www.jb51.net/article/28009.htm#">?</a></p>
 <p>1</p>
 <p>2</p>
 <p>3</p>
@@ -520,8 +511,8 @@ String s1 = s. replaceFirst （“ba”，“12”）；
 <p><code>&lt;code class=&quot;js string&quot;&gt;&quot;text/javascript&quot;&lt;/code&gt;&lt;code class=&quot;js plain&quot;&gt;&gt;&lt;/code&gt;&lt;/div&gt; &lt;div class=&quot;line number2 index1 alt1&quot;&gt;&lt;code class=&quot;js keyword&quot;&gt;var&lt;/code&gt; &lt;code class=&quot;js plain&quot;&gt;str=&lt;/code&gt;&lt;code class=&quot;js string&quot;&gt;&quot;Visit Microsoft!&quot;&lt;/code&gt;&lt;/div&gt; &lt;div class=&quot;line number3 index2 alt2&quot;&gt;&lt;code class=&quot;js plain&quot;&gt;document.write(str.replace(/Microsoft/, &lt;/code&gt;&lt;code class=&quot;js string&quot;&gt;&quot;jb51.net&quot;&lt;/code&gt;&lt;code class=&quot;js plain&quot;&gt;))&lt;/code&gt;&lt;/div&gt; &lt;div class=&quot;line number4 index3 alt1&quot;&gt;&lt;code class=&quot;js plain&quot;&gt;</code></p>
 <p>输出：</p>
 <p>Visit jb51.net!</p>
-<p>*<em>例子 2<br>*</em>在本例中，我们将执行一次全局替换，每当 “Microsoft” 被找到，它就被替换为 “jb51.net”：</p>
-<p><a href="http://www.jb51.net/article/28009.htm#" target="_blank" rel="noopener">?</a></p>
+<p>**例子 2<br>**在本例中，我们将执行一次全局替换，每当 “Microsoft” 被找到，它就被替换为 “jb51.net”：</p>
+<p><a target="_blank" rel="noopener" href="http://www.jb51.net/article/28009.htm#">?</a></p>
 <p>1</p>
 <p>2</p>
 <p>3</p>
@@ -531,33 +522,33 @@ String s1 = s. replaceFirst （“ba”，“12”）；
 <p><code>&lt;code class=&quot;js string&quot;&gt;&quot;text/javascript&quot;&lt;/code&gt;&lt;code class=&quot;js plain&quot;&gt;&gt;&lt;/code&gt;&lt;/div&gt; &lt;div class=&quot;line number2 index1 alt1&quot;&gt;&lt;code class=&quot;js keyword&quot;&gt;var&lt;/code&gt; &lt;code class=&quot;js plain&quot;&gt;str=&lt;/code&gt;&lt;code class=&quot;js string&quot;&gt;&quot;Welcome to Microsoft! &quot;&lt;/code&gt;&lt;/div&gt; &lt;div class=&quot;line number3 index2 alt2&quot;&gt;&lt;code class=&quot;js plain&quot;&gt;str=str + &lt;/code&gt;&lt;code class=&quot;js string&quot;&gt;&quot;We are proud to announce that Microsoft has &quot;&lt;/code&gt;&lt;/div&gt; &lt;div class=&quot;line number4 index3 alt1&quot;&gt;&lt;code class=&quot;js plain&quot;&gt;str=str + &lt;/code&gt;&lt;code class=&quot;js string&quot;&gt;&quot;one of the largest Web Developers sites in the world.&quot;&lt;/code&gt;&lt;/div&gt; &lt;div class=&quot;line number5 index4 alt2&quot;&gt;&lt;code class=&quot;js plain&quot;&gt;document.write(str.replace(/Microsoft/g, &lt;/code&gt;&lt;code class=&quot;js string&quot;&gt;&quot;jb51.net&quot;&lt;/code&gt;&lt;code class=&quot;js plain&quot;&gt;))&lt;/code&gt;&lt;/div&gt; &lt;div class=&quot;line number6 index5 alt1&quot;&gt;&lt;code class=&quot;js plain&quot;&gt;</code></p>
 <p>输出：</p>
 <p>Welcome to jb51.net! We are proud to announce that jb51.net<br>has one of the largest Web Developers sites in the world.</p>
-<p>*<em>例子 3<br>*</em>您可以使用本例提供的代码来确保匹配字符串大写字符的正确：</p>
-<p><a href="http://www.jb51.net/article/28009.htm#" target="_blank" rel="noopener">?</a></p>
+<p>**例子 3<br>**您可以使用本例提供的代码来确保匹配字符串大写字符的正确：</p>
+<p><a target="_blank" rel="noopener" href="http://www.jb51.net/article/28009.htm#">?</a></p>
 <p>1</p>
 <p>2</p>
 <p><code>text =</code> <code>&quot;javascript Tutorial&quot;``;</code></p>
 <p><code>text.replace(/javascript/i,</code> <code>&quot;JavaScript&quot;``);</code></p>
-<p>*<em>例子 4<br>*</em>在本例中，我们将把 “Doe, John” 转换为 “John Doe” 的形式：</p>
-<p><a href="http://www.jb51.net/article/28009.htm#" target="_blank" rel="noopener">?</a></p>
+<p>**例子 4<br>**在本例中，我们将把 “Doe, John” 转换为 “John Doe” 的形式：</p>
+<p><a target="_blank" rel="noopener" href="http://www.jb51.net/article/28009.htm#">?</a></p>
 <p>1</p>
 <p>2</p>
 <p><code>name =</code> <code>&quot;Doe, John&quot;``;</code></p>
 <p><code>name.replace(/(\w+)\s*, \s*(\w+)/,</code> <code>&quot;$2 $1&quot;``);</code></p>
-<p>*<em>例子 5<br>*</em>在本例中，我们将把所有的花引号替换为直引号：</p>
-<p><a href="http://www.jb51.net/article/28009.htm#" target="_blank" rel="noopener">?</a></p>
+<p>**例子 5<br>**在本例中，我们将把所有的花引号替换为直引号：</p>
+<p><a target="_blank" rel="noopener" href="http://www.jb51.net/article/28009.htm#">?</a></p>
 <p>1</p>
 <p>2</p>
 <p><code>name =</code> <code>&#39;&quot;a&quot;, &quot;b&quot;&#39;``;</code></p>
 <p><code>name.replace(/``&quot;([^&quot;``]*)``&quot;/g, &quot;``&#39;$1&#39;``&quot;);</code></p>
-<p>*<em>例子 6<br>*</em>在本例中，我们将把字符串中所有单词的首字母都转换为大写：</p>
-<p><a href="http://www.jb51.net/article/28009.htm#" target="_blank" rel="noopener">?</a></p>
+<p>**例子 6<br>**在本例中，我们将把字符串中所有单词的首字母都转换为大写：</p>
+<p><a target="_blank" rel="noopener" href="http://www.jb51.net/article/28009.htm#">?</a></p>
 <p>1</p>
 <p>2</p>
 <p>3</p>
 <p>4</p>
 <p><code>name =</code> <code>&#39;aaa bbb ccc&#39;``;</code></p>
-<p><code>uw=name.replace(/\b\w+\b/g,</code> <code>function``(word){</code></p>
-<p><code>return</code> <code>word.substring(0,1).toUpperCase()+word.substring(1);}</code></p>
+<p><code>uw=name.replace(/\b\w+\b/g,</code> <code>function``(word)&#123;</code></p>
+<p><code>return</code> <code>word.substring(0,1).toUpperCase()+word.substring(1);&#125;</code></p>
 <p><code>);</code><br>$$</p>
 
             </div>
@@ -903,8 +894,7 @@ m-n 位的数字：^\d{m,n}$
                         
                             
 定义一个父组件
-/_ ============ * Home Index Page * ============ * * The home index page._/
-import VLayout from ‘@/layouts/Defa
+&#x2F; &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D; * Home Index Page * &#x3D;&#x3D
                         
                     </div>
                     <div class="publish-info">
@@ -1115,12 +1105,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
       <a href="http://www.jixiaokang.com" target="_blank">xkloveme</a>
       |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
       <br />
-       &nbsp;<i
-        class="fas fa-chart-area"
-      ></i
-      >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >148.1k</span
-      >&nbsp;字      
+           
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
           id="busuanzi_value_site_pv"

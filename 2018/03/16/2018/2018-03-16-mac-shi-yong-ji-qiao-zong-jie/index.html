@@ -36,7 +36,7 @@ Mac 系统日常使用技巧归纳总结。
     
     <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -306,7 +306,7 @@ Mac 系统日常使用技巧归纳总结。
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=8bxww2x5axs')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=74dcz7w6ums')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -458,7 +458,7 @@ Mac 系统日常使用技巧归纳总结。
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1k
+                    1.1k
                 </div>
                 
 
@@ -495,29 +495,29 @@ Mac 系统日常使用技巧归纳总结。
 <h1 id="此命令关闭显示隐藏文件"><a href="#此命令关闭显示隐藏文件" class="headerlink" title="此命令关闭显示隐藏文件"></a>此命令关闭显示隐藏文件</h1><p>defaults write com.apple.finder AppleShowAllFiles -bool false</p>
 </li>
 <li><p>命令运行之后需要重新加载 Finder</p>
-<p>快捷键  <code>Option + Command + ESC</code>，选中  <code>Finder</code>，重新启动即可</p>
+<p>快捷键  <code>Option + Command + ESC</code>，选中  <code>Finder</code>，重新启动即可</p>
 </li>
 </ul>
 <h2 id="1-2-Finder-快捷键"><a href="#1-2-Finder-快捷键" class="headerlink" title="1.2 Finder 快捷键"></a>1.2 Finder 快捷键</h2><p>在 macOS Sierra（10.12） 版本的系统中，我们可以使用快捷键<code>⌘⇧.</code>(<code>Command + Shift + .</code>) 来快速（在 Finder 中）显示和隐藏隐藏文件了。</p>
-<h1 id="二、Terminal-中使用-Sublime-打开文件"><a href="#二、Terminal-中使用-Sublime-打开文件" class="headerlink" title="二、Terminal 中使用 Sublime 打开文件"></a>二、Terminal 中使用 Sublime 打开文件</h1><h2 id="2-1-如果使用默认-Shell"><a href="#2-1-如果使用默认-Shell" class="headerlink" title="2.1 如果使用默认 Shell"></a>2.1 如果使用默认 Shell</h2><p>在  <code>Terminal</code>  输入以下命令：</p>
+<h1 id="二、Terminal-中使用-Sublime-打开文件"><a href="#二、Terminal-中使用-Sublime-打开文件" class="headerlink" title="二、Terminal 中使用 Sublime 打开文件"></a>二、Terminal 中使用 Sublime 打开文件</h1><h2 id="2-1-如果使用默认-Shell"><a href="#2-1-如果使用默认-Shell" class="headerlink" title="2.1 如果使用默认 Shell"></a>2.1 如果使用默认 Shell</h2><p>在  <code>Terminal</code>  输入以下命令：</p>
 <p>1</p>
-<p>sudo ln -s “/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl” /usr/bin/subl</p>
-<h2 id="2-2-如果使用-zsh"><a href="#2-2-如果使用-zsh" class="headerlink" title="2.2 如果使用 zsh"></a>2.2 如果使用 zsh</h2><p>在文件  <code>~/.zshrc</code>  最后添加</p>
+<p>sudo ln -s “&#x2F;Applications&#x2F;Sublime\ Text.app&#x2F;Contents&#x2F;SharedSupport&#x2F;bin&#x2F;subl” &#x2F;usr&#x2F;bin&#x2F;subl</p>
+<h2 id="2-2-如果使用-zsh"><a href="#2-2-如果使用-zsh" class="headerlink" title="2.2 如果使用 zsh"></a>2.2 如果使用 zsh</h2><p>在文件  <code>~/.zshrc</code>  最后添加</p>
 <p>1</p>
 <p>2</p>
 <p>3</p>
 <p>4</p>
 <p>5</p>
-<p>alias subl=”‘/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl’”</p>
-<p>alias nano=”subl”</p>
-<p>export EDITOR=”subl”</p>
-<p>然后在  <code>Terminal</code>  中使用  <code>subl</code>  就可以打开  <code>Sublime</code>  了。</p>
+<p>alias subl&#x3D;”‘&#x2F;Applications&#x2F;Sublime Text.app&#x2F;Contents&#x2F;SharedSupport&#x2F;bin&#x2F;subl’”</p>
+<p>alias nano&#x3D;”subl”</p>
+<p>export EDITOR&#x3D;”subl”</p>
+<p>然后在  <code>Terminal</code>  中使用  <code>subl</code>  就可以打开  <code>Sublime</code>  了。</p>
 <h2 id="2-3-使用-Sublime-打开指定的文件"><a href="#2-3-使用-Sublime-打开指定的文件" class="headerlink" title="2.3 使用 Sublime 打开指定的文件"></a>2.3 使用 Sublime 打开指定的文件</h2><p>1</p>
-<p>open -a Sublime\ Text .m2/settings.xml</p>
+<p>open -a Sublime\ Text .m2&#x2F;settings.xml</p>
 <blockquote>
-<p>可以使用  <code>Tab</code>  自定补全应用名称</p>
+<p>可以使用  <code>Tab</code>  自定补全应用名称</p>
 </blockquote>
-<h1 id="三、多屏切换-dock-显示"><a href="#三、多屏切换-dock-显示" class="headerlink" title="三、多屏切换 dock 显示"></a>三、多屏切换 dock 显示</h1><p>如果  <code>dock</code>  在屏幕底部显示，移动鼠标到要显示  <code>dock</code>  的屏幕上，单击使屏幕处于选中状态，在屏幕底部中间部位向下滑动鼠标即可移动  <code>dock</code>  到当前屏幕上显示。</p>
+<h1 id="三、多屏切换-dock-显示"><a href="#三、多屏切换-dock-显示" class="headerlink" title="三、多屏切换 dock 显示"></a>三、多屏切换 dock 显示</h1><p>如果  <code>dock</code>  在屏幕底部显示，移动鼠标到要显示  <code>dock</code>  的屏幕上，单击使屏幕处于选中状态，在屏幕底部中间部位向下滑动鼠标即可移动  <code>dock</code>  到当前屏幕上显示。</p>
 <h1 id="四、Terminal-重启-Finder、dock-等命令"><a href="#四、Terminal-重启-Finder、dock-等命令" class="headerlink" title="四、Terminal 重启 Finder、dock 等命令"></a>四、Terminal 重启 Finder、dock 等命令</h1><p>1</p>
 <p>2</p>
 <p>3</p>
@@ -529,7 +529,7 @@ Mac 系统日常使用技巧归纳总结。
 <h1 id="Finder-崩溃重启"><a href="#Finder-崩溃重启" class="headerlink" title="Finder 崩溃重启"></a>Finder 崩溃重启</h1><p>killall -kill Finder</p>
 <h1 id="Dock-崩溃重启"><a href="#Dock-崩溃重启" class="headerlink" title="Dock 崩溃重启"></a>Dock 崩溃重启</h1><p>killall -kill Dock</p>
 <h1 id="菜单栏崩溃重启"><a href="#菜单栏崩溃重启" class="headerlink" title="菜单栏崩溃重启"></a>菜单栏崩溃重启</h1><p>killall -kill SystemUIServer</p>
-<h1 id="五、Terminal-中用打开当前路径的文件夹"><a href="#五、Terminal-中用打开当前路径的文件夹" class="headerlink" title="五、Terminal 中用打开当前路径的文件夹"></a>五、Terminal 中用打开当前路径的文件夹</h1><p>在  <code>Terminal</code>  中输入命令：</p>
+<h1 id="五、Terminal-中用打开当前路径的文件夹"><a href="#五、Terminal-中用打开当前路径的文件夹" class="headerlink" title="五、Terminal 中用打开当前路径的文件夹"></a>五、Terminal 中用打开当前路径的文件夹</h1><p>在  <code>Terminal</code>  中输入命令：</p>
 <p>1</p>
 <p>open .</p>
 <h1 id="六、剪贴文件"><a href="#六、剪贴文件" class="headerlink" title="六、剪贴文件"></a>六、剪贴文件</h1><p>1</p>
@@ -539,15 +539,15 @@ Mac 系统日常使用技巧归纳总结。
 <p>5</p>
 <h1 id="复制"><a href="#复制" class="headerlink" title="复制"></a>复制</h1><p>Command + c</p>
 <h1 id="剪切到当前目录"><a href="#剪切到当前目录" class="headerlink" title="剪切到当前目录"></a>剪切到当前目录</h1><p>Command + Option + v</p>
-<h1 id="七、快速打开最小化程序"><a href="#七、快速打开最小化程序" class="headerlink" title="七、快速打开最小化程序"></a>七、快速打开最小化程序</h1><p><code>Command + Tab</code>  切换程序的时候，最小化的程序不自动弹出窗口，解决办法如下：</p>
+<h1 id="七、快速打开最小化程序"><a href="#七、快速打开最小化程序" class="headerlink" title="七、快速打开最小化程序"></a>七、快速打开最小化程序</h1><p><code>Command + Tab</code>  切换程序的时候，最小化的程序不自动弹出窗口，解决办法如下：</p>
 <ul>
-<li>用  <code>Command + Tab</code>  切换到要打开的程序</li>
-<li>先松开  <code>Tab</code>  键，不要松开  <code>Command</code>  键</li>
-<li>然后按住  <code>Option</code>  键</li>
-<li>然后依次松开  <code>Command</code>  和  <code>Option</code>  键</li>
+<li>用  <code>Command + Tab</code>  切换到要打开的程序</li>
+<li>先松开  <code>Tab</code>  键，不要松开  <code>Command</code>  键</li>
+<li>然后按住  <code>Option</code>  键</li>
+<li>然后依次松开  <code>Command</code>  和  <code>Option</code>  键</li>
 </ul>
 <p>如上操作就可以快速打开最小化的程序了。</p>
-<h1 id="八、常用快捷键"><a href="#八、常用快捷键" class="headerlink" title="八、常用快捷键"></a>八、常用快捷键</h1><p><a href="https://support.apple.com/zh-cn/HT201236" target="_blank" rel="noopener">Mac 键盘快捷键官方参考</a></p>
+<h1 id="八、常用快捷键"><a href="#八、常用快捷键" class="headerlink" title="八、常用快捷键"></a>八、常用快捷键</h1><p><a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT201236">Mac 键盘快捷键官方参考</a></p>
 <p>功能</p>
 <p>快捷键</p>
 <p>预览文件</p>
@@ -560,13 +560,13 @@ Mac 系统日常使用技巧归纳总结。
 <p><code>F11</code></p>
 <p>切换窗口全屏状态</p>
 <p><code>Ctrl + Cmmad + f</code></p>
-<p>影藏 / 显示 Dock</p>
+<p>影藏 &#x2F; 显示 Dock</p>
 <p><code>Command + Option + d</code></p>
 <p>输入 emoji 表情</p>
 <p><code>Ctrl + Cmmad + 空格</code></p>
-<h1 id="九、-DS-Store-文件处理"><a href="#九、-DS-Store-文件处理" class="headerlink" title="九、.DS_Store 文件处理"></a>九、.DS_Store 文件处理</h1><p><a href="https://zh.wikipedia.org/wiki/.DS_Store" target="_blank" rel="noopener">.DS_Store (英文全称 Desktop Services Store) 是一种由苹果公司的 Mac OS X 操作系统所创造的隐藏文件，目的在于存贮目录的自定义属性，例如文件们的图标位置或者是背景色的选择。</a></p>
+<h1 id="九、-DS-Store-文件处理"><a href="#九、-DS-Store-文件处理" class="headerlink" title="九、.DS_Store 文件处理"></a>九、.DS_Store 文件处理</h1><p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/.DS_Store">.DS_Store (英文全称 Desktop Services Store) 是一种由苹果公司的 Mac OS X 操作系统所创造的隐藏文件，目的在于存贮目录的自定义属性，例如文件们的图标位置或者是背景色的选择。</a></p>
 <h2 id="9-1-清除文件"><a href="#9-1-清除文件" class="headerlink" title="9.1 清除文件"></a>9.1 清除文件</h2><p>清除命令：</p>
-<p><code>sudo find / -name &quot;.DS_Store&quot; -depth -exec rm {} \;</code></p>
+<p><code>sudo find / -name &quot;.DS_Store&quot; -depth -exec rm &#123;&#125; \;</code></p>
 <h2 id="9-2-禁用或启用自动生成"><a href="#9-2-禁用或启用自动生成" class="headerlink" title="9.2 禁用或启用自动生成"></a>9.2 禁用或启用自动生成</h2><p>执行以下命令，回车执行，重启 Mac 即可生效。</p>
 <ul>
 <li>禁止. DS_store 生成：</li>
@@ -576,9 +576,9 @@ Mac 系统日常使用技巧归纳总结。
 <li>恢复. DS_store 生成：</li>
 </ul>
 <p><code>defaults delete com.apple.desktopservices DSDontWriteNetworkStores</code></p>
-<h1 id="十、NTFS-格式移动盘写入文件"><a href="#十、NTFS-格式移动盘写入文件" class="headerlink" title="十、NTFS 格式移动盘写入文件"></a>十、NTFS 格式移动盘写入文件</h1><p>一般来说，MacOS 是不支持 NTFS 格式磁盘的写入，可以借助三方工具，例如：Tuxera NTFS，不过收费还挺高的。这里介绍一种方法，不需要借助三方工具也可以实现 NTFS 格式磁盘写入。（基于系统版本  <code>macOS Sierra 10.12.4</code>  亲测可行）</p>
+<h1 id="十、NTFS-格式移动盘写入文件"><a href="#十、NTFS-格式移动盘写入文件" class="headerlink" title="十、NTFS 格式移动盘写入文件"></a>十、NTFS 格式移动盘写入文件</h1><p>一般来说，MacOS 是不支持 NTFS 格式磁盘的写入，可以借助三方工具，例如：Tuxera NTFS，不过收费还挺高的。这里介绍一种方法，不需要借助三方工具也可以实现 NTFS 格式磁盘写入。（基于系统版本  <code>macOS Sierra 10.12.4</code>  亲测可行）</p>
 <ul>
-<li><p>插入移动硬盘，终端输入命令：<code>$ diskutil list</code>  查看移动硬盘名称。例如：</p>
+<li><p>插入移动硬盘，终端输入命令：<code>$ diskutil list</code>  查看移动硬盘名称。例如：</p>
 <p>1</p>
 <p>2</p>
 <p>3</p>
@@ -588,21 +588,21 @@ Mac 系统日常使用技巧归纳总结。
 <p>7</p>
 <p>$ diskutil list</p>
 <p>….</p>
-<p>/dev/disk2 (external, physical):</p>
+<p>&#x2F;dev&#x2F;disk2 (external, physical):</p>
 <p>#: TYPE NAME SIZE IDENTIFIER</p>
 <p>0: FDisk_partition_scheme *500.1 GB disk2</p>
 <p>1: Windows_NTFS EHLXR 500.1 GB disk2s4</p>
 </li>
-<li><p>编辑系统文件  <code>sudo vim /etc/fstab</code> ，写入以下内容，然后保存。</p>
+<li><p>编辑系统文件  <code>sudo vim /etc/fstab</code> ，写入以下内容，然后保存。</p>
 <p>1</p>
-<p>LABEL=EHLXR none ntfs rw,auto,nobrowse</p>
-<p>其中  <code>EHLXR</code>  为移动硬盘名称。</p>
+<p>LABEL&#x3D;EHLXR none ntfs rw,auto,nobrowse</p>
+<p>其中  <code>EHLXR</code>  为移动硬盘名称。</p>
 </li>
 <li><p>推出硬盘重新插入，这时候桌面已不再显示移动硬盘图标。</p>
 </li>
-<li><p>在 Finder 中通过快捷键  <code>Command + Shift + g</code>  输入<code>/Volumes</code>  就可以重新看到移动硬盘，这时候打开移动硬盘就可以写入文件了。</p>
+<li><p>在 Finder 中通过快捷键  <code>Command + Shift + g</code>  输入<code>/Volumes</code>  就可以重新看到移动硬盘，这时候打开移动硬盘就可以写入文件了。</p>
 </li>
-<li><p>为了方便起见，可以通过命令：<code>sudo ln -s /Volumes ~/Desktop/Volumes</code>  在桌面建立快捷方式，方便查看。</p>
+<li><p>为了方便起见，可以通过命令：<code>sudo ln -s /Volumes ~/Desktop/Volumes</code>  在桌面建立快捷方式，方便查看。</p>
 </li>
 </ul>
 
@@ -893,7 +893,7 @@ Mac 系统日常使用技巧归纳总结。
                     <div class="summary block-with-text">
                         
                             mac 打开终端默认是当前登录用户，若要切换到 root 用户，使用命令：
-第一种：(1)输入  sudo -i 或者 su - 或着 su - root  然后回车
+第一种：(1)输入  sudo -i 或者 su - 或着 su - root  然后回车
 (2)输入密码，就可以进入 root 用户（因为我之前设置过一次 roo
                         
                     </div>
@@ -1156,12 +1156,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
       <a href="http://www.jixiaokang.com" target="_blank">xkloveme</a>
       |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
       <br />
-       &nbsp;<i
-        class="fas fa-chart-area"
-      ></i
-      >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >148.1k</span
-      >&nbsp;字      
+           
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
           id="busuanzi_value_site_pv"

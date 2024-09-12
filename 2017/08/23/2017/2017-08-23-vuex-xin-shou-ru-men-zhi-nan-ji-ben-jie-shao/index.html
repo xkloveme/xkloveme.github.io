@@ -7,7 +7,7 @@
     <meta name="keywords" content="Vuex新手入门指南-基本介绍, 小康,xkloveme,博客">
     <meta name="description" content="很多人在学习完 Vue.js 之后还会看到一个经常被提及的词语叫做 Vuex。
 Vuex 字面上看与 Vue.js 只差了一个字母，但是他们两个做的事情完全不一样。
-在本文我会像之前的  Vue.js 新手入门指南文章一样的问答形式来写文章">
+在本文我会像之前的  Vue.js 新手入门指南文章一样的问答形式来写文章">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -28,7 +28,7 @@ Vuex 字面上看与 Vue.js 只差了一个字母，但是他们两个做的事�
     
     <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -298,7 +298,7 @@ Vuex 字面上看与 Vue.js 只差了一个字母，但是他们两个做的事�
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=5xw6h2oemh')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=k4d7g941d')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -479,12 +479,12 @@ Vuex 字面上看与 Vue.js 只差了一个字母，但是他们两个做的事�
             <div id="articleContent">
                 <p>很多人在学习完 Vue.js 之后还会看到一个经常被提及的词语叫做 Vuex。</p>
 <p>Vuex 字面上看与 Vue.js 只差了一个字母，但是他们两个做的事情完全不一样。</p>
-<p>在本文我会像之前的  Vue.js 新手入门指南文章一样的问答形式来写文章。</p>
-<p><img src="http://img.mp.itc.cn/upload/20170313/1f60b593695b4e1f8f5f4bf16a63183d_th.jpeg" alt=""></p>
+<p>在本文我会像之前的  Vue.js 新手入门指南文章一样的问答形式来写文章。</p>
+<p><img src="http://img.mp.itc.cn/upload/20170313/1f60b593695b4e1f8f5f4bf16a63183d_th.jpeg"></p>
 <p>1.Vuex 是什么？</p>
 <p>我们还是像以往一样先看一看官方文档对此的解读（Vuex 是什么？ · GitBook）</p>
 <blockquote>
-<p>Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。Vuex 也集成到 Vue 的官方调试工具  devtools extension，提供了诸如零配置的 time-travel 调试、状态快照导入导出等高级调试功能。</p>
+<p>Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。Vuex 也集成到 Vue 的官方调试工具  devtools extension，提供了诸如零配置的 time-travel 调试、状态快照导入导出等高级调试功能。</p>
 </blockquote>
 <p>是不是又遇到了很多看起来很高大上听起来却一脸懵逼的专业术语？别急别急，我们慢慢来剖析一下这个 Vuex 究竟是个啥东西，他能做些啥。</p>
 <p>2.Vuex 到底用来做什么？</p>
@@ -501,7 +501,7 @@ Vuex 字面上看与 Vue.js 只差了一个字母，但是他们两个做的事�
 <p>官方文档（Vuex 是什么？ · GitBook）中说：</p>
 <blockquote>
 <p>虽然 Vuex 可以帮助我们管理共享状态，但也附带了更多的概念和框架。这需要对短期和长期效益进行权衡。</p>
-<p>如果您不打算开发大型单页应用，使用 Vuex 可能是繁琐冗余的。确实是如此——如果您的应用够简单，您最好不要使用 Vuex。一个简单的  global event bus  就足够您所需了。但是，如果您需要构建是一个中大型单页应用，您很可能会考虑如何更好地在组件外部管理状态，Vuex 将会成为自然而然的选择。引用 Redux 的作者 Dan Abramov 的话说就是：</p>
+<p>如果您不打算开发大型单页应用，使用 Vuex 可能是繁琐冗余的。确实是如此——如果您的应用够简单，您最好不要使用 Vuex。一个简单的  global event bus  就足够您所需了。但是，如果您需要构建是一个中大型单页应用，您很可能会考虑如何更好地在组件外部管理状态，Vuex 将会成为自然而然的选择。引用 Redux 的作者 Dan Abramov 的话说就是：</p>
 <p>Flux 架构就像眼镜：您自会知道什么时候需要它。</p>
 </blockquote>
 <p>他的意思其实就是如果开发的程序并不是很庞大，一个页面中的组件不是很多并且他们之间并不需要大量频繁的互相读写操作，那么就可以直接使用传统的 Vue.js 中的组件 Prop 或者事件触发来修改状态，或者用组件 - vue.js#非父子组件通信 中介绍的 new 一个空的 Vue 对象实例，并且通过事件触发等方式来跨组件通信。</p>
@@ -519,10 +519,10 @@ Vuex 字面上看与 Vue.js 只差了一个字母，但是他们两个做的事�
 <p>第一行是用 ECMA6 的 import 将 vuex 包导入进来（这个是不是和 java 中导入 jar 包以及 php 中导入命名空间很相似？）</p>
 <p>第二行是 Vue.js 本身的插件注入语法（参考官方文档插件 - vue.js），将插件注入 Vue.js 的目的是方便我们在插件内部调用它。</p>
 <p>6.官方文档的五大核心概念是什么？</p>
-<p><img src="http://img.mp.itc.cn/upload/20170313/f2e5f9a1d9d543a4b82a2f7d99156d2c_th.png" alt=""></p>
+<p><img src="http://img.mp.itc.cn/upload/20170313/f2e5f9a1d9d543a4b82a2f7d99156d2c_th.png"></p>
 <p>打开官方文档（Introduction · GitBook）能看到五大核心概念，他们都是啥？看了半天官方文档我还是对它们没什么了解，楼主能不能以通俗易懂的方式讲解一下它们的作用？当然可以啦！</p>
 <p>首先先看一遍这个代码，不需要你看懂它。</p>
-<p>const store = new Vuex.Store({ state: { count: 0 }, mutations: { increment (state) { state.count++ } }})7.State（状态）</p>
+<p>const store &#x3D; new Vuex.Store({ state: { count: 0 }, mutations: { increment (state) { state.count++ } }})7.State（状态）</p>
 <p>官方文档：State · GitBook</p>
 <p>这个状态就是前面所介绍的“状态”值的存放处。</p>
 <p>看第 6 节末尾的代码中，状态就是在 state 属性中以键值对的形式声明这个 SPA 中所有的状态。上面的代码中声明了一个 count 状态。</p>
@@ -562,10 +562,10 @@ Vuex 字面上看与 Vue.js 只差了一个字母，但是他们两个做的事�
 </ul>
 </blockquote>
 <p>其实异步的状态修改本质上还是通过几个同步操作组合的，所以我们还是得先声明好 mutation 同步操作方法，然后在 actions 中进行异步操作。如果我们暂时手头上没有 ajax 接口用于异步请求，那么我们可以像官方文档一样用 setTimeout 这种最简单的测试方法来理解。</p>
-<p>actions: { incrementAsync ({ commit }) { setTimeout(() =&gt; { commit(‘increment’) }, 1000) }}</p>
+<p>actions: { incrementAsync ({ commit }) { setTimeout(() &#x3D;&gt; { commit(‘increment’) }, 1000) }}</p>
 <p>前面讲到了 mutation 是用 commit 来提交操作的，那么 actions 是怎么提交的呢？官方文档中说了 actions 是使用 Vuex 实例的 dispatch 方法来提交（其实说分发会更加准确）的。</p>
 <p>至于其他更详细的 actions 操作官方文档讲的还是比较清楚的，没有什么比较复杂的概念，可以参考官方文档学习，这里不做更多讲解。</p>
-<p>至于后面“组合 actions”中提到的 Promise 对象以及  async / await  都是 Java 中的一些特性，大家可以利用搜索引擎进行更多了解。</p>
+<p>至于后面“组合 actions”中提到的 Promise 对象以及  async &#x2F; await  都是 Java 中的一些特性，大家可以利用搜索引擎进行更多了解。</p>
 <p>11.Modules（模块）</p>
 <p>官方文档：Modules · GitBook</p>
 <p>如果你的 SPA 项目非常的庞大，那么状态可能本身还需要进行分模块分类管理，这个时候就需要用到模块了。官方文档中已经给出了比较详细的模块操作代码，这里不再做更多讲解。</p>
@@ -879,12 +879,12 @@ Vuex 字面上看与 Vue.js 只差了一个字母，但是他们两个做的事�
                     <div class="summary block-with-text">
                         
                             一、git 命令名词解释
-1、添加/跟踪/暂存：添加到本地索引
+1、添加&#x2F;跟踪&#x2F;暂存：添加到本地索引
 git add 文件名
 2、提交：提交到本地仓库
 git commit -m ‘注释’
 3、推送：将提交到本地仓库的所有更新提交到服务器
-git push mycode rel
+git push 
                         
                     </div>
                     <div class="publish-info">
@@ -1146,12 +1146,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
       <a href="http://www.jixiaokang.com" target="_blank">xkloveme</a>
       |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
       <br />
-       &nbsp;<i
-        class="fas fa-chart-area"
-      ></i
-      >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >148.1k</span
-      >&nbsp;字      
+           
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
           id="busuanzi_value_site_pv"

@@ -31,7 +31,7 @@
     
     <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -301,7 +301,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=g96zon1p8ou')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=ky9yjw062w')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -444,7 +444,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    122
+                    126
                 </div>
                 
 
@@ -469,22 +469,16 @@
             <div id="articleContent">
                 <h1 id="nginx-设置静态资源访问造成中文404问题"><a href="#nginx-设置静态资源访问造成中文404问题" class="headerlink" title="nginx 设置静态资源访问造成中文404问题"></a>nginx 设置静态资源访问造成中文404问题</h1><p>环境:centos7<br>工具:nginx、xhell5、xftp5</p>
 <ul>
-<li>问题:<br>访问nginx非中文静态资源一切正常,但是带有中文文件的资源就会404错误<br><img src="https://img-blog.csdnimg.cn/20201202143555679.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzE0NzM3MQ==,size_16,color_FFFFFF,t_70#pic_center" alt=""></li>
+<li>问题:<br>访问nginx非中文静态资源一切正常,但是带有中文文件的资源就会404错误<br><img src="https://img-blog.csdnimg.cn/20201202143555679.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzE0NzM3MQ==,size_16,color_FFFFFF,t_70#pic_center"></li>
 </ul>
 <p>1, 设置xftp传输文件格式为utf-8</p>
-<p><img src="https://img-blog.csdnimg.cn/20201202143701671.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzE0NzM3MQ==,size_16,color_FFFFFF,t_70#pic_center" alt=""></p>
-<p><img src="https://img-blog.csdnimg.cn/20201202143711853.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzE0NzM3MQ==,size_16,color_FFFFFF,t_70#pic_center" alt=""></p>
-<p><img src="https://img-blog.csdnimg.cn/20201202143719142.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzE0NzM3MQ==,size_16,color_FFFFFF,t_70#pic_center" alt=""></p>
+<p><img src="https://img-blog.csdnimg.cn/20201202143701671.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzE0NzM3MQ==,size_16,color_FFFFFF,t_70#pic_center"></p>
+<p><img src="https://img-blog.csdnimg.cn/20201202143711853.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzE0NzM3MQ==,size_16,color_FFFFFF,t_70#pic_center"></p>
+<p><img src="https://img-blog.csdnimg.cn/20201202143719142.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzE0NzM3MQ==,size_16,color_FFFFFF,t_70#pic_center"></p>
 <p>2, 设置nginx编码格式</p>
-<p><img src="https://img-blog.csdnimg.cn/20201202143729413.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzE0NzM3MQ==,size_16,color_FFFFFF,t_70#pic_center" alt=""></p>
+<p><img src="https://img-blog.csdnimg.cn/20201202143729413.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzE0NzM3MQ==,size_16,color_FFFFFF,t_70#pic_center"></p>
 <p>3, 配置服务器编码格式并重启服务器</p>
-<pre class=" language-Bash"><code class="language-Bash">编辑文件/etc/sysconfig/i18n并添加内容:
-LANG="en_US.UTF-8"
-SYSFONT="latarcyrheb-sun16"
-
-添加完以后重启服务器:reboot
-</code></pre>
-
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">编辑文件/etc/sysconfig/i18n并添加内容:</span><br><span class="line">LANG=<span class="string">&quot;en_US.UTF-8&quot;</span></span><br><span class="line">SYSFONT=<span class="string">&quot;latarcyrheb-sun16&quot;</span></span><br><span class="line"></span><br><span class="line">添加完以后重启服务器:reboot</span><br><span class="line"></span><br></pre></td></tr></table></figure>
             </div>
             <hr/>
 
@@ -1020,12 +1014,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
       <a href="http://www.jixiaokang.com" target="_blank">xkloveme</a>
       |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
       <br />
-       &nbsp;<i
-        class="fas fa-chart-area"
-      ></i
-      >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >148.1k</span
-      >&nbsp;字      
+           
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
           id="busuanzi_value_site_pv"

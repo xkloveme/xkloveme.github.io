@@ -29,7 +29,7 @@
     
     <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -299,7 +299,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=d1hkpm8lpd')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=kdcckgr1kz')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -451,14 +451,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.2k
+                    3.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    12 分
+                    13 分
                 </div>
                 
 				
@@ -491,9 +491,8 @@
 <li><p>基本语法</p>
 </li>
 </ol>
-<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// @param {Object} target 用来被代理的对象</span>
-<span class="token comment" spellcheck="true">// @param {Object} handler 用来设置代理的对象</span>
-<span class="token keyword">let</span> proxy <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Proxy</span><span class="token punctuation">(</span>target<span class="token punctuation">,</span> handler<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// @param &#123;Object&#125; target 用来被代理的对象</span></span><br><span class="line"><span class="comment">// @param &#123;Object&#125; handler 用来设置代理的对象</span></span><br><span class="line"><span class="keyword">let</span> proxy = <span class="keyword">new</span> <span class="title class_">Proxy</span>(target, handler);</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li><p>Proxy，见名知意，其功能非常类似于设计模式中的代理模式，该模式常用于三个方面：</p>
 </li>
@@ -507,22 +506,14 @@
 </li>
 </ul>
 <p>一个代理的例子：</p>
-<pre class=" language-js"><code class="language-js"><span class="token keyword">const</span> target <span class="token operator">=</span> <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">"Billy Bob"</span><span class="token punctuation">,</span> age<span class="token punctuation">:</span> <span class="token number">15</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token keyword">const</span> handler <span class="token operator">=</span> <span class="token punctuation">{</span>
-  <span class="token keyword">get</span><span class="token punctuation">(</span>target<span class="token punctuation">,</span> key<span class="token punctuation">,</span> proxy<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">const</span> today <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`GET request made for </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>key<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> at </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>today<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">return</span> Reflect<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span>target<span class="token punctuation">,</span> key<span class="token punctuation">,</span> proxy<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token keyword">const</span> proxy <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Proxy</span><span class="token punctuation">(</span>target<span class="token punctuation">,</span> handler<span class="token punctuation">)</span><span class="token punctuation">;</span>
-proxy<span class="token punctuation">.</span>name<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// => "GET request made for name at Thu Jul 21 2016 15:26:20 GMT+0800 (CST)" // => "Billy Bob"</span></code></pre>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> target = &#123; <span class="attr">name</span>: <span class="string">&quot;Billy Bob&quot;</span>, <span class="attr">age</span>: <span class="number">15</span> &#125;;</span><br><span class="line"><span class="keyword">const</span> handler = &#123;</span><br><span class="line">  <span class="title function_">get</span>(<span class="params">target, key, proxy</span>) &#123;</span><br><span class="line">    <span class="keyword">const</span> today = <span class="keyword">new</span> <span class="title class_">Date</span>();</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`GET request made for <span class="subst">$&#123;key&#125;</span> at <span class="subst">$&#123;today&#125;</span>`</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="title class_">Reflect</span>.<span class="title function_">get</span>(target, key, proxy);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">const</span> proxy = <span class="keyword">new</span> <span class="title class_">Proxy</span>(target, handler);</span><br><span class="line">proxy.<span class="property">name</span>; <span class="comment">// =&gt; &quot;GET request made for name at Thu Jul 21 2016 15:26:20 GMT+0800 (CST)&quot; // =&gt; &quot;Billy Bob&quot;</span></span><br></pre></td></tr></table></figure>
+
 <p>1.Reflect 称为反射。它也是 ES6 中为了操作对象而提供的新的 API，用来替代直接调用 Object 的方法。Reflect 是一个内置的对象，它提供可拦截 JavaScript 操作的方法。方法与代理处理程序的方法相同。Reflect 不是一个函数对象，因此它是不可构造的。</p>
 <p>Reflect 与大多数全局对象不同，Reflect 没有构造函数。你不能将其与一个 new 运算符一起使用，或者将 Reflect 对象作为一个函数来调用。</p>
 <ol>
 <li>处理器对象 handler</li>
 </ol>
-<p>处理器对象 handler 一共提供了 14 种可代理操作，每种操作的代号（属性名/方法名）和触发这种操作的方式如下：</p>
+<p>处理器对象 handler 一共提供了 14 种可代理操作，每种操作的代号（属性名&#x2F;方法名）和触发这种操作的方式如下：</p>
 <ul>
 <li><p>handler.getPrototypeOf()：在读取代理对象的原型时触发该操作，比如在执行 Object.getPrototypeOf(proxy)时</p>
 </li>
@@ -540,7 +531,7 @@ proxy<span class="token punctuation">.</span>name<span class="token punctuation"
 </li>
 <li><p>handler.get()：在读取代理对象的某个属性时触发该操作，比如在执行 proxy.foo 时</p>
 </li>
-<li><p>handler.set()：在给代理对象的某个赋值时触发该操作，比如在执行 proxy.foo = 1 时</p>
+<li><p>handler.set()：在给代理对象的某个赋值时触发该操作，比如在执行 proxy.foo &#x3D; 1 时</p>
 </li>
 <li><p>handler.deleteProperty()：在删除代理对象的某个属性时触发该操作，比如在执行 delete proxy.foo 时</p>
 </li>
@@ -553,17 +544,8 @@ proxy<span class="token punctuation">.</span>name<span class="token punctuation"
 </ul>
 <p>Reflect 对象拥有对应的可以控制各种元编程任务的静态方法。这些功能和 Proxy 一一对应。</p>
 <p>下面的这些名称你可能看起来很眼熟（因为他们也是 Object 上的方法）：</p>
-<pre class=" language-js"><code class="language-js">Reflect<span class="token punctuation">.</span><span class="token function">getOwnPropertyDescriptor</span><span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="title class_">Reflect</span>.<span class="title function_">getOwnPropertyDescriptor</span>(..)</span><br><span class="line"></span><br><span class="line"><span class="title class_">Reflect</span>.<span class="title function_">defineProperty</span>(..)</span><br><span class="line"></span><br><span class="line"><span class="title class_">Reflect</span>.<span class="title function_">getPrototypeOf</span>(..)</span><br><span class="line"></span><br><span class="line"><span class="title class_">Reflect</span>.<span class="title function_">setPrototypeOf</span>(..)</span><br><span class="line"></span><br><span class="line"><span class="title class_">Reflect</span>.<span class="title function_">preventExtensions</span>(..)</span><br><span class="line"></span><br><span class="line"><span class="title class_">Reflect</span>.<span class="title function_">isExtensible</span>(..)</span><br></pre></td></tr></table></figure>
 
-Reflect<span class="token punctuation">.</span><span class="token function">defineProperty</span><span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span>
-
-Reflect<span class="token punctuation">.</span><span class="token function">getPrototypeOf</span><span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span>
-
-Reflect<span class="token punctuation">.</span><span class="token function">setPrototypeOf</span><span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span>
-
-Reflect<span class="token punctuation">.</span><span class="token function">preventExtensions</span><span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span>
-
-Reflect<span class="token punctuation">.</span><span class="token function">isExtensible</span><span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span></code></pre>
 <p>这些方法和在 Object 上的同名方法一样。然后，一个区别在于，Object 上这么方法的第一个参数是一个对象，Reflect 遇到这种情况会扔出一个错误。</p>
 <ol start="3">
 <li>陷阱代理</li>
@@ -583,37 +565,17 @@ Reflect<span class="token punctuation">.</span><span class="token function">isEx
 </ul>
 <p><strong>Reflect.set()是 set 陷阱对应的反射方法和默认特性，它和 set 代理陷阱一样也接受相同的 4 个参数，以方便在陷阱中使用。如果属性已设置陷阱应该返回 true，如果未设置则返回 false。(Reflect.set()方法基于操作是否成功来返回恰当的值)。</strong></p>
 <p>可以使用 set 陷阱并检查传入的值来验证属性值：</p>
-<pre class=" language-js"><code class="language-js"><span class="token number">1</span> <span class="token comment" spellcheck="true">//set 陷阱并检查传入的值来验证属性值</span>
-<span class="token number">2</span> <span class="token keyword">let</span> target <span class="token operator">=</span> <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">"target"</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token number">3</span> <span class="token keyword">let</span> proxy <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Proxy</span><span class="token punctuation">(</span>target<span class="token punctuation">,</span> <span class="token punctuation">{</span>
-<span class="token number">4</span> <span class="token keyword">set</span><span class="token punctuation">(</span>trapTarget<span class="token punctuation">,</span> key<span class="token punctuation">,</span> value<span class="token punctuation">,</span> receiver<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-<span class="token number">5</span> <span class="token comment" spellcheck="true">// 忽略已有属性，避免影响它们</span>
-<span class="token number">6</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>trapTarget<span class="token punctuation">.</span><span class="token function">hasOwnProperty</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-<span class="token number">7</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isNaN</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">TypeError</span><span class="token punctuation">(</span><span class="token string">"Property must be a number."</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
-<span class="token number">8</span> <span class="token punctuation">}</span> <span class="token comment" spellcheck="true">// 添加属性</span>
-<span class="token number">9</span> <span class="token keyword">return</span> Reflect<span class="token punctuation">.</span><span class="token keyword">set</span><span class="token punctuation">(</span>trapTarget<span class="token punctuation">,</span> key<span class="token punctuation">,</span> value<span class="token punctuation">,</span> receiver<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token number">10</span> <span class="token punctuation">}</span>
-<span class="token number">11</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token number">12</span> <span class="token comment" spellcheck="true">// 添加一个新属性</span>
-<span class="token number">13</span> proxy<span class="token punctuation">.</span>count <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-<span class="token number">14</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>proxy<span class="token punctuation">.</span>count<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// => 1</span>
-<span class="token number">15</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>target<span class="token punctuation">.</span>count<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// => 1 // 你可以为 name 赋一个非数值类型的值，因为该属性已经存在</span>
-<span class="token number">16</span> proxy<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">"proxy"</span><span class="token punctuation">;</span>
-<span class="token number">17</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>proxy<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// => "proxy"</span>
-<span class="token number">18</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>target<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// => "proxy"</span>
-<span class="token comment" spellcheck="true">// 抛出错误 proxy.anotherName = "proxy";</span></code></pre>
-<p>这段代码定义了一个代理来验证添加到 target 的新属性，当执行 proxy.count=1 时，set 陷阱被调用，此时 trapTarget 的值等于 target，key 等于”count”，value 等于 1，receiver 等于 proxy。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="number">1</span> <span class="comment">//set 陷阱并检查传入的值来验证属性值</span></span><br><span class="line"><span class="number">2</span> <span class="keyword">let</span> target = &#123; <span class="attr">name</span>: <span class="string">&quot;target&quot;</span> &#125;;</span><br><span class="line"><span class="number">3</span> <span class="keyword">let</span> proxy = <span class="keyword">new</span> <span class="title class_">Proxy</span>(target, &#123;</span><br><span class="line"><span class="number">4</span> <span class="title function_">set</span>(<span class="params">trapTarget, key, value, receiver</span>) &#123;</span><br><span class="line"><span class="number">5</span> <span class="comment">// 忽略已有属性，避免影响它们</span></span><br><span class="line"><span class="number">6</span> <span class="keyword">if</span> (!trapTarget.<span class="title function_">hasOwnProperty</span>(key)) &#123;</span><br><span class="line"><span class="number">7</span> <span class="keyword">if</span> (<span class="built_in">isNaN</span>(value)) &#123; <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">TypeError</span>(<span class="string">&quot;Property must be a number.&quot;</span>); &#125;</span><br><span class="line"><span class="number">8</span> &#125; <span class="comment">// 添加属性</span></span><br><span class="line"><span class="number">9</span> <span class="keyword">return</span> <span class="title class_">Reflect</span>.<span class="title function_">set</span>(trapTarget, key, value, receiver);</span><br><span class="line"><span class="number">10</span> &#125;</span><br><span class="line"><span class="number">11</span> &#125;);</span><br><span class="line"><span class="number">12</span> <span class="comment">// 添加一个新属性</span></span><br><span class="line"><span class="number">13</span> proxy.<span class="property">count</span> = <span class="number">1</span>;</span><br><span class="line"><span class="number">14</span> <span class="variable language_">console</span>.<span class="title function_">log</span>(proxy.<span class="property">count</span>); <span class="comment">// =&gt; 1</span></span><br><span class="line"><span class="number">15</span> <span class="variable language_">console</span>.<span class="title function_">log</span>(target.<span class="property">count</span>); <span class="comment">// =&gt; 1 // 你可以为 name 赋一个非数值类型的值，因为该属性已经存在</span></span><br><span class="line"><span class="number">16</span> proxy.<span class="property">name</span> = <span class="string">&quot;proxy&quot;</span>;</span><br><span class="line"><span class="number">17</span> <span class="variable language_">console</span>.<span class="title function_">log</span>(proxy.<span class="property">name</span>); <span class="comment">// =&gt; &quot;proxy&quot;</span></span><br><span class="line"><span class="number">18</span> <span class="variable language_">console</span>.<span class="title function_">log</span>(target.<span class="property">name</span>); <span class="comment">// =&gt; &quot;proxy&quot;</span></span><br><span class="line"><span class="comment">// 抛出错误 proxy.anotherName = &quot;proxy&quot;;</span></span><br></pre></td></tr></table></figure>
+
+<p>这段代码定义了一个代理来验证添加到 target 的新属性，当执行 proxy.count&#x3D;1 时，set 陷阱被调用，此时 trapTarget 的值等于 target，key 等于”count”，value 等于 1，receiver 等于 proxy。</p>
 <p>由于 target 上没有 count 属性，因此代理继续将 value 值传入 isNaN()，如果结果是 NaN，则证明传入的属性值不是数字，同时也抛出一个错误。在这段代码中，count 被设置为 1，所以代理调用 Reflect.set()方法并传入陷阱接受的 4 个参数来添加新属性。</p>
 <p>proxy.name 可以成功被赋值为一个字符串，这是因为 target 已经拥有一个 name 属性，但通过调用 trapTarget.hasownproperty()方法验证检查后被排除了，所以目标已有的非数字属性仍然可以被操作。</p>
 <p>然而，将 proxy.anotherName 赋值为一个字符串时会抛出错误。目标上没有 anotherName 属性，所以它的值需要被验证，而由于”Proxy”不是一个数字值，因此抛出错误。</p>
 <p>set 代理陷阱可以拦截写入属性的操作，get 代理陷阱可以拦截读取属性的操作</p>
 <p>用 get 陷阱验证对象结构(Object Shape)</p>
 <p>JS 有一个时常令人感到困惑的特殊行为，即读取不存在的属性时不会抛出错误，而是用 undefined 代替被读取属性的值。</p>
-<pre class=" language-js"><code class="language-js"><span class="token number">1</span> <span class="token comment" spellcheck="true">//用 get 陷阱验证对象结构(Object Shape)</span>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="number">1</span> <span class="comment">//用 get 陷阱验证对象结构(Object Shape)</span></span><br><span class="line"></span><br><span class="line"><span class="number">2</span> <span class="keyword">let</span> target = &#123;&#125;;</span><br><span class="line"></span><br><span class="line"><span class="number">3</span> <span class="variable language_">console</span>.<span class="title function_">log</span>(target.<span class="property">name</span>); <span class="comment">// =&gt; undefined</span></span><br></pre></td></tr></table></figure>
 
-<span class="token number">2</span> <span class="token keyword">let</span> target <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
-
-<span class="token number">3</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>target<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// => undefined</span></code></pre>
 <p>对象结构是指对象中所有可用属性和方法的集合，JS 引擎通过对象结构来优化代码，通常会创建类来表示对象，如果可以安全地假定一个对象将始终具有相同的属性和方法，那么当程序试图访问不存在的属性时会抛出错误。代理让对象结构检验变得简单。</p>
 <p>因为只有当读取属性时才会检验属性，所以无论对象中是否存在某个属性，都可以通过 get 陷阱来检测，它接受 3 个参数：</p>
 <ul>
@@ -626,28 +588,8 @@ Reflect<span class="token punctuation">.</span><span class="token function">isEx
 </ul>
 <p>由于 get 陷阱不写入值，所以它复刻了 set 陷阱中除 value 外的其他 3 个参数，Reflect.get()也接受同样 3 个参数并返回属性的默认值。</p>
 <p>如果属性在目标上不存在，则使用 get 陷阱和 Reflect.get()时会抛出错误：</p>
-<pre class=" language-js"><code class="language-js"><span class="token keyword">let</span> proxy <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Proxy</span><span class="token punctuation">(</span>
-  <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token punctuation">{</span>
-    <span class="token keyword">get</span><span class="token punctuation">(</span>trapTarget<span class="token punctuation">,</span> key<span class="token punctuation">,</span> receiver<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token punctuation">(</span>key <span class="token keyword">in</span> receiver<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">TypeError</span><span class="token punctuation">(</span><span class="token string">"Property "</span> <span class="token operator">+</span> key <span class="token operator">+</span> <span class="token string">" doesn't exist."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> proxy = <span class="keyword">new</span> <span class="title class_">Proxy</span>(</span><br><span class="line">  &#123;&#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="title function_">get</span>(<span class="params">trapTarget, key, receiver</span>) &#123;</span><br><span class="line">      <span class="keyword">if</span> (!(key <span class="keyword">in</span> receiver)) &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">TypeError</span>(<span class="string">&quot;Property &quot;</span> + key + <span class="string">&quot; doesn&#x27;t exist.&quot;</span>);</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">return</span> <span class="title class_">Reflect</span>.<span class="title function_">get</span>(trapTarget, key, receiver);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 添加属性的功能正常</span></span><br><span class="line"></span><br><span class="line">proxy.<span class="property">name</span> = <span class="string">&quot;proxy&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(proxy.<span class="property">name</span>); <span class="comment">// =&gt; &quot;proxy&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 读取不存在属性会抛出错误</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(proxy.<span class="property">nme</span>); <span class="comment">// =&gt; 抛出错误</span></span><br></pre></td></tr></table></figure>
 
-      <span class="token keyword">return</span> Reflect<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span>trapTarget<span class="token punctuation">,</span> key<span class="token punctuation">,</span> receiver<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-<span class="token comment" spellcheck="true">// 添加属性的功能正常</span>
-
-proxy<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">"proxy"</span><span class="token punctuation">;</span>
-
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>proxy<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// => "proxy"</span>
-
-<span class="token comment" spellcheck="true">// 读取不存在属性会抛出错误</span>
-
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>proxy<span class="token punctuation">.</span>nme<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// => 抛出错误</span></code></pre>
 <p>原型代理陷阱<br>Object.setPrototypeOf()方法被用于作为 ES5 中的 Object.getPrototypeOf()方法的补充。通过代理中的 setPrototypeOf 陷阱和 getPrototypeOf 陷阱可以拦截这两个方法的执行过程，在这两种情况下，Object 上的方法会调用代理中的同名陷阱来改变方法的行为。</p>
 <p>两个陷阱均与代理有关，但具体到方法只与每个陷阱的类型有关，setPrototypeOf 陷阱接受以下这些参数:</p>
 <ul>
@@ -659,57 +601,13 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <p>传入 Object.setPrototypeOf()方法和 Reflect.setPrototypeOf()方法的均是以上两个参数，另一方面，getPrototypeOf 陷阱中的 Object.getPrototypeOf()方法和 Reflect.getPrototypeOf()方法只接受参数 trapTarget。</p>
 <p>原型代理陷阱的运行机制<br>原型代理陷阱有一些限制。首先，getPrototypeOf 陷阱必须返回对象或 null，否则将导致运行时错误，返回值检查可以确保 Object.getPrototypeOf()返回的总是预期的值；其次，在 setPrototypeOf 陷阱中，如果操作失败则返回的一定是 false，此时 Object.setPrototypeOf()会抛出错误，如果 setPrototypeOf 返回了任何不是 false 的值，那么 Object.setPrototypeOf()便假设操作成功。</p>
 <p>以下示例通过总是返回 null，且不允许改变原型的方式隐藏了代理的原型:</p>
-<pre class=" language-js"><code class="language-js"><span class="token number">1</span> <span class="token keyword">let</span> target <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="number">1</span> <span class="keyword">let</span> target = &#123;&#125;;</span><br><span class="line"></span><br><span class="line"><span class="number">2</span> <span class="keyword">let</span> proxy = <span class="keyword">new</span> <span class="title class_">Proxy</span>(target, &#123;</span><br><span class="line"></span><br><span class="line"><span class="number">3</span> <span class="title function_">getPrototypeOf</span>(<span class="params">trapTarget</span>) &#123;</span><br><span class="line"></span><br><span class="line"><span class="number">4</span> returnnull;</span><br><span class="line"></span><br><span class="line"><span class="number">5</span> &#125;,</span><br><span class="line"></span><br><span class="line"><span class="number">6</span> <span class="title function_">setPrototypeOf</span>(<span class="params">trapTarget, proto</span>) &#123;</span><br><span class="line"></span><br><span class="line"><span class="number">7</span> returnfalse;</span><br><span class="line"></span><br><span class="line"><span class="number">8</span> &#125;</span><br><span class="line"></span><br><span class="line"><span class="number">9</span> &#125;);</span><br><span class="line"></span><br><span class="line"><span class="number">10</span> <span class="keyword">let</span> targetProto = <span class="title class_">Object</span>.<span class="title function_">getPrototypeOf</span>(target);</span><br><span class="line"></span><br><span class="line"><span class="number">11</span> <span class="keyword">let</span> proxyProto = <span class="title class_">Object</span>.<span class="title function_">getPrototypeOf</span>(proxy);</span><br><span class="line"></span><br><span class="line"><span class="number">12</span> <span class="variable language_">console</span>.<span class="title function_">log</span>(targetProto ===<span class="title class_">Object</span>.<span class="property"><span class="keyword">prototype</span></span>); <span class="comment">// =&gt; true</span></span><br><span class="line"></span><br><span class="line"><span class="number">13</span> <span class="variable language_">console</span>.<span class="title function_">log</span>(proxyProto ===<span class="title class_">Object</span>.<span class="property"><span class="keyword">prototype</span></span>); <span class="comment">// =&gt; false</span></span><br><span class="line"></span><br><span class="line"><span class="number">14</span> <span class="variable language_">console</span>.<span class="title function_">log</span>(proxyProto); <span class="comment">// =&gt; null</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 成功</span></span><br><span class="line"></span><br><span class="line"><span class="number">15</span> <span class="title class_">Object</span>.<span class="title function_">setPrototypeOf</span>(target, &#123;&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 抛出错误</span></span><br><span class="line"></span><br><span class="line"><span class="number">16</span> <span class="title class_">Object</span>.<span class="title function_">setPrototypeOf</span>(proxy, &#123;&#125;);</span><br></pre></td></tr></table></figure>
 
-<span class="token number">2</span> <span class="token keyword">let</span> proxy <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Proxy</span><span class="token punctuation">(</span>target<span class="token punctuation">,</span> <span class="token punctuation">{</span>
-
-<span class="token number">3</span> <span class="token function">getPrototypeOf</span><span class="token punctuation">(</span>trapTarget<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-
-<span class="token number">4</span> returnnull<span class="token punctuation">;</span>
-
-<span class="token number">5</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
-
-<span class="token number">6</span> <span class="token function">setPrototypeOf</span><span class="token punctuation">(</span>trapTarget<span class="token punctuation">,</span> proto<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-
-<span class="token number">7</span> returnfalse<span class="token punctuation">;</span>
-
-<span class="token number">8</span> <span class="token punctuation">}</span>
-
-<span class="token number">9</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-<span class="token number">10</span> <span class="token keyword">let</span> targetProto <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">getPrototypeOf</span><span class="token punctuation">(</span>target<span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-<span class="token number">11</span> <span class="token keyword">let</span> proxyProto <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">getPrototypeOf</span><span class="token punctuation">(</span>proxy<span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-<span class="token number">12</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>targetProto <span class="token operator">===</span>Object<span class="token punctuation">.</span>prototype<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// => true</span>
-
-<span class="token number">13</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>proxyProto <span class="token operator">===</span>Object<span class="token punctuation">.</span>prototype<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// => false</span>
-
-<span class="token number">14</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>proxyProto<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// => null</span>
-
-<span class="token comment" spellcheck="true">// 成功</span>
-
-<span class="token number">15</span> Object<span class="token punctuation">.</span><span class="token function">setPrototypeOf</span><span class="token punctuation">(</span>target<span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-<span class="token comment" spellcheck="true">// 抛出错误</span>
-
-<span class="token number">16</span> Object<span class="token punctuation">.</span><span class="token function">setPrototypeOf</span><span class="token punctuation">(</span>proxy<span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 <p>代码强调了 target 和 proxy 的行为差异。Object.getPrototypeOf()给 target 返回的是值，而给 proxy 返回值时，由于 getPrototypeOf 陷阱被调用，返回的是 null；同样，Object.setPrototypeOf()成功为 target 设置原型，而给 proxy 设置原型时，由于 setPrototypeOf 陷阱被调用，最终抛出一个错误。</p>
 <p>一、 vue 的$ref</p>
 <p>一个对象，持有注册过 ref 特性 的所有 DOM 元素和组件实例。</p>
 <p>ref 被用来给元素或子组件注册引用信息。引用信息将会注册在父组件的 $refs 对象上。如果在普通的 DOM 元素上使用，引用指向的就是 DOM 元素；如果用在子组件上，引用就指向组件实例：</p>
-<pre class=" language-js"><code class="language-js"><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> <span class="token template-string"><span class="token string">`vm.$refs.p`</span></span> will be the DOM node <span class="token operator">--</span><span class="token operator">></span>
-<span class="token operator">&lt;</span>p ref<span class="token operator">=</span><span class="token string">"p"</span><span class="token operator">></span>hello<span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
-
-<span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> <span class="token template-string"><span class="token string">`vm.$refs.child`</span></span> will be the child component instance <span class="token operator">--</span><span class="token operator">></span>
-
-<span class="token operator">&lt;</span>child<span class="token operator">-</span>component ref<span class="token operator">=</span><span class="token string">"child"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>child<span class="token operator">-</span>component<span class="token operator">></span>
-
-ref 属性不是一个标准的 HTML 属性，只是 Vue 中的一个属性。实际上，它甚至不会是 DOM 的一部分，所以在浏览器中你查看渲染的 HTML，你是看不到有关于 ref 的任何东西。因为在它前面没有添加<span class="token punctuation">:</span>，而且它也不是一个指令
-
-<span class="token operator">&lt;</span>div ref<span class="token operator">=</span><span class="token string">"demo"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-
-document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'[ref=demo]'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;!-- <span class="string">`vm.$refs.p`</span> will be the <span class="variable constant_">DOM</span> node --&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">p</span> <span class="attr">ref</span>=<span class="string">&quot;p&quot;</span>&gt;</span>hello<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line">&lt;!-- <span class="string">`vm.$refs.child`</span> will be the child component instance --&gt;</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">child-component</span> <span class="attr">ref</span>=<span class="string">&quot;child&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">child-component</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line">ref 属性不是一个标准的 <span class="variable constant_">HTML</span> 属性，只是 <span class="title class_">Vue</span> 中的一个属性。实际上，它甚至不会是 <span class="variable constant_">DOM</span> 的一部分，所以在浏览器中你查看渲染的 <span class="variable constant_">HTML</span>，你是看不到有关于 ref 的任何东西。因为在它前面没有添加:，而且它也不是一个指令</span><br><span class="line"></span><br><span class="line">&lt;div ref=<span class="string">&quot;demo&quot;</span>&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;[ref=demo]&#x27;</span>);</span><br></pre></td></tr></table></figure>
 
             </div>
             <hr/>
@@ -1267,12 +1165,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
       <a href="http://www.jixiaokang.com" target="_blank">xkloveme</a>
       |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
       <br />
-       &nbsp;<i
-        class="fas fa-chart-area"
-      ></i
-      >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >148.1k</span
-      >&nbsp;字      
+           
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
           id="busuanzi_value_site_pv"

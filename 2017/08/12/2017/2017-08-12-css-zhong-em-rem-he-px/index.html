@@ -26,7 +26,7 @@
     
     <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -296,7 +296,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=db3mgtvhi6w')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=y7ozu52qa5s')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -472,15 +472,15 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>PX:<br>PX 实际上就是像素，用 PX 设置字体大小时，比较稳定和精确。但是这种方法存在一个问题，当用户在浏览器中浏览我们制作的 Web 页面时，如果改变了浏览器的缩放，这时会使用我们的 Web 页面布局被打破。这样对于那些关心自己网站可用性的用户来说，就是一个大问题了。因此，这时就提出了使用“em”来定义 Web 页面的字体。</p>
-<p>EM:<br>EM 就是根据基准来缩放字体的大小。EM 实质是一个相对值，而非具体的数值。这种技术需要一个参考点，一般都是以的“font-size”为基准。如 WordPress 官方主题 Twenntytwelve 的基准就是 14px=1em。<br>另外，em 是相对于父元素的属性而计算的，如果想计算 px 和 em 之间的换算，这个网站不错，输入数据就可以 px 和 em 相互计算。狠击这里：px 和 em 换算</p>
+<p>EM:<br>EM 就是根据基准来缩放字体的大小。EM 实质是一个相对值，而非具体的数值。这种技术需要一个参考点，一般都是以的“font-size”为基准。如 WordPress 官方主题 Twenntytwelve 的基准就是 14px&#x3D;1em。<br>另外，em 是相对于父元素的属性而计算的，如果想计算 px 和 em 之间的换算，这个网站不错，输入数据就可以 px 和 em 相互计算。狠击这里：px 和 em 换算</p>
 <p>Rem:<br>EM 是相对于其父元素来设置字体大小的，这样就会存在一个问题，进行任何元素设置，都有可能需要知道他父元素的大小。而 Rem 是相对于根元素，这样就意味着，我们只需要在根元素确定一个参考值。</p>
 <p>浏览器的兼容性<br>除了 IE6-IE8r，其它的浏览器都支持 em 和 rem 属性，px 是所有浏览器都支持。<br>因此为了浏览器的兼容性，可“px”和“rem”一起使用，用”px”来实现 IE6-8 下的效果，然后使用“Rem”来实现代浏览器的效果。</p>
 <p>------</p>
-<h2 id="rem-是什么？"><a href="#rem-是什么？" class="headerlink" title="rem 是什么？"></a>rem 是什么？</h2><p>rem（font size of the root element）是指相对于根元素的字体大小的单位。简单的说它就是一个相对单位。看到 rem 大家一定会想起 em 单位，em（font size of the element）是指相对于父元素的字体大小的单位。它们之间其实很相似，只不过一个计算的规则是依赖根元素一个是依赖父元素计算。<a href="http://caibaojian.com/web-app-rem.html" target="_blank" rel="noopener">·</a></p>
-<h2 id="为什么-web-app-要使用-rem？"><a href="#为什么-web-app-要使用-rem？" class="headerlink" title="为什么 web app 要使用 rem？"></a>为什么 web app 要使用 rem？</h2><p>这里我特别强调 web app，web page 就不能使用 rem 吗，其实也当然可以，不过出于兼容性的考虑在 web app 下使用更加能突显这个单位的价值和能力，接下来我们来看看目前一些企业的 web app 是怎么做屏幕适配的。</p>
-<h3 id="1、实现强大的屏幕适配布局："><a href="#1、实现强大的屏幕适配布局：" class="headerlink" title="1、实现强大的屏幕适配布局："></a>1、实现强大的屏幕适配布局：</h3><p>最近 iphone6 一下出了两款尺寸的手机，导致的移动端的屏幕种类更加的混乱，记得一两年前做 web app 有一种做法是以 320 宽度为标准去做适配，超过 320 的大小还是以 320 的规格去展示，这种实现方式以淘宝 web app 为代表作，但是近期手机淘宝首页进行了改版，采用了 rem 这个单位，首页以内依旧是和以前一样各种混乱，有定死宽度的页面，也有那种流式布局的页面。</p>
-<p>我们现在在切页面布局的使用常用的单位是 px，这是一个绝对单位，web app 的屏幕适配有很多中做法，例如：流式布局、限死宽度，还有就是通过<a href="http://caibaojian.com/356.html" target="_blank" rel="noopener" title="响应式布局">响应式</a>来做，但是这些方案都不是最佳的解决方法。</p>
-<p>例如流式布局的解决方案有不少弊端，它虽然可以让各种屏幕都适配，但是显示的效果极其的不好，因为只有几个尺寸的手机能够完美的显示出视觉设计师和交互最想要的效果，但是目前行业里用流式布局切 web app 的公司还是挺多的，看看下面我收集的一些案例：<a href="http://caibaojian.com/web-app-rem.html" target="_blank" rel="noopener">·</a></p>
+<h2 id="rem-是什么？"><a href="#rem-是什么？" class="headerlink" title="rem 是什么？"></a>rem 是什么？</h2><p>rem（font size of the root element）是指相对于根元素的字体大小的单位。简单的说它就是一个相对单位。看到 rem 大家一定会想起 em 单位，em（font size of the element）是指相对于父元素的字体大小的单位。它们之间其实很相似，只不过一个计算的规则是依赖根元素一个是依赖父元素计算。<a target="_blank" rel="noopener" href="http://caibaojian.com/web-app-rem.html">·</a></p>
+<h2 id="为什么-web-app-要使用-rem？"><a href="#为什么-web-app-要使用-rem？" class="headerlink" title="为什么 web app 要使用 rem？"></a>为什么 web app 要使用 rem？</h2><p>这里我特别强调 web app，web page 就不能使用 rem 吗，其实也当然可以，不过出于兼容性的考虑在 web app 下使用更加能突显这个单位的价值和能力，接下来我们来看看目前一些企业的 web app 是怎么做屏幕适配的。</p>
+<h3 id="1、实现强大的屏幕适配布局："><a href="#1、实现强大的屏幕适配布局：" class="headerlink" title="1、实现强大的屏幕适配布局："></a>1、实现强大的屏幕适配布局：</h3><p>最近 iphone6 一下出了两款尺寸的手机，导致的移动端的屏幕种类更加的混乱，记得一两年前做 web app 有一种做法是以 320 宽度为标准去做适配，超过 320 的大小还是以 320 的规格去展示，这种实现方式以淘宝 web app 为代表作，但是近期手机淘宝首页进行了改版，采用了 rem 这个单位，首页以内依旧是和以前一样各种混乱，有定死宽度的页面，也有那种流式布局的页面。</p>
+<p>我们现在在切页面布局的使用常用的单位是 px，这是一个绝对单位，web app 的屏幕适配有很多中做法，例如：流式布局、限死宽度，还有就是通过<a target="_blank" rel="noopener" href="http://caibaojian.com/356.html" title="响应式布局">响应式</a>来做，但是这些方案都不是最佳的解决方法。</p>
+<p>例如流式布局的解决方案有不少弊端，它虽然可以让各种屏幕都适配，但是显示的效果极其的不好，因为只有几个尺寸的手机能够完美的显示出视觉设计师和交互最想要的效果，但是目前行业里用流式布局切 web app 的公司还是挺多的，看看下面我收集的一些案例：<a target="_blank" rel="noopener" href="http://caibaojian.com/web-app-rem.html">·</a></p>
 <p>1.亚马逊：</p>
 <p><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/1418896965.jpeg" alt="1418896965"></p>
 <p>2.携程：</p>
@@ -491,27 +491,27 @@
 <p>流式布局并不是最理想的实现方式，通过大量的百分比布局，会经常出现许多兼容性的问题，还有就是对设计有很多的限制，因为他们在设计之初就需要考虑流式布局对元素造成的影响，只能设计横向拉伸的元素布局，设计的时候存在很多局限性。</p>
 <h3 id="2-固定宽度做法"><a href="#2-固定宽度做法" class="headerlink" title="2.固定宽度做法"></a>2.固定宽度做法</h3><p>还有一种是固定页面宽度的做法，早期有些网站把页面设置成 320 的宽度，超出部分留白，这样做视觉，前端都挺开心，视觉在也不用被流式布局限制自己的设计灵感了，前端也不用在搞坑爹的流式布局。但是这种解决方案也是存在一些问题，例如在大屏幕手机下两边是留白的，还有一个就是大屏幕手机下看起来页面会特别小，操作的按钮也很小，手机淘宝首页起初是这么做的，但近期改版了，采用了 rem。</p>
 <h3 id="3-响应式做法"><a href="#3-响应式做法" class="headerlink" title="3.响应式做法"></a>3.响应式做法</h3><p>响应式这种方式在国内很少有大型企业的复杂性的网站在移动端用这种方法去做，主要原因是工作大，维护性难，所以一般都是中小型的门户或者博客类站点会采用响应式的方法从 web page 到 web app 直接一步到位，因为这样反而可以节约成本，不用再专门为自己的网站做一个 web app 的版本。</p>
-<h3 id="4-设置-viewport-进行缩放"><a href="#4-设置-viewport-进行缩放" class="headerlink" title="4.设置 viewport 进行缩放"></a>4.设置 viewport 进行缩放</h3><p>天猫的 web app 的首页就是采用这种方式去做的，以 320 宽度为基准，进行缩放，最大缩放为 320*1.3 = 416，基本缩放到 416 都就可以兼容 iphone6 plus 的屏幕了，这个方法简单粗暴，又高效。说实话我觉得他和用接下去我们要讲的 rem 都非常高效，不过有部分同学使用过程中反应缩放会导致有些页面元素会糊的情况。</p>
+<h3 id="4-设置-viewport-进行缩放"><a href="#4-设置-viewport-进行缩放" class="headerlink" title="4.设置 viewport 进行缩放"></a>4.设置 viewport 进行缩放</h3><p>天猫的 web app 的首页就是采用这种方式去做的，以 320 宽度为基准，进行缩放，最大缩放为 320*1.3 &#x3D; 416，基本缩放到 416 都就可以兼容 iphone6 plus 的屏幕了，这个方法简单粗暴，又高效。说实话我觉得他和用接下去我们要讲的 rem 都非常高效，不过有部分同学使用过程中反应缩放会导致有些页面元素会糊的情况。</p>
 <h2 id="rem-能等比例适配所有屏幕"><a href="#rem-能等比例适配所有屏幕" class="headerlink" title="rem 能等比例适配所有屏幕"></a>rem 能等比例适配所有屏幕</h2><p>上面讲了一大堆目前大部分公司主流的一些 web app 的适配解决方案，接下来讲下 rem 是如何工作的。</p>
 <p>上面说过 rem 是通过根元素进行适配的，网页中的根元素指的是 html 我们通过设置 html 的字体大小就可以控制 rem 的大小。举个例子：</p>
 <p>html{<br>font-size:20px;<br>}<br>.btn {<br>width: 6rem;<br>height: 3rem;<br>line-height: 3rem;<br>font-size: 1.2rem;<br>display: inline-block;<br>background: #06c;<br>color: #fff;<br>border-radius: .5rem;<br>text-decoration: none;<br>text-align: center;<br>}</p>
 <p>Demo 上面代码结果按钮大小如下图：</p>
 <p><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/1418899506.jpeg" alt="1418899506"></p>
 <p>我把 html 设置成 10px 是为了方便我们计算，为什么 6rem 等于 60px。如果这个时候我们的.btn 的样式不变，我们再改变 html 的 font-size 的值，看看按钮发生上面变化:</p>
-<p>//code from <a href="http://caibaojian.com/web-app-rem.html" target="_blank" rel="noopener">http://caibaojian.com/web-app-rem.html</a><br>html{<br>font-size:40px;<br>}</p>
+<p>&#x2F;&#x2F;code from <a target="_blank" rel="noopener" href="http://caibaojian.com/web-app-rem.html">http://caibaojian.com/web-app-rem.html</a><br>html{<br>font-size:40px;<br>}</p>
 <p>Demo</p>
 <p>按钮大小结果如下：</p>
 <p><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/1418898055.jpeg" alt="1418898055"></p>
 <p>上面的 width，height 变成了上面结果的两倍，我们只改变了 html 的 font-size，但.btn 样式的 width,height 的 rem 设置的属性不变的情况下就改变了按钮在 web 中的大小。</p>
 <p>其实从上面两个案例中我们就可以计算出 1px 多少 rem:</p>
 <p>第一个例子：</p>
-<p>120px = 6rem * 20px(根元素设置大值)</p>
+<p>120px &#x3D; 6rem * 20px(根元素设置大值)</p>
 <p>第二个例子：</p>
-<p>240px = 6rem * 40px(根元素设置大值)</p>
+<p>240px &#x3D; 6rem * 40px(根元素设置大值)</p>
 <p>推算出：</p>
-<p>10px  = 1rem 在根元素（font-size = 10px 的时候）；</p>
-<p>20px  = 1rem 在根元素（font-size = 20px 的时候）；</p>
-<p>40px  = 1rem 在根元素（font-size = 40px 的时候）；</p>
+<p>10px  &#x3D; 1rem 在根元素（font-size &#x3D; 10px 的时候）；</p>
+<p>20px  &#x3D; 1rem 在根元素（font-size &#x3D; 20px 的时候）；</p>
+<p>40px  &#x3D; 1rem 在根元素（font-size &#x3D; 40px 的时候）；</p>
 <p>在上面两个例子中我们发现第一个案例按钮是等比例放大到第二个按钮，html font-size 的改变就会导致按钮的大小发生改变，我们并不需要改变先前给按钮设置的宽度和高度，其实这就是我们最想看到的，为什么这么说？接下来我们再来看一个例子：</p>
 <p>Demo</p>
 <p><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/1418873132.jpeg" alt="1418873132"></p>
@@ -519,55 +519,57 @@
 <p><strong>到这里肯定有很多人会问我是怎么计算出不同分辨率下 font-size 的值？</strong></p>
 <p>首先假设我上面的页面设计稿给我时候是按照 640 的标准尺寸给我的前提下，（当然这个尺寸肯定不一定是 640，可以是 320，或者 480，又或是 375）来看一组表格。</p>
 <p><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/1418903956.jpeg" alt="1418903956"></p>
-<p>上面的表格蓝色一列是 Demo3 中页面的尺寸，页面是以 640 的宽度去切的，怎么计算不同宽度下 font-site 的值，大家看表格上面的数值变化应该能明白。举个例子：384/640 = 0.6，384 是 640 的 0.6 倍，所以 384 页面宽度下的 font-size 也等于它的 0.6 倍，这时 384 的 font-size 就等于 12px。在不同设备的宽度计算方式以此类推。</p>
-<p>Demo3 中我是通过<a href="http://caibaojian.com/javascript/" target="_blank" rel="noopener" title="js">JS</a>去动态计算根元素的 font-size，这样的好处是所有设备分辨率都能兼容适配，淘宝首页目前就是用的 JS 计算。但其实不用 JS 我们也可以做适配，一般我们在做 web app 都会先统计自己网站有哪些主流的屏幕设备，然后去针对那些设备去做 media query 设置也可以实现适配，例如下面这样：</p>
+<p>上面的表格蓝色一列是 Demo3 中页面的尺寸，页面是以 640 的宽度去切的，怎么计算不同宽度下 font-site 的值，大家看表格上面的数值变化应该能明白。举个例子：384&#x2F;640 &#x3D; 0.6，384 是 640 的 0.6 倍，所以 384 页面宽度下的 font-size 也等于它的 0.6 倍，这时 384 的 font-size 就等于 12px。在不同设备的宽度计算方式以此类推。</p>
+<p>Demo3 中我是通过<a target="_blank" rel="noopener" href="http://caibaojian.com/javascript/" title="js">JS</a>去动态计算根元素的 font-size，这样的好处是所有设备分辨率都能兼容适配，淘宝首页目前就是用的 JS 计算。但其实不用 JS 我们也可以做适配，一般我们在做 web app 都会先统计自己网站有哪些主流的屏幕设备，然后去针对那些设备去做 media query 设置也可以实现适配，例如下面这样：</p>
 <p>html {<br>font-size : 20px;<br>}<br>@media only screen and (min-width: 401px){<br>html {<br>font-size: 25px !important;<br>}<br>}<br>@media only screen and (min-width: 428px){<br>html {<br>font-size: 26.75px !important;<br>}<br>}<br>@media only screen and (min-width: 481px){<br>html {<br>font-size: 30px !important;<br>}<br>}<br>@media only screen and (min-width: 569px){<br>html {<br>font-size: 35px !important;<br>}<br>}<br>@media only screen and (min-width: 641px){<br>html {<br>font-size: 40px !important;<br>}<br>}</p>
 <p>上面的做的设置当然是不能所有设备全适配，但是用 JS 是可以实现全适配。具体用哪个就要根据自己的实际工作场景去定了。</p>
 <p>下面推荐两个国内用了 rem 技术的移动站，大家可以上去参考看看他们的做法，手机淘宝目前只有首页用了 rem，淘宝 native app 的首页是内嵌的 web app 首页。</p>
 <p><strong>淘宝首页</strong>：m.taobao.com</p>
 <p><strong>D X</strong>：m.dx.com</p>
 <h3 id="最后我们再来看一看他的兼容性："><a href="#最后我们再来看一看他的兼容性：" class="headerlink" title="最后我们再来看一看他的兼容性："></a>最后我们再来看一看他的兼容性：</h3><p><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/1418894538.png" alt="1418894538"></p>
-<h3 id="在线工具"><a href="#在线工具" class="headerlink" title="在线工具"></a>在线工具</h3><p>@blinkcat，rem 是可以合并雪碧图的，viewport 设置确实简洁，但是过于粗暴，全局都进行缩放，有时候我布局并不希望全局缩放，部分布局希望不用缩放，所以使用 rem，不过具体使用什么方法大家都可以根据实际情况衡量。并不是每个人都喜欢使用 sass，所以在 px 转 rem 这块我做了一个在线转换工具：<a href="http://520ued.com/tools/rem" target="_blank" rel="noopener">http://520ued.com/tools/rem</a></p>
-<h3 id="REM自适应JS"><a href="#REM自适应JS" class="headerlink" title="REM自适应JS"></a>REM<a href="http://caibaojian.com/t/自适应" target="_blank" rel="noopener" title="自适应">自适应</a>JS</h3><p>具体使用方法请参考这篇文章：<a href="http://caibaojian.com/simple-flexible.html" target="_blank" rel="noopener">Rem 精简版实现自适应-优化 flexible.js</a></p>
-<p>//designWidth:设计稿的实际宽度值，需要根据实际设置<br>//maxWidth:制作稿的最大宽度值，需要根据实际设置<br>//这段 js 的最后面有两个参数记得要设置，一个为设计稿实际宽度，一个为制作稿最大宽度，例如设计稿为 750，最大宽度为 750，则为(750,750)<br>;(function(designWidth, maxWidth) {<br>var doc = document,<br>win = window,<br>docEl = doc.documentElement,<br>remStyle = document.createElement(“style”),<br>tid;</p>
-<pre><code>function refreshRem() {
+<h3 id="在线工具"><a href="#在线工具" class="headerlink" title="在线工具"></a>在线工具</h3><p>@blinkcat，rem 是可以合并雪碧图的，viewport 设置确实简洁，但是过于粗暴，全局都进行缩放，有时候我布局并不希望全局缩放，部分布局希望不用缩放，所以使用 rem，不过具体使用什么方法大家都可以根据实际情况衡量。并不是每个人都喜欢使用 sass，所以在 px 转 rem 这块我做了一个在线转换工具：<a target="_blank" rel="noopener" href="http://520ued.com/tools/rem">http://520ued.com/tools/rem</a></p>
+<h3 id="REM自适应JS"><a href="#REM自适应JS" class="headerlink" title="REM自适应JS"></a>REM<a target="_blank" rel="noopener" href="http://caibaojian.com/t/%E8%87%AA%E9%80%82%E5%BA%94" title="自适应">自适应</a>JS</h3><p>具体使用方法请参考这篇文章：<a target="_blank" rel="noopener" href="http://caibaojian.com/simple-flexible.html">Rem 精简版实现自适应-优化 flexible.js</a></p>
+<p>&#x2F;&#x2F;designWidth:设计稿的实际宽度值，需要根据实际设置<br>&#x2F;&#x2F;maxWidth:制作稿的最大宽度值，需要根据实际设置<br>&#x2F;&#x2F;这段 js 的最后面有两个参数记得要设置，一个为设计稿实际宽度，一个为制作稿最大宽度，例如设计稿为 750，最大宽度为 750，则为(750,750)<br>;(function(designWidth, maxWidth) {<br>var doc &#x3D; document,<br>win &#x3D; window,<br>docEl &#x3D; doc.documentElement,<br>remStyle &#x3D; document.createElement(“style”),<br>tid;</p>
+<pre><code>function refreshRem() &#123;
     var width = docEl.getBoundingClientRect().width;
     maxWidth = maxWidth || 540;
     width&gt;maxWidth &amp;&amp; (width=maxWidth);
     var rem = width * 100 / designWidth;
-    remStyle.innerHTML = &#39;html{font-size:&#39; + rem + &#39;px;}&#39;;
-}
+    remStyle.innerHTML = &#39;html&#123;font-size:&#39; + rem + &#39;px;&#125;&#39;;
+&#125;
 
-if (docEl.firstElementChild) {
+if (docEl.firstElementChild) &#123;
     docEl.firstElementChild.appendChild(remStyle);
-} else {
+&#125; else &#123;
     var wrap = doc.createElement(&quot;div&quot;);
     wrap.appendChild(remStyle);
     doc.write(wrap.innerHTML);
     wrap = null;
-}
+&#125;
 //要等 wiewport 设置好后才能执行 refreshRem，不然 refreshRem 会执行2次；
 refreshRem();
 
-win.addEventListener(&quot;resize&quot;, function() {
+win.addEventListener(&quot;resize&quot;, function() &#123;
     clearTimeout(tid); //防止执行两次
     tid = setTimeout(refreshRem, 300);
-}, false);
+&#125;, false);
 
-win.addEventListener(&quot;pageshow&quot;, function(e) {
-    if (e.persisted) { // 浏览器后退的时候重新计算
+win.addEventListener(&quot;pageshow&quot;, function(e) &#123;
+    if (e.persisted) &#123; // 浏览器后退的时候重新计算
         clearTimeout(tid);
         tid = setTimeout(refreshRem, 300);
-    }
-}, false);
+    &#125;
+&#125;, false);
 
-if (doc.readyState === &quot;complete&quot;) {
+if (doc.readyState === &quot;complete&quot;) &#123;
     doc.body.style.fontSize = &quot;16px&quot;;
-} else {
-    doc.addEventListener(&quot;DOMContentLoaded&quot;, function(e) {
+&#125; else &#123;
+    doc.addEventListener(&quot;DOMContentLoaded&quot;, function(e) &#123;
         doc.body.style.fontSize = &quot;16px&quot;;
-    }, false);
-}</code></pre><p>})(750, 750);</p>
+    &#125;, false);
+&#125;
+</code></pre>
+<p>})(750, 750);</p>
 
             </div>
             <hr/>
@@ -855,7 +857,7 @@ if (doc.readyState === &quot;complete&quot;) {
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            寻根溯源话布局一切都始于这样一个问题：怎样通过 CSS 简单而优雅的实现水平、垂直同时居中。记得刚开始学习 CSS 的时候，看到  float  属性不由得感觉眼前一亮，顺理成章的联想到 Word 文档排版中用到的的左对齐、右对齐和居中对齐
+                            寻根溯源话布局一切都始于这样一个问题：怎样通过 CSS 简单而优雅的实现水平、垂直同时居中。记得刚开始学习 CSS 的时候，看到  float  属性不由得感觉眼前一亮，顺理成章的联想到 Word 文档排版中用到的的左对齐、右对齐和居中对齐
                         
                     </div>
                     <div class="publish-info">
@@ -1113,12 +1115,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
       <a href="http://www.jixiaokang.com" target="_blank">xkloveme</a>
       |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
       <br />
-       &nbsp;<i
-        class="fas fa-chart-area"
-      ></i
-      >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >148.1k</span
-      >&nbsp;字      
+           
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
           id="busuanzi_value_site_pv"

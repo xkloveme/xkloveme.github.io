@@ -6,12 +6,12 @@
     <meta charset="utf-8">
     <meta name="keywords" content="公司Git实用记录, 小康,xkloveme,博客">
     <meta name="description" content="一、git 命令名词解释
-1、添加/跟踪/暂存：添加到本地索引
+1、添加&amp;#x2F;跟踪&amp;#x2F;暂存：添加到本地索引
 git add 文件名
 2、提交：提交到本地仓库
 git commit -m ‘注释’
 3、推送：将提交到本地仓库的所有更新提交到服务器
-git push mycode rel">
+git push ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -32,7 +32,7 @@ git push mycode rel">
     
     <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -302,7 +302,7 @@ git push mycode rel">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=ecmixzbto5h')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=bp1accez63r')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -461,7 +461,7 @@ git push mycode rel">
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    4 分
                 </div>
                 
 				
@@ -478,26 +478,26 @@ git push mycode rel">
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p><strong>一、git 命令名词解释</strong></p>
-<p>1、添加/跟踪/暂存：添加到本地索引</p>
+<p>1、添加&#x2F;跟踪&#x2F;暂存：添加到本地索引</p>
 <p>git add 文件名</p>
 <p>2、提交：提交到本地仓库</p>
 <p>git commit -m ‘注释’</p>
 <p>3、推送：将提交到本地仓库的所有更新提交到服务器</p>
 <p>git push mycode release</p>
-<p>4、更新/拉取：将远程最新的仓库或拉到本地，两种方法<br>a) 从远程获取最新版本，不会自动合并(merge)：</p>
+<p>4、更新&#x2F;拉取：将远程最新的仓库或拉到本地，两种方法<br>a) 从远程获取最新版本，不会自动合并(merge)：</p>
 <p>git checkout release</p>
-<p>git fetch origin release</p>
+<p>git fetch origin release</p>
 <p>b) 从远程获取最新版本并自动 merge：</p>
 <p>git checkout release</p>
-<p>git pull origin release</p>
+<p>git pull origin release</p>
 <p>方法：</p>
 <p>a) 推荐先使用第一种方法，更安全些，先 git fetch</p>
 <p>b) 再检测是否有哪些更改或是否有冲突：</p>
-<p>git log -p release..orgin/release</p>
+<p>git log -p release..orgin&#x2F;release</p>
 <p>或</p>
-<p>git log orgin/release ^release</p>
+<p>git log orgin&#x2F;release ^release</p>
 <p>c) 最后再合并：</p>
-<p>git merge origin/release（将 origin/release 合并到当前的分支）</p>
+<p>git merge origin&#x2F;release（将 origin&#x2F;release 合并到当前的分支）</p>
 <p><strong>二、基本步骤</strong></p>
 <p>1、进入 web 端页面，从主仓储派生一个自己仓库</p>
 <p>2、新建本地系统文件夹</p>
@@ -513,28 +513,28 @@ git push mycode rel">
 <p>a)提交到本地索引 git add 文件名或点(.)</p>
 <p>提示 1：在 add 前，可以用 git status 查看有哪些文件被修改</p>
 <p>提示 2：输入”git add “ 可以不断按两次 tab 键快速定位本地改过的文件，如下图：</p>
-<p><img src="http://note.youdao.com/yws/public/resource/bfdf6863b921ed753d6a3f93b19bb513/6DAFFB28BAF04F01B94CF290865B5974" alt=""></p>
+<p><img src="http://note.youdao.com/yws/public/resource/bfdf6863b921ed753d6a3f93b19bb513/6DAFFB28BAF04F01B94CF290865B5974"></p>
 <p>提示 3：VS2013 自动支持，如下右键提交即可</p>
-<p><img src="http://note.youdao.com/yws/public/resource/bfdf6863b921ed753d6a3f93b19bb513/AED5D15984704D3E989D27B4463B9289" alt=""></p>
+<p><img src="http://note.youdao.com/yws/public/resource/bfdf6863b921ed753d6a3f93b19bb513/AED5D15984704D3E989D27B4463B9289"></p>
 <p>b)提交到本地仓库 git commit -m ‘注释必填’</p>
 <p>c)提交到远程服务器的我的派生仓库：</p>
 <p>git push mycode release</p>
 <p>(注意：本地已经测试小组没问题后执行)</p>
 <p>9、合并请求</p>
-<p>a)进入主仓库 &gt;  合并请求 &gt; 创建合并请求</p>
+<p>a)进入主仓库 &gt;  合并请求 &gt; 创建合并请求</p>
 <p>b)再次确认需要提交的文件及内容无误，最后点提交</p>
 <p>注意：从本地的 release 分支 合并到 总的 release 分支</p>
 <p><strong>PS：在具体实践中，都用更新提交都使用 release 分支，不用 master</strong></p>
 <p>-------------</p>
 <p><strong>三、其它：</strong></p>
-<p><strong>1、.net 项目开发，需要忽略  /bin/ /obj/ .user .suo  等文件</strong></p>
+<p><strong>1、.net 项目开发，需要忽略  &#x2F;bin&#x2F; &#x2F;obj&#x2F; .user .suo  等文件</strong></p>
 <p><strong>需要在.git 同级目录（即解决方案目录）添加一个文件，名为 “.gitignore”</strong></p>
 <p>内容为：</p>
-<p>**/bin/</p>
-<p>**/obj/</p>
+<p>**&#x2F;bin&#x2F;</p>
+<p>**&#x2F;obj&#x2F;</p>
 <p>*.user</p>
 <p>*.suo</p>
-<p><img src="http://note.youdao.com/yws/public/resource/bfdf6863b921ed753d6a3f93b19bb513/3EFE59705E6845F99CDF66D88164485E" alt=""></p>
+<p><img src="http://note.youdao.com/yws/public/resource/bfdf6863b921ed753d6a3f93b19bb513/3EFE59705E6845F99CDF66D88164485E"></p>
 <p>2、本地切换分支：git checkout 分支名称</p>
 <p>本地新建分支：git checkout -b 分支名称</p>
 <p>查看本地有哪些分支：git branch</p>
@@ -555,7 +555,7 @@ git push mycode rel">
 <p>f、查看本地有，远程没有提交</p>
 <p>git log 本地分支名称 ^远程分支名称</p>
 <p>反之，远程有本地没有</p>
-<p>git log  远程分支名称 ^本地分支名称</p>
+<p>git log  远程分支名称 ^本地分支名称</p>
 <p>g、查看本地已添加的远程及地址</p>
 <p>git remote -v</p>
 <p>h、查看本地所有分支</p>
@@ -565,7 +565,7 @@ git push mycode rel">
 <p>git log –stat -n 3</p>
 <p>k、从服务端 总的分支 release 更新到 本地仓库分支 release</p>
 <p>git checkout release</p>
-<p>git fetch origin release (假设你电脑的 origin 是总的 release 分支)</p>
+<p>git fetch origin release (假设你电脑的 origin 是总的 release 分支)</p>
 <p>l、重新定位本地仓库的提交点</p>
 <p>git log -n 2 (获取 hash 值)</p>
 <p>git reset dc6f6dade019663f2948a83aead8b0c92e1c3fce</p>
@@ -912,7 +912,7 @@ Vue 实例在文档中经常会使用
                         
                             很多人在学习完 Vue.js 之后还会看到一个经常被提及的词语叫做 Vuex。
 Vuex 字面上看与 Vue.js 只差了一个字母，但是他们两个做的事情完全不一样。
-在本文我会像之前的  Vue.js 新手入门指南文章一样的问答形式来写文章
+在本文我会像之前的  Vue.js 新手入门指南文章一样的问答形式来写文章
                         
                     </div>
                     <div class="publish-info">
@@ -1123,12 +1123,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
       <a href="http://www.jixiaokang.com" target="_blank">xkloveme</a>
       |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
       <br />
-       &nbsp;<i
-        class="fas fa-chart-area"
-      ></i
-      >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >148.1k</span
-      >&nbsp;字      
+           
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
           id="busuanzi_value_site_pv"

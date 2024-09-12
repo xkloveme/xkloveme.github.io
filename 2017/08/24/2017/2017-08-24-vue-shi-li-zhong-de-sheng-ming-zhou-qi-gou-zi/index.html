@@ -27,7 +27,7 @@ Vue 实例在文档中经常会使用">
     
     <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -297,7 +297,7 @@ Vue 实例在文档中经常会使用">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=bwr6bl4r51')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=rdog0vvqsgi')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -453,14 +453,14 @@ Vue 实例在文档中经常会使用">
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2k
+                    2.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    7 分
+                    8 分
                 </div>
                 
 				
@@ -479,116 +479,132 @@ Vue 实例在文档中经常会使用">
                 <p>Vue 框架的入口就是 Vue 实例，其实就是框架中的 view model ，它包含页面中的业务<br>处理逻辑、数据模型等，它的生命周期中有多个事件钩子，让我们在控制整个 Vue 实例的<br>过程时更容易形成好的逻辑。</p>
 <h2 id="Vue-实例"><a href="#Vue-实例" class="headerlink" title="Vue 实例"></a>Vue 实例</h2><p>在文档中经常会使用 vm 这个变量名表示 Vue 实例，在实例化 Vue 时，需要传入一个选<br>项对象，它可以包含数据(data)、模板(template)、挂载元素(el)、方法(methods)、生<br>命周期钩子(lifecyclehook)等选项。</p>
 <h3 id="Vue-实例化的选项"><a href="#Vue-实例化的选项" class="headerlink" title="Vue 实例化的选项"></a>Vue 实例化的选项</h3><p>需要注意的是含 this 的函数大多不要使用箭头函数，因为我们期望 this 指向 Vue 实例。</p>
-<h3 id="data"><a href="#data" class="headerlink" title="data"></a>data</h3><p>Vue 实例的数据都保存在 data 对象中，Vue 将会递归将 data 的属性转换为 getter/setter，<br>从而让 data 的属性能够响应数据变化。</p>
-<pre><code>var data = { a: 1 }
+<h3 id="data"><a href="#data" class="headerlink" title="data"></a>data</h3><p>Vue 实例的数据都保存在 data 对象中，Vue 将会递归将 data 的属性转换为 getter&#x2F;setter，<br>从而让 data 的属性能够响应数据变化。</p>
+<pre><code>var data = &#123; a: 1 &#125;
 // 直接创建一个实例
-var vm = new Vue({
+var vm = new Vue(&#123;
   data: data
-})
+&#125;)
 vm.a // -&gt; 1
-vm.$data === data // -&gt; true</code></pre><p>这样数据就绑定在 HTML 中，Vue 框架监视 data 的数据变化，自动更新 HTML 内容。</p>
+vm.$data === data // -&gt; true
+</code></pre>
+<p>这样数据就绑定在 HTML 中，Vue 框架监视 data 的数据变化，自动更新 HTML 内容。</p>
 <h3 id="computed"><a href="#computed" class="headerlink" title="computed"></a>computed</h3><blockquote>
-<p>计算属性将被混入到 Vue 实例中。所有 getter 和 setter 的 this 上下文自动地绑定为 Vue<br>实例。<a href="https://cn.vuejs.org/v2/api/#%E9%80%89%E9%A1%B9-%E6%95%B0%E6%8D%AE" target="_blank" rel="noopener" title="Vue API">官方 API</a></p>
+<p>计算属性将被混入到 Vue 实例中。所有 getter 和 setter 的 this 上下文自动地绑定为 Vue<br>实例。<a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/api/#%E9%80%89%E9%A1%B9-%E6%95%B0%E6%8D%AE" title="Vue API">官方 API</a></p>
 </blockquote>
-<pre><code>var vm = new Vue({
-  data: { a: 1 },
-  computed: {
+<pre><code>var vm = new Vue(&#123;
+  data: &#123; a: 1 &#125;,
+  computed: &#123;
     // 仅读取，值只须为函数
-    aDouble: function () {
+    aDouble: function () &#123;
       return this.a * 2
-    },
+    &#125;,
     // 读取和设置
-    aPlus: {
-      get: function () {
+    aPlus: &#123;
+      get: function () &#123;
         return this.a + 1
-      },
-      set: function (v) {
+      &#125;,
+      set: function (v) &#123;
         this.a = v - 1
-      }
-    }
-  }
-})
+      &#125;
+    &#125;
+  &#125;
+&#125;)
 vm.aPlus   // -&gt; 2
 vm.aPlus = 3
 vm.a       // -&gt; 2
-vm.aDouble // -&gt; 4</code></pre><p>这里可以省略 setter,如果省略了 setter，那么值就可以是普通函数，但是必须有返回值。</p>
+vm.aDouble // -&gt; 4
+</code></pre>
+<p>这里可以省略 setter,如果省略了 setter，那么值就可以是普通函数，但是必须有返回值。</p>
 <h3 id="methods"><a href="#methods" class="headerlink" title="methods"></a>methods</h3><blockquote>
-<p>methods 将被混入到 Vue 实例中。可以直接通过 VM 实例访问这些方法，或者在指令表达<br>式中使用。方法中的 this 自动绑定为 Vue 实例。<a href="https://cn.vuejs.org/v2/api/#%E9%80%89%E9%A1%B9-%E6%95%B0%E6%8D%AE" target="_blank" rel="noopener" title="Vue API">官方 API</a></p>
+<p>methods 将被混入到 Vue 实例中。可以直接通过 VM 实例访问这些方法，或者在指令表达<br>式中使用。方法中的 this 自动绑定为 Vue 实例。<a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/api/#%E9%80%89%E9%A1%B9-%E6%95%B0%E6%8D%AE" title="Vue API">官方 API</a></p>
 </blockquote>
-<pre><code>var vm = new Vue({
-  data: { a: 1 },
-  methods: {
-    plus: function () {
+<pre><code>var vm = new Vue(&#123;
+  data: &#123; a: 1 &#125;,
+  methods: &#123;
+    plus: function () &#123;
       this.a++
-    }
-  }
-})
+    &#125;
+  &#125;
+&#125;)
 vm.plus()
-vm.a // 2</code></pre><p>看下面这个例子，methods 和 computed 看起来可以做同样的事情，单纯看结果两种方式确实是相同的。<br>然而，不同的是计算属性是基于它们的依赖进行缓存的。计算属性只有在它的相关依赖发生改变<br>时才会重新求值。这就意味着只要 message 还没有发生改变，多次访问 reversedMessage 计算属性会<br>立即返回之前的计算结果，而不必再次执行函数。相比而言，只要发生重新渲染，method 调用总会执行<br>该函数。</p>
-<pre><code>var vm = new Vue({
+vm.a // 2
+</code></pre>
+<p>看下面这个例子，methods 和 computed 看起来可以做同样的事情，单纯看结果两种方式确实是相同的。<br>然而，不同的是计算属性是基于它们的依赖进行缓存的。计算属性只有在它的相关依赖发生改变<br>时才会重新求值。这就意味着只要 message 还没有发生改变，多次访问 reversedMessage 计算属性会<br>立即返回之前的计算结果，而不必再次执行函数。相比而言，只要发生重新渲染，method 调用总会执行<br>该函数。</p>
+<pre><code>var vm = new Vue(&#123;
   el: &#39;#example&#39;,
-  data: {
+  data: &#123;
     message: &#39;Hello&#39;
-  },
-  computed: {
+  &#125;,
+  computed: &#123;
     // a computed getter
-    reversedMessage: function () {
+    reversedMessage: function () &#123;
       // `this` points to the vm instance
       return this.message.split(&#39;&#39;).reverse().join(&#39;&#39;)
-    }
-  }
-})</code></pre><h3 id="watch"><a href="#watch" class="headerlink" title="watch"></a>watch</h3><blockquote>
+    &#125;
+  &#125;
+&#125;)
+</code></pre>
+<h3 id="watch"><a href="#watch" class="headerlink" title="watch"></a>watch</h3><blockquote>
 <p>一个对象，键是需要观察的表达式，值是对应回调函数。值也可以是方法名，或者包含选项的对象。Vue<br>实例将会在实例化时调用 $watch()，遍历 watch 对象的每一个属性。</p>
 </blockquote>
-<pre><code>var vm = new Vue({
-  data: {
+<pre><code>var vm = new Vue(&#123;
+  data: &#123;
     a: 1,
     b: 2,
     c: 3
-  },
-  watch: {
+  &#125;,
+  watch: &#123;
     // 监控a变量变化的时候，自动执行此函数
-    a: function (val, oldVal) {
+    a: function (val, oldVal) &#123;
       console.log(&#39;new: %s, old: %s&#39;, val, oldVal)
-    },
+    &#125;,
     // 深度 watcher
-    c: {
-      handler: function (val, oldVal) { /* ... */ },
+    c: &#123;
+      handler: function (val, oldVal) &#123; /* ... */ &#125;,
       deep: true
-    }
-  }
-})
-vm.a = 2 // -&gt; new: 2, old: 1</code></pre><h2 id="Vue-实例的生命周期"><a href="#Vue-实例的生命周期" class="headerlink" title="Vue 实例的生命周期"></a>Vue 实例的生命周期</h2><p>Vue 实例有一个完整的生命周期，也就是从开始创建、初始化数据、编译模板、挂载 Dom→ 渲染、更新 → 渲染、卸载等一系列<br>过程，我们称这是 Vue 的生命周期。通俗说就是 Vue 实例从创建到销毁的过程，就是生命周期。</p>
-<p>在 Vue 的整个生命周期中，它提供了一些<a href="https://cn.vuejs.org/v2/api/#%E9%80%89%E9%A1%B9-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%92%A9%E5%AD%90" target="_blank" rel="noopener" title="Vue API 生命周期钩子">生命周期钩子</a>，给了我们执行自定义逻辑的机会。</p>
+    &#125;
+  &#125;
+&#125;)
+vm.a = 2 // -&gt; new: 2, old: 1
+</code></pre>
+<h2 id="Vue-实例的生命周期"><a href="#Vue-实例的生命周期" class="headerlink" title="Vue 实例的生命周期"></a>Vue 实例的生命周期</h2><p>Vue 实例有一个完整的生命周期，也就是从开始创建、初始化数据、编译模板、挂载 Dom→ 渲染、更新 → 渲染、卸载等一系列<br>过程，我们称这是 Vue 的生命周期。通俗说就是 Vue 实例从创建到销毁的过程，就是生命周期。</p>
+<p>在 Vue 的整个生命周期中，它提供了一些<a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/api/#%E9%80%89%E9%A1%B9-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%92%A9%E5%AD%90" title="Vue API 生命周期钩子">生命周期钩子</a>，给了我们执行自定义逻辑的机会。</p>
 <p>接下来我们用几个例子来看看生命周期钩子是怎么用的：</p>
-<p>完整的代码托管在  <a href="http://codepen.io/koucxz/pen/vxdQrY" target="_blank" rel="noopener">codepen</a></p>
+<p>完整的代码托管在  <a target="_blank" rel="noopener" href="http://codepen.io/koucxz/pen/vxdQrY">codepen</a></p>
 <p>HTML 结构：</p>
 <p>{ { number }}</p>
 <p>我们对 input 和 p 绑定了 data 对象的 number 数据，Vue 实例构建如下：</p>
-<pre><code>var app = new Vue({
+<pre><code>var app = new Vue(&#123;
     el: &#39;#app&#39;,
-    data: {
+    data: &#123;
       number: 1
-    }
-})</code></pre><p>在实例中分别在每个生命周期钩子中  <code>console.log(&#39;钩子名称&#39;,this.number)</code>  我们发现，第一次页面加载时<br>触发了 beforeCreate, created, beforeMount, mounted 这几个钩子，data 数据在 created 中可获取到。</p>
-<p>再去  <code>console.log(&#39;mounted: &#39;, document.getElementsByTagName(&#39;p&#39;)[0])</code> ，DOM 渲染在 mounted 中已经<br>完成。</p>
+    &#125;
+&#125;)
+</code></pre>
+<p>在实例中分别在每个生命周期钩子中  <code>console.log(&#39;钩子名称&#39;,this.number)</code>  我们发现，第一次页面加载时<br>触发了 beforeCreate, created, beforeMount, mounted 这几个钩子，data 数据在 created 中可获取到。</p>
+<p>再去  <code>console.log(&#39;mounted: &#39;, document.getElementsByTagName(&#39;p&#39;)[0])</code> ，DOM 渲染在 mounted 中已经<br>完成。</p>
 <p>我们再试着去更改 input 输入框中的内容，可以看到输入框上方的数据同步发生改变，这就是数据绑定的效果，在更<br>新数据时触发 beforeUpdate 和 updated 钩子，且在 beforeUpdate 触发时，数据已更新完毕。</p>
 <p>而 destroy 仅在调用<code>app.$destroy();</code>时触发，对 vue 实例进行销毁。销毁完成后，我们再重新改变 number 的值，vue 不再对此动作<br>进行响应了。但是原先生成的 dom 元素还存在，可以这么理解，执行了 destroy 操作，后续就不再受 vue 控制了。</p>
 <h3 id="Vue-nextTick"><a href="#Vue-nextTick" class="headerlink" title="Vue.nextTick"></a>Vue.nextTick</h3><blockquote>
-<p>在下次 DOM 更新循环结束之后执行延迟回调。在修改数据之后立即使用这个方法，获取更新后的 DOM。<a href="https://cn.vuejs.org/v2/api/#%E9%80%89%E9%A1%B9-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%92%A9%E5%AD%90" target="_blank" rel="noopener" title="Vue API 生命周期钩子">官方 API</a></p>
+<p>在下次 DOM 更新循环结束之后执行延迟回调。在修改数据之后立即使用这个方法，获取更新后的 DOM。<a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/api/#%E9%80%89%E9%A1%B9-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%92%A9%E5%AD%90" title="Vue API 生命周期钩子">官方 API</a></p>
 </blockquote>
-<pre><code>Vue.nextTick(function () {
+<pre><code>Vue.nextTick(function () &#123;
   // DOM 更新了
-})</code></pre><p>官方还提供了一种写法，<code>vm.$nextTick</code>，用 this 自动绑定到调用它的实例上</p>
-<pre><code>created() {
-    setTimeout(() =&gt; {
+&#125;)
+</code></pre>
+<p>官方还提供了一种写法，<code>vm.$nextTick</code>，用 this 自动绑定到调用它的实例上</p>
+<pre><code>created() &#123;
+    setTimeout(() =&gt; &#123;
           this.number = 100
-          this.$nextTick(() =&gt; {
+          this.$nextTick(() =&gt; &#123;
             console.log(&#39;nextTick&#39;, document.getElementsByTagName(&#39;p&#39;)[0])
-          })
-    },100)
-}</code></pre><blockquote>
-<p>什么时候需要用到<a href="https://segmentfault.com/a/1190000008570874" target="_blank" rel="noopener" title="segmentfault博客 Vue.nextTick()">Vue.nextTick()</a></p>
+          &#125;)
+    &#125;,100)
+&#125;
+</code></pre>
+<blockquote>
+<p>什么时候需要用到<a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000008570874" title="segmentfault博客 Vue.nextTick()">Vue.nextTick()</a></p>
 <ol>
 <li>在 Vue 生命周期的 created() 钩子函数进行的 DOM 操作一定要放在 Vue.nextTick() 的回调函数中。原因是什么呢，原因是<br>在 created() 钩子函数执行的时候 DOM 其实并未进行任何渲染，而此时进行 DOM 操作无异于徒劳，所以此处一定要将 DOM 操作<br>的 js 代码放进 Vue.nextTick() 的回调函数中。与之对应的就是 mounted 钩子函数，因为该钩子函数执行时所有的 DOM 挂载和<br>渲染都已完成，此时在该钩子函数中进行任何 DOM 操作都不会有问题 。</li>
 <li>在数据变化后要执行的某个操作，而这个操作需要使用随数据改变而改变的 DOM 结构的时候，这个操作都应该放<br>进 Vue.nextTick() 的回调函数中。</li>
@@ -596,28 +612,34 @@ vm.a = 2 // -&gt; new: 2, old: 1</code></pre><h2 id="Vue-实例的生命周期">
 </blockquote>
 <h3 id="生命周期小结"><a href="#生命周期小结" class="headerlink" title="生命周期小结"></a>生命周期小结</h3><p>生命周期钩子的一些使用方法：</p>
 <p>beforecreate : 可以在这加个 loading 事件，在加载实例时触发<br>created : 初始化完成时的事件写在这里，如在这结束 loading 事件，异步请求也适宜在这里调用<br>mounted : 挂载元素，获取到 DOM 节点<br>updated : 如果对数据统一处理，在这里写上相应函数<br>beforeDestroy : 可以做一个确认停止事件的确认框<br>nextTick : 更新数据后立即操作 dom</p>
-<h2 id="官方示例中生命周期的运用"><a href="#官方示例中生命周期的运用" class="headerlink" title="官方示例中生命周期的运用"></a>官方示例中生命周期的运用</h2><h3 id="一个极简的-Markdown-编辑器"><a href="#一个极简的-Markdown-编辑器" class="headerlink" title="一个极简的 Markdown 编辑器"></a><a href="https://cn.vuejs.org/v2/examples/index.html" target="_blank" rel="noopener">一个极简的 Markdown 编辑器</a></h3><p>运行这个例子需要 marked 组件，通过以下方法引入：<br>在项目目录下运行 npm i marked -S, js 文件中  <code>import marked from &#39;marked&#39;</code>  即可。<br>这个例子没有用到生命周期钩子，简单解读一下这段代码，</p>
-<pre><code>methods: {
-    update: _.debounce(function (e) {
+<h2 id="官方示例中生命周期的运用"><a href="#官方示例中生命周期的运用" class="headerlink" title="官方示例中生命周期的运用"></a>官方示例中生命周期的运用</h2><h3 id="一个极简的-Markdown-编辑器"><a href="#一个极简的-Markdown-编辑器" class="headerlink" title="一个极简的 Markdown 编辑器"></a><a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/examples/index.html">一个极简的 Markdown 编辑器</a></h3><p>运行这个例子需要 marked 组件，通过以下方法引入：<br>在项目目录下运行 npm i marked -S, js 文件中  <code>import marked from &#39;marked&#39;</code>  即可。<br>这个例子没有用到生命周期钩子，简单解读一下这段代码，</p>
+<pre><code>methods: &#123;
+    update: _.debounce(function (e) &#123;
       this.input = e.target.value
-    }, 300)
-  }</code></pre><p>html 中 textarea 绑定了  <a href="https://github.com/input" target="_blank" rel="noopener">@input</a> = “update” ，方法中用 debounce 指令设置了延时，在每次输<br>入后延时同步输入框的数据，减少了更新次数，提高性能。</p>
-<h3 id="GitHub-提交"><a href="#GitHub-提交" class="headerlink" title="GitHub 提交"></a><a href="https://cn.vuejs.org/v2/examples/commits.html" target="_blank" rel="noopener">GitHub 提交</a></h3><p>这个例子从 Github 的 API 中获取了最新的 Vue.js 提交数据，并且以列表形式将它们展示了出<br>来。你可以轻松地切换 master 和 dev 分支。</p>
-<pre><code>created: function () {
+    &#125;, 300)
+  &#125;
+</code></pre>
+<p>html 中 textarea 绑定了  <a target="_blank" rel="noopener" href="https://github.com/input">@input</a> &#x3D; “update” ，方法中用 debounce 指令设置了延时，在每次输<br>入后延时同步输入框的数据，减少了更新次数，提高性能。</p>
+<h3 id="GitHub-提交"><a href="#GitHub-提交" class="headerlink" title="GitHub 提交"></a><a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/examples/commits.html">GitHub 提交</a></h3><p>这个例子从 Github 的 API 中获取了最新的 Vue.js 提交数据，并且以列表形式将它们展示了出<br>来。你可以轻松地切换 master 和 dev 分支。</p>
+<pre><code>created: function () &#123;
     this.fetchData()
-  },</code></pre><p>在 created 钩子中用声明的 fetchData 函数获取 ajax 异步数据并渲染到页面。</p>
-<h3 id="内嵌组件"><a href="#内嵌组件" class="headerlink" title="内嵌组件"></a><a href="https://cn.vuejs.org/v2/examples/select2.html" target="_blank" rel="noopener">内嵌组件</a></h3><p>本例中，整合了第三方 jQuery 插件（select2）,怎么做到的呢？就是把它内嵌在一个常用组件中</p>
-<pre><code>mounted: function () {
+  &#125;,
+</code></pre>
+<p>在 created 钩子中用声明的 fetchData 函数获取 ajax 异步数据并渲染到页面。</p>
+<h3 id="内嵌组件"><a href="#内嵌组件" class="headerlink" title="内嵌组件"></a><a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/examples/select2.html">内嵌组件</a></h3><p>本例中，整合了第三方 jQuery 插件（select2）,怎么做到的呢？就是把它内嵌在一个常用组件中</p>
+<pre><code>mounted: function () &#123;
     var vm = this
     $(this.$el)
       .val(this.value)
       // init select2
-      .select2({ data: this.options })
+      .select2(&#123; data: this.options &#125;)
       // emit event on change.
-      .on(&#39;change&#39;, function () {
+      .on(&#39;change&#39;, function () &#123;
         vm.$emit(&#39;input&#39;, this.value)
-      })
-  },</code></pre><p>这个例子建立了组件 select2 ，在 mounted 钩子中增加了 jQuery 插件 select2 的方法，数据加载时<br>给元素增加这几个方法，获取 DOM 数据。</p>
+      &#125;)
+  &#125;,
+</code></pre>
+<p>这个例子建立了组件 select2 ，在 mounted 钩子中增加了 jQuery 插件 select2 的方法，数据加载时<br>给元素增加这几个方法，获取 DOM 数据。</p>
 
             </div>
             <hr/>
@@ -909,7 +931,7 @@ vm.a = 2 // -&gt; new: 2, old: 1</code></pre><h2 id="Vue-实例的生命周期">
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Vuex 是一个专为 Vue 服务，用于管理页面数据状态、提供统一数据操作的生态系统。它集中于 MVC 模式中的 Model 层，规定所有的数据操作必须通过  action - mutation - state change  的流程来进行
+                            Vuex 是一个专为 Vue 服务，用于管理页面数据状态、提供统一数据操作的生态系统。它集中于 MVC 模式中的 Model 层，规定所有的数据操作必须通过  action - mutation - state change  的流程来进行
                         
                     </div>
                     <div class="publish-info">
@@ -963,12 +985,12 @@ vm.a = 2 // -&gt; new: 2, old: 1</code></pre><h2 id="Vue-实例的生命周期">
                     <div class="summary block-with-text">
                         
                             一、git 命令名词解释
-1、添加/跟踪/暂存：添加到本地索引
+1、添加&#x2F;跟踪&#x2F;暂存：添加到本地索引
 git add 文件名
 2、提交：提交到本地仓库
 git commit -m ‘注释’
 3、推送：将提交到本地仓库的所有更新提交到服务器
-git push mycode rel
+git push 
                         
                     </div>
                     <div class="publish-info">
@@ -1175,12 +1197,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
       <a href="http://www.jixiaokang.com" target="_blank">xkloveme</a>
       |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
       <br />
-       &nbsp;<i
-        class="fas fa-chart-area"
-      ></i
-      >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >148.1k</span
-      >&nbsp;字      
+           
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
           id="busuanzi_value_site_pv"

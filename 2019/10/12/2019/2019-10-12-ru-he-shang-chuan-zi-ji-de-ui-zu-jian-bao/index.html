@@ -29,7 +29,7 @@
     
     <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -299,7 +299,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=id1co1kb6fq')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=lqmlxj6i5qo')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -459,14 +459,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2k
+                    2.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    8 分
+                    10 分
                 </div>
                 
 				
@@ -485,10 +485,10 @@
                 <h1 id="开篇"><a href="#开篇" class="headerlink" title="开篇"></a>开篇</h1><blockquote>
 <p>西风吹老洞庭波，一夜湘君白发多。<br>醉后不知天在水，满船清梦压星河。</p>
 </blockquote>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><strong>身为程序员,还没有自己的包,总感觉缺点什么,女朋友和包至少占一样吧.正如上战场没有扛枪的士兵,吃饭少了筷子一样,令人心情不愉悦.同时经常会有面试官会问一个犀利的问题,你有自己开源项目么?你写过公司自己的 UI 组件么?如同雷劈,总觉得比别人矮一截,那么今天就以<a href="https://hy.hekr.me/hk-ui/web/index.html" target="_blank" rel="noopener">hekr-ui</a>为例,介绍一下如何打造自己的 UI 库吧</strong></p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><strong>身为程序员,还没有自己的包,总感觉缺点什么,女朋友和包至少占一样吧.正如上战场没有扛枪的士兵,吃饭少了筷子一样,令人心情不愉悦.同时经常会有面试官会问一个犀利的问题,你有自己开源项目么?你写过公司自己的 UI 组件么?如同雷劈,总觉得比别人矮一截,那么今天就以<a target="_blank" rel="noopener" href="https://hy.hekr.me/hk-ui/web/index.html">hekr-ui</a>为例,介绍一下如何打造自己的 UI 库吧</strong></p>
 <ul>
-<li><a href="https://hy.hekr.me/hk-ui/web/index.html" target="_blank" rel="noopener">文档地址</a></li>
-<li><a href="https://github.com/xkloveme/hk-ui" target="_blank" rel="noopener">项目源码</a></li>
+<li><a target="_blank" rel="noopener" href="https://hy.hekr.me/hk-ui/web/index.html">文档地址</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/xkloveme/hk-ui">项目源码</a></li>
 </ul>
 <h2 id="选型"><a href="#选型" class="headerlink" title="选型"></a>选型</h2><blockquote>
 <p>我们的目标是构建一个以<code>Vue</code>为基础基于<code>element-ui</code>的 UI 框架</p>
@@ -505,10 +505,11 @@
 <li>为社区贡献自己一份脚印 👣</li>
 </ol>
 <h1 id="初步构思"><a href="#初步构思" class="headerlink" title="初步构思"></a>初步构思</h1><h2 id="启动一个项目"><a href="#启动一个项目" class="headerlink" title="启动一个项目"></a>启动一个项目</h2><h3 id="1-初始化一个项目"><a href="#1-初始化一个项目" class="headerlink" title="1.初始化一个项目"></a>1.初始化一个项目</h3><blockquote>
-<p>这里推荐使用<a href="https://cli.vuejs.org/zh/guide/creating-a-project.html#vue-create" target="_blank" rel="noopener"><code>Vue CLI</code></a> 来进行快速构建</p>
+<p>这里推荐使用<a target="_blank" rel="noopener" href="https://cli.vuejs.org/zh/guide/creating-a-project.html#vue-create"><code>Vue CLI</code></a> 来进行快速构建</p>
 </blockquote>
 <p><img src="https://s2.ax1x.com/2019/10/10/uThubn.jpg" alt="初始化.jpg"></p>
-<pre class=" language-bash"><code class="language-bash">vue create hekr-ui</code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vue create hekr-ui</span><br></pre></td></tr></table></figure>
+
 <p>我们选择默认配置就可以了</p>
 <h3 id="2-关联代码到你的库"><a href="#2-关联代码到你的库" class="headerlink" title="2.关联代码到你的库"></a>2.关联代码到你的库</h3><blockquote>
 <p><code>git</code>可以很好对代码版本进行管理</p>
@@ -516,49 +517,32 @@
 <ul>
 <li>当你初始化库时</li>
 </ul>
-<pre class=" language-bash"><code class="language-bash"><span class="token keyword">echo</span> <span class="token string">"# hekr-ui"</span> <span class="token operator">>></span> README.md
-<span class="token function">git</span> init
-<span class="token function">git</span> add README.md
-<span class="token function">git</span> commit -m <span class="token string">"first commit"</span>
-<span class="token function">git</span> remote add origin https://github.com/xkloveme/hekr-ui.git
-<span class="token function">git</span> push -u origin master</code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;# hekr-ui&quot;</span> &gt;&gt; README.md</span><br><span class="line">git init</span><br><span class="line">git add README.md</span><br><span class="line">git commit -m <span class="string">&quot;first commit&quot;</span></span><br><span class="line">git remote add origin https://github.com/xkloveme/hekr-ui.git</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>关联本地库时</li>
 </ul>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">git</span> remote add origin https://github.com/xkloveme/hekr-ui.git
-<span class="token function">git</span> push -u origin master</code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git remote add origin https://github.com/xkloveme/hekr-ui.git</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+
 <p>当然我们选择第二种.记得把<code>node_modules</code>忽略</p>
 <h2 id="配置你的项目"><a href="#配置你的项目" class="headerlink" title="配置你的项目"></a>配置你的项目</h2><h3 id="1-添加相关依赖"><a href="#1-添加相关依赖" class="headerlink" title="1.添加相关依赖"></a>1.添加相关依赖</h3><blockquote>
 <p>本文以<code>yarn</code>为主,当然<code>npm</code>也是 👌OK 的</p>
 </blockquote>
 <p>我们以<code>vuepress</code>为主编写文档,当然这是非必须的,如果您只想发一个包,可以省略此步,必要的<code>demo</code>和测试会有极大的方便</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 将 VuePress 作为一个本地依赖安装</span>
-yarn add -D vuepress <span class="token comment" spellcheck="true"># 或者：npm install -D vuepress</span>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将 VuePress 作为一个本地依赖安装</span></span><br><span class="line">yarn add -D vuepress <span class="comment"># 或者：npm install -D vuepress</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个 docs 文件夹</span></span><br><span class="line"><span class="built_in">mkdir</span> docs</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个 markdown 文件</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&#x27;# Hello VuePress!&#x27;</span> &gt; docs/README.md</span><br><span class="line"></span><br><span class="line"><span class="comment"># 开始写作</span></span><br><span class="line">npx vuepress dev docs</span><br></pre></td></tr></table></figure>
 
-<span class="token comment" spellcheck="true"># 新建一个 docs 文件夹</span>
-<span class="token function">mkdir</span> docs
-
-<span class="token comment" spellcheck="true"># 新建一个 markdown 文件</span>
-<span class="token keyword">echo</span> <span class="token string">'# Hello VuePress!'</span> <span class="token operator">></span> docs/README.md
-
-<span class="token comment" spellcheck="true"># 开始写作</span>
-npx vuepress dev docs</code></pre>
 <p>接着，在 <code>package.json</code> 里加一些脚本:</p>
-<pre class=" language-json"><code class="language-json"><span class="token punctuation">{</span>
-  <span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-    <span class="token property">"docs:dev"</span><span class="token operator">:</span> <span class="token string">"vuepress dev docs"</span><span class="token punctuation">,</span>
-    <span class="token property">"docs:build"</span><span class="token operator">:</span> <span class="token string">"vuepress build docs"</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span></code></pre>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;scripts&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;docs:dev&quot;</span><span class="punctuation">:</span> <span class="string">&quot;vuepress dev docs&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;docs:build&quot;</span><span class="punctuation">:</span> <span class="string">&quot;vuepress build docs&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
 <p>然后就可以开始写作了:</p>
-<pre class=" language-bash"><code class="language-bash">yarn docs:dev <span class="token comment" spellcheck="true"># 或者：npm run docs:dev</span></code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yarn docs:dev <span class="comment"># 或者：npm run docs:dev</span></span><br></pre></td></tr></table></figure>
+
 <p>要生成静态的 HTML 文件，运行：</p>
-<pre class=" language-bash"><code class="language-bash">yarn docs:build <span class="token comment" spellcheck="true"># 或者：npm run docs:build</span></code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yarn docs:build <span class="comment"># 或者：npm run docs:build</span></span><br></pre></td></tr></table></figure>
+
 <p>添加其他依赖,常用语法</p>
-<pre class=" language-bash"><code class="language-bash">// 安装指定包
-yarn add ***
-// 安装所有包,注意和npm的区别
-yarn</code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">// 安装指定包</span><br><span class="line">yarn add ***</span><br><span class="line">// 安装所有包,注意和npm的区别</span><br><span class="line">yarn</span><br></pre></td></tr></table></figure>
+
 <p>注意 ⚠️ 这两者的区别<code>dependencies</code>和<code>devDependencies</code></p>
 <ol>
 <li><code>--save</code> 将依赖的名称、版本要求添加到 <code>dependencies</code></li>
@@ -567,51 +551,16 @@ yarn</code></pre>
 <h3 id="2-一些约定俗成的目录结构"><a href="#2-一些约定俗成的目录结构" class="headerlink" title="2.一些约定俗成的目录结构"></a>2.一些约定俗成的目录结构</h3><ul>
 <li>在使用<code>vuepress</code>开发时,约定了一些目录结构</li>
 </ul>
-<pre class=" language-docs"><code class="language-docs">.
-├── docs
-│   ├── .vuepress (可选的)
-│   │   ├── components (可选的)
-│   │   ├── theme (可选的)
-│   │   │   └── Layout.vue
-│   │   ├── public (可选的)
-│   │   ├── styles (可选的)
-│   │   │   ├── index.styl
-│   │   │   └── palette.styl
-│   │   ├── templates (可选的, 谨慎配置)
-│   │   │   ├── dev.html
-│   │   │   └── ssr.html
-│   │   ├── config.js (可选的)
-│   │   └── enhanceApp.js (可选的)
-│   │
-│   ├── README.md
-│   ├── guide
-│   │   └── README.md
-│   └── config.md
-│
-└── package.json</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── docs</span><br><span class="line">│   ├── .vuepress (可选的)</span><br><span class="line">│   │   ├── components (可选的)</span><br><span class="line">│   │   ├── theme (可选的)</span><br><span class="line">│   │   │   └── Layout.vue</span><br><span class="line">│   │   ├── public (可选的)</span><br><span class="line">│   │   ├── styles (可选的)</span><br><span class="line">│   │   │   ├── index.styl</span><br><span class="line">│   │   │   └── palette.styl</span><br><span class="line">│   │   ├── templates (可选的, 谨慎配置)</span><br><span class="line">│   │   │   ├── dev.html</span><br><span class="line">│   │   │   └── ssr.html</span><br><span class="line">│   │   ├── config.js (可选的)</span><br><span class="line">│   │   └── enhanceApp.js (可选的)</span><br><span class="line">│   │</span><br><span class="line">│   ├── README.md</span><br><span class="line">│   ├── guide</span><br><span class="line">│   │   └── README.md</span><br><span class="line">│   └── config.md</span><br><span class="line">│</span><br><span class="line">└── package.json</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>在本项目中目录结构为</li>
 </ul>
 <p><img src="https://s2.ax1x.com/2019/10/10/uThQU0.jpg" alt="结构.jpg"></p>
-<pre class=" language-tree"><code class="language-tree">template
-├─ docs
-│    └─ .vuepress            # 配置、演示组件、静态资源
-│    │    ├─ compnents        # 演示组件
-│    │    |    └─ demo          # demo组件
-│    │    ├─ public           # 静态资源
-│    │    |    └─ images        # 图片文件
-│    │    |    └─ scss          # 样式文件
-│    │    ├─ config.js        # 配置文件
-│    │    └─ enhanceApp       # 引入文件
-|    ├─ compnent             # 组件md文件
-|    └─ README              # 首页md
-├─ packages
-│    ├─ index.js             # 组件index.js
-│    └─ hk-countup           # countup组件
-├─ public
-└─ package.json</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">template</span><br><span class="line">├─ docs</span><br><span class="line">│    └─ .vuepress            # 配置、演示组件、静态资源</span><br><span class="line">│    │    ├─ compnents        # 演示组件</span><br><span class="line">│    │    |    └─ demo          # demo组件</span><br><span class="line">│    │    ├─ public           # 静态资源</span><br><span class="line">│    │    |    └─ images        # 图片文件</span><br><span class="line">│    │    |    └─ scss          # 样式文件</span><br><span class="line">│    │    ├─ config.js        # 配置文件</span><br><span class="line">│    │    └─ enhanceApp       # 引入文件</span><br><span class="line">|    ├─ compnent             # 组件md文件</span><br><span class="line">|    └─ README              # 首页md</span><br><span class="line">├─ packages</span><br><span class="line">│    ├─ index.js             # 组件index.js</span><br><span class="line">│    └─ hk-countup           # countup组件</span><br><span class="line">├─ public</span><br><span class="line">└─ package.json</span><br></pre></td></tr></table></figure>
+
 <h3 id="3-修改你的package-json文件"><a href="#3-修改你的package-json文件" class="headerlink" title="3.修改你的package.json文件"></a>3.修改你的<code>package.json</code>文件</h3><blockquote>
-<p>这个文件是项目的灵魂 👻,是最重要的文件之一.具体字段参考<a href="http://javascript.ruanyifeng.com/nodejs/packagejson.html" target="_blank" rel="noopener">packagejson</a></p>
+<p>这个文件是项目的灵魂 👻,是最重要的文件之一.具体字段参考<a target="_blank" rel="noopener" href="http://javascript.ruanyifeng.com/nodejs/packagejson.html">packagejson</a></p>
 </blockquote>
 <p><img src="https://s2.ax1x.com/2019/10/10/uThl5V.jpg" alt="目录.jpg"></p>
 <ul>
@@ -620,22 +569,21 @@ yarn</code></pre>
 <blockquote>
 <p><code>main</code>字段指定了加载的入口文件，<code>require(&#39;moduleName&#39;)</code>就会加载这个文件。这个字段的默认值是模块根目录下面的<code>index.js</code>。</p>
 </blockquote>
-<pre class=" language-bash"><code class="language-bash"><span class="token string">"main"</span><span class="token keyword">:</span> <span class="token string">"dist/hekr-ui.umd.min.js"</span></code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;main&quot;</span>: <span class="string">&quot;dist/hekr-ui.umd.min.js&quot;</span></span><br></pre></td></tr></table></figure>
+
 <blockquote>
 <p>你可以通过下面的命令将一个单独的入口构建为一个库</p>
 </blockquote>
-<pre class=" language-bash"><code class="language-bash">vue-cli-service build --target lib --name myLib <span class="token punctuation">[</span>entry<span class="token punctuation">]</span></code></pre>
-<p>运行结果为:</p>
-<pre class=" language-bash"><code class="language-bash">  File                     Size                     Gzipped
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vue-cli-service build --target lib --name myLib [entry]</span><br></pre></td></tr></table></figure>
 
-  dist/hk-ui.umd.min.js    13.64 KiB                5.31 KiB
-  dist/hk-ui.umd.js        43.87 KiB                11.37 KiB
-  dist/hk-ui.common.js     43.49 KiB                11.25 KiB
-  dist/hk-ui.css           0.54 KiB                 0.29 KiB</code></pre>
+<p>运行结果为:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">File                     Size                     Gzipped</span><br><span class="line"></span><br><span class="line">dist/hk-ui.umd.min.js    13.64 KiB                5.31 KiB</span><br><span class="line">dist/hk-ui.umd.js        43.87 KiB                11.37 KiB</span><br><span class="line">dist/hk-ui.common.js     43.49 KiB                11.25 KiB</span><br><span class="line">dist/hk-ui.css           0.54 KiB                 0.29 KiB</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>添加<code>lib</code>命令</li>
 </ul>
-<pre class=" language-bash"><code class="language-bash">    <span class="token string">"lib"</span><span class="token keyword">:</span> <span class="token string">"vue-cli-service build --target lib --name hk-ui --dest dist ./src/packages/index.js"</span></code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;lib&quot;</span>: <span class="string">&quot;vue-cli-service build --target lib --name hk-ui --dest dist ./src/packages/index.js&quot;</span></span><br></pre></td></tr></table></figure>
+
 <p>这个入口可以是一个 <code>.js</code> 或一个 <code>.vue</code> 文件。如果没有指定入口，则会使用 <code>src/App.vue</code>。</p>
 <p>构建一个库会输出：</p>
 <ul>
@@ -645,53 +593,27 @@ yarn</code></pre>
 </li>
 <li><p><code>dist/myLib.umd.min.js</code>：压缩后的 UMD 构建版本</p>
 </li>
-<li><p><code>dist/myLib.css</code>：提取出来的 CSS 文件 (可以通过在 <code>vue.config.js</code> 中设置 <code>css: { extract: false }</code> 强制内联)</p>
+<li><p><code>dist/myLib.css</code>：提取出来的 CSS 文件 (可以通过在 <code>vue.config.js</code> 中设置 <code>css: &#123; extract: false &#125;</code> 强制内联)</p>
 </li>
 </ul>
 <h3 id="4-文档配置"><a href="#4-文档配置" class="headerlink" title="4. 文档配置"></a>4. 文档配置</h3><p><img src="https://s2.ax1x.com/2019/10/10/uTIdVs.jpg" alt="文档.jpg"></p>
 <blockquote>
 <p>项目启动之后需要我们配置我们的<code>vuepress</code></p>
 </blockquote>
-<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">/*
- * @describe: 配置文件 config.js
- * @Author: superDragon
- * @Date: 2019-10-09 23:25:49
- * @LastEditors: superDragon
- * @LastEditTime: 2019-10-10 18:49:25
- */</span>
-<span class="token keyword">let</span> component <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"hk-button"</span><span class="token punctuation">,</span> <span class="token string">"hk-card"</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
-  base<span class="token punctuation">:</span> <span class="token string">"/hekr-ui/"</span><span class="token punctuation">,</span>
-  title<span class="token punctuation">:</span> <span class="token string">"hekr-ui"</span><span class="token punctuation">,</span>
-  description<span class="token punctuation">:</span> <span class="token string">"hekr-ui"</span><span class="token punctuation">,</span>
-  themeConfig<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-    nav<span class="token punctuation">:</span> <span class="token punctuation">[</span>
-      <span class="token punctuation">{</span> text<span class="token punctuation">:</span> <span class="token string">"首页"</span><span class="token punctuation">,</span> link<span class="token punctuation">:</span> <span class="token string">"/"</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
-      <span class="token punctuation">{</span>
-        text<span class="token punctuation">:</span> <span class="token string">"组件"</span><span class="token punctuation">,</span>
-        link<span class="token punctuation">:</span> <span class="token string">"/component/hk-button"</span>
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">]</span><span class="token punctuation">,</span>
-    sidebar<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-      <span class="token string">"/component/"</span><span class="token punctuation">:</span> component
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    lastUpdated<span class="token punctuation">:</span> <span class="token string">"最后更新"</span><span class="token punctuation">,</span>
-    repo<span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
-    repoLabel<span class="token punctuation">:</span> <span class="token string">"GitLab"</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  plugins<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-  serviceWorker<span class="token punctuation">:</span> <span class="token boolean">true</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @describe: 配置文件 config.js</span></span><br><span class="line"><span class="comment"> * @Author: superDragon</span></span><br><span class="line"><span class="comment"> * @Date: 2019-10-09 23:25:49</span></span><br><span class="line"><span class="comment"> * @LastEditors: superDragon</span></span><br><span class="line"><span class="comment"> * @LastEditTime: 2019-10-10 18:49:25</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">let</span> component = [<span class="string">&quot;hk-button&quot;</span>, <span class="string">&quot;hk-card&quot;</span>];</span><br><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123;</span><br><span class="line">  <span class="attr">base</span>: <span class="string">&quot;/hekr-ui/&quot;</span>,</span><br><span class="line">  <span class="attr">title</span>: <span class="string">&quot;hekr-ui&quot;</span>,</span><br><span class="line">  <span class="attr">description</span>: <span class="string">&quot;hekr-ui&quot;</span>,</span><br><span class="line">  <span class="attr">themeConfig</span>: &#123;</span><br><span class="line">    <span class="attr">nav</span>: [</span><br><span class="line">      &#123; <span class="attr">text</span>: <span class="string">&quot;首页&quot;</span>, <span class="attr">link</span>: <span class="string">&quot;/&quot;</span> &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attr">text</span>: <span class="string">&quot;组件&quot;</span>,</span><br><span class="line">        <span class="attr">link</span>: <span class="string">&quot;/component/hk-button&quot;</span></span><br><span class="line">      &#125;</span><br><span class="line">    ],</span><br><span class="line">    <span class="attr">sidebar</span>: &#123;</span><br><span class="line">      <span class="string">&quot;/component/&quot;</span>: component</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">lastUpdated</span>: <span class="string">&quot;最后更新&quot;</span>,</span><br><span class="line">    <span class="attr">repo</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="attr">repoLabel</span>: <span class="string">&quot;GitLab&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">plugins</span>: [],</span><br><span class="line">  <span class="attr">serviceWorker</span>: <span class="literal">true</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
 <p>当我们能够成功运行下面时</p>
-<pre class=" language-js"><code class="language-js">    <span class="token string">"docs:dev"</span><span class="token punctuation">:</span> <span class="token string">"vuepress dev docs"</span><span class="token punctuation">,</span>
-    <span class="token string">"docs:build"</span><span class="token punctuation">:</span> <span class="token string">"vuepress build docs"</span><span class="token punctuation">,</span></code></pre>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;docs:dev&quot;</span>: <span class="string">&quot;vuepress dev docs&quot;</span>,</span><br><span class="line"><span class="string">&quot;docs:build&quot;</span>: <span class="string">&quot;vuepress build docs&quot;</span>,</span><br></pre></td></tr></table></figure>
+
 <ul>
-<li>本地运行</li>
+<li><p>本地运行</p>
+<p>  yarn docs:dev # 或者：npm run docs:dev</p>
+</li>
+<li><p>打包</p>
+<p>  yarn docs:build # 或者：npm run docs:build</p>
+</li>
 </ul>
-<pre><code>yarn docs:dev # 或者：npm run docs:dev</code></pre><ul>
-<li>打包</li>
-</ul>
-<pre><code>yarn docs:build # 或者：npm run docs:build</code></pre><h3 id="5-持续集成"><a href="#5-持续集成" class="headerlink" title="5.持续集成"></a>5.持续集成</h3><blockquote>
+<h3 id="5-持续集成"><a href="#5-持续集成" class="headerlink" title="5.持续集成"></a>5.持续集成</h3><blockquote>
 <p>以<code>GitHub Pages</code> 和<code>Travis CI</code> 为例</p>
 </blockquote>
 <ul>
@@ -699,11 +621,8 @@ module<span class="token punctuation">.</span>exports <span class="token operato
 <li>使用的是默认的构建输出位置；</li>
 <li>VuePress 以本地依赖的形式被安装到你的项目中，并且配置了如下的 npm scripts:</li>
 </ul>
-<pre class=" language-json"><code class="language-json"><span class="token punctuation">{</span>
-  <span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-    <span class="token property">"docs:build"</span><span class="token operator">:</span> <span class="token string">"vuepress build docs"</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span></code></pre>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;scripts&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;docs:build&quot;</span><span class="punctuation">:</span> <span class="string">&quot;vuepress build docs&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
 <ol>
 <li><p>在 <code>docs/.vuepress/config.js</code> 中设置正确的 <code>base</code>这里我们设置<code>/hekr-ui/</code> 🌿。</p>
 <p>如果你打算发布到 <code>https://&lt;USERNAME&gt;.github.io/</code>，则可以省略这一步，因为 <code>base</code> 默认即是 <code>&quot;/&quot;</code>。</p>
@@ -712,45 +631,11 @@ module<span class="token punctuation">.</span>exports <span class="token operato
 <li><p>在你的项目中，创建一个如下的 <code>.travis.yml</code> 文件 📃:</p>
 </li>
 </ol>
-<pre class=" language-yml"><code class="language-yml">language: node_js
-node_js:
-  - "8"
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">language:</span> <span class="string">node_js</span></span><br><span class="line"><span class="attr">node_js:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&quot;8&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="attr">install:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">npm</span> <span class="string">install</span></span><br><span class="line"></span><br><span class="line"><span class="attr">script:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">npm</span> <span class="string">run</span> <span class="string">build</span></span><br><span class="line"></span><br><span class="line"><span class="attr">after_success:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">cd</span> <span class="string">./docs/.vuepress/dist</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">git</span> <span class="string">init</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">git</span> <span class="string">config</span> <span class="string">--global</span> <span class="string">user.name</span> <span class="string">&quot;$&#123;U_NAME&#125;&quot;</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">git</span> <span class="string">config</span> <span class="string">--global</span> <span class="string">user.email</span> <span class="string">&quot;$&#123;U_EMAIL&#125;&quot;</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">git</span> <span class="string">add</span> <span class="string">.</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">git</span> <span class="string">commit</span> <span class="string">-m</span> <span class="string">&quot;👷‍Automatically update from travis-ci 👷‍&quot;</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">git</span> <span class="string">push</span> <span class="string">--quiet</span> <span class="string">--force</span>  <span class="string">&quot;https://$&#123;GH_TOKEN&#125;@$&#123;GH_REF&#125;&quot;</span> <span class="string">master:$&#123;P_BRANCH&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="attr">branches:</span></span><br><span class="line">  <span class="attr">only:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">master</span></span><br><span class="line"></span><br><span class="line"><span class="attr">notifications:</span></span><br><span class="line">  <span class="attr">email:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">xkloveme@163.com</span></span><br><span class="line">  <span class="attr">on_failure:</span> <span class="string">always</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># <span class="doctag">Note:</span> you should set Environment Variables here or &#x27;Settings&#x27; on travis-ci.org</span></span><br><span class="line"><span class="attr">env:</span></span><br><span class="line">  <span class="attr">global:</span></span><br><span class="line">    <span class="comment"># 我将其添加到了travis-ci的环境变量中</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">U_NAME:</span> <span class="string">xkloveme</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">U_EMAIL:</span> <span class="string">xkloveme@qq.com</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">P_BRANCH:</span> <span class="string">gh-pages</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">GH_REF:</span> <span class="string">github.com/xkloveme/vue-v-xxx.git</span></span><br></pre></td></tr></table></figure>
 
-install:
-  - npm install
-
-script:
-  - npm run build
-
-after_success:
-  - cd ./docs/.vuepress/dist
-  - git init
-  - git config --global user.name "${U_NAME}"
-  - git config --global user.email "${U_EMAIL}"
-  - git add .
-  - git commit -m "👷‍Automatically update from travis-ci 👷‍"
-  - git push --quiet --force  "https://${GH_TOKEN}@${GH_REF}" master:${P_BRANCH}
-
-branches:
-  only:
-    - master
-
-notifications:
-  email:
-    - xkloveme@163.com
-  on_failure: always
-
-# Note: you should set Environment Variables here or 'Settings' on travis-ci.org
-env:
-  global:
-    # 我将其添加到了travis-ci的环境变量中
-    - U_NAME: xkloveme
-    - U_EMAIL: xkloveme@qq.com
-    - P_BRANCH: gh-pages
-    - GH_REF: github.com/xkloveme/vue-v-xxx.git</code></pre>
 <ol start="3">
-<li>注册<code>github</code>、<code>travis</code>和配置<code>travis</code>相关,启用构建,自行<code>Google</code><a href="https://docs.travis-ci.com/user/deployment/pages/" target="_blank" rel="noopener">传送门</a></li>
-<li>更多配置参考<a href="https://vuepress.vuejs.org/zh/guide/deploy.html" target="_blank" rel="noopener">vuepress 部署</a></li>
+<li>注册<code>github</code>、<code>travis</code>和配置<code>travis</code>相关,启用构建,自行<code>Google</code><a target="_blank" rel="noopener" href="https://docs.travis-ci.com/user/deployment/pages/">传送门</a></li>
+<li>更多配置参考<a target="_blank" rel="noopener" href="https://vuepress.vuejs.org/zh/guide/deploy.html">vuepress 部署</a></li>
 </ol>
 <h1 id="实践"><a href="#实践" class="headerlink" title="实践"></a>实践</h1><h2 id="完善组件并打包"><a href="#完善组件并打包" class="headerlink" title="完善组件并打包"></a>完善组件并打包</h2><blockquote>
 <p>以编写<code>hk-button</code>组件为例,并导出</p>
@@ -758,98 +643,38 @@ env:
 <ol>
 <li>添加组件及导出</li>
 </ol>
-<pre class=" language-vue"><code class="language-vue"><template lang="pug">
-el-tooltip(effect="dark" v-if="tips" :content="tips" placement="top-start")
-  el-button.hk-button(:size="size" :type="type" v-bind="$attrs" @click="handleClick")
-    slot
-el-button.hk-button(:size="size" v-else :type="type" v-bind="$attrs" @click="handleClick")
-  slot
-</template>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;template lang=&quot;pug&quot;&gt;</span><br><span class="line">el-tooltip(effect=&quot;dark&quot; v-if=&quot;tips&quot; :content=&quot;tips&quot; placement=&quot;top-start&quot;)</span><br><span class="line">  el-button.hk-button(:size=&quot;size&quot; :type=&quot;type&quot; v-bind=&quot;$attrs&quot; @click=&quot;handleClick&quot;)</span><br><span class="line">    slot</span><br><span class="line">el-button.hk-button(:size=&quot;size&quot; v-else :type=&quot;type&quot; v-bind=&quot;$attrs&quot; @click=&quot;handleClick&quot;)</span><br><span class="line">  slot</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">import &#123; Debounce &#125; from &quot;./../util/debounce&quot;;</span><br><span class="line">export default &#123;</span><br><span class="line">  name: &quot;hk-button&quot;,</span><br><span class="line">  props: &#123;</span><br><span class="line">    type: &#123;</span><br><span class="line">      type: String,</span><br><span class="line">      default: &quot;primary&quot;</span><br><span class="line">    &#125;,</span><br><span class="line">    size: &#123;</span><br><span class="line">      type: String,</span><br><span class="line">      default: &quot;medium&quot;</span><br><span class="line">    &#125;,</span><br><span class="line">    tips: &#123;</span><br><span class="line">      type: String,</span><br><span class="line">      default: null</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  methods: &#123;</span><br><span class="line">    handleClick: Debounce(function(e) &#123;</span><br><span class="line">      this.$emit(&quot;click&quot;, e);</span><br><span class="line">    &#125;, 200)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style lang=&quot;scss&quot;&gt;</span><br><span class="line">.hk-button &#123;</span><br><span class="line">  i + span &#123;</span><br><span class="line">    padding-left: 10px;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
 
-<script>
-import { Debounce } from "./../util/debounce";
-export default {
-  name: "hk-button",
-  props: {
-    type: {
-      type: String,
-      default: "primary"
-    },
-    size: {
-      type: String,
-      default: "medium"
-    },
-    tips: {
-      type: String,
-      default: null
-    }
-  },
-  methods: {
-    handleClick: Debounce(function(e) {
-      this.$emit("click", e);
-    }, 200)
-  }
-};
-</script>
-
-<style lang="scss">
-.hk-button {
-  i + span {
-    padding-left: 10px;
-  }
-}
-</style></code></pre>
 <ol start="2">
 <li>导出组件</li>
 </ol>
-<pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> HkButton <span class="token keyword">from</span> <span class="token string">"./hk-button"</span><span class="token punctuation">;</span>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">HkButton</span> <span class="keyword">from</span> <span class="string">&quot;./hk-button&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="title class_">HkButton</span>;</span><br></pre></td></tr></table></figure>
 
-<span class="token keyword">export</span> <span class="token keyword">default</span> HkButton<span class="token punctuation">;</span></code></pre>
 <ol start="3">
 <li>导出为<code>install</code></li>
 </ol>
-<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">/*
- * @describe: 主入口,导出install
- * @Author: superDragon
- * @Date: 2019-10-09 23:21:11
- * @LastEditors: superDragon
- * @LastEditTime: 2019-10-10 19:09:57
- */</span>
-<span class="token keyword">import</span> HkButton <span class="token keyword">from</span> <span class="token string">"./hk-button"</span><span class="token punctuation">;</span>
-<span class="token keyword">import</span> HKcard <span class="token keyword">from</span> <span class="token string">"./hk-card"</span><span class="token punctuation">;</span>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @describe: 主入口,导出install</span></span><br><span class="line"><span class="comment"> * @Author: superDragon</span></span><br><span class="line"><span class="comment"> * @Date: 2019-10-09 23:21:11</span></span><br><span class="line"><span class="comment"> * @LastEditors: superDragon</span></span><br><span class="line"><span class="comment"> * @LastEditTime: 2019-10-10 19:09:57</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">HkButton</span> <span class="keyword">from</span> <span class="string">&quot;./hk-button&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="title class_">HKcard</span> <span class="keyword">from</span> <span class="string">&quot;./hk-card&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">install</span> = <span class="title class_">Vue</span> =&gt; &#123;</span><br><span class="line">  <span class="title class_">Vue</span>.<span class="title function_">component</span>(<span class="title class_">HkButton</span>.<span class="property">name</span>, <span class="title class_">HkButton</span>);</span><br><span class="line">  <span class="title class_">Vue</span>.<span class="title function_">component</span>(<span class="title class_">HKcard</span>.<span class="property">name</span>, <span class="title class_">HKcard</span>);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (<span class="keyword">typeof</span> <span class="variable language_">window</span> !== <span class="string">&quot;undefined&quot;</span> &amp;&amp; <span class="variable language_">window</span>.<span class="property">Vue</span>) &#123;</span><br><span class="line">  <span class="title function_">install</span>(<span class="variable language_">window</span>.<span class="property">Vue</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> &#123; <span class="title class_">HkButton</span>, <span class="title class_">HKcard</span> &#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123; install &#125;;</span><br></pre></td></tr></table></figure>
 
-<span class="token keyword">const</span> install <span class="token operator">=</span> Vue <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-  Vue<span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span>HkButton<span class="token punctuation">.</span>name<span class="token punctuation">,</span> HkButton<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  Vue<span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span>HKcard<span class="token punctuation">.</span>name<span class="token punctuation">,</span> HKcard<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-
-<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> window <span class="token operator">!==</span> <span class="token string">"undefined"</span> <span class="token operator">&amp;&amp;</span> window<span class="token punctuation">.</span>Vue<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token function">install</span><span class="token punctuation">(</span>window<span class="token punctuation">.</span>Vue<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-
-<span class="token keyword">export</span> <span class="token punctuation">{</span> HkButton<span class="token punctuation">,</span> HKcard <span class="token punctuation">}</span><span class="token punctuation">;</span>
-
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span> install <span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
 <h2 id="上传自己的npm"><a href="#上传自己的npm" class="headerlink" title="上传自己的npm"></a>上传自己的<code>npm</code></h2><h3 id="注册-®️-并切换到官方npm源"><a href="#注册-®️-并切换到官方npm源" class="headerlink" title="注册 ®️ 并切换到官方npm源"></a>注册 ®️ 并切换到官方<code>npm</code>源</h3><p><img src="https://s2.ax1x.com/2019/10/10/uTjYY4.jpg" alt="换源.jpg"></p>
-<h3 id="注册登陆npm"><a href="#注册登陆npm" class="headerlink" title="注册登陆npm"></a>注册登陆<code>npm</code></h3><pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> adduser        //回车后,弹出Username:
-Username:          //输入你在官网注册时的用户名,回车
-Password:          //输入官网注册的密码,密码看不见,请确保你输的密码正确, 回车
-Email:<span class="token punctuation">(</span>this is Public<span class="token punctuation">)</span>    //输入官网注册时绑定的邮箱,回车</code></pre>
-<h3 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h3><pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> publish        //此处上传命令,回车</code></pre>
+<h3 id="注册登陆npm"><a href="#注册登陆npm" class="headerlink" title="注册登陆npm"></a>注册登陆<code>npm</code></h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm adduser        //回车后,弹出Username:</span><br><span class="line">Username:          //输入你在官网注册时的用户名,回车</span><br><span class="line">Password:          //输入官网注册的密码,密码看不见,请确保你输的密码正确, 回车</span><br><span class="line">Email:(this is Public)    //输入官网注册时绑定的邮箱,回车</span><br></pre></td></tr></table></figure>
+
+<h3 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm publish        //此处上传命令,回车</span><br></pre></td></tr></table></figure>
+
 <p><img src="https://s2.ax1x.com/2019/10/10/uTvZB6.jpg" alt="发布.jpg"></p>
 <p>这样一个<code>hekr-ui</code>就发布完成了</p>
 <h3 id="撤销"><a href="#撤销" class="headerlink" title="撤销"></a>撤销</h3><blockquote>
 <p>24 小时内撤销也是很简单的.</p>
 </blockquote>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> unpublish --force</code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm unpublish --force</span><br></pre></td></tr></table></figure>
+
 <h1 id="大功告成"><a href="#大功告成" class="headerlink" title="大功告成"></a>大功告成</h1><blockquote>
 <p>Let’s enjoy the taste of life, if we feel, the more we will live longer.</p>
 </blockquote>
 <p>觉得不错的话给个<code>star</code></p>
 <ul>
-<li>本文演示库地址<a href="https://github.com/xkloveme/hekr-ui" target="_blank" rel="noopener">hekr-ui</a></li>
-<li><a href="https://hy.hekr.me/hk-ui/web/index.html" target="_blank" rel="noopener">文档地址</a></li>
-<li><a href="https://github.com/xkloveme/hk-ui" target="_blank" rel="noopener">项目源码</a></li>
+<li>本文演示库地址<a target="_blank" rel="noopener" href="https://github.com/xkloveme/hekr-ui">hekr-ui</a></li>
+<li><a target="_blank" rel="noopener" href="https://hy.hekr.me/hk-ui/web/index.html">文档地址</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/xkloveme/hk-ui">项目源码</a></li>
 </ul>
 
             </div>
@@ -1420,12 +1245,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
       <a href="http://www.jixiaokang.com" target="_blank">xkloveme</a>
       |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
       <br />
-       &nbsp;<i
-        class="fas fa-chart-area"
-      ></i
-      >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >148.1k</span
-      >&nbsp;字      
+           
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
           id="busuanzi_value_site_pv"

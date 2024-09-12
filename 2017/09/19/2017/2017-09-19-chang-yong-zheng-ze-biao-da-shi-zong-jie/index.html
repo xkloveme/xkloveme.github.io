@@ -32,7 +32,7 @@ m-n 位的数字：^\d{m,n}$
     
     <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -302,7 +302,7 @@ m-n 位的数字：^\d{m,n}$
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=2k16pj4xyq')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=rvq5xzggy6')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -454,7 +454,7 @@ m-n 位的数字：^\d{m,n}$
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.5k
+                    1.6k
                 </div>
                 
 
@@ -494,8 +494,8 @@ m-n 位的数字：^\d{m,n}$
 <li>非正整数：^-[1-9]\d*|0$ 或 ^((-\d+)|(0+))$</li>
 <li>非负浮点数：^\d+(\.\d+)?$ 或 ^[1-9]\d<em>\.\d</em>|0\.\d<em>[1-9]\d</em>|0?\.0+|0$</li>
 <li>非正浮点数：^((-\d+(\.\d+)?)|(0+(\.0+)?))$ 或 ^(-([1-9]\d<em>\.\d</em>|0\.\d<em>[1-9]\d</em>))|0?\.0+|0$</li>
-<li>正浮点数：^[1-9]\d<em>\.\d</em>|0\.\d<em>[1-9]\d</em>$ 或 ^(([0-9]+\.[0-9]<em>[1-9][0-9]</em>)|([0-9]<em>[1-9][0-9]<em>\.[0-9]+)|([0-9]</em>[1-9][0-9]</em>))$</li>
-<li>负浮点数：^-([1-9]\d<em>\.\d</em>|0\.\d<em>[1-9]\d</em>)$ 或 ^(-(([0-9]+\.[0-9]<em>[1-9][0-9]</em>)|([0-9]<em>[1-9][0-9]<em>\.[0-9]+)|([0-9]</em>[1-9][0-9]</em>)))$</li>
+<li>正浮点数：^[1-9]\d<em>\.\d</em>|0\.\d<em>[1-9]\d</em>$ 或 ^(([0-9]+\.[0-9]<em>[1-9][0-9]</em>)|([0-9]<em>[1-9][0-9]</em>\.[0-9]+)|([0-9]<em>[1-9][0-9]</em>))$</li>
+<li>负浮点数：^-([1-9]\d<em>\.\d</em>|0\.\d<em>[1-9]\d</em>)$ 或 ^(-(([0-9]+\.[0-9]<em>[1-9][0-9]</em>)|([0-9]<em>[1-9][0-9]</em>\.[0-9]+)|([0-9]<em>[1-9][0-9]</em>)))$</li>
 <li>浮点数：^(-?\d+)(\.\d+)?$ 或 ^-?([1-9]\d<em>\.\d</em>|0\.\d<em>[1-9]\d</em>|0?\.0+|0)$</li>
 </ul>
 <h3 id="二、校验字符的表达式"><a href="#二、校验字符的表达式" class="headerlink" title="二、校验字符的表达式"></a>二、校验字符的表达式</h3><ul>
@@ -509,13 +509,13 @@ m-n 位的数字：^\d{m,n}$
 <li>由数字、26 个英文字母或者下划线组成的字符串：^\w+$ 或 ^\w{3,20}$</li>
 <li>中文、英文、数字包括下划线：^[\u4E00-\u9FA5A-Za-z0-9\_]+$</li>
 <li>中文、英文、数字但不包括下划线等符号：^[\u4E00-\u9FA5A-Za-z0-9]+$ 或 ^[\u4E00-\u9FA5A-Za-z0-9]{2,20}$</li>
-<li>可以输入含有^%&amp;’,;=?$\”等字符：[^%&amp;’,;=?$\x22]+</li>
+<li>可以输入含有^%&amp;’,;&#x3D;?$\”等字符：[^%&amp;’,;&#x3D;?$\x22]+</li>
 <li>禁止输入含有<del>的字符：[^</del>\x22]+</li>
 </ul>
 <h3 id="三、特殊需求表达式"><a href="#三、特殊需求表达式" class="headerlink" title="三、特殊需求表达式"></a>三、特殊需求表达式</h3><ul>
 <li>Email 地址：^\w+([-+.]\w+)_@\w+([-.]\w+)_\.\w+([-.]\w+)\*$</li>
-<li>域名：[a-zA-Z0-9][-a-zA-Z0-9]{0,62}(/.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+/.?</li>
-<li>InternetURL：[a-zA-z]+://[^\s]_ 或 ^http://([\w-]+\.)+[\w-]+(/[\w-./?%&amp;=]_)?$</li>
+<li>域名：[a-zA-Z0-9][-a-zA-Z0-9]{0,62}(&#x2F;.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+&#x2F;.?</li>
+<li>InternetURL：[a-zA-z]+:&#x2F;&#x2F;[^\s]_ 或 ^http:&#x2F;&#x2F;([\w-]+\.)+[\w-]+(&#x2F;[\w-.&#x2F;?%&amp;&#x3D;]_)?$</li>
 <li>手机号码：^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$</li>
 <li>电话号码(“XXX-XXXXXXX”、”XXXX-XXXXXXXX”、”XXX-XXXXXXX”、”XXX-XXXXXXXX”、”XXXXXXX”和”XXXXXXXX)：^($$\d{3,4}-)|\d{3.4}-)?\d{7,8}$</li>
 <li>国内电话号码(0511-4405222、021-87888822)：\d{3}-\d{8}|\d{4}-\d{7}</li>
@@ -523,7 +523,7 @@ m-n 位的数字：^\d{m,n}$
 <li>短身份证号码(数字、字母 x 结尾)：^([0-9]){7,18}(x|X)?$ 或 ^\d{8,18}|[0-9x]{8,18}|[0-9X]{8,18}?$</li>
 <li>帐号是否合法(字母开头，允许 5-16 字节，允许字母数字下划线)：^[a-zA-Z][a-zA-Z0-9\_]{4,15}$</li>
 <li>密码(以字母开头，长度在 6~18 之间，只能包含字母、数字和下划线)：^[a-zA-Z]\w{5,17}$</li>
-<li>强密码(必须包含大小写字母和数字的组合，不能使用特殊字符，长度在 8-10 之间)：^(?=._\d)(?=._[a-z])(?=.\*[A-Z]).{8,10}$</li>
+<li>强密码(必须包含大小写字母和数字的组合，不能使用特殊字符，长度在 8-10 之间)：^(?&#x3D;._\d)(?&#x3D;._[a-z])(?&#x3D;.\*[A-Z]).{8,10}$</li>
 <li>日期格式：^\d{4}-\d{1,2}-\d{1,2}</li>
 <li>一年的 12 个月(01 ～ 09 和 1 ～ 12)：^(0?[1-9]|1[0-2])$</li>
 <li>一个月的 31 天(01 ～ 09 和 1 ～ 31)：^((0?[1-9])|((1|2)[0-9])|30|31)$</li>
@@ -543,8 +543,8 @@ m-n 位的数字：^\d{m,n}$
 <li>中文字符的正则表达式：[\u4e00-\u9fa5]</li>
 <li>双字节字符：[^\x00-\xff] (包括汉字在内，可以用来计算字符串的长度(一个双字节字符长度计 2，ASCII 字符计 1))</li>
 <li>空白行的正则表达式：\n\s*\r (可以用来删除空白行)</li>
-<li>HTML 标记的正则表达式：&lt;(\S<em>?)[^&gt;]</em>&gt;.<em>?|&lt;.</em>? /&gt; (网上流传的版本太糟糕，上面这个也仅仅能部分，对于复杂的嵌套标记依旧无能为力)</li>
-<li>首尾空白字符的正则表达式：^\s<em>|\s</em>$或(^\s<em>)|(\s</em>$) (可以用来删除行首行尾的空白字符(包括空格、制表符、换页符等等)，非常有用的表达式)</li>
+<li>HTML 标记的正则表达式：&lt;(\S*?)[^&gt;]*&gt;._?|&lt;._? &#x2F;&gt; (网上流传的版本太糟糕，上面这个也仅仅能部分，对于复杂的嵌套标记依旧无能为力)</li>
+<li>首尾空白字符的正则表达式：^\s*|\s*$或(^\s*)|(\s*$) (可以用来删除行首行尾的空白字符(包括空格、制表符、换页符等等)，非常有用的表达式)</li>
 <li>腾讯 QQ 号：[1-9][0-9]{4,} (腾讯 QQ 号从 10000 开始)</li>
 <li>中国邮政编码：[1-9]\d{5}(?!\d) (中国邮政编码为 6 位数字)</li>
 <li>IP 地址：\d+\.\d+\.\d+\.\d+ (提取 IP 地址时有用)</li>
@@ -838,7 +838,7 @@ m-n 位的数字：^\d{m,n}$
                     <div class="summary block-with-text">
                         
                             
-转载请注明：  老 D 博客
+转载请注明：  老 D 博客
 
 本页面长期更新最新Google、谷歌学术、维基百科、ccFox.info、ProjectH、Battle.NET 、WordPress、Microsoft Live、GitHub、Amazon、Archiv
                         
@@ -892,7 +892,7 @@ m-n 位的数字：^\d{m,n}$
                             定义和用法
 replace() 方法用于在字符串中用一些字符替换另一些字符，或替换一个与正则表达式匹配的子串。
 语法
-stringObject.replace(regexp/substr,replacement)参数 描述regexp/su
+stringObject.replace(regexp&#x2F;substr,replacement)参数 描述  re
                         
                     </div>
                     <div class="publish-info">
@@ -1099,12 +1099,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
       <a href="http://www.jixiaokang.com" target="_blank">xkloveme</a>
       |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
       <br />
-       &nbsp;<i
-        class="fas fa-chart-area"
-      ></i
-      >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >148.1k</span
-      >&nbsp;字      
+           
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
           id="busuanzi_value_site_pv"

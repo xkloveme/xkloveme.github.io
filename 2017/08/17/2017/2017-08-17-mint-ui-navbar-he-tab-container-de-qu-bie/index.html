@@ -5,8 +5,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="mint-ui —— navbar和tab-container的区别, 小康,xkloveme,博客">
-    <meta name="description" content="navbar 的具体实现)
-1  2  3 Navbardiv&amp;gt; 4 5  6 选项一 mt-tab-item&amp;gt; 7 选项二 mt-tab-item&amp;gt; 8 选项三 mt-tab-item&amp;gt; 9 mt-navbar&amp;g">
+    <meta name="description" content="navbar 的具体实现
+1  2  3 Navbardiv&amp;gt; 4 5  6 选项一 mt-tab-item&amp;gt; 7 选项二 mt-tab-item&amp;gt; 8 选项三 mt-tab-item&amp;gt; 9 mt-navbar&amp;gt">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -27,7 +27,7 @@
     
     <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -297,7 +297,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=c3t9mafm5lv')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=4f8tw5tk2a4')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -476,7 +476,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="navbar-的具体实现"><a href="#navbar-的具体实现" class="headerlink" title="navbar 的具体实现"></a><strong>navbar 的具体实现</strong></h1><p><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/ContractedBlock-2.gif" alt="">)<img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/ExpandedBlockStart-2.gif" alt=""></p>
+                <h1 id="navbar-的具体实现"><a href="#navbar-的具体实现" class="headerlink" title="navbar 的具体实现"></a><strong>navbar 的具体实现</strong></h1><p><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/ContractedBlock-2.gif"><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/ExpandedBlockStart-2.gif"></p>
 <p>1 <template><br> 2 <div class="page-navbar"><br> 3 <div class="page-title">Navbardiv&gt;<br> 4<br> 5 <mt-navbar class="page-part" v-model="selected"><br> 6 <mt-tab-item id="1">选项一 mt-tab-item&gt;<br> 7 <mt-tab-item id="2">选项二 mt-tab-item&gt;<br> 8 <mt-tab-item id="3">选项三 mt-tab-item&gt;<br> 9 mt-navbar&gt;<br>10<br>11 <div><br>12 <mt-cell class="page-part" title="当前选中">{ { selected }}mt-cell&gt;<br>13 div&gt;<br>14<br>15<br>16 <mt-tab-container v-model="selected"><br>17 <mt-tab-container-item id="1"><br>18 <mt-cell v-for="n in 10" :title="'内容 ' \+ n" /><br>19 mt-tab-container-item&gt;<br>20 <mt-tab-container-item id="2"><br>21 <mt-cell v-for="n in 4" :title="'测试 ' \+ n" /><br>22 mt-tab-container-item&gt;<br>23 <mt-tab-container-item id="3"><br>24 <mt-cell v-for="n in 6" :title="'选项 ' \+ n" /><br>25 mt-tab-container-item&gt;<br>26 mt-tab-container&gt;<br>27 div&gt;<br>28 template&gt;<br>29<br>30 <script><br>31 export default { 32 name: 'page-navbar', 33<br>34 data() { 35 return { 36 selected: '1'<br>37 }; 38 } 39 }; 40 script></p>
 <p>navbar.vue</p>
 <h3 id="Import"><a href="#Import" class="headerlink" title="Import"></a><strong>Import</strong></h3><p>按需引入：</p>
@@ -509,21 +509,25 @@
 <p>*</p>
 <h2 id="Slot"><a href="#Slot" class="headerlink" title="Slot"></a>Slot</h2><h3 id="navbar-1"><a href="#navbar-1" class="headerlink" title="navbar"></a>navbar</h3><p>name</p>
 <p>描述</p>
-<p>-</p>
+<ul>
+<li></li>
+</ul>
 <p>内容</p>
 <h3 id="tab-item-1"><a href="#tab-item-1" class="headerlink" title="tab-item"></a>tab-item</h3><p>name</p>
 <p>描述</p>
-<p>-</p>
+<ul>
+<li></li>
+</ul>
 <p>显示文字</p>
 <p>icon</p>
 <p>icon 图标</p>
 <p><strong>show：</strong></p>
-<p><img src="http://img.blog.csdn.net/20170729231112350?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbWljaGFlbF9vdXlhbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt=""></p>
+<p><img src="http://img.blog.csdn.net/20170729231112350?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbWljaGFlbF9vdXlhbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center"></p>
 <p>点击选项二</p>
-<p><img src="http://img.blog.csdn.net/20170729231121127?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbWljaGFlbF9vdXlhbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt=""></p>
-<h1 id="navbar-是选项卡之间的切换，可以更改切换后选项卡的样式，因为每一个激活后都会有一个-mint-tab-item-is-selected-的一个类，显示被激活，而-tab-container-是按钮之间的切换，可以有左右滑动的特效，具体实现如下："><a href="#navbar-是选项卡之间的切换，可以更改切换后选项卡的样式，因为每一个激活后都会有一个-mint-tab-item-is-selected-的一个类，显示被激活，而-tab-container-是按钮之间的切换，可以有左右滑动的特效，具体实现如下：" class="headerlink" title="navbar 是选项卡之间的切换，可以更改切换后选项卡的样式，因为每一个激活后都会有一个 mint-tab-item is-selected 的一个类，显示被激活，而**tab-container 是按钮之间的切换，可以有左右滑动的特效，具体实现如下：**"></a><strong>navbar 是选项卡之间的切换，可以更改切换后选项卡的样式，因为每一个激活后都会有一个 mint-tab-item is-selected 的一个类，显示被激活，而**</strong>tab-container 是按钮之间的切换，可以有左右滑动的特效，具体实现如下：**</h1><h1 id="tab-container-的具体实现"><a href="#tab-container-的具体实现" class="headerlink" title="tab-container 的具体实现"></a>tab-container 的具体实现</h1><p>面板，可切换显示子页面。</p>
+<p><img src="http://img.blog.csdn.net/20170729231121127?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbWljaGFlbF9vdXlhbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center"></p>
+<h1 id="navbar-是选项卡之间的切换，可以更改切换后选项卡的样式，因为每一个激活后都会有一个-mint-tab-item-is-selected-的一个类，显示被激活，而-tab-container-是按钮之间的切换，可以有左右滑动的特效，具体实现如下："><a href="#navbar-是选项卡之间的切换，可以更改切换后选项卡的样式，因为每一个激活后都会有一个-mint-tab-item-is-selected-的一个类，显示被激活，而-tab-container-是按钮之间的切换，可以有左右滑动的特效，具体实现如下：" class="headerlink" title="**navbar 是选项卡之间的切换，可以更改切换后选项卡的样式，因为每一个激活后都会有一个 mint-tab-item is-selected 的一个类，显示被激活，而****tab-container 是按钮之间的切换，可以有左右滑动的特效，具体实现如下：**"></a>**navbar 是选项卡之间的切换，可以更改切换后选项卡的样式，因为每一个激活后都会有一个 mint-tab-item is-selected 的一个类，显示被激活，而****tab-container 是按钮之间的切换，可以有左右滑动的特效，具体实现如下：**</h1><h1 id="tab-container-的具体实现"><a href="#tab-container-的具体实现" class="headerlink" title="tab-container 的具体实现"></a>tab-container 的具体实现</h1><p>面板，可切换显示子页面。</p>
 <p>常与 navbar、tabbar 结合使用</p>
-<p><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/ContractedBlock-2.gif" alt="">)<img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/ExpandedBlockStart-2.gif" alt=""></p>
+<p><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/ContractedBlock-2.gif"><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/ExpandedBlockStart-2.gif"></p>
 <p>1 <template><br> 2 <div><br> 3 <div class="nav"><br> 4 <mt-button size="small" @click.native.prevent="active = 'tab-container1'">tab 1mt-button><br> 5 <mt-button size="small" @click.native.prevent="active = 'tab-container2'">tab 2mt-button><br> 6 <mt-button size="small" @click.native.prevent="active = 'tab-container3'">tab 3mt-button><br> 7 div><br> 8<br> 9 <div class="page-tab-container"><br>10 <mt-tab-container class="page-tabbar-tab-container" v-model="active" swipeable><br>11 <mt-tab-container-item id="tab-container1"><br>12<br>13 <mt-cell v-for="n in 10" title="tab-container 1">mt-cell><br>14 mt-tab-container-item><br>15 <mt-tab-container-item id="tab-container2"><br>16<br>17 <mt-cell v-for="n in 5" title="tab-container 2">mt-cell><br>18 mt-tab-container-item><br>19 <mt-tab-container-item id="tab-container3"><br>20<br>21 <mt-cell v-for="n in 7" title="tab-container 3">mt-cell><br>22 mt-tab-container-item><br>23 mt-tab-container><br>24 div><br>25 div><br>26 template><br>27<br>28 <script><br>29 export default { 30 name: 'page-tab-container', 31 data() { 32 return { 33 active: 'tab-container1'<br>34 }; 35 } 36 }; 37 script><br>38<br>39 <style lang="css" scoped><br>40 .item {<br>41 display: inline-block;<br>42 }<br>43<br>44 .nav {<br>45 padding: 10px;<br>46 }<br>47<br>48 .link {<br>49 color: inherit;<br>50 padding: 20px;<br>51 display: block;<br>52 }<br>53 style></p>
 <p>tab-container.vue</p>
 <h3 id="Import-1"><a href="#Import-1" class="headerlink" title="Import"></a><strong>Import</strong></h3><p>按需引入：</p>
@@ -556,14 +560,18 @@
 <p>*</p>
 <h2 id="Slot-1"><a href="#Slot-1" class="headerlink" title="Slot"></a>Slot</h2><h3 id="tab-container-1"><a href="#tab-container-1" class="headerlink" title="tab-container"></a>tab-container</h3><p>name</p>
 <p>描述</p>
-<p>-</p>
+<ul>
+<li></li>
+</ul>
 <p>内容</p>
 <h3 id="tab-container-item-1"><a href="#tab-container-item-1" class="headerlink" title="tab-container-item"></a>tab-container-item</h3><p>name</p>
 <p>描述</p>
-<p>-</p>
+<ul>
+<li></li>
+</ul>
 <p>内容</p>
 <p>show<strong>：</strong></p>
-<p><img src="http://img.blog.csdn.net/20170803105647087?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbWljaGFlbF9vdXlhbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt=""></p>
+<p><img src="http://img.blog.csdn.net/20170803105647087?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbWljaGFlbF9vdXlhbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center"></p>
 
             </div>
             <hr/>
@@ -910,7 +918,7 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            一、git 命令名词解释1、添加/跟踪/暂存：添加到本地索引      git add  文件名2、提交：提交到本地仓库      git commit -m ‘注释’3、推送：将提交到本地仓库的所有更新提交到服务器      git pu
+                            一、git 命令名词解释1、添加&#x2F;跟踪&#x2F;暂存：添加到本地索引        git add  文件名2、提交：提交到本地仓库        git commit -m ‘注释’3、推送：将提交到本地仓库的所有更新提交到服
                         
                     </div>
                     <div class="publish-info">
@@ -1121,12 +1129,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
       <a href="http://www.jixiaokang.com" target="_blank">xkloveme</a>
       |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
       <br />
-       &nbsp;<i
-        class="fas fa-chart-area"
-      ></i
-      >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >148.1k</span
-      >&nbsp;字      
+           
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
           id="busuanzi_value_site_pv"

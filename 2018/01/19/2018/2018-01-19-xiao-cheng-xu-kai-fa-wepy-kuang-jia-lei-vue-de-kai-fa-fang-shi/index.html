@@ -32,7 +32,7 @@ WePY 是一款让小程序支持组件化开发的框架，通过预编译的手
     
     <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -302,7 +302,7 @@ WePY 是一款让小程序支持组件化开发的框架，通过预编译的手
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=ej1hk5v7lkp')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=g8cgozim3d')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -454,14 +454,14 @@ WePY 是一款让小程序支持组件化开发的框架，通过预编译的手
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.4k
+                    2.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    11 分
+                    12 分
                 </div>
                 
 				
@@ -477,7 +477,7 @@ WePY 是一款让小程序支持组件化开发的框架，通过预编译的手
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="1-node-的安装"><a href="#1-node-的安装" class="headerlink" title="1.node 的安装"></a>1.node 的安装</h2><p><a href="https://nodejs.org/en/" target="_blank" rel="noopener">节点网官</a>下载<br><img src="http://img.blog.csdn.net/20170602210731167?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcmVzX21pbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="节点官网截取"></p>
+                <h2 id="1-node-的安装"><a href="#1-node-的安装" class="headerlink" title="1.node 的安装"></a>1.node 的安装</h2><p><a target="_blank" rel="noopener" href="https://nodejs.org/en/">节点网官</a>下载<br><img src="http://img.blog.csdn.net/20170602210731167?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcmVzX21pbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="节点官网截取"></p>
 <p>推荐左边的安装方式，因为右边的最新版本在有些电脑上运行不稳定。</p>
 <p>下载到本地一直继续就好。</p>
 <p>安装好后就可以直接在命令行运行查看结果</p>
@@ -487,10 +487,18 @@ WePY 是一款让小程序支持组件化开发的框架，通过预编译的手
 <p>同时 WePY 也是一款成长中的框架，大量吸收借鉴了一些优化前端工具以及框架的设计理念和思想。如果 WePY 有不足地方，或者你有更好的想法，欢迎提交发行或者 PR。</p>
 </blockquote>
 <p><strong>安装（更新）wepy 命令行工具。</strong></p>
-<pre><code>npm install wepy-cli -g</code></pre><p><strong>在开发目录生成开发 DEMO。</strong></p>
-<pre><code>wepy new demo</code></pre><p><strong>切换至项目目录。</strong></p>
-<pre><code>cd demo</code></pre><p><strong>打开目录</strong><br>窗口</p>
-<pre><code> dir</code></pre><p><strong>项目目录结构</strong></p>
+<pre><code>npm install wepy-cli -g
+</code></pre>
+<p><strong>在开发目录生成开发 DEMO。</strong></p>
+<pre><code>wepy new demo
+</code></pre>
+<p><strong>切换至项目目录。</strong></p>
+<pre><code>cd demo
+</code></pre>
+<p><strong>打开目录</strong> <br>窗口</p>
+<pre><code> dir
+</code></pre>
+<p><strong>项目目录结构</strong></p>
 <pre><code>├── dist                   微信开发者工具指定的目录
 ├── node_modules
 ├── src                    代码编写的目录
@@ -501,10 +509,12 @@ WePY 是一款让小程序支持组件化开发的框架，通过预编译的手
 |   |   ├── index.wpy      页面 index
 |   |   └── page.wpy       页面 page
 |   └── app.wpy            小程序配置项（全局样式配置、声明钩子等）
-└── package.json           package 配置</code></pre><p><strong>开发使用说明</strong></p>
+└── package.json           package 配置
+</code></pre>
+<p><strong>开发使用说明</strong></p>
 <ol>
 <li>使用<code>微信开发者工具</code>新建项目，开发本地选择<code>dist</code>目录。</li>
-<li><code>微信开发者工具</code> - &gt;项目 - &gt;关闭 ES6 转 ES5。</li>
+<li><code>微信开发者工具</code> - &gt;项目 - &gt;关闭 ES6 转 ES5。</li>
 <li>本地项目根目录运行<code>wepy build --watch</code>，开启实时编译。</li>
 </ol>
 <p><strong>代码高亮</strong></p>
@@ -516,47 +526,53 @@ WePY 是一款让小程序支持组件化开发的框架，通过预编译的手
 <blockquote>
 <p>配置展示进入设置<br>在 settings.js 文件下添加如下代码</p>
 </blockquote>
-<pre><code>&quot;files.associations&quot;: {
+<pre><code>&quot;files.associations&quot;: &#123;
         &quot;*.vue&quot;: &quot;vue&quot;,
         &quot;*.wpy&quot;: &quot;vue&quot;,
         &quot;*.wxml&quot;: &quot;html&quot;,
         &quot;*.wxss&quot;: &quot;css&quot;
-    },
-    &quot;emmet.syntaxProfiles&quot;: {
+    &#125;,
+    &quot;emmet.syntaxProfiles&quot;: &#123;
         &quot;vue-html&quot;: &quot;html&quot;,
         &quot;vue&quot;: &quot;html&quot;
-    }</code></pre><p>后就保存在可以中页面看待<code>.wpy</code>后缀代码高亮</p>
+    &#125;
+</code></pre>
+<p>后就保存在可以中页面看待<code>.wpy</code>后缀代码高亮</p>
 <blockquote>
-<p>Sublime 下载码高亮<br>文件后缀为.wpy，可共用 vue 高亮，但需要手动安装。<br>打开 Sublime-&gt; Preferences-&gt; Browse Packages ..进入用户包文件夹。<br>在此文件夹下打开 cmd，运行 git clone <a href="mailto:git@github.com">git@github.com</a>：vuejs / VUE -句法- highlight.git，无 GIT 用户可以直接下载拉链包解压至当前文件夹。<br>关闭.wpy 文件重新打开即可高亮。</p>
+<p>Sublime 下载码高亮<br>文件后缀为.wpy，可共用 vue 高亮，但需要手动安装。<br>打开 Sublime-&gt; Preferences-&gt; Browse Packages ..进入用户包文件夹。<br>在此文件夹下打开 cmd，运行 git clone <a href="mailto:&#103;&#x69;&#116;&#x40;&#x67;&#x69;&#x74;&#104;&#x75;&#98;&#x2e;&#x63;&#x6f;&#109;">&#103;&#x69;&#116;&#x40;&#x67;&#x69;&#x74;&#104;&#x75;&#98;&#x2e;&#x63;&#x6f;&#109;</a>：vuejs &#x2F; VUE -句法- highlight.git，无 GIT 用户可以直接下载拉链包解压至当前文件夹。<br>关闭.wpy 文件重新打开即可高亮。</p>
 <p>WebStorm 下代码高亮<br>打开首选项，搜索插件，搜索 Vue.js 插件并安装。<br>打开首选项，搜索文件类型，找到 Vue.js 模板，在注册模式添加* .wpy，即可高亮。</p>
 <p>Atom 下代码高亮<br>在 Atom 里先安装 vue 的语法高亮 - language-vue，如果装过了就忽略这一步。<br>打开 Atom - &gt;配置菜单。在 core 键下添加：</p>
 </blockquote>
 <pre><code>customFileTypes:
    &quot;text.html.vue&quot;: [
       &quot;wpy&quot;
-   ]</code></pre><h2 id="3，代码规范"><a href="#3，代码规范" class="headerlink" title="3，代码规范"></a>3，代码规范</h2><ol>
+   ]
+</code></pre>
+<h2 id="3，代码规范"><a href="#3，代码规范" class="headerlink" title="3，代码规范"></a>3，代码规范</h2><ol>
 <li>变量与方法使用尽量使用驼峰式命名，避免使用$开头。</li>
 <li>入口，页面，组件的命名后缀为.wpy。外链的文件可以是其它后缀。</li>
 <li>使用 ES6 语法开发。框架在 ES6 下开发，因此也需要使用 ES6 开发小程序，ES6 中有大量的语法糖可以让我们的代码更加简洁高效。</li>
-<li>甚至可以直接使用异步/等待等新特性进行开发。</li>
-<li>事件绑定语法使用优化语法代替：原 bindtap =“click”替换为@ tap =“click”，原 catchtap =“click”替换为@ tap.stop =“click”。更多@符用法</li>
-<li>事件传参使用优化后语法代替：原 bindtap =“click”data-index = { {index}}替换为@ tap =“click（{ {index}}）”。</li>
+<li>甚至可以直接使用异步&#x2F;等待等新特性进行开发。</li>
+<li>事件绑定语法使用优化语法代替：原 bindtap &#x3D;“click”替换为@ tap &#x3D;“click”，原 catchtap &#x3D;“click”替换为@ tap.stop &#x3D;“click”。更多@符用法</li>
+<li>事件传参使用优化后语法代替：原 bindtap &#x3D;“click”data-index &#x3D; { {index}}替换为@ tap &#x3D;“click（{ {index}}）”。</li>
 <li>自定义组件命名应避开微信原生组件以及功能标签。不可以使用输入，按钮，查看，重复等命名自定义组件。</li>
 </ol>
 <h2 id="4-优点"><a href="#4-优点" class="headerlink" title="4.优点"></a>4.优点</h2><ol>
 <li>支持组件化开发。</li>
 <li>支持加载外部 NPM 包。</li>
 <li>单文件模式，使得目录结构更加清晰。</li>
-<li>默认使用巴别编译，支持 ES6 / 7 的一些新特性。</li>
+<li>默认使用巴别编译，支持 ES6 &#x2F; 7 的一些新特性。</li>
 <li>针对原生 API 进行优化。</li>
 </ol>
-<h2 id="5-wpy-文件说明"><a href="#5-wpy-文件说明" class="headerlink" title="5.wpy 文件说明"></a>5.wpy 文件说明</h2><p>一个<code>.wpy</code>文件分为三个部分：<br>1 .样式对应原有 wxss。2.<br>模板对应原有 wxml。3.<br>代码对应原有 js。</p>
+<h2 id="5-wpy-文件说明"><a href="#5-wpy-文件说明" class="headerlink" title="5.wpy 文件说明"></a>5.wpy 文件说明</h2><p>一个<code>.wpy</code>文件分为三个部分：<br>1 .样式对应原有 wxss。2. <br>模板对应原有 wxml。3. <br>代码对应原有 js。</p>
 <p>其中入口文件 app.wpy 不需要模板，所以编译时会被忽略。这三个标签都支持郎和 SRC 属性，郎决定了其代码编译过程，SRC 决定是否外联代码，存在 SRC 属性且有效时，忽略内联代码，示例如下：</p>
 <pre><code>&lt;style lang=&quot;less&quot; src=&quot;page1.less&quot;&gt;style&gt;
 &lt;template lang=&quot;wxml&quot; src=&quot;page1.wxml&quot;&gt;template&gt;
 &lt;script&gt;
     // some code
-script&gt;</code></pre><p>标签对应 lang 值如下表所示：</p>
+script&gt;
+</code></pre>
+<p>标签对应 lang 值如下表所示：</p>
 <p>标签</p>
 <p>郎默认值</p>
 <p>郎支持值</p>
@@ -571,30 +587,30 @@ script&gt;</code></pre><p>标签对应 lang 值如下表所示：</p>
 <p>巴布尔，打字稿</p>
 <h2 id="演示"><a href="#演示" class="headerlink" title="演示"></a>演示</h2><p>index.wpy</p>
 <pre><code>&lt;style lang=&quot;less&quot;&gt;
-.userinfo {
+.userinfo &#123;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+&#125;
 
-.userinfo-avatar {
+.userinfo-avatar &#123;
   width: 80rpx;
   height: 80rpx;
   border-radius: 50%;
-}
+&#125;
 
-.userinfo-nickname {
+.userinfo-nickname &#123;
   color: #aaa;
-}
+&#125;
 style&gt;
 &lt;template&gt;
   &lt;view class=&quot;container&quot;&gt;
     &lt;view class=&quot;userinfo&quot; @tap=&quot;handleViewTap&quot;&gt;
-      &lt;image class=&quot;userinfo-avatar&quot; src=&quot;{ { userInfo.avatarUrl }}&quot; background-size=&quot;cover&quot; /&gt;
-      &lt;view class=&quot;userinfo-nickname&quot;&gt;{ { userInfo.nickName }}view&gt;
+      &lt;image class=&quot;userinfo-avatar&quot; src=&quot;&#123; &#123; userInfo.avatarUrl &#125;&#125;&quot; background-size=&quot;cover&quot; /&gt;
+      &lt;view class=&quot;userinfo-nickname&quot;&gt;&#123; &#123; userInfo.nickName &#125;&#125;view&gt;
     view&gt;
     &lt;panel&gt;
-      &lt;view&gt;{ { datas }}&#39;111&#39;view&gt;
+      &lt;view&gt;&#123; &#123; datas &#125;&#125;&#39;111&#39;view&gt;
       &lt;view @tap=&quot;doLogin&quot; class=&quot;item&quot;&gt;
         &lt;view class=&quot;item-inner&quot;&gt;登录view&gt;
       view&gt;
@@ -604,11 +620,11 @@ style&gt;
     panel&gt;
     &lt;panel&gt;
             &lt;view class=&quot;title&quot; slot=&quot;title&quot;&gt;测试数据绑定view&gt;
-            &lt;text class=&quot;info&quot;&gt;{ {normalTitle}}text&gt;
-            &lt;text class=&quot;info&quot;&gt;{ {setTimeoutTitle}}text&gt;
-            &lt;text class=&quot;info&quot;&gt;{ {mixin}}text&gt;
-            &lt;text class=&quot;info&quot;&gt;{ {mynum}}text&gt;
-            &lt;text class=&quot;info&quot;&gt;{ {now}}text&gt;
+            &lt;text class=&quot;info&quot;&gt;&#123; &#123;normalTitle&#125;&#125;text&gt;
+            &lt;text class=&quot;info&quot;&gt;&#123; &#123;setTimeoutTitle&#125;&#125;text&gt;
+            &lt;text class=&quot;info&quot;&gt;&#123; &#123;mixin&#125;&#125;text&gt;
+            &lt;text class=&quot;info&quot;&gt;&#123; &#123;mynum&#125;&#125;text&gt;
+            &lt;text class=&quot;info&quot;&gt;&#123; &#123;now&#125;&#125;text&gt;
             &lt;button @tap=&quot;plus(&#39;a&#39;)&quot; size=&quot;mini&quot;&gt; + button&gt;
           panel&gt;
 
@@ -622,7 +638,7 @@ style&gt;
           &lt;panel&gt;
             &lt;view class=&quot;title&quot; slot=&quot;title&quot;&gt;测试并发网络请求view&gt;
             &lt;view&gt;返回结果:
-              &lt;text&gt;{ {netrst}}text&gt;
+              &lt;text&gt;&#123; &#123;netrst&#125;&#125;text&gt;
             view&gt;
             &lt;button @tap=&quot;request&quot; size=&quot;mini&quot;&gt; 点我发起10个请求 button&gt;
           panel&gt;
@@ -644,7 +660,7 @@ style&gt;
 
           &lt;panel&gt;
             &lt;view class=&quot;title&quot; slot=&quot;title&quot;&gt;测试组件Repeatview&gt;
-            &lt;repeat for=&quot;{ {groupList}}&quot; index=&quot;index&quot; item=&quot;item&quot; key=&quot;key&quot;&gt;
+            &lt;repeat for=&quot;&#123; &#123;groupList&#125;&#125;&quot; index=&quot;index&quot; item=&quot;item&quot; key=&quot;key&quot;&gt;
               &lt;group :grouplist=&quot;item&quot; :indexa=&quot;index&quot;&gt;group&gt;
             repeat&gt;
           panel&gt;
@@ -668,175 +684,177 @@ import Toast from &#39;wepy-com-toast&#39;
 import testMixin from &#39;../mixins/test&#39;
 // 引入 QCloud 小程序增强 SDK
 import qcloud from &#39;../assets/qcloud-weapp-client-sdk/index&#39;
-export default class Index extends wepy.page {
-  config = {
+export default class Index extends wepy.page &#123;
+  config = &#123;
     navigationBarTitleText: &#39;test&#39;
-  }
-  components = {
+  &#125;
+  components = &#123;
     panel: Panel,
     counter1: Counter,
     counter2: Counter,
     list: List,
     group: Group,
     toast: Toast
-  }
+  &#125;
   mixins = [testMixin]
 
-  data = {
+  data = &#123;
     datas: &#39;&#39;,
     mynum: 20,
-    userInfo: {
+    userInfo: &#123;
       nickName: &#39;加载中...&#39;
-    },
+    &#125;,
     normalTitle: &#39;原始标题&#39;,
     setTimeoutTitle: &#39;标题三秒后会被修改&#39;,
     count: 0,
     netrst: &#39;&#39;,
     groupList: [
-      {
+      &#123;
         id: 1,
         name: &#39;点击改变&#39;,
         list: [
-          {
+          &#123;
             childid: &#39;1.1&#39;,
             childname: &#39;子项，点我改变&#39;
-          }, {
+          &#125;, &#123;
             childid: &#39;1.2&#39;,
             childname: &#39;子项，点我改变&#39;
-          }, {
+          &#125;, &#123;
             childid: &#39;1.3&#39;,
             childname: &#39;子项，点我改变&#39;
-          }
+          &#125;
         ]
-      },
-      {
+      &#125;,
+      &#123;
         id: 2,
         name: &#39;点击改变&#39;,
         list: [
-          {
+          &#123;
             childid: &#39;2.1&#39;,
             childname: &#39;子项，点我改变&#39;
-          }, {
+          &#125;, &#123;
             childid: &#39;2.2&#39;,
             childname: &#39;子项，点我改变&#39;
-          }, {
+          &#125;, &#123;
             childid: &#39;2.3&#39;,
             childname: &#39;子项，点我改变&#39;
-          }
+          &#125;
         ]
-      },
-      {
+      &#125;,
+      &#123;
         id: 3,
         name: &#39;点击改变&#39;,
         list: [
-          {
+          &#123;
             childid: &#39;3.1&#39;,
             childname: &#39;子项，点我改变&#39;
-          }
+          &#125;
         ]
-      }
+      &#125;
     ]
-  }
+  &#125;
 
-  computed = {
-    now() {
+  computed = &#123;
+    now() &#123;
       return +new Date()
-    }
-  }
+    &#125;
+  &#125;
 
-  methods = {
-    doLogin() {
+  methods = &#123;
+    doLogin() &#123;
       qcloud.setLoginUrl(&#39;https://66280981.qcloud.la/api/user/login&#39;);
-      qcloud.login({
-        success: function (userInfo) {
+      qcloud.login(&#123;
+        success: function (userInfo) &#123;
           console.log(&#39;登录成功&#39;, userInfo);
-        },
-        fail: function (err) {
+        &#125;,
+        fail: function (err) &#123;
           console.log(&#39;登录失败&#39;, err);
-        }
-      });
-    },
-    enevts() {
-       qcloud.request({
+        &#125;
+      &#125;);
+    &#125;,
+    enevts() &#123;
+       qcloud.request(&#123;
         url: `https://66280981.qcloud.la/api/user/info`,
         login: true,
-        success: (response) =&gt; {
+        success: (response) =&gt; &#123;
           console.log(response.data.data.userInfo)
           // this.me = response.data.data.userInfo;
           // this.connect();
-        }
-      });
-    },
-    plus() {
+        &#125;
+      &#125;);
+    &#125;,
+    plus() &#123;
       this.mynum++
-    },
-    toast() {
-      let promise = this.$invoke(&#39;toast&#39;, &#39;show&#39;, {
+    &#125;,
+    toast() &#123;
+      let promise = this.$invoke(&#39;toast&#39;, &#39;show&#39;, &#123;
         title: &#39;自定义标题&#39;,
         img: &#39;https://raw.githubusercontent.com/kiinlam/wetoast/master/images/star.png&#39;
-      })
+      &#125;)
 
-      promise.then((d) =&gt; {
+      promise.then((d) =&gt; &#123;
         console.log(&#39;toast done&#39;)
-      })
-    },
-    tap() {
+      &#125;)
+    &#125;,
+    tap() &#123;
       console.log(&#39;do noting from &#39; + this.$name)
-    },
-    communicate() {
+    &#125;,
+    communicate() &#123;
       console.log(this.$name + &#39; tap&#39;)
 
       this.$invoke(&#39;counter2&#39;, &#39;minus&#39;, 45, 6)
       this.$invoke(&#39;counter1&#39;, &#39;plus&#39;, 45, 6)
 
       this.$broadcast(&#39;index-broadcast&#39;, 1, 3, 4)
-    },
-    request() {
+    &#125;,
+    request() &#123;
       let self = this
       let i = 10
       let map = [&#39;MA==&#39;, &#39;MQo=&#39;, &#39;Mg==&#39;, &#39;Mw==&#39;, &#39;NA==&#39;, &#39;NQ==&#39;, &#39;Ng==&#39;, &#39;Nw==&#39;, &#39;OA==&#39;, &#39;OQ==&#39;]
-      while (i--) {
-        wepy.request({
+      while (i--) &#123;
+        wepy.request(&#123;
           url: &#39;https://www.madcoder.cn/tests/sleep.php?time=1&amp;t=css&amp;c=&#39; + map[i] + &#39;&amp;i=&#39; + i,
-          success: function (d) {
+          success: function (d) &#123;
             self.netrst += d.data + &#39;.&#39;
             self.$apply()
-          }
-        })
-      }
-    },
-    counterEmit(...args) {
+          &#125;
+        &#125;)
+      &#125;
+    &#125;,
+    counterEmit(...args) &#123;
       let $event = args[args.length - 1]
-      console.log(`${this.$name} receive ${$event.name} from ${$event.source.$name}`)
-    }
-  }
+      console.log(`$&#123;this.$name&#125; receive $&#123;$event.name&#125; from $&#123;$event.source.$name&#125;`)
+    &#125;
+  &#125;
 
-  events = {
-    &#39;index-emit&#39;: (...args) =&gt; {
+  events = &#123;
+    &#39;index-emit&#39;: (...args) =&gt; &#123;
       let $event = args[args.length - 1]
-      console.log(`${this.$name} receive ${$event.name} from ${$event.source.$name}`)
-    }
-  }
+      console.log(`$&#123;this.$name&#125; receive $&#123;$event.name&#125; from $&#123;$event.source.$name&#125;`)
+    &#125;
+  &#125;
 
-  onLoad() {
+  onLoad() &#123;
     let self = this
-    this.$parent.getUserInfo(function (userInfo) {
-      if (userInfo) {
+    this.$parent.getUserInfo(function (userInfo) &#123;
+      if (userInfo) &#123;
         self.userInfo = userInfo
-      }
+      &#125;
       self.normalTitle = &#39;标题已被修改&#39;
 
       self.setTimeoutTitle = &#39;标题三秒后会被修改&#39;
-      setTimeout(() =&gt; {
+      setTimeout(() =&gt; &#123;
         self.setTimeoutTitle = &#39;到三秒了&#39;
         self.$apply()
-      }, 3000)
+      &#125;, 3000)
 
       self.$apply()
-    })
-  }
-}
-script&gt;</code></pre>
+    &#125;)
+  &#125;
+&#125;
+script&gt;
+</code></pre>
+
             </div>
             <hr/>
 
@@ -1388,12 +1406,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
       <a href="http://www.jixiaokang.com" target="_blank">xkloveme</a>
       |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
       <br />
-       &nbsp;<i
-        class="fas fa-chart-area"
-      ></i
-      >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >148.1k</span
-      >&nbsp;字      
+           
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
           id="busuanzi_value_site_pv"

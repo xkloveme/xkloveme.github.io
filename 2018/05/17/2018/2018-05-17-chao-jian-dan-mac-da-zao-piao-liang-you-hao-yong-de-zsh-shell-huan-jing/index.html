@@ -28,7 +28,7 @@
     
     <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -298,7 +298,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=r38cbw21nd')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=19bb0xwk4ac')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -477,125 +477,141 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/QQ20180517-1@2x.png" alt="">身为开发者，很大一部分的时间是在用 command line 做事，如果能把 command line 调整成好用又酷炫的模样，不只是效率提升非常多，用起来爽度也比较高,上面放了一张我自己的 item，是不是觉得高大上了许多</p>
+                <p><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/QQ20180517-1@2x.png">身为开发者，很大一部分的时间是在用 command line 做事，如果能把 command line 调整成好用又酷炫的模样，不只是效率提升非常多，用起来爽度也比较高,上面放了一张我自己的 item，是不是觉得高大上了许多</p>
 <ul>
 <li>本片文章适用于 MAC 开发的 developer，学习时间大概十分钟</li>
 <li>shell 默认选中 ZSH，已经安装过<strong>iTerm2，oh-my-zsh</strong></li>
 <li>避免搞乱你的开发环境：仅可能使用 homebrew 来安装需要的套件</li>
-<li>安装 zsh theme: <strong>powerlevel9k</strong></li>
+<li>安装 zsh theme: <strong>powerlevel9k</strong></li>
 </ul>
 <h4 id="安装-iTerm2："><a href="#安装-iTerm2：" class="headerlink" title="安装 iTerm2："></a><strong>安装 iTerm2：</strong></h4><p>虽然不是必要，内建的 Terminal app 也可以，不过 iTerm2 还是比较好用，下面的示范也全都是用 iTerm2,个人用的自带其实还好</p>
-<p><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/QQ20180517-3@2x.png" alt=""></p>
-<p>#如果你从来没有用过 brew cask 的话需要先跑这行<br>brew tap caskroom/cask</p>
+<p><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/QQ20180517-3@2x.png"></p>
+<p>#如果你从来没有用过 brew cask 的话需要先跑这行<br>brew tap caskroom&#x2F;cask</p>
 <p>#安装 iTerm2<br>brew cask instal iterm2</p>
 <p>安装好以后，打开 iTerm2 检查 Report Terminal Type 的设置，路径： <code>Preferences &gt; Profiles &gt; Terminal &gt; Report Terminal Type</code></p>
 <p>设为<code>xterm-256color</code>，等等在 terminal 才能看得到漂亮的颜色</p>
-<p><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/QQ20180517-5@2x.png" alt=""></p>
+<p><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/QQ20180517-5@2x.png"></p>
 <h4 id="修改-iTerm2-的-color-scheme"><a href="#修改-iTerm2-的-color-scheme" class="headerlink" title="修改 iTerm2 的 color scheme"></a><strong>修改 iTerm2 的 color scheme</strong></h4><p>这步骤很重要，预设的很丑，想要自己的 command line 看起来赏心悦目就绝对要换掉预设的</p>
-<p><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/QQ20180517-4@2x.png" alt=""></p>
+<p><img src="http://www.jixiaokang.com/wp-content/uploads/2018/05/QQ20180517-4@2x.png"></p>
 <h4 id="安装-powerline-font"><a href="#安装-powerline-font" class="headerlink" title="安装 powerline font"></a><strong>安装 powerline font</strong></h4><p>因为我们要用的 theme 会用到很多的特殊 icon，所以 iTerm2 选用的字型必需要支援这种特殊 icon font。这类型的字体统称为 powerline font（另外还有加强版支援更多特殊 icon 的叫的 nerd font）</p>
 <p>没有安装的话画面会长这样，遇到 icon 会变框框问号</p>
-<p><img src="https://cdn-images-1.medium.com/max/1600/1*sB3u7_aAXl6BkRy9UEygPw.png" alt=""></p>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*sB3u7_aAXl6BkRy9UEygPw.png"></p>
 <p>非 powerline font</p>
 <p>装完并设定新字型后的效果：</p>
-<p><img src="https://cdn-images-1.medium.com/max/1600/1*0lPAd28LbancmQuHgnDyNg.png" alt=""></p>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*0lPAd28LbancmQuHgnDyNg.png"></p>
 <p>powerline font</p>
 <p>支援 powerline 的字型很多，我推荐<strong>Sauce Code Pro Nerd Font Complete</strong> 安装方式推荐直接用 brew 安装比较快又好管理</p>
 <p>安装指令：</p>
-<p>#先执行这行，才能用 homebrew 安装字型。曾经执行过的人可以跳过这个指令<br>brew tap caskroom/fonts</p>
+<p>#先执行这行，才能用 homebrew 安装字型。曾经执行过的人可以跳过这个指令<br>brew tap caskroom&#x2F;fonts</p>
 <pre><code># 安裝指令
-brew cask install</code></pre><p>如果想要装别的，brew 上面也有很多字型可以挑。</p>
+brew cask install
+</code></pre>
+<p>如果想要装别的，brew 上面也有很多字型可以挑。</p>
 <p>关键字是<code>nerd</code>：</p>
 <p>brew cask search nerd</p>
 <p>装完后，记得修改 iTerm2 字型设定否则不会生效。请改成 SauceCodePro Nerd Font 或你自己下载的字型</p>
 <p>设定路径：<code>Preferences &gt; Profiles &gt; Text &gt; Change Font</code></p>
 <h4 id="安装-oh-my-zsh"><a href="#安装-oh-my-zsh" class="headerlink" title="安装 oh-my-zsh"></a><strong>安装 oh-my-zsh</strong></h4><p>上一步装完 zsh 后，就可以开始调整我们想要的 command line 外观设定了，但是原始的 zsh 因为设定太难搞，所以多年前刚出现的时候没有受到太多关注，直到有人写了一套叫<strong>oh-my-zsh</strong>的 framework 来帮助大家使用 zsh，zsh 才火了起来。现在几乎所有 zsh 好用的工具都有支援 oh-my-zsh，所以当然是要装这东西</p>
 <p>安装指令：</p>
-<pre><code>sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;</code></pre><blockquote>
-<p>注：这会直接执行 oh-my-zsh 的有疑虑的人可以先稍微研究一下<a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank" rel="noopener">oh-my-zsh github</a>上的，觉得放心再执行<code>install.sh</code> <code>install.sh</code></p>
+<pre><code>sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;
+</code></pre>
+<blockquote>
+<p>注：这会直接执行 oh-my-zsh 的有疑虑的人可以先稍微研究一下<a target="_blank" rel="noopener" href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh github</a>上的，觉得放心再执行<code>install.sh</code> <code>install.sh</code></p>
 </blockquote>
-<p>执行完以后如果没有出现什么错误讯息就代表成功了，同时会发现多了 oh-my-zsh 的资料夹  <code>~/.oh-my-zsh</code></p>
-<h4 id="重头戏！！安装-zsh-theme-powerlevel9k-https-github-com-bhilburn-powerlevel9k"><a href="#重头戏！！安装-zsh-theme-powerlevel9k-https-github-com-bhilburn-powerlevel9k" class="headerlink" title="重头戏！！安装 zsh theme **[powerlevel9k**](https://github.com/bhilburn/powerlevel9k)"></a><strong>重头戏！！安装 zsh theme **[</strong>powerlevel9k**](<a href="https://github.com/bhilburn/powerlevel9k" target="_blank" rel="noopener">https://github.com/bhilburn/powerlevel9k</a>)</h4><p>刚装完 oh-my-zsh 以后，预设是使用内建的 theme <em>robbyrussell</em>，多了 git 资讯，颜色也看起来比原生 bash 好一些：</p>
-<p><img src="https://cdn-images-1.medium.com/max/1600/1*1TqBIUz998aoEAoepG4mbw.png" alt=""></p>
-<p>不过 oh-my-zsh 内建很多 theme，在它的<a href="https://github.com/robbyrussell/oh-my-zsh/wiki/themes" target="_blank" rel="noopener">github wiki</a>上有很多截图可以参考</p>
+<p>执行完以后如果没有出现什么错误讯息就代表成功了，同时会发现多了 oh-my-zsh 的资料夹  <code>~/.oh-my-zsh</code></p>
+<h4 id="重头戏！！安装-zsh-theme-powerlevel9k"><a href="#重头戏！！安装-zsh-theme-powerlevel9k" class="headerlink" title="**重头戏！！安装 zsh theme **powerlevel9k"></a>**重头戏！！安装 zsh theme **<a target="_blank" rel="noopener" href="https://github.com/bhilburn/powerlevel9k"><strong>powerlevel9k</strong></a></h4><p>刚装完 oh-my-zsh 以后，预设是使用内建的 theme <em>robbyrussell</em>，多了 git 资讯，颜色也看起来比原生 bash 好一些：</p>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*1TqBIUz998aoEAoepG4mbw.png"></p>
+<p>不过 oh-my-zsh 内建很多 theme，在它的<a target="_blank" rel="noopener" href="https://github.com/robbyrussell/oh-my-zsh/wiki/themes">github wiki</a>上有很多截图可以参考</p>
 <p>切换内建的 theme 很简单，直接修改你的<code>~/.zshrc</code>，把原本改成你想要的：<code>ZSH_THEME=”_robbyrussell_”</code></p>
 <pre><code># 編輯 ~/.zshrc
-ZSH_THEME=”</code></pre><p>任何的 zsh 设定修改过后，还要执行以下指令才会生效</p>
+ZSH_THEME=”
+</code></pre>
+<p>任何的 zsh 设定修改过后，还要执行以下指令才会生效</p>
 <p>exec $SHELL</p>
-<p><img src="https://cdn-images-1.medium.com/max/1600/1*Dj2trYBv3hgFg4LOIlMtWg.png" alt=""></p>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*Dj2trYBv3hgFg4LOIlMtWg.png"></p>
 <p>agnoster 看起来是不是比 robbyrussell 漂亮多了？</p>
 <p>这边推荐一个超强的 theme，powerlevel9k！</p>
-<p>文章开头的图片就是撷取自<a href="https://github.com/bhilburn/powerlevel9k" target="_blank" rel="noopener">powerlevel9k 的 github</a></p>
-<p><img src="https://cdn-images-1.medium.com/max/1600/1*OwwhfTqbc8IUaZnCAYXt7g.gif" alt=""></p>
-<p>图片来源：<a href="https://github.com/bhilburn/powerlevel9k" target="_blank" rel="noopener">https://github.com/bhilburn/powerlevel9k</a></p>
+<p>文章开头的图片就是撷取自<a target="_blank" rel="noopener" href="https://github.com/bhilburn/powerlevel9k">powerlevel9k 的 github</a></p>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*OwwhfTqbc8IUaZnCAYXt7g.gif"></p>
+<p>图片来源：<a target="_blank" rel="noopener" href="https://github.com/bhilburn/powerlevel9k">https://github.com/bhilburn/powerlevel9k</a></p>
 <p>powerlevel9k 不只是像上面的示范图显示一些基本的资讯，还可以做到很屌的事情，比如像下图那样，显示 WiFi 讯号强度、笔电电池电力、CPU loading、system free memory 等等资讯在 command line</p>
-<p><img src="https://cdn-images-1.medium.com/max/1600/1*Ixhmm4KVixyzZolr-OTV3w.png" alt=""></p>
-<p>图片撷取自<a href="https://github.com/bhilburn/powerlevel9k" target="_blank" rel="noopener">powerlevel9k github</a></p>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*Ixhmm4KVixyzZolr-OTV3w.png"></p>
+<p>图片撷取自<a target="_blank" rel="noopener" href="https://github.com/bhilburn/powerlevel9k">powerlevel9k github</a></p>
 <h4 id="powerlevel9k-安装方式："><a href="#powerlevel9k-安装方式：" class="headerlink" title="powerlevel9k 安装方式："></a>powerlevel9k 安装方式：</h4><ol>
-<li><a href="https://github.com/bhilburn/powerlevel9k" target="_blank" rel="noopener">powerlevel9k</a>不是 oh-my-zsh 内建的 theme ，必须另外下载</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/bhilburn/powerlevel9k">powerlevel9k</a>不是 oh-my-zsh 内建的 theme ，必须另外下载</li>
 </ol>
 <p>指令：</p>
-<pre><code>git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k</code></pre><p>2.编辑你的<code>~/.zshrc</code>，把 ZSH_THEME 设为 powerlevel9k，并设定要显示哪些东西在 command line 上：</p>
-<pre><code>ZSH_THEME=&quot;powerlevel9k/powerlevel9k&quot;</code></pre><p># command line 左边想显示的内容<br>POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir) # &lt;= left prompt 设了”dir”</p>
-<p># command line 右边想显示的内容<br>POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(time) # &lt;= right prompt 设了”time”</p>
+<pre><code>git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+</code></pre>
+<p>2.编辑你的<code>~/.zshrc</code>，把 ZSH_THEME 设为 powerlevel9k，并设定要显示哪些东西在 command line 上：</p>
+<pre><code>ZSH_THEME=&quot;powerlevel9k/powerlevel9k&quot;
+</code></pre>
+<p># command line 左边想显示的内容<br>POWERLEVEL9K_LEFT_PROMPT_ELEMENTS&#x3D;(dir) # &lt;&#x3D; left prompt 设了”dir”</p>
+<p># command line 右边想显示的内容<br>POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS&#x3D;(time) # &lt;&#x3D; right prompt 设了”time”</p>
 <p>上面的例子我们把左边设了一个<code>dir</code>，右边设了<code>time</code>，代表左边想显示当前资料夹路径，右边显示时间</p>
 <p>设定完后 command line 看起来会像这样(记得执行<code>exec $SHELL</code>，设定才会生效)：</p>
-<p><img src="https://cdn-images-1.medium.com/max/1600/1*MY6xGaUv0ksJni-EbeOZQg.png" alt=""></p>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*MY6xGaUv0ksJni-EbeOZQg.png"></p>
 <p>左边显示当前资料夹路径，右边显示时间</p>
 <hr>
 <p>如果想要有版本控制的资讯，可以在<code>POWERLEVEL9K_LEFT_PROMPT_ELEMENTS</code>加上<code>vcs</code>(vcs 为 version control system 的缩写)</p>
 <pre><code># 編輯 ~/.zshrc
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs) # 加上 &quot;vcs&quot;</code></pre><p>command line 会变这样：</p>
-<p><img src="https://cdn-images-1.medium.com/max/1600/1*BrzqzPH-XOjywfbIekAzEQ.png" alt=""></p>
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs) # 加上 &quot;vcs&quot;
+</code></pre>
+<p>command line 会变这样：</p>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*BrzqzPH-XOjywfbIekAzEQ.png"></p>
 <p>多了 git branch 以及 git status 资讯</p>
 <hr>
 <p>当你进入了一个没有写入权限的资料夹时还可以给你提醒：</p>
-<p>#加上”dir_writable”<br>POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir <strong>dir_writable</strong> vcs)</p>
-<p><img src="https://cdn-images-1.medium.com/max/1600/1*BYW3MIbGBv9DXzNU72JFKQ.png" alt=""></p>
-<p>/etc 没有写入权限，多出一个锁头提醒你</p>
+<p>#加上”dir_writable”<br>POWERLEVEL9K_LEFT_PROMPT_ELEMENTS&#x3D;(dir <strong>dir_writable</strong> vcs)</p>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*BYW3MIbGBv9DXzNU72JFKQ.png"></p>
+<p>&#x2F;etc 没有写入权限，多出一个锁头提醒你</p>
 <hr>
 <p>如果你的 command line 是设成 vi mode ，相信你一定碰过这个困扰，就是不晓得自己是处在 normal mode 还是 insert mode。没关系，powerlevel9k 可以帮你解决这个问题：</p>
-<p>#加上”vi_mode”<br>POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir dir_writable vcs <strong>vi_mode</strong> )</p>
+<p>#加上”vi_mode”<br>POWERLEVEL9K_LEFT_PROMPT_ELEMENTS&#x3D;(dir dir_writable vcs <strong>vi_mode</strong> )</p>
 <p>结果如下：</p>
-<p><img src="https://cdn-images-1.medium.com/max/1600/1*bj90M9RvPCFZ6GNVqJUP4g.png" alt=""></p>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*bj90M9RvPCFZ6GNVqJUP4g.png"></p>
 <p>上图告诉我们现在在 insert mode</p>
 <p>按下<code>ESC</code>后：</p>
-<p><img src="https://cdn-images-1.medium.com/max/1600/1*PCsqH7xDf3z4lXCr81QV0A.png" alt=""></p>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*PCsqH7xDf3z4lXCr81QV0A.png"></p>
 <p>告诉你变 normal mode 啦~赞吧！</p>
 <hr>
 <p>我自己习惯左侧的设定放一些常用基本资讯 右边放一些好用但不是每次下指令都要看的东西</p>
-<p>command line 右边的设定放在  <code>POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS</code></p>
+<p>command line 右边的设定放在  <code>POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS</code></p>
 <p>例如显示上一个指令的 return code：</p>
-<p>#加上”status”显示上一个指令的 return code：<br>POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=( <strong>status</strong> time)</p>
+<p>#加上”status”显示上一个指令的 return code：<br>POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS&#x3D;( <strong>status</strong> time)</p>
 <p>如果指令没出错，linux return code 为 0 时会有个绿色小勾勾：</p>
-<p><img src="https://cdn-images-1.medium.com/max/1600/1*nSS8Df1YlCwI87ICv_jM_Q.png" alt=""></p>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*nSS8Df1YlCwI87ICv_jM_Q.png"></p>
 <p>指令正确执行，return code 为 0</p>
 <p>如果打了错误指令会出现相对应的 return code，并且用红色底色提醒你</p>
-<p><img src="https://cdn-images-1.medium.com/max/1600/1*DSV5vY-pzNOVcv4jaI-4Wg.png" alt=""></p>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*DSV5vY-pzNOVcv4jaI-4Wg.png"></p>
 <p>指令执行错误，return code 为 127</p>
 <hr>
 <p>还可以显示目前电脑的 free memory：</p>
-<p>#加上 ram，显示目前的 free memory<br>POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status <strong>ram</strong> time)</p>
-<p><img src="https://cdn-images-1.medium.com/max/1600/1*tgWdaWPdLSn8LMharCTOYQ.png" alt=""></p>
+<p>#加上 ram，显示目前的 free memory<br>POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS&#x3D;(status <strong>ram</strong> time)</p>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*tgWdaWPdLSn8LMharCTOYQ.png"></p>
 <p>还有 4.61G 的记忆体可用</p>
-<p><strong>2017/12/30 更新： 上图的最左方有个资料夹 icon，且 git 资讯多显示了几个 icon，这用原本的设定是看不到的，需要加上这行：</strong></p>
-<pre><code>POWERLEVEL9K_MODE=&#39;nerdfont-complete&#39;</code></pre><p><a href="https://github.com/bhilburn/powerlevel9k/wiki/Install-Instructions#option-4-install-nerd-fonts" target="_blank" rel="noopener">powerlevel9k 的 wiki</a>有解释这个设定的作用，请大家使用时注意一下别忘记加上去</p>
+<p><strong>2017&#x2F;12&#x2F;30 更新： 上图的最左方有个资料夹 icon，且 git 资讯多显示了几个 icon，这用原本的设定是看不到的，需要加上这行：</strong></p>
+<pre><code>POWERLEVEL9K_MODE=&#39;nerdfont-complete&#39;
+</code></pre>
+<p><a target="_blank" rel="noopener" href="https://github.com/bhilburn/powerlevel9k/wiki/Install-Instructions#option-4-install-nerd-fonts">powerlevel9k 的 wiki</a>有解释这个设定的作用，请大家使用时注意一下别忘记加上去</p>
 <hr>
 <p>加上 CPU load average：</p>
-<p>#加上 load 显示 CPU 忙碌程度<br>POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status ram <strong>load</strong> time)</p>
-<p><img src="https://cdn-images-1.medium.com/max/1600/1*-j1gAm788RbWzRiY0MidCg.png" alt=""></p>
+<p>#加上 load 显示 CPU 忙碌程度<br>POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS&#x3D;(status ram <strong>load</strong> time)</p>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*-j1gAm788RbWzRiY0MidCg.png"></p>
 <p>CPU 忙碌程度 2.45，还行</p>
 <p>显示电量：</p>
-<p>POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=( <strong>battery</strong> )</p>
-<p><img src="https://cdn-images-1.medium.com/max/1600/1*48h7cUsjuzXBV8dhOjHehw.png" alt=""></p>
+<p>POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS&#x3D;( <strong>battery</strong> )</p>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*48h7cUsjuzXBV8dhOjHehw.png"></p>
 <p>还可以用 6 小时又 11 分</p>
 <hr>
-<p>示范了不少，但还有非常非常多东西可以用，请参考这个列表自己玩玩看<a href="https://github.com/bhilburn/powerlevel9k#available-prompt-segments" target="_blank" rel="noopener">https://github.com/bhilburn/powerlevel9k#available-prompt-segments</a></p>
+<p>示范了不少，但还有非常非常多东西可以用，请参考这个列表自己玩玩看<a target="_blank" rel="noopener" href="https://github.com/bhilburn/powerlevel9k#available-prompt-segments">https://github.com/bhilburn/powerlevel9k#available-prompt-segments</a></p>
 <p>不过有些东西中看不中用，放太多东西也会让 command line 反应变慢，试了各种设定一阵子后，只留下了一些我觉得比较有用的，给大家参考：</p>
-<p>#左侧<br>POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir dir_writable vcs vi_mode)</p>
-<p>#右侧<br>POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs history ram load time)</p>
-<p>#若当前登入的帐号为你的帐号 xxx，就不用特别显示出来<br>DEFAULT_USER=”xxx”</p>
-<pre><code># 使用 nerd font 時可以顯示更多 icon。詳情請參考</code></pre><hr>
+<p>#左侧<br>POWERLEVEL9K_LEFT_PROMPT_ELEMENTS&#x3D;(context dir dir_writable vcs vi_mode)</p>
+<p>#右侧<br>POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS&#x3D;(status background_jobs history ram load time)</p>
+<p>#若当前登入的帐号为你的帐号 xxx，就不用特别显示出来<br>DEFAULT_USER&#x3D;”xxx”</p>
+<pre><code># 使用 nerd font 時可以顯示更多 icon。詳情請參考
+</code></pre>
+<hr>
 <h4 id="最后…"><a href="#最后…" class="headerlink" title="最后…"></a>最后…</h4><p>这篇文章介绍了怎么样把自己的 command line 替换成 zsh，并且使用很厉害的 powerlevel9k theme，不过 zsh 不只是可以换酷炫的 theme 而已，更重要的是还有很多比 bash 好用的功能可以大幅提升工作效率，又可以装各种方便的 plugin，就留待有机会时再介绍啰</p>
 <hr>
 
@@ -1150,12 +1166,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
       <a href="http://www.jixiaokang.com" target="_blank">xkloveme</a>
       |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
       <br />
-       &nbsp;<i
-        class="fas fa-chart-area"
-      ></i
-      >&nbsp;站点总字数:&nbsp;<span class="white-color"
-        >148.1k</span
-      >&nbsp;字      
+           
       <span id="busuanzi_container_site_pv">
         |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span
           id="busuanzi_value_site_pv"
