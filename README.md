@@ -4,14 +4,15 @@
 
 ![](https://cdn.jsdelivr.net/gh/xkloveme/oss@master/images/1627479150168-1627479149928.png)
 
-- [online](http://www.jixiaokang.com/)
-- [国内](https://xkloveme-github-io.vercel.app/)
+- [预览](http://www.jixiaokang.com/)
+- [管理平台](https://hexo.jixiaokang.com/)
 
 ## 新建笔记
 
 ``` bash
 hexo new 2020-05-31
 ```
+
 
 ## 关注我
 
