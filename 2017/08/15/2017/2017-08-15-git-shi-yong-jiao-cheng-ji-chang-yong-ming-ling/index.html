@@ -28,7 +28,8 @@
     <link rel="stylesheet" type="text/css" href="/css/my.css">
     
     <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
-    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7603553603899928"
+     crossorigin="anonymous"></script>
 <meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="小康之家" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
@@ -299,7 +300,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=rho6c5jeb6a')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://picsum.photos/600/300?t=23asqgjz5jm')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -626,7 +627,7 @@
 <p>五：远程仓库。</p>
 <p>在了解之前，先注册 github 账号，由于你的本地 Git 仓库和 github 仓库之间的传输是通过 SSH 加密的，所以需要一点设置：</p>
 <p>第一步：创建 SSH Key。在用户主目录下，看看有没有.ssh 目录，如果有，再看看这个目录下有没有 id_rsa 和 id_rsa.pub 这两个文件，如果有的话，直接跳过此如下命令，如果没有的话，打开命令行，输入如下命令：</p>
-<p>ssh-keygen  -t rsa –C “<a href="mailto:&#121;&#x6f;&#117;&#x72;&#x65;&#109;&#x61;&#x69;&#x6c;&#x40;&#101;&#x78;&#x61;&#109;&#112;&#108;&#101;&#x2e;&#99;&#x6f;&#x6d;">&#121;&#x6f;&#117;&#x72;&#x65;&#109;&#x61;&#x69;&#x6c;&#x40;&#101;&#x78;&#x61;&#109;&#112;&#108;&#101;&#x2e;&#99;&#x6f;&#x6d;</a>”, 由于我本地此前运行过一次，所以本地有，如下所示：</p>
+<p>ssh-keygen  -t rsa –C “<a href="mailto:&#121;&#x6f;&#x75;&#x72;&#101;&#x6d;&#x61;&#105;&#108;&#64;&#101;&#120;&#97;&#x6d;&#112;&#108;&#x65;&#x2e;&#x63;&#x6f;&#109;">&#121;&#x6f;&#x75;&#x72;&#101;&#x6d;&#x61;&#105;&#108;&#64;&#101;&#120;&#97;&#x6d;&#112;&#108;&#x65;&#x2e;&#x63;&#x6f;&#109;</a>”, 由于我本地此前运行过一次，所以本地有，如下所示：</p>
 <p><img src="http://images.cnitblog.com/blog/561794/201410/251355342303027.png"></p>
 <p>id_rsa 是私钥，不能泄露出去，id_rsa.pub 是公钥，可以放心地告诉任何人。</p>
 <p>第二步：登录 github,打开” settings”中的 SSH Keys 页面，然后点击“Add SSH Key”,填上任意 title，在 Key 文本框里黏贴 id_rsa.pub 文件的内容。</p>
