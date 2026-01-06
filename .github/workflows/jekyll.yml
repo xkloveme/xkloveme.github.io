@@ -1,10 +1,8 @@
 name: docs
 
 on:
-  # 每当 push 到 main 分支时触发部署
   push:
     branches: [master]
-  # 手动触发部署
   workflow_dispatch:
 
 jobs:
@@ -12,9 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4  # 升级到 v4
         with:
-          # “最近更新时间” 等 git 日志相关信息，需要拉取全部提交记录
           fetch-depth: 0
 
       - name: Install Bun
@@ -23,11 +20,11 @@ jobs:
           echo "${HOME}/.bun/bin" >> $GITHUB_PATH
 
       - name: Cache dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: |
             node_modules
-            .bun
+            ～/.bun  # 修正路径，确保缓存生效
           key: ${{ runner.os }}-bun-${{ hashFiles('**/bun.lockb') }}
           restore-keys: |
             ${{ runner.os }}-bun-
@@ -38,13 +35,11 @@ jobs:
       - name: Build site
         run: bun run build
 
-      # 查看 workflow 的文档来获取更多信息
-      # @see https://github.com/crazy-max/ghaction-github-pages
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+        uses: JamesIves/github-pages-deploy-action@v4.5.2  # 建议升级到最新版
         with:
-          ACCESS_TOKEN: ${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }}
-          # 部署到 gh-pages 分支
+          # 🔴 删除 ACCESS_TOKEN，直接使用默认的 GITHUB_TOKEN
           BRANCH: gh-pages
-          # 部署目录为 VuePress 的默认输出目录
           FOLDER: public
+          # 如果你的 GitHub Pages 设置里源分支是 gh-pages，这行可以省略
+          # CLEAN: true # 可选：部署前清理旧文件
