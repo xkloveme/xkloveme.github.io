@@ -10,7 +10,7 @@
 ## 新建笔记
 
 ``` bash
-hexo new 2020-05-31
+bun new
 ```
 
 
