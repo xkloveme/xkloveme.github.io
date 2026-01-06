@@ -36,7 +36,7 @@ jobs:
         run: bun run build
 
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4.5.2  # 建议升级到最新版
+        uses: JamesIves/github-pages-deploy-action@releases/v4  # 建议升级到最新版
         with:
           # 🔴 删除 ACCESS_TOKEN，直接使用默认的 GITHUB_TOKEN
           BRANCH: gh-pages
